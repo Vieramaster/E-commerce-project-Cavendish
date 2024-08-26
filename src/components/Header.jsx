@@ -15,42 +15,61 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-esmerald h-20 w-full flex items-center justify-between px-5 relative">
+    <header className="bg-esmerald h-20 w-full flex items-center justify-between px-5 relative ">
       <div className="flex w-52 h-3/4 justify-start gap-3  items-center ">
-        <img src={logo} alt="logo" className="h-full w-auto" />
-        <h1 className="font-Oswald font-bold text-4xl text-white">etalon</h1>
+        <img src={logo} alt="logo" className="h-3/4 w-auto" />
+        <h1 className="font-Oswald font-bold text-5xl text-white">etalon</h1>
       </div>
-      <ResponsiveButton svg={<IcoBarsResponsive />} onClick={responsiveClick} />
+      <ResponsiveButton
+        svg={openNav ? <IcoCloseResponsive /> : <IcoBarsResponsive />}
+        onClick={responsiveClick}
+      />
 
-      <div
-        className={`bg-red-900  absolute z-50 flex flex-col w-1/2 h-screen top-0 justify-between ease-in-out duration-300  ${
-          openNav ? "right-0 " : "-right-52"
-        } `}
+      <nav
+        className={`${
+          openNav ? "right-0" : "-right-full"
+        } bg-red-500 absolute max-w-64 w-3/4 h-screen flex-col items-center   top-20 `}
       >
-        <div className="h-20 w-full flex justify-end items-center pr-5">
-          <ResponsiveButton
-            svg={<IcoCloseResponsive />}
-            onClick={responsiveClick}
-          />
-        </div>
-        <nav className="bg-green-400 w-full flex-1">
-          <ul className="w-full h-full flex flex-col justify-center gap-5 text-center">
-            <li className="bg-red-600 w-full h-10  grid place-content-center font-bold text-3xl text-white">
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li className="bg-red-600 w-full h-10  grid place-content-center font-bold text-3xl text-white">
-              <NavLink to={"/store"}>Store</NavLink>
-            </li>
-            <li className="bg-red-600 w-full h-auto  min-h-10 grid place-content-center font-bold text-3xl text-white">
-              <NavLink to={"/NewArrivals"}>New Arrivals</NavLink>
-            </li>
-            <li className="bg-red-600 w-full h-10  grid place-content-center font-bold text-3xl text-white">
-              <NavLink to={"/contact"}>Contact us</NavLink>
-            </li>
-          </ul>
-        </nav>
+        <ul className="flex flex-col gap-5 w-full h-full items-center justify-start pt-10">
+          <li className="">
+            <NavLink to={"/"}>Home</NavLink>
+          </li>
+          <li>
+            <ul className="flex flex-col gap-5 w-full h-full items-center">
+              <span>
+                <h2>Store</h2>
+              </span>
+              <li>
+                <NavLink to={"/sweaters"}>Sweaters</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/jackets"}>jackets</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/T-shirts"}>T-shirts</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/Hoodies"}>Hoodies</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/Shirts"}>Shirts</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/Pants"}>Pants</NavLink>
+              </li>
+            </ul>
+          </li>
+          <li className="">
+            <NavLink to={"/NewArrivals"}>New Arrivals</NavLink>
+          </li>
+          <li className="">
+            <NavLink to={"/contact"}>Contact us</NavLink>
+          </li>
+        </ul>
         <BasketButton />
-      </div>
+      </nav>
     </header>
   );
 }
+
+/*https://legacy.vteximg.com.br/scripts/json2.js?v=1.0.0.0*/

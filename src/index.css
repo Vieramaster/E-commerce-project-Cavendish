@@ -11,6 +11,10 @@
   font-family: "Quicksand", sans-serif;
 }
 
+#root{
+  overflow: hidden;
+}
+
 .Quicksand-extraLight {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
