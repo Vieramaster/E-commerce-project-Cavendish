@@ -1,8 +1,8 @@
 import IcoBasket from "../icons/IcoBasket";
 
-export default function BasketButton() {
+export default function BasketButton({addClass}) {
   return (
-    <button className="w-full h-20 bg-yellow ">
+    <button className={addClass}>
       <IcoBasket className={"h-12 w-12  fill-white"} />
     </button>
   );
