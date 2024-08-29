@@ -10,6 +10,8 @@ export default {
         "yellow": "#fede67",
         "carbon": "#191919",
         "light-grey": "#ececec",
+        "grey":"#c5c2c9",
+        "light-esmerald":"#73957e"
       },
       fontFamily: {
         Quicksand: ["Quicksand", "cursive"],

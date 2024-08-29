@@ -1,9 +1,10 @@
 import IcoBasket from "../icons/IcoBasket";
+import IcoShopBag from "../icons/IcoShopBag";
 
 export default function BasketButton({addClass}) {
   return (
     <button className={addClass}>
-      <IcoBasket className={"h-12 w-12  fill-white"} />
+     <IcoShopBag />
     </button>
   );
 }
