@@ -7,16 +7,26 @@ export default function SocialBanner({ classNameUl, svgSize }) {
   return (
     <ul className={`${classNameUl} flex justify-center items-center gap-5`}>
       <li>
-        <IcoFacebook className={svgSize} />
+        <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="_blank">
+          <IcoFacebook className={svgSize} />
+        </a>
       </li>
       <li>
-        <IcoInstagram className={svgSize} />
+        <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="_blank">
+          <IcoInstagram className={svgSize} />
+        </a>
       </li>
       <li>
-        <IcoYoutube className={svgSize} />
+        <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="_blank">
+          {" "}
+          <IcoYoutube className={svgSize} />
+        </a>
       </li>
       <li>
-        <IcoTwitter className={svgSize} />
+        <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="_blank">
+          {" "}
+          <IcoTwitter className={svgSize} />
+        </a>
       </li>
     </ul>
   );
