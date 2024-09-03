@@ -1,143 +1,104 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
-import logo from "../assets/images/logo.webp";
-import BasketButton from "./BasketButton";
-import ResponsiveButton from "./ResponsiveButton";
+//ICOS
 import IcoBarsResponsive from "../icons/IcoBarsResponsive";
+import ICoSearch from "../icons/ICoSearch";
+import ICoShoppingCart from "../icons/ICoShoppingCart";
 import IcoCloseResponsive from "../icons/IcoCloseResponsive";
-import IcoArrowList from "../icons/IcoArrowList";
+
+//COMPONENTS
+import SocialBanner from "./SocialBanner";
 
 export default function Header() {
-  const [openNav, setOpenNav] = useState(false);
-  const [openUl, setOpenUl] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-  const responsiveClick = () => {
-    setOpenNav(!openNav);
+  const openNav = () => {
+    setNavbar(!navbar);
   };
 
-  const toggleSubMenu = () => {
-    setOpenUl(!openUl);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1024) {
-        setOpenNav(false);
-        setOpenUl(false);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const mouseLeaveUl = () => {
-    if (window.innerWidth >= 1024) {
-      setOpenUl(false);
-    }
-  };
-
-  const submenuStyle =
-    "h-14 text-2xl pl-2 font-medium  lg:flex lg:items-center lg:pl-0 lg:text-grey lg:hover:text-white duration-200 ease-in";
-  const menuStyle =
-    "h-14 place-content-center text-3xl font-bold text-white lg:text-grey lg:hover:text-white lg:duration-100 lg:ease-in lg:text-xl";
-
-    
   return (
-    <header className="bg-esmerald h-24 w-full flex items-center justify-between px-5 lg:px-14 fixed">
-      <div className="flex w-52 h-3/4 justify-start gap-3 items-center">
-        <img src={logo} alt="logo" className="h-3/4 w-auto" />
-        <h1 className="font-Oswald font-bold text-5xl text-white">etalon</h1>
-      </div>
-      <ResponsiveButton svg={<IcoBarsResponsive />} onClick={responsiveClick} />
-      <nav
-        className={`${
-          openNav ? "right-0" : "-right-80"
-        } flex flex-col absolute w-3/4 max-w-80 h-screen z-50 top-0 ease-in-out duration-500 bg-dark-esmerald min-h-[350px] lg:relative lg:max-w-none lg:h-20 lg:z-0 lg:w-auto lg:right-0 lg:duration-0 lg:flex-row  lg:min-h-20 lg:bg-transparent`}
-      >
-        <div className="h-24 w-full flex justify-end items-center pr-5 lg:hidden">
-          <ResponsiveButton
-            svg={<IcoCloseResponsive />}
-            onClick={responsiveClick}
-          />
+    <>
+      <span className="h-7 w-full bg-carbon grid place-content-center">
+        <h2 className="text-white"> Free U.S. Shipping on Orders $125+</h2>
+      </span>
+      <header className="relative w-full h-16 flex justify-between px-3 ">
+        <div className="flex gap-3 w-auto h-full bg-green-300 flex-1 justify-start items-center ">
+          <button onClick={openNav} aria-label="open responsive menu">
+            <IcoBarsResponsive className={"w-10 h-10 stroke-white stroke-1"} />
+          </button>
+
+          <button aria-label="search button">
+            <ICoSearch className={"w-7 h-7 stroke-white"} />
+          </button>
         </div>
-        <ul className="flex flex-1 flex-col justify-start mt-20 gap-5 w-full px-5 overflow-y-auto h-auto lg:flex-row lg:h-20 lg:mt-0 lg:items-center lg:overflow-visible lg:gap-10 lg:cursor-pointer">
-          <li
-            onMouseLeave={mouseLeaveUl}
-            className="place-content-center relative text-3xl font-bold text-white lg:text-grey lg:hover:text-white lg:duration-100 lg:ease-in lg:text-xl group "
-          >
+        <div className="h-full flex-auto bg-red-400 grid place-content-center">
+          <a href="#" className="text-white text-3xl">
+            ETALON
+          </a>
+        </div>
+        <div className="h-full flex-1 bg-violet-500 flex justify-end">
+          <button className="flex gap-2 h-full w-14 items-center ">
+            <ICoShoppingCart className={"w-7 h-7 stroke-white"} />
+            <span>1</span>
+          </button>
+        </div>
+        <nav
+          className={`${
+            navbar ? "left-0" : "-left-full"
+          } bg-rose-500 absolute w-2/3 max-w-96 duration-500 ease-in-out flex flex-col justify-between h-menuScreen`}
+        >
+          <div className="w-full h-16 flex justify-end items-center bg-yellow-500">
             <button
-              className="flex gap-5 items-center justify-between w-full lg:h-24"
-              onClick={toggleSubMenu}
-              aria-expanded={openUl}
-              aria-controls="submenu"
+              className="w-10 h-10 mr-3 bg-red-500 grid place-content-center"
+              onClick={openNav}
+              aria-label="close responsive menu"
             >
-              <h2>Store</h2>
-              <IcoArrowList isOpen={openUl} />
+              <IcoCloseResponsive className={"w-8 h-8 fill-white"} />
             </button>
-            <ul
-              id="submenu"
-              className={`${
-                openUl ? "block" : "hidden"
-              } pt-5 lg:absolute  lg:w-44 lg:-right-8 lg:rounded-b-md lg:bg-dark-esmerald`}
-            >
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/Sweaters">
-                  Sweaters
-                </NavLink>
+          </div>
+          <div className=" bg-orange-500 flex flex-col justify-between flex-auto py-5 px-3">
+            <ul className="text-white text-xl flex flex-col gap-2">
+              <li>
+                <NavLink to={"/"}>New Arrivals</NavLink>
               </li>
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/T-shirts">
-                  T-shirts
-                </NavLink>
+              <li>
+                <NavLink to={"/"}>Sweaters & hoodies</NavLink>
               </li>
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/Jackets">
-                  Jackets
-                </NavLink>
+              <li>
+                <NavLink to={"/"}>Jackets & coats</NavLink>
               </li>
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/Hoodies">
-                  Hoodies
-                </NavLink>
+              <li>
+                <NavLink to={"/"}>T-shirts & shirts</NavLink>
               </li>
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/Shirts">
-                  Shirts
-                </NavLink>
+              <li>
+                <NavLink to={"/"}>Pants</NavLink>
               </li>
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/Pants">
-                  Pants
-                </NavLink>
-              </li>
-              <li className={submenuStyle}>
-                <NavLink className={" m-auto "} to="/Coats">
-                  Coats
-                </NavLink>
+              <li>
+                <NavLink to={"/"}>Shoes</NavLink>
               </li>
             </ul>
-          </li>
-          <li className={menuStyle}>
-            <NavLink to="/New arrivals">New arrivals</NavLink>
-          </li>
-          <li className={menuStyle}>
-            <NavLink to="/Contact us">Contact us</NavLink>
-          </li>
-          <li className={menuStyle}>
-            <NavLink to="/Our stores">Our stores</NavLink>
-          </li>
-        </ul>
-        <BasketButton addClass="w-full h-20 bg-yellow lg:hidden" />
-      </nav>
+            <ul className="text-white text-xl flex flex-col gap-2">
+              <li>
+                <button>Log in/Register</button>
+              </li>
+              <li>
+                <NavLink to="/stores">Stores</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
+              <li>
+                <NavLink to="/partner">Partner with us</NavLink>
+              </li>
+              <li>
+                <NavLink to="/help">Help</NavLink>
+              </li>
+            </ul>
+          </div>
 
-      <BasketButton
-        addClass={
-          "hidden h-16 w-16 rounded-full bg-yellow lg:grid lg:place-content-center"
-        }
-      />
-    </header>
+          <SocialBanner svgSize={"w-8 h-8"} classNameUl={"w-full h-12 "} />
+        </nav>
+      </header>
+    </>
   );
 }
