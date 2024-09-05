@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
   padding: 0;
@@ -11,8 +11,8 @@
   font-family: "Quicksand", sans-serif;
 }
 
-#root{
-  overflow: hidden;
+#root {
+  position: relative;
 }
 
 .Quicksand-extraLight {
@@ -55,6 +55,6 @@
   font-style: normal;
 }
 
-.h-menuScreen{
+.h-menuScreen {
   height: calc(100vh - 1.75rem);
 }
