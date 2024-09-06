@@ -2,54 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+
 }
 
-#root {
-  position: relative;
-}
 
 .Quicksand-extraLight {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
 
 .Quicksand-light {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 .Quicksand-normal {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .Quicksand-semiBold {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
 .Quicksand-Bold {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 .Quicksand-extraBold {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
