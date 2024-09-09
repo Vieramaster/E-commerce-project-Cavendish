@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         esmerald: "#3b5e48",
-        darkEsmerald: "#2c4937",
+        darkEsmerald: "#2a4033",
         white: "#fff",
         yellow: "#fede67",
         lightCarbon:"#404040",

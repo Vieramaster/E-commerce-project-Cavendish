@@ -10,7 +10,7 @@ import ICoShoppingCart from "../icons/ICoShoppingCart";
 import useClickOutside from "./hooks/useClickOutside";
 import SearchModal from "./SearchModal";
 import Navbar from "./NavBar";
-import IcoSearch from "../icons/ICoSearch";
+
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -48,27 +48,12 @@ export default function Header() {
               aria-label="search button"
               onClick={toggleSearch}
               disabled={searchBar}
-              className={`${
-                searchBar ? "opacity-30 cursor-not-allowed" : ""
-              } xl:hidden`}
+              className={`${searchBar ? "opacity-30 cursor-not-allowed" : ""}`}
             >
               <ICoSearch
-                className={"w-7 h-7 stroke-customGrey stroke-2 lg:w-10 lg:h-10"}
+                className={"w-7 h-7 stroke-white stroke-2 lg:w-10 lg:h-10"}
               />
             </button>
-            <fieldset className="hidden xl:flex bg-white h-10 w-60 px-3 xl:w-80 rounded-sm">
-              <span className=" h-full w-10  grid place-content-center bg-white ">
-                <IcoSearch className={"stroke-gray-400 w-8 h-8 stroke-2"} />
-              </span>
-              <input
-                className=" outline-none w-full h-full pl-3 text-gray "
-                type="search"
-                name="search"
-                id="search"
-                aria-label="search bar"
-                placeholder="What are you looking for?"
-              />
-            </fieldset>
           </div>
           <div className="h-full flex-auto grid place-content-center">
             <NavLink
@@ -79,9 +64,10 @@ export default function Header() {
             </NavLink>
           </div>
           <div className="h-full flex-1  flex justify-end items-center">
-            <button className="flex gap-2 h-12 rounded-full w-12 items-center justify-center bg-yellow lg:h-16 lg:w-16 ">
-              <ICoShoppingCart className={"w-6 h-6 stroke-darkEsmerald stroke-2 lg:w-10 lg:h-10"} />
-
+            <button className="flex gap-2 h-12 rounded-full w-12 items-center justify-center bg-yellow lg:h-14 lg:w-14 ">
+              <ICoShoppingCart
+                className={"w-4 h-4 stroke-darkEsmerald stroke-2 lg:w-8 lg:h-8"}
+              />
             </button>
           </div>
         </div>

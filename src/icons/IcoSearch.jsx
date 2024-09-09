@@ -1,14 +1,16 @@
-export default function IcoSearch({ className }) {
+export default function IcoSearch({className}) {
   return (
     <svg
-      className={`${className} stroke-white`}
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
       viewBox="0 0 24 24"
+      fill="none"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    className={className}
     >
-      <path d="M0 0h24v24H0z" stroke="none" />
-      <path d="M3 10a7 7 0 1014 0 7 7 0 10-14 0M21 21l-6-6" />
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+      <path d="M21 21l-6 -6" />
     </svg>
   );
 }

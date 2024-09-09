@@ -2,6 +2,9 @@ import SocialBanner from "./SocialBanner";
 import IcoCloseResponsive from "../icons/IcoCloseResponsive";
 import { NavLink } from "react-router-dom";
 
+const classNameBefore =
+  " relative before:w-0 before:h-[2px]  before:bg-white before:absolute before:bottom-0 before:left-0 before:hover:w-full before:duration-500 before:ease-in-out";
+
 export default function Navbar({ refNavBar, toggleNav, navbar }) {
   return (
     <nav
@@ -20,26 +23,39 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
         </button>
       </div>
       <div className="flex flex-col justify-between flex-auto  px-3  ">
-        <ul className="text-white text-lg flex flex-col gap-2 lg:text-2xl">
-          <li className=" h-12 lg:h-14">
-            <NavLink className={"text-3xl lg:text-4xl text-yellow"} to={"/NewArrivals"}>
+        <ul className="text-white text-lg flex flex-col gap-2 lg:text-2xl ">
+          <li className="h-12 lg:h-14 ">
+            <NavLink
+              className={`text-3xl lg:text-4xl text-yellow ${classNameBefore}`}
+              to="/NewArrivals"
+            >
               New Arrivals
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/Sweaters&Hoodies"}>Sweaters & hoodies</NavLink>
+            <NavLink className={classNameBefore} to={"/Sweaters&Hoodies"}>
+              Sweaters & hoodies
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/Jackets&Coats"}>Jackets & coats</NavLink>
+            <NavLink className={classNameBefore} to={"/Jackets&Coats"}>
+              Jackets & coats
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/T-shirts&Shirts"}>T-shirts & shirts</NavLink>
+            <NavLink className={classNameBefore} to={"/T-shirts&Shirts"}>
+              T-shirts & shirts
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/Pants"}>Pants</NavLink>
+            <NavLink className={classNameBefore} to={"/Pants"}>
+              Pants
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/Shoes"}>Shoes</NavLink>
+            <NavLink className={classNameBefore} to={"/Shoes"}>
+              Shoes
+            </NavLink>
           </li>
         </ul>
         <ul className="text-white text-lg flex flex-col gap-2 mb-3 lg:text-2xl">
@@ -62,7 +78,9 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
       </div>
 
       <SocialBanner
-        svgSize={"w-8 h-8  hover:stroke-yellow duration-300 ease-in-out lg:w-10 lg:h-10" }
+        svgSize={
+          "w-8 h-8  hover:stroke-yellow duration-300 ease-in-out lg:w-10 lg:h-10"
+        }
         classNameUl={"w-full h-12 lg:h-20"}
       />
     </nav>
