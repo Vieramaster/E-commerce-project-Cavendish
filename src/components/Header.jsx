@@ -64,7 +64,7 @@ export default function Header() {
             </NavLink>
           </div>
           <div className="h-full flex-1  flex justify-end items-center">
-            <button className="flex gap-2 h-12 rounded-full w-12 items-center justify-center bg-yellow lg:h-14 lg:w-14 ">
+            <button className="flex gap-2 h-10 w-10 rounded-full  items-center justify-center bg-yellow lg:h-14 lg:w-14 ">
               <ICoShoppingCart
                 className={"w-4 h-4 stroke-darkEsmerald stroke-2 lg:w-8 lg:h-8"}
               />

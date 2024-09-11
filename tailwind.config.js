@@ -5,19 +5,21 @@ export default {
     extend: {
       colors: {
         esmerald: "#3b5e48",
-        darkEsmerald: "#2a4033",
+        darkEsmerald: "#1c2d23",
         white: "#fff",
-        yellow: "#fede67",
-        lightCarbon:"#404040",
+        yellow: "#fee161",
+        lightCarbon: "#404040",
         carbon: "#191919",
-        lightGrey: "#ececec",
-        customGrey: "#c5c2c9",
-        darkGrey:"#a09ea2",
+        lightGrey: "#e9e9e9",
+        darkGrey: "#c5c2c9",
+        customGrey: "#a09ea2",
         lightEsmerald: "#73957e",
-
       },
       fontFamily: {
         Noto: ["Noto Sans JP", "sans-serif"],
+      },
+      rotate: {
+        custom: "30deg",
       },
     },
   },
