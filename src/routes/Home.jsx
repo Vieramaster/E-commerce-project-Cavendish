@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
 
-      <section className="w-full h-auto min-h-[600px] pt-24 bg-gradient-to-br  from-darkEsmerald to-esmerald flex  flex-col justify-center text-white gap-2 lg:flex-row lg:h-screen ">
+      <section className="w-full h-auto min-h-[600px] pt-24 bg-gradient-to-br  from-darkEsmerald to-esmerald flex  flex-col justify-center text-white gap-2 lg:flex-row lg:h-screen lg:px-20">
         <div className="w-full h-96  grid place-content-center lg:h-full  ">
           <div className="w-80 h-auto  text-center flex flex-col items-center lg:w-[28rem] lg:items-start lg:text-start">
             <h3 className="italic text-3xl lg:text-4xl 2xl:text-5xl ">2025</h3>
@@ -52,6 +52,19 @@ export default function Home() {
         </div>
       </section>
       <BannerLogos />
+      <section className="w-full h-auto min-h-[600px] bg-lightGrey flex flex-col gap-5 items-center justify-center ">
+        <h2 className="w-[18rem] text-left text-3xl font-medium">New Collection</h2>
+        <div className="flex flex-col gap-5">
+          <div className="bg-darkGrey w-[18rem] h-96 rounded-3xl flex flex-col justify-end items-center gap-10  relative">
+            <p className="font-semibold ">Mens Summer Collection</p>
+            <img src="/" alt="" className="w-2/3 h-72 bg-red-500" />
+            <button className="absolute bottom-5 right-5 px-2 py-2 bg-carbon text-white rounded-lg font-light">
+            Discover Now
+            </button>
+          </div>
+
+        </div>
+      </section>
     </>
   );
 }
