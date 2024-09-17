@@ -19,7 +19,7 @@ export default {
         Noto: ["Noto Sans JP", "sans-serif"],
       },
       rotate: {
-        custom: "30deg",
+        customMd: "25deg",
       },
     },
   },

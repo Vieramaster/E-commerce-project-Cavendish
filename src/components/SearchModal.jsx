@@ -6,7 +6,7 @@ export default function SearchModal({ toggleSearch, searchModal, searchBar }) {
     <div
       ref={searchModal}
       className={`fixed ${
-        searchBar ? "top-24 opacity-85 lg:top-28" : "top-5 opacity-0"
+        searchBar ? "top-24 opacity-100 lg:top-28" : "top-5 opacity-0"
       } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-30`}
     >
       <fieldset className="w-5/6 max-w-[40rem] h-2/3 flex items-center justify-center rounded-md relative">
