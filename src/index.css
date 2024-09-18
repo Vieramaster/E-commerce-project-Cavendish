@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 
 * {
   padding: 0;
@@ -10,50 +10,39 @@
   box-sizing: border-box;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-
-}
-
-
-.Quicksand-extraLight {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.Quicksand-light {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.Quicksand-normal {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.Quicksand-semiBold {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.Quicksand-Bold {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.Quicksand-extraBold {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
 }
 
 .h-menuScreen {
   height: calc(100vh - 1.75rem);
+}
+@keyframes fadeInNext {
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInPrevius {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInNext {
+  animation: fadeInNext ease-in-out 1s both;
+}
+
+.fadeOutNext {
+  animation: fadeInPrevius ease-in-out 1s both;
 }
