@@ -43,6 +43,6 @@
   animation: fadeInNext ease-in-out 1s both;
 }
 
-.fadeOutNext {
+.fadeInPrevius {
   animation: fadeInPrevius ease-in-out 1s both;
 }

@@ -35,16 +35,16 @@ export default function SliderHomeOff() {
 
   const frontImage = useRef(null);
 
-  const timeButton = () => {
+  const timeButton = (className) => {
     setIsDisabled(true);
     if (frontImage.current) {
-      frontImage.current.classList.add("fadeInNext");
+      frontImage.current.classList.add(className);
     }
 
     setTimeout(() => {
       setIsDisabled(false);
       if (frontImage.current) {
-        frontImage.current.classList.remove("fadeInNext");
+        frontImage.current.classList.remove(className);
       }
     }, 1000);
   };
@@ -55,7 +55,7 @@ export default function SliderHomeOff() {
     } else {
       setIndexArray(indexArray + 1);
     }
-    timeButton();
+    timeButton("fadeInNext");
   };
 
   const previus = () => {
@@ -64,8 +64,9 @@ export default function SliderHomeOff() {
     } else {
       setIndexArray(indexArray - 1);
     }
-    timeButton();
+    timeButton("fadeInPrevius");
   };
+  
   return (
     <div className="w-full h-[30rem] flex justify-center lg:h-full lg:items-end relative">
       <div
