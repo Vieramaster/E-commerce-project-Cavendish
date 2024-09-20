@@ -2,9 +2,9 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // ICONOS
-import IcoBarsResponsive from "../SVGs/IcoBarsResponsive";
-import IcoSearch from "../SVGs/IcoSearch";
-import IcoShoppingCart from "../SVGs/IcoShoppingCart";
+import IcoBarsResponsive from "./SVGs/IcoBarsResponsive";
+import IcoSearch from "./SVGs/IcoSearch";
+import IcoShoppingCart from "./SVGs/IcoShoppingCart";
 
 // COMPONENTES
 import useClickOutside from "./hooks/useClickOutside";

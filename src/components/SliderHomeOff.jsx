@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import IcoCircleArrowLeft from "../SVGs/IcoCircleArrowLeft";
-import IcoCircleArrowRight from "../SVGs/IcoCircleArrowRight";
+import IcoCircleArrowLeft from "./SVGs/IcoCircleArrowLeft";
+import IcoCircleArrowRight from "./SVGs/IcoCircleArrowRight";
 
 const classArrows =
   "w-12 h-12 lg:w-16 lg:h-16 hover:stroke-yellow duration-200 ease-in-out";
@@ -66,7 +66,7 @@ export default function SliderHomeOff() {
     }
     timeButton("fadeInPrevius");
   };
-  
+
   return (
     <div className="w-full h-[30rem] flex justify-center lg:h-full lg:items-end relative">
       <div

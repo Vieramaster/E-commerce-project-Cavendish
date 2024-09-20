@@ -1,5 +1,5 @@
-import IcoHeart from "../SVGs/IcoHearth";
-import IcoShoppingCart from "../SVGs/IcoShoppingCart";
+import IcoHeart from "./SVGs/IcoHearth";
+import IcoShoppingCart from "./SVGs/IcoShoppingCart";
 
 const products = [
   {
@@ -50,9 +50,7 @@ export default function BestSellers() {
                 <p>{item.price}</p>
               </div>
               <button className="h-12 w-12 bg-yellow rounded-2xl grid place-content-center">
-                <IcoShoppingCart
-                  className={"w-6 h-6 stroke-carbon stroke-2"}
-                />
+                <IcoShoppingCart className={"w-6 h-6 stroke-carbon stroke-2"} />
               </button>
             </div>
           </div>
