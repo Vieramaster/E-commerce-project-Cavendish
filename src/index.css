@@ -46,3 +46,9 @@
 .fadeInPrevius {
   animation: fadeInPrevius ease-in-out 1s both;
 }
+
+.bg-yellow-green-clip {
+  background: linear-gradient(to right, #fee161 30%, #3b5e48 30%);
+  background-size: 100% 100%;
+  background-clip: content-box;
+}

@@ -11,21 +11,28 @@ const products = [
     img: "src/assets/images/home/outfit1.webp",
     price: "$299",
     off: "-40%",
-    splash: "25Deg",
+    rotation: "rotate-12",
   },
   {
     name: "Green jacket",
     img: "src/assets/images/home/outfit2.webp",
     price: "$249",
     off: "-25%",
-    splash: "20deg",
+    rotation: "-rotate-12",
   },
   {
     name: "Green jacket",
     img: "src/assets/images/home/outfit3.webp",
     price: "$399",
     off: "-10%",
-    splash: "20deg",
+    rotation: "rotate-12",
+  },
+  {
+    name: "Green jacket",
+    img: "src/assets/images/home/outfit3.webp",
+    price: "$399",
+    off: "-10%",
+    rotation: "-rotate-12",
   },
 ];
 
@@ -70,7 +77,7 @@ export default function SliderHomeOff() {
   return (
     <div className="w-full h-[30rem] flex justify-center lg:h-full lg:items-end relative">
       <div
-        className={`absolute w-[22rem] h-52 translate-y-2/3 rounded-full bg-darkEsmerald lg:w-[32rem] lg:h-80 lg:-translate-y-1/4 xl:-translate-y-2/4 xl:w-[40rem] xl:h-96 `}
+        className={`absolute w-[22rem] h-52 translate-y-2/3 rounded-full bg-darkEsmerald lg:w-[32rem] lg:h-80 lg:-translate-y-1/4 xl:-translate-y-2/4 xl:w-[40rem] xl:h-96 ${products[indexArray].rotation}`}
       ></div>
 
       <div className="w-96 h-full relative flex items-end lg:h-[40rem] lg:w-[30rem] 2xl:h-[48rem] 2xl:w-[40rem]">

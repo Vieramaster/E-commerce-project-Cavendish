@@ -34,11 +34,10 @@ export default function Home() {
           <h2 className="  font-semibold text-3xl text-center lg:text-start lg:text-5xl ">
             New collection
           </h2>
-
           <div className="w-full  flex flex-col gap-10 items-center lg:flex-row lg:justify-center">
             <div className="bg-darkGrey relative w-[20rem] h-[30rem]  rounded-xl flex flex-col justify-between items-center  2xl:h-[36rem] 2xl:w-[25rem]">
               <div className="w-full h-20  grid place-content-center text-center ">
-                <p className="font-semibold text-lg  2xl:text-3xl">
+                <p className="font-medium text-lg  2xl:text-3xl">
                   Summer Collection
                 </p>
               </div>
@@ -58,7 +57,7 @@ export default function Home() {
                 <p className="font-semibold text-lg  lg:text-2xl 2xl:text-4xl">
                   Men Bags Collection
                 </p>
-                <p className="font-semibold text-2xl  lg:text-4xl 2xl:text-6xl">
+                <p className="font-semibold text-2xl  text-esmerald lg:text-4xl 2xl:text-6xl">
                   40% OFF
                 </p>
               </div>
@@ -75,12 +74,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-20 flex flex-col justify-center items-center  gap-14">
-        <div className="flex flex-col gap-10">
-          <h2 className="font-semibold text-3xl lg:text-left xl:text-4xl">
+
+      <section className="  w-full py-20 ">
+        <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start mx-auto ">
+          <h2 className=" font-semibold text-3xl text-center lg:text-start lg:text-5xl">
             Best Sellers
           </h2>
           <BestSellers />
+        </div>
+      </section>
+      <section className="w-full h-96 bg-yellow-green-clip">
+        <div>
+
         </div>
       </section>
     </>

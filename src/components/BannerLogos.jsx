@@ -10,25 +10,27 @@ const ClassNameBannerLi = "grid place-content-center";
 
 export default function BannerLogos() {
   return (
-    <ul className="h-auto w-full bg-carbon p-5 grid grid-rows-2 grid-cols-3 gap-5 lg:grid-rows-none lg:grid-cols-6 ">
-      <li className={ClassNameBannerLi}>
-        <PumaLogo className={ClassNameBanner} />
-      </li>
-      <li className={ClassNameBannerLi}>
-        <UnderArmorLogo className={ClassNameBanner} />
-      </li>
-      <li className={ClassNameBannerLi}>
-        <AdidasLogo className={ClassNameBanner} />
-      </li>
-      <li className={ClassNameBannerLi}>
-        <VansLogo className={ClassNameBanner} />
-      </li>
-      <li className={ClassNameBannerLi}>
-        <DCLogo className={ClassNameBanner} />
-      </li>
-      <li className={ClassNameBannerLi}>
-        <ConverseLogo className={ClassNameBanner} />
-      </li>
-    </ul>
+    <div className="h-auto w-full bg-carbon flex justify-center">
+      <ul className=" h-auto w-5/6 p-5 grid grid-rows-2 grid-cols-3 gap-5 lg:flex lg:flex-row lg:justify-between ">
+        <li className={ClassNameBannerLi}>
+          <PumaLogo className={ClassNameBanner} />
+        </li>
+        <li className={ClassNameBannerLi}>
+          <UnderArmorLogo className={ClassNameBanner} />
+        </li>
+        <li className={ClassNameBannerLi}>
+          <AdidasLogo className={ClassNameBanner} />
+        </li>
+        <li className={ClassNameBannerLi}>
+          <VansLogo className={ClassNameBanner} />
+        </li>
+        <li className={ClassNameBannerLi}>
+          <DCLogo className={ClassNameBanner} />
+        </li>
+        <li className={ClassNameBannerLi}>
+          <ConverseLogo className={ClassNameBanner} />
+        </li>
+      </ul>
+    </div>
   );
 }
