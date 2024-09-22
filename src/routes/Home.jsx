@@ -3,6 +3,8 @@ import Header from "../components/header";
 import ButtonCard from "../components/buttonCard";
 import SliderHomeOff from "../components/SliderHomeOff";
 import BestSellers from "../components/BestSellers";
+import SaleCounter from "../components/SaleCounter";
+import ShoppingButton from "../components/ShoppingButton";
 export default function Home() {
   return (
     <>
@@ -83,9 +85,28 @@ export default function Home() {
           <BestSellers />
         </div>
       </section>
-      <section className="w-full h-96 bg-yellow-green-clip">
-        <div>
+      <section className="w-full h-auto bg-red-400  px-10 py-32  items-center">
+        <div className="w-full h-48 flex flex-col items-center gap-10 justify-center">
+          <div className="w-2/3 flex flex-col gap-5 bg-violet-400">
+            <h3 className="text-2xl font-semibold text-carbon">-70% OFF</h3>
+            <img src="src/assets/images/home/shoes.webp" alt="" />
+            <div className="flex gap-4 ">
+              <div className="flex gap-5 items-center px-4  border border-spacing-1 rounded-lg border-carbon">
+                <p className="text-xl font-semibold">$180</p>
+                <p className="text-xl font-semibold">$50</p>
+              </div>
+              <ShoppingButton size={"w-6 h-6"} />
+            </div>
+          </div>
 
+          <div className="flex flex-col gap-5 w-auto">
+            <h3 className="text-2xl text-white text-center">Sale ends soon</h3>
+            <div className="flex gap-5 h-32 w-auto ">
+              <SaleCounter time={3} text={"days"} />
+              <SaleCounter time={23} text={"Hours"} />
+              <SaleCounter time={16} text={"Minutes"} />
+            </div>
+          </div>
         </div>
       </section>
     </>
