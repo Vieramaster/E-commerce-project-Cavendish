@@ -1,7 +1,7 @@
-import IcoFacebook from "./SVGs/SocialIcons/IcoFacebook";
-import IcoInstagram from "./SVGs/SocialIcons/IcoInstagram";
-import IcoYoutube from "./SVGs/SocialIcons/IcoYoutube";
-import IcoTwitter from "./SVGs/SocialIcons/IcoTwitter";
+import IcoFacebook from "./SVGs/socialIcons/IcoFacebook";
+import IcoInstagram from "./SVGs/socialIcons/IcoInstagram";
+import IcoYoutube from "./SVGs/socialIcons/IcoYoutube";
+import IcoTwitter from "./SVGs/socialIcons/IcoTwitter";
 
 export default function SocialBanner({ classNameUl, svgSize }) {
   return (

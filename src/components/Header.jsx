@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// ICONOS
-import IcoBarsResponsive from "./SVGs/IcoBarsResponsive";
-import IcoSearch from "./SVGs/IcoSearch";
-import IcoShoppingCart from "./SVGs/IcoShoppingCart";
+// ICONS
+import IcoBarsResponsive from "./SVGs/icons/IcoBarsResponsive";
+import IcoSearch from "./SVGs/icons/IcoSearch";
+import IcoShoppingCart from "./SVGs/icons/IcoShoppingCart";
 
 // COMPONENTES
 import useClickOutside from "./hooks/useClickOutside";
-import SearchModal from "./SearchModal";
-import Navbar from "./NavBar";
+import SearchModal from "./modals/SearchModal";
+import Navbar from "./modals/Navbar";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);

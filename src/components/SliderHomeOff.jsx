@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import IcoCircleArrowLeft from "./SVGs/IcoCircleArrowLeft";
-import IcoCircleArrowRight from "./SVGs/IcoCircleArrowRight";
+import IcoCircleArrowLeft from "./SVGs/icons/IcoCircleArrowLeft";
+import IcoCircleArrowRight from "./SVGs/icons/IcoCircleArrowRight";
 
 const classArrows =
   "w-12 h-12 lg:w-16 lg:h-16 hover:stroke-yellow duration-200 ease-in-out";
@@ -77,7 +77,7 @@ export default function SliderHomeOff() {
   return (
     <div className="w-full h-[30rem] flex justify-center lg:h-full lg:items-end relative">
       <div
-        className={`absolute w-[22rem] h-52 translate-y-2/3 rounded-full bg-darkEsmerald lg:w-[32rem] lg:h-80 lg:-translate-y-1/4 xl:-translate-y-2/4 xl:w-[40rem] xl:h-96 ${products[indexArray].rotation}`}
+        className={`absolute  min-w-[20rem] h-52 translate-y-2/3 rounded-full bg-darkEsmerald lg:w-[32rem] lg:h-80 lg:-translate-y-1/4 xl:-translate-y-2/4 xl:w-[40rem] xl:h-96 ${products[indexArray].rotation}`}
       ></div>
 
       <div className="w-96 h-full relative flex items-end lg:h-[40rem] lg:w-[30rem] 2xl:h-[48rem] 2xl:w-[40rem]">

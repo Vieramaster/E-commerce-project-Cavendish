@@ -1,5 +1,5 @@
-import SocialBanner from "./SocialBanner";
-import IcoCloseResponsive from "./SVGs/IcoCloseResponsive";
+import SocialBanner from "../SocialBanner"
+import IcoCloseResponsive from "../SVGs/icons/IcoCloseResponsive";
 import { NavLink } from "react-router-dom";
 
 const classNameBefore =

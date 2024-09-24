@@ -1,9 +1,9 @@
-import AdidasLogo from "./SVGs/Logos/AdidasLogo";
-import DCLogo from "./SVGs/Logos/DCLogo";
-import PumaLogo from "./SVGs/Logos/PumaLogo";
-import UnderArmorLogo from "./SVGs/Logos/UnderArmorLogo";
-import VansLogo from "./SVGs/Logos/VansLogo";
-import ConverseLogo from "./SVGs/Logos/ConverseLogo";
+import AdidasLogo from "./SVGs/logos/AdidasLogo";
+import DCLogo from "./SVGs/logos/DCLogo";
+import PumaLogo from "./SVGs/logos/PumaLogo";
+import UnderArmorLogo from "./SVGs/logos/UnderArmorLogo";
+import VansLogo from "./SVGs/logos/VansLogo";
+import ConverseLogo from "./SVGs/logos/ConverseLogo";
 
 const ClassNameBanner = "h-8 fill-white sm:h-10 lg:h-12 2xl:h-14";
 const ClassNameBannerLi = "grid place-content-center";

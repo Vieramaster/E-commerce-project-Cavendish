@@ -1,6 +1,6 @@
 import BannerLogos from "../components/BannerLogos";
 import Header from "../components/header";
-import ButtonCard from "../components/buttonCard";
+import ButtonCard from "../components/buttons/ButtonCard";
 import SliderHomeOff from "../components/SliderHomeOff";
 import BestSellers from "../components/BestSellers";
 import SaleCounter from "../components/SaleCounter";
@@ -31,7 +31,7 @@ export default function Home() {
 
       <BannerLogos />
 
-      <section className="w-full h-auto py-16 bg-lightGrey flex flex-col gap-10 items-center justify-center xl:gap-16">
+      <section className="w-full h-auto py-16 bg-lightGrey flex items-center justify-center">
         <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start">
           <h2 className="  font-semibold text-3xl text-center lg:text-start lg:text-5xl ">
             New collection
@@ -77,16 +77,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="  w-full py-20 ">
-        <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start mx-auto ">
+      <section className="w-full h-auto py-16 bg-white flex items-center justify-center">
+        <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start">
           <h2 className=" font-semibold text-3xl text-center lg:text-start lg:text-5xl">
             Best Sellers
           </h2>
           <BestSellers />
         </div>
       </section>
-      <section className="w-full h-auto bg-red-400  px-10 py-32  items-center">
-        <div className="w-full h-48 flex flex-col items-center gap-10 justify-center">
+      <section className="w-full h-auto bg-red-400  px-10 py-10 items-center">
+        <div className="w-full h-auto flex flex-col items-center gap-10  bg-green-300">
           <div className="w-2/3 flex flex-col gap-5 bg-violet-400">
             <h3 className="text-2xl font-semibold text-carbon">-70% OFF</h3>
             <img src="src/assets/images/home/shoes.webp" alt="" />
@@ -99,8 +99,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 w-auto">
-            <h3 className="text-2xl text-white text-center">Sale ends soon</h3>
+          <div className="flex flex-col gap-5 w-auto h-auto bg-green-800">
+            <h3 className="text-2xl text-white text-center ">Sale ends soon</h3>
             <div className="flex gap-5 h-32 w-auto ">
               <SaleCounter time={3} text={"days"} />
               <SaleCounter time={23} text={"Hours"} />

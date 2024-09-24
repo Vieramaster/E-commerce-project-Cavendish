@@ -1,5 +1,5 @@
-import IcoCloseResponsive from "./SVGs/IcoCloseResponsive";
-import IcoSearch from "./SVGs/IcoSearch";
+import IcoCloseResponsive from "../SVGs/icons/IcoCloseResponsive";
+import IcoSearch from "../SVGs/icons/IcoSearch";
 
 export default function SearchModal({ toggleSearch, searchModal, searchBar }) {
   return (
