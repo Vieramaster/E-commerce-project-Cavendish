@@ -1,35 +1,31 @@
 import { useState, useRef } from "react";
-import IcoCircleArrowLeft from "./SVGs/icons/IcoCircleArrowLeft";
-import IcoCircleArrowRight from "./SVGs/icons/IcoCircleArrowRight";
-
-const classArrows =
-  "w-12 h-12 lg:w-16 lg:h-16 hover:stroke-yellow duration-200 ease-in-out";
+import BannerButtons from "./buttons/BannerButtons";
 
 const products = [
   {
     name: "Green jacket",
-    img: "src/assets/images/home/outfit1.webp",
+    img: "src/assets/images/outfit1.webp",
     price: "$299",
     off: "-40%",
     rotation: "rotate-12",
   },
   {
     name: "Green jacket",
-    img: "src/assets/images/home/outfit2.webp",
+    img: "src/assets/images/outfit2.webp",
     price: "$249",
     off: "-25%",
     rotation: "-rotate-12",
   },
   {
     name: "Green jacket",
-    img: "src/assets/images/home/outfit3.webp",
+    img: "src/assets/images/outfit3.webp",
     price: "$399",
     off: "-10%",
     rotation: "rotate-12",
   },
   {
     name: "Green jacket",
-    img: "src/assets/images/home/outfit3.webp",
+    img: "src/assets/images/outfit1.webp",
     price: "$399",
     off: "-10%",
     rotation: "-rotate-12",
@@ -99,14 +95,7 @@ export default function SliderHomeOff() {
           </div>
         </div>
       </div>
-      <div className="absolute w-full h-20 flex justify-between items-center px-2 bottom-4">
-        <button onClick={previus} disabled={isDisabled}>
-          <IcoCircleArrowLeft className={classArrows} />
-        </button>
-        <button onClick={next} disabled={isDisabled}>
-          <IcoCircleArrowRight className={classArrows} />
-        </button>
-      </div>
+      <BannerButtons {...{ next, previus, isDisabled }} />
     </div>
   );
 }

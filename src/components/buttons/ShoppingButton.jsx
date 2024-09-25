@@ -1,4 +1,4 @@
-import IcoShoppingCart from "./SVGs/icons/IcoShoppingCart"
+import IcoShoppingCart from "../SVGs/icons/IcoShoppingCart";
 
 export default function ShoppingButton({ size }) {
   return (

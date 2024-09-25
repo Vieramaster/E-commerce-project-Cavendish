@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// ICONS
-import IcoBarsResponsive from "./SVGs/icons/IcoBarsResponsive";
-import IcoSearch from "./SVGs/icons/IcoSearch";
-import IcoShoppingCart from "./SVGs/icons/IcoShoppingCart";
-
 // COMPONENTES
 import useClickOutside from "./hooks/useClickOutside";
 import SearchModal from "./modals/SearchModal";
 import Navbar from "./modals/Navbar";
+import SearchButton from "./buttons/Searchbutton";
+import ResponsiveButton from "./buttons/Responsivebutton";
+import ShoppingNavButton from "./buttons/ShoppingNavbutton";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -35,17 +33,8 @@ export default function Header() {
         </div>
         <div className="w-full flex-auto flex justify-between px-3">
           <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center">
-            <button onClick={toggleNav} aria-label="open responsive menu">
-              <IcoBarsResponsive className="w-10 h-10 stroke-white stroke-1 lg:w-14 lg:h-14" />
-            </button>
-            <button
-              aria-label="search button"
-              onClick={toggleSearch}
-              disabled={searchBar}
-              className={searchBar ? "opacity-30 cursor-not-allowed" : ""}
-            >
-              <IcoSearch className="w-7 h-7 stroke-white stroke-2 lg:w-10 lg:h-10" />
-            </button>
+            <ResponsiveButton onClick={toggleNav} />
+            <SearchButton onClick={toggleSearch} boolean={searchBar} />
           </div>
           <div className="h-full flex-auto grid place-content-center">
             <NavLink
@@ -56,11 +45,10 @@ export default function Header() {
             </NavLink>
           </div>
           <div className="h-full flex-1 flex justify-end items-center">
-            <button className="flex gap-2 h-10 w-10 rounded-full items-center justify-center bg-yellow lg:h-14 lg:w-14">
-              <IcoShoppingCart className="w-4 h-4 stroke-darkEsmerald stroke-2 lg:w-8 lg:h-8" />
-            </button>
+            <ShoppingNavButton />
           </div>
         </div>
+
         <Navbar refNavBar={refNavBar} toggleNav={toggleNav} navbar={navbar} />
       </header>
 

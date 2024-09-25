@@ -1,4 +1,4 @@
-import IcoCloseResponsive from "../SVGs/icons/IcoCloseResponsive";
+import CloseButton from "../buttons/CloseButton";
 import IcoSearch from "../SVGs/icons/IcoSearch";
 
 export default function SearchModal({ toggleSearch, searchModal, searchBar }) {
@@ -22,13 +22,7 @@ export default function SearchModal({ toggleSearch, searchModal, searchBar }) {
           aria-label="search bar"
           placeholder="What are you looking for?"
         />
-        <button
-          className="w-10 h-full bg-lightGrey grid place-content-center lg:w-20"
-          onClick={toggleSearch}
-          aria-label="close search"
-        >
-          <IcoCloseResponsive className="fill-customGrey w-5 h-5 lg:w-6 lg:h-6" />
-        </button>
+        <CloseButton onClick={toggleSearch} className={"w-10 h-full bg-lightGrey grid place-content-center lg:w-20 fill-darkGrey"}/>
       </fieldset>
     </div>
   );
