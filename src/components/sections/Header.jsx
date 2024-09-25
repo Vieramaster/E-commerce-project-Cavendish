@@ -2,12 +2,12 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // COMPONENTES
-import useClickOutside from "./hooks/useClickOutside";
-import SearchModal from "./modals/SearchModal";
-import Navbar from "./modals/Navbar";
-import SearchButton from "./buttons/Searchbutton";
-import ResponsiveButton from "./buttons/Responsivebutton";
-import ShoppingNavButton from "./buttons/ShoppingNavbutton";
+import useClickOutside from "../hooks/useClickOutside";
+import SearchModal from "../modals/SearchModal";
+import Navbar from "../modals/Navbar";
+import SearchButton from "../buttons/Searchbutton";
+import ResponsiveButton from "../buttons/Responsivebutton";
+import ShoppingNavButton from "../buttons/ShoppingNavbutton";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);

@@ -39,7 +39,10 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
       <div className="flex flex-col justify-between flex-auto px-3">
         <ul className="text-white text-lg flex flex-col gap-2 lg:text-2xl">
           {listShop.map((item, index) => (
-            <li className={`${index === 0 ? "h-12 lg:h-14" : ""}`} key={index}>
+            <li
+              className={`${index === 0 ? "h-12 lg:h-14" : ""}`}
+              key={item.name}
+            >
               <NavLink
                 href={item.url}
                 className={`${
@@ -57,7 +60,7 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
           </li>
           {ListEmprise.map((item, index) => {
             return (
-              <li>
+              <li key={item.name}>
                 <NavLink
                   href={item.url}
                   className={classNameBefore}
