@@ -11,7 +11,7 @@ export default function NewCollection({
   return (
     <section className="w-full h-auto py-16 bg-lightGrey flex items-center justify-center">
       <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start">
-        <h2 className="  font-semibold text-3xl text-center lg:text-start lg:text-5xl ">
+        <h2 className="  text-carbon font-semibold text-3xl text-center lg:text-start lg:text-5xl ">
           {mainTitle}
         </h2>
         <div className="w-full  flex flex-col gap-10 items-center lg:flex-row lg:justify-center">

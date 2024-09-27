@@ -5,6 +5,7 @@ import BannerLogos from "../components/sections/BannerLogos";
 import ShoppingCards from "../components/sections/ShoppingCards";
 import SellCounter from "../components/sections/SellCounter";
 import useCountdown from "../components/hooks/useCountdown";
+import News from "../components/sections/News";
 
 const bestSellers = [
   {
@@ -41,8 +42,36 @@ const bestSellers = [
   },
 ];
 
+const news = [
+  {
+    id: "0001",
+    image: "src/assets/images/news1.webp",
+    imageName: "outfits",
+    newsTitle: "Lorem ipsum dolor sit",
+    introduction:
+      "Impedit laborum ex? Quasi officia nulla atque sunt iusto l Quasi officia",
+  },
+  {
+    id: "0002",
+    image: "src/assets/images/news2.webp",
+    imageName: "outfits",
+    newsTitle: "Lorem ipsum dolor sit",
+    introduction:
+      "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto l Quasi officia",
+  },
+  {
+    id: "0003",
+    image: "src/assets/images/news3.webp",
+    imageName: "outfits",
+    newsTitle: "Lorem ipsum dolor sit",
+    introduction:
+      "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto ",
+  },
+];
+
 export default function Home() {
   //CountDown Sale
+
   const { days, hours, minutes, seconds } = useCountdown(
     "Oct 14, 2024 00:00:00"
   );
@@ -69,6 +98,7 @@ export default function Home() {
         image={"src/assets/images/shoes.webp"}
         {...{ days, hours, minutes, seconds }}
       />
+      <News mainTitle={"Latest News"} arrayNews={news} />
     </>
   );
 }
