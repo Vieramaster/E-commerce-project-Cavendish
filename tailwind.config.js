@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         esmerald: "#3b5e48",
+        semiEsmerald:"#2c4937",
         darkEsmerald: "#1c2d23",
         white: "#fff",
         yellow: "#fee161",
@@ -16,7 +17,7 @@ export default {
         lightEsmerald: "#73957e",
       },
       fontFamily: {
-        Noto: ["Noto Sans JP", "sans-serif"],
+        ubuntu: ['Ubuntu', 'sans-serif'],
       },
       rotate: {
         first: "25deg",

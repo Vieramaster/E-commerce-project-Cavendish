@@ -28,12 +28,15 @@ export default function BestSellers({ title, array }) {
               </div>
               <div className="flex justify-between w-full h-1/6 items-center">
                 <div>
-                  <h3 className="font-semibold text-lg 2xl:text-xl">
+                  <h3 className="text-xl 2xl:text-xl">
                     {item.name}
                   </h3>
-                  <p className="lg:text-lg">{item.price}</p>
+                  <p className="lg:text-xl  ">{item.price}</p>
                 </div>
-                <ShoppingButton size="w-6 h-6" />
+                <ShoppingButton
+                  SVGclass="size-6 stroke-carbon"
+                  background={"bg-yellow hover:bg-esmerald"}
+                />
               </div>
             </div>
           ))}

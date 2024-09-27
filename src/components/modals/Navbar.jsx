@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 
+//COMPONENTS
 import SocialBanner from "../SocialBanner";
 import CloseButton from "../buttons/CloseButton";
+
 
 const classNameBefore =
   "relative before:w-0 before:h-[2px] before:bg-white before:absolute before:bottom-0 before:left-0 before:hover:w-full before:duration-500 before:ease-in-out";
@@ -21,6 +23,7 @@ const ListEmprise = [
   { url: "/Partner", name: "Partner with us" },
   { url: "/Help", name: "Help" },
 ];
+
 
 export default function Navbar({ refNavBar, toggleNav, navbar }) {
   return (
@@ -73,7 +76,6 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
           })}
         </ul>
       </div>
-
       <SocialBanner
         svgSize="w-8 h-8 hover:stroke-yellow duration-300 ease-in-out lg:w-10 lg:h-10"
         classNameUl="w-full h-12 lg:h-20"
