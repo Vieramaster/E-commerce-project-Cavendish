@@ -6,6 +6,8 @@ import ShoppingCards from "../components/sections/ShoppingCards";
 import SellCounter from "../components/sections/SellCounter";
 import useCountdown from "../components/hooks/useCountdown";
 import News from "../components/sections/News";
+import SubscribeBanner from "../components/sections/SubscribeBanner";
+import Footer from "../components/sections/Footer"
 
 const bestSellers = [
   {
@@ -99,6 +101,8 @@ export default function Home() {
         {...{ days, hours, minutes, seconds }}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
+      <SubscribeBanner/>
+      <Footer/>
     </>
   );
 }

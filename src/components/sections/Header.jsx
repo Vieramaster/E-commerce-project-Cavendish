@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 // COMPONENTES
+import LogoButton from "../buttons/LogoButton";
 import useClickOutside from "../hooks/useClickOutside";
 import SearchModal from "../modals/SearchModal";
 import Navbar from "../modals/Navbar";
@@ -37,12 +37,7 @@ export default function Header() {
             <SearchButton onClick={toggleSearch} boolean={searchBar} />
           </div>
           <div className="h-full flex-auto grid place-content-center">
-            <NavLink
-              to="/"
-              className="text-white text-2xl font-semibold tracking-wider sm:text-3xl lg:text-4xl"
-            >
-              ALIGATOR
-            </NavLink>
+            <LogoButton />
           </div>
           <div className="h-full flex-1 flex justify-end items-center">
             <ShoppingNavButton />
