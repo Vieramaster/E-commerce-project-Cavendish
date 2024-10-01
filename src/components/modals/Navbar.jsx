@@ -4,26 +4,24 @@ import { NavLink } from "react-router-dom";
 import SocialBanner from "../SocialBanner";
 import CloseButton from "../buttons/CloseButton";
 
-
 const classNameBefore =
   "relative before:w-0 before:h-[2px] before:bg-white before:absolute before:bottom-0 before:left-0 before:hover:w-full before:duration-500 before:ease-in-out";
 
 const listShop = [
-  { url: "/NewArrivals", name: "New Arrivals" },
-  { url: "/Sweaters&Hoodies", name: "Sweaters & hoodies" },
-  { url: "/Jackets&Coats", name: "Jackets & coats" },
-  { url: "/T-shirts&Shirts", name: "T-shirts & shirts" },
-  { url: "/Pants", name: "Pants" },
-  { url: "/Shoes", name: "Shoes" },
+  { path: "/NewArrivals", name: "New Arrivals" },
+  { path: "/SweatersAndHoodies", name: "Sweaters & hoodies" },
+  { path: "/JacketsAndCoats", name: "Jackets & coats" },
+  { path: "/T-shirtsAndShirts", name: "T-shirts & shirts" },
+  { path: "/Pants", name: "Pants" },
+  { path: "/Shoes", name: "Shoes" },
 ];
 
 const ListEmprise = [
-  { url: "/Stores", name: "Stores" },
-  { url: "/Contact", name: "Contact" },
-  { url: "/Partner", name: "Partner with us" },
-  { url: "/Help", name: "Help" },
+  { path: "/Stores", name: "Stores" },
+  { path: "/Contact", name: "Contact" },
+  { path: "/Partner", name: "Partner with us" },
+  { path: "/Help", name: "Help" },
 ];
-
 
 export default function Navbar({ refNavBar, toggleNav, navbar }) {
   return (
@@ -47,7 +45,7 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
               key={item.name}
             >
               <NavLink
-                href={item.url}
+                href={item.path}
                 className={`${
                   index === 0 ? "text-3xl lg:text-4xl text-yellow" : ""
                 } ${classNameBefore}`}
@@ -65,7 +63,7 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
             return (
               <li key={item.name}>
                 <NavLink
-                  href={item.url}
+                  href={item.path}
                   className={classNameBefore}
                   key={index}
                 >

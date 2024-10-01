@@ -8,7 +8,7 @@ export default function SearchButton({onClick, boolean}) {
       disabled={boolean}
       className={boolean ? "opacity-30 cursor-not-allowed" : ""}
     >
-      <IcoSearch className="w-7 h-7 stroke-white stroke-2 lg:w-10 lg:h-10" />
+      <IcoSearch className="size-7 stroke-white stroke-2 lg:size-10" />
     </button>
   );
 }

@@ -28,15 +28,17 @@ export default function Header() {
   return (
     <>
       <header className="flex flex-col w-full h-24 lg:h-28 z-50 fixed bg-darkEsmerald">
-        <div className="h-7 w-full bg-carbon grid place-content-center">
-          <h2 className="text-white">Free U.S. shipping on orders $125+</h2>
+        <div className="h-7 w-full bg-carbon">
+          <h2 className="text-white text-center">
+            Free U.S. shipping on orders $125+
+          </h2>
         </div>
         <div className="w-full flex-auto flex justify-between px-3">
-          <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center">
+          <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center ">
             <ResponsiveButton onClick={toggleNav} />
             <SearchButton onClick={toggleSearch} boolean={searchBar} />
           </div>
-          <div className="h-full flex-auto grid place-content-center">
+          <div className="h-full flex-auto grid place-content-center ">
             <LogoButton />
           </div>
           <div className="h-full flex-1 flex justify-end items-center">

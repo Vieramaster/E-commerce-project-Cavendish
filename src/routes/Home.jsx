@@ -1,6 +1,6 @@
 import Header from "../components/sections/Header";
 import IntroHome from "../components/sections/IntroHome";
-import Outlet from "../components/sections/Outlet";
+import MainCards from "../components/sections/MainCards";
 import BannerLogos from "../components/sections/BannerLogos";
 import ShoppingCards from "../components/sections/ShoppingCards";
 import SellCounter from "../components/sections/SellCounter";
@@ -83,7 +83,7 @@ export default function Home() {
       <Header />
       <IntroHome />
       <BannerLogos />
-      <Outlet
+      <MainCards
         mainTitle={"New Collection"}
         card1Title={"Summer Collection"}
         imageCard1={"src/assets/images/imageCard1.webp"}

@@ -1,12 +1,12 @@
 // COMPONENTS
 import LogoButton from "../buttons/LogoButton";
+import { NavLink } from "react-router-dom";
 
 // ICONS
 import TruckICo from "../SVGs/icons/TruckIco";
 import CoinIco from "../SVGs/icons/CoinIco";
 import ReplaceIco from "../SVGs/icons/ReplaceIco";
 import ShieldDolar from "../SVGs/icons/ShieldDolar";
-import { NavLink } from "react-router-dom";
 
 const bannerIcons = [
   { name: "Shipping", Component: TruckICo, title: "Free Shipping & Returns" },
@@ -21,12 +21,12 @@ const bannerIcons = [
 
 const menuListFooter = [
   {
-    key: "Help&Information",
+    key: "HelpAndInformation",
     title: "Help & Information",
     items: [
       { path: "Help", label: "Help" },
       { path: "trackOrder", label: "Track order" },
-      { path: "Delivery&Returns", label: "Delivery & returns" },
+      { path: "DeliveryAndReturns", label: "Delivery & returns" },
     ],
   },
   {
@@ -74,12 +74,12 @@ export default function Footer() {
               <ul className="mt-5">
                 {items.map(({ path, label }) => (
                   <li key={path}>
-                    <NavLink
+                    <a
                       className="text-darkGrey hover:text-yellow duration-200 ease-in-out"
-                      to={`/${path}`}
+                      href="https://www.youtube.com/watch?v=QB7ACr7pUuE"
                     >
                       {label}
-                    </NavLink>
+                    </a>
                   </li>
                 ))}
               </ul>

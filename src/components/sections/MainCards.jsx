@@ -1,6 +1,6 @@
 import CardButton from "../buttons/CardButton";
 
-export default function NewCollection({
+export default function MainCards({
   mainTitle,
   imageCard1,
   imageCard2,
