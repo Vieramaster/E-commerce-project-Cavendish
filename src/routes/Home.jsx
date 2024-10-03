@@ -8,6 +8,7 @@ import useCountdown from "../components/hooks/useCountdown";
 import News from "../components/sections/News";
 import SubscribeBanner from "../components/sections/SubscribeBanner";
 import Footer from "../components/sections/Footer"
+import UseApi from "../components/hooks/UseApi"
 
 const bestSellers = [
   {
@@ -71,12 +72,15 @@ const news = [
   },
 ];
 
-export default function Home() {
-  //CountDown Sale
 
-  const { days, hours, minutes, seconds } = useCountdown(
-    "Oct 14, 2024 00:00:00"
-  );
+
+
+export default function Home() {
+
+  const {data} = UseApi()
+
+  console.log(data)
+
 
   return (
     <>
@@ -98,7 +102,7 @@ export default function Home() {
         beforePrice={"$50"}
         discount={"-70% OFF"}
         image={"src/assets/images/shoes.webp"}
-        {...{ days, hours, minutes, seconds }}
+        timedate={"Oct 14, 2024 00:00:00"}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
       <SubscribeBanner/>

@@ -1,7 +1,7 @@
-export default function TruckICo({size}) {
+export default function TruckIco({ className }) {
   return (
     <svg
-    className={`${size} m-auto`}
+      className={`${className} m-auto `}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

@@ -1,7 +1,7 @@
-import IcoFacebook from "./SVGs/socialIcons/IcoFacebook";
-import IcoInstagram from "./SVGs/socialIcons/IcoInstagram";
-import IcoYoutube from "./SVGs/socialIcons/IcoYoutube";
-import IcoTwitter from "./SVGs/socialIcons/IcoTwitter";
+import IcoFacebook from "./SVGs/socialIcons/FacebookIco";
+import IcoInstagram from "./SVGs/socialIcons/InstagramIco";
+import IcoYoutube from "./SVGs/socialIcons/YoutubeIco";
+import IcoTwitter from "./SVGs/socialIcons/TwitterIco";
 
 const logoList = [
   { Component: IcoFacebook, key: "Facebook" },

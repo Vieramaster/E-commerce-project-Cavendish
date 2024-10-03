@@ -1,7 +1,7 @@
 export default function AdidasLogo({className}) {
   return (
     <svg
-        className={className}
+    className={`${className} m-auto`}
       viewBox="0 0 55.004 32.688"
     >
       <g transform="translate(-1272 -525.379)">

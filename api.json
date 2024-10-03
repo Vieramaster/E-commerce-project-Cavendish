@@ -1,0 +1,73 @@
+{
+  "SweaterAndHoodies": {
+    "0001": {
+      "name": "",
+      "id": "0001",
+      "imageCover": "",
+      "images": {},
+      "category": "",
+      "discount": "",
+      "price": "",
+      "realPrice": "",
+      "colors": {},
+      "outlet": "",
+      "newArrival": ""
+    },
+    "0002": {
+      "name": "",
+      "id": "0002",
+      "imageCover": "",
+      "images": {},
+      "category": "",
+      "discount": "",
+      "price": "",
+      "realPrice": "",
+      "colors": {},
+      "outlet": "",
+      "newArrival": ""
+    },
+    "0003": {
+      "name": "",
+      "id": "0003",
+      "imageCover": "",
+      "images": {},
+      "category": "",
+      "discount": "",
+      "price": "",
+      "realPrice": "",
+      "colors": {},
+      "outlet": "",
+      "newArrival": ""
+    },
+    "0004": {
+      "name": "",
+      "id": "0004",
+      "imageCover": "",
+      "images": {},
+      "category": "",
+      "discount": "",
+      "price": "",
+      "realPrice": "",
+      "colors": {},
+      "outlet": "",
+      "newArrival": ""
+    },
+    "0005": {
+      "name": "",
+      "id": "0005",
+      "imageCover": "",
+      "images": {},
+      "category": "",
+      "discount": "",
+      "price": "",
+      "realPrice": "",
+      "colors": {},
+      "outlet": "",
+      "newArrival": ""
+    }
+  },
+
+  "JacketsAndCoats": {},
+  "T-shirtsAndShirts": {},
+  "Pants": {}
+}

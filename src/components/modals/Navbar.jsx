@@ -34,7 +34,7 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
       <div className="w-full h-16 flex justify-end items-center bg-yellow-500">
         <CloseButton
           onClick={toggleNav}
-          className={"w-10 h-10 mr-3 grid place-content-center fill-yellow"}
+          className={"size-10 mr-3  fill-yellow"}
         />
       </div>
       <div className="flex flex-col justify-between flex-auto px-3">
@@ -75,7 +75,7 @@ export default function Navbar({ refNavBar, toggleNav, navbar }) {
         </ul>
       </div>
       <SocialBanner
-        svgSize="w-8 h-8 hover:stroke-yellow duration-300 ease-in-out lg:w-10 lg:h-10"
+        svgSize="size-8 stroke-white hover:stroke-yellow duration-300 ease-in-out lg:size-10"
         classNameUl="w-full h-12 lg:h-20"
       />
     </nav>

@@ -1,12 +1,11 @@
 // COMPONENTS
 import LogoButton from "../buttons/LogoButton";
-import { NavLink } from "react-router-dom";
 
 // ICONS
 import TruckICo from "../SVGs/icons/TruckIco";
 import CoinIco from "../SVGs/icons/CoinIco";
 import ReplaceIco from "../SVGs/icons/ReplaceIco";
-import ShieldDolar from "../SVGs/icons/ShieldDolar";
+import ShieldDolarIco from "../SVGs/icons/ShieldDolarIco";
 
 const bannerIcons = [
   { name: "Shipping", Component: TruckICo, title: "Free Shipping & Returns" },
@@ -16,7 +15,11 @@ const bannerIcons = [
     Component: ReplaceIco,
     title: "Replacement in Case of Defect",
   },
-  { name: "Secure", Component: ShieldDolar, title: "Safe and Secure Checkout" },
+  {
+    name: "Secure",
+    Component: ShieldDolarIco,
+    title: "Safe and Secure Checkout",
+  },
 ];
 
 const menuListFooter = [
@@ -59,7 +62,7 @@ export default function Footer() {
         <div className={`${footerClass} border-b-2 border-lightCarbon`}>
           {bannerIcons.map(({ Component, title, name }) => (
             <div key={name}>
-              <Component size="size-10" />
+              <Component className="size-10" />
               <p className="text-center mt-3">{title}</p>
             </div>
           ))}

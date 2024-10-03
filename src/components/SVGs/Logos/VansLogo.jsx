@@ -1,6 +1,6 @@
 export default function VansLogo({ className }) {
   return (
-    <svg className={className} viewBox="0 0 57.1 21.8">
+    <svg className={`${className} m-auto`} viewBox="0 0 57.1 21.8">
       <g>
         <polygon points="14.8,0 18.9,0 12.1,21.5 7,21.5 0,0.1 4.2,0.2 9.7,16.6 	" />
         <rect x="14.8" width="38.7" height="3.7" />

@@ -1,9 +1,9 @@
-import IcoBarsResponsive from "../SVGs/icons/IcoBarsResponsive";
+import BarsResponsiveIco from "../SVGs/icons/BarsResponsiveIco";
 
 export default function responsiveButton({ onClick }) {
   return (
     <button onClick={onClick} aria-label="open responsive menu">
-      <IcoBarsResponsive className="size-10 stroke-white stroke-1 lg:size-14" />
+      <BarsResponsiveIco className="size-10 stroke-white stroke-1 lg:size-14" />
     </button>
   );
 }

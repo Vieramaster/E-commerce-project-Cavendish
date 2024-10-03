@@ -1,4 +1,4 @@
-import IcoCloseResponsive from "../SVGs/icons/IcoCloseResponsive";
+import CloseResponsiveIco from "../SVGs/icons/CloseResponsiveIco";
 
 export default function CloseButton({ onClick, className }) {
   return (
@@ -7,7 +7,7 @@ export default function CloseButton({ onClick, className }) {
       onClick={onClick}
       aria-label="close button"
     >
-      <IcoCloseResponsive className="w-8 h-8" />
+      <CloseResponsiveIco className="w-8 h-8" />
     </button>
   );
 }

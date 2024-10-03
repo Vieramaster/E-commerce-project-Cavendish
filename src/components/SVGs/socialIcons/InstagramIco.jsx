@@ -1,7 +1,7 @@
-export default function IcoInstagram({ className }) {
+export default function InstagramIco({ className }) {
   return (
     <svg
-      className={`${className} stroke-white`}
+    className={`${className} m-auto`}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

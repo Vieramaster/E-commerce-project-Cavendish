@@ -1,5 +1,6 @@
 import ShoppingButton from "../buttons/ShoppingButton";
 import CountdownCard from "../cards/CountdownCard";
+import useCountdown from "../hooks/useCountdown";
 
 const titleClass =
   "font-semibold text-4xl text-center lg:text-start xl:text-5xl 2xl:text-6xl";
@@ -9,11 +10,10 @@ export default function SellCounter({
   afterPrice,
   beforePrice,
   image,
-  days,
-  hours,
-  minutes,
-  seconds,
+  timedate
 }) {
+  const { days, hours, minutes, seconds } = useCountdown(timedate);
+
   return (
     <section className="w-full h-auto py-10 bg-sellCounter flex justify-center 2xl:py-14">
       <div className="h-full w-full flex flex-col gap-10 justify-start items-center lg:w-5/6 lg:flex-row lg:justify-between lg:items-start">

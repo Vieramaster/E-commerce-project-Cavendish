@@ -1,6 +1,6 @@
 export default function PumaLogo({className}) {
   return (
-    <svg viewBox="0 0 68.6 34.2" className={className}>
+    <svg viewBox="0 0 68.6 34.2" className={`${className} m-auto`}>
       <g>
         <path
           d="M9,17.5c-0.4,0-9,0-9,0l0,0l0,16.4h4.4v-3.6l0,0c0,0,4.1,0,4.6,0c0.9,0,1.8-0.7,1.8-1.8c0-0.4,0-2.8,0-4.7

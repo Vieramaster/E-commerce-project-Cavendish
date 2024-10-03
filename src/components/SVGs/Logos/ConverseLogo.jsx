@@ -1,6 +1,6 @@
 export default function ConverseLogo({ className }) {
   return (
-    <svg className={className} viewBox="0 0 51.569 34.635">
+    <svg className={`${className} m-auto`} viewBox="0 0 51.569 34.635">
       <g transform="translate(-20.164 -25.358)">
         <g transform="translate(31.286 25.358)">
           <path

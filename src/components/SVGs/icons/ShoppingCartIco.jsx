@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function IcoShoppingCart({ className }) {
+export default function ShoppingCartIco({ className }) {
   return (
     <svg
       viewBox="0 0 24 24"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={className}
+      className={`${className} m-auto`}
       fill="none"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />

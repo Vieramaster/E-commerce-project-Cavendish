@@ -1,6 +1,6 @@
 export default function UnderArmorLogo({className}) {
   return (
-    <svg className={className} viewBox="0 0 53.8 31.404">
+    <svg className={`${className} m-auto`} viewBox="0 0 53.8 31.404">
       <g transform="translate(-1 -1)">
         <g transform="translate(7.991 1)">
           <path

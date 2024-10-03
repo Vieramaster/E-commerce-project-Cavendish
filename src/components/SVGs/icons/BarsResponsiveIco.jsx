@@ -1,7 +1,7 @@
-export default function IcoBarsResponsive({ className }) {
+export default function BarsResponsiveIco({ className }) {
   return (
     <svg
-      className={`${className} stroke-white`}
+      className={`${className} m-auto`}
       fill="none"
       stroke="currentColor"
       strokeLinecap="round"

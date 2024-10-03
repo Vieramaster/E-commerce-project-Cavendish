@@ -24,6 +24,7 @@ export default function Header() {
 
   const refNavBar = useClickOutside(() => setNavbar(false));
   const searchModal = useClickOutside(() => setSearchBar(false));
+  
 
   return (
     <>
