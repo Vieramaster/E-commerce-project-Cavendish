@@ -9,7 +9,7 @@ export default function UseApi() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await fetch("https://www.lacoste.com/on/demandware.store/Sites-FlagShip-Site/en_US/");
+        const response = await fetch("https://www.lacoste.com/on/demandware.store/Sites-FlagShip-Site/en_US/Search-GetFilters?cgid=Lacoste_Men_Clothing_Polos&format=json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

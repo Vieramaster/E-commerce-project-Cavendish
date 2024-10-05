@@ -12,6 +12,7 @@ export default function SellCounter({
   image,
   timedate
 }) {
+  
   const { days, hours, minutes, seconds } = useCountdown(timedate);
 
   return (

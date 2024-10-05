@@ -1,14 +1,16 @@
-import Header from "../components/sections/Header";
-import IntroHome from "../components/sections/IntroHome";
-import MainCards from "../components/sections/MainCards";
-import BannerLogos from "../components/sections/BannerLogos";
-import ShoppingCards from "../components/sections/ShoppingCards";
-import SellCounter from "../components/sections/SellCounter";
-import useCountdown from "../components/hooks/useCountdown";
-import News from "../components/sections/News";
-import SubscribeBanner from "../components/sections/SubscribeBanner";
-import Footer from "../components/sections/Footer"
-import UseApi from "../components/hooks/UseApi"
+import UseApi from "../components/hooks/UseApi";
+
+import {
+  Header,
+  IntroHome,
+  MainCards,
+  BannerLogos,
+  ShoppingCards,
+  SellCounter,
+  News,
+  SubscribeBanner,
+  Footer,
+} from "../components/sections";
 
 const bestSellers = [
   {
@@ -72,15 +74,10 @@ const news = [
   },
 ];
 
-
-
-
 export default function Home() {
+  const { data } = UseApi();
 
-  const {data} = UseApi()
-
-  console.log(data)
-
+  console.log(data);
 
   return (
     <>
@@ -105,8 +102,8 @@ export default function Home() {
         timedate={"Oct 14, 2024 00:00:00"}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
-      <SubscribeBanner/>
-      <Footer/>
+      <SubscribeBanner />
+      <Footer />
     </>
   );
 }
