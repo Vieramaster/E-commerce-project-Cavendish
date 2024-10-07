@@ -1,4 +1,4 @@
-export default function DCLogo({ className }) {
+const DCLogo = ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 37.4 31.3">
       <path
@@ -15,4 +15,5 @@ export default function DCLogo({ className }) {
       />
     </svg>
   );
-}
+};
+export default DCLogo;

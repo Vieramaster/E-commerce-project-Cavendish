@@ -1,7 +1,7 @@
-import SliderHomeOff from "../SliderHomeOff";
-import OpenColectionButton from "../buttons/OpenCollectionButton";
+import SliderHomeOff from "../sliders/HomeCardSlider";
+import { MainButton } from "../buttons";
 
-export default function IntroHome() {
+const IntroHome = () => {
   return (
     <section className="w-full h-auto min-h-[600px] pt-24 bg-gradient-to-br  from-darkEsmerald to-esmerald flex  flex-col justify-center text-white gap-2 lg:flex-row lg:h-screen lg:px-20 lg:-mt10 lg:min-h-[55rem]">
       <div className="w-full h-96  grid place-content-center lg:h-full ">
@@ -14,10 +14,12 @@ export default function IntroHome() {
           <p className="  mt-4 lg:text-xl 2xl:text-2xl ">
             Summer Sale / Up to 50% OFF
           </p>
-          <OpenColectionButton />
+          <MainButton>Open Collection</MainButton>
         </div>
       </div>
       <SliderHomeOff />
     </section>
   );
-}
+};
+
+export default IntroHome;

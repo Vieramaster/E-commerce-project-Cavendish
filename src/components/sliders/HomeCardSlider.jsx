@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import BannerButtons from "./buttons/BannerButtons";
+import { BannerButtons } from "../buttons";
 
 const products = [
   {
@@ -32,7 +32,7 @@ const products = [
   },
 ];
 
-export default function SliderHomeOff() {
+const HomeCardSlider = () => {
   const [indexArray, setIndexArray] = useState(0);
   const [isDisabled, setIsDisabled] = useState(false);
 
@@ -61,13 +61,13 @@ export default function SliderHomeOff() {
     timeButton("fadeInNext");
   };
 
-  const previus = () => {
+  const previous = () => {
     if (indexArray === 0) {
       setIndexArray(products.length - 1);
     } else {
       setIndexArray(indexArray - 1);
     }
-    timeButton("fadeInPrevius");
+    timeButton("fadeInPrevious");
   };
 
   return (
@@ -95,7 +95,8 @@ export default function SliderHomeOff() {
           </div>
         </div>
       </div>
-      <BannerButtons {...{ next, previus, isDisabled }} />
+      <BannerButtons {...{ next, previous, isDisabled }} />
     </div>
   );
-}
+};
+export default HomeCardSlider;

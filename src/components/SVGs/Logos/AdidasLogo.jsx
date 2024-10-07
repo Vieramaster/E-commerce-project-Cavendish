@@ -1,9 +1,6 @@
-export default function AdidasLogo({className}) {
+const AdidasLogo = ({ className }) => {
   return (
-    <svg
-    className={`${className} m-auto`}
-      viewBox="0 0 55.004 32.688"
-    >
+    <svg className={`${className} m-auto`} viewBox="0 0 55.004 32.688">
       <g transform="translate(-1272 -525.379)">
         <g transform="translate(1272 548.087)">
           <path
@@ -26,4 +23,5 @@ export default function AdidasLogo({className}) {
       </g>
     </svg>
   );
-}
+};
+export default AdidasLogo;

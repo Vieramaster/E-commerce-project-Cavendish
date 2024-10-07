@@ -1,12 +1,12 @@
-import CloseButton from "../buttons/CloseButton";
-import SearchIco from "../SVGs/icons/SearchIco";
+import { ResponsiveButton } from "../buttons";
+import { SearchIco, CloseResponsiveIco } from "../SVGs/icons";
 
-export default function SearchModal({ toggleSearch, searchModal, searchBar }) {
+export default function SearchModal({ toggle, componentRef, open }) {
   return (
     <div
-      ref={searchModal}
+      ref={componentRef}
       className={`fixed ${
-        searchBar ? "top-24 opacity-100 lg:top-28" : "top-5 opacity-0"
+        open ? "top-24 opacity-100 lg:top-28" : "top-5 opacity-0"
       } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-30`}
     >
       <fieldset className="w-5/6 max-w-[40rem] h-2/3 flex items-center justify-center rounded-md relative">
@@ -22,13 +22,10 @@ export default function SearchModal({ toggleSearch, searchModal, searchBar }) {
           aria-label="search bar"
           placeholder="What are you looking for?"
         />
-        <CloseButton
-          onClick={toggleSearch}
-          className={
-            "w-10 h-full bg-lightGrey grid place-content-center lg:w-20 fill-darkGrey"
-          }
-        />
       </fieldset>
+      <ResponsiveButton parentMethod={toggle} label={"close searchbar"}>
+        <CloseResponsiveIco className={"w-2/5  fill-darkGrey"} />
+      </ResponsiveButton>
     </div>
   );
 }

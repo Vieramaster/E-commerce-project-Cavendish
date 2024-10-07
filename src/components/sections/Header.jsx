@@ -1,30 +1,29 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { BarsResponsiveIco } from "../SVGs/icons";
+import { Navbar, SearchModal } from "../modals";
+import { useClickOutside } from "../hooks";
+import {
+  LogoButton,
+  ShoppingNavButton,
+  SearchButton,
+  ResponsiveButton,
+} from "../buttons";
 
-// COMPONENTES
-import LogoButton from "../buttons/LogoButton";
-import useClickOutside from "../hooks/useClickOutside";
-import SearchModal from "../modals/SearchModal";
-import Navbar from "../modals/Navbar";
-import SearchButton from "../buttons/Searchbutton";
-import ResponsiveButton from "../buttons/Responsivebutton";
-import ShoppingNavButton from "../buttons/ShoppingNavbutton";
+const Header = () => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
 
-export default function Header() {
-  const [navbar, setNavbar] = useState(false);
-  const [searchBar, setSearchBar] = useState(false);
-
-  const toggleNav = () => {
-    setSearchBar(false);
-    setNavbar(!navbar);
+  const toggleNavbar = () => {
+    setIsSearchBarOpen(false);
+    setIsNavbarOpen((prevState) => !prevState);
   };
 
-  const toggleSearch = () => {
-    setSearchBar(!searchBar);
-  };
+  const toggleSearchBar = useCallback(() => {
+    setIsSearchBarOpen((prevState) => !prevState);
+  }, []);
 
-  const refNavBar = useClickOutside(() => setNavbar(false));
-  const searchModal = useClickOutside(() => setSearchBar(false));
-  
+  const navbarRef = useClickOutside(() => setIsNavbarOpen(false));
+  const searchModalRef = useClickOutside(() => setIsSearchBarOpen(false));
 
   return (
     <>
@@ -35,26 +34,35 @@ export default function Header() {
           </h2>
         </div>
         <div className="w-full flex-auto flex justify-between px-3">
-          <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center ">
-            <ResponsiveButton onClick={toggleNav} />
-            <SearchButton onClick={toggleSearch} boolean={searchBar} />
+          <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center">
+            <ResponsiveButton parentMethod={toggleNavbar} label="Open menu">
+              <BarsResponsiveIco className="size-full stroke-white" />
+            </ResponsiveButton>
+            <SearchButton
+              parentMethod={toggleSearchBar}
+              active={isSearchBarOpen}
+            />
           </div>
-          <div className="h-full flex-auto grid place-content-center ">
+          <div className="h-full flex-auto grid place-content-center">
             <LogoButton />
           </div>
           <div className="h-full flex-1 flex justify-end items-center">
             <ShoppingNavButton />
           </div>
         </div>
-
-        <Navbar refNavBar={refNavBar} toggleNav={toggleNav} navbar={navbar} />
+        <Navbar
+          componentRef={navbarRef}
+          toggle={toggleNavbar}
+          open={isNavbarOpen}
+        />
       </header>
-
       <SearchModal
-        toggleSearch={toggleSearch}
-        searchModal={searchModal}
-        searchBar={searchBar}
+        toggle={toggleSearchBar}
+        componentRef={searchModalRef}
+        open={isSearchBarOpen}
       />
     </>
   );
-}
+};
+
+export default Header;

@@ -1,5 +1,3 @@
-import UseApi from "../components/hooks/UseApi";
-
 import {
   Header,
   IntroHome,
@@ -49,35 +47,36 @@ const bestSellers = [
 
 const news = [
   {
-    id: "0001",
+    id: "news0001",
     image: "src/assets/images/news1.webp",
-    imageName: "outfits",
-    newsTitle: "Lorem ipsum dolor sit",
+    imageAlt: "outfits",
+    date: "10/10/2024",
+    title: "Lorem ipsum dolor sit",
     introduction:
       "Impedit laborum ex? Quasi officia nulla atque sunt iusto l Quasi officia",
   },
   {
-    id: "0002",
+    id: "news0002",
     image: "src/assets/images/news2.webp",
-    imageName: "outfits",
-    newsTitle: "Lorem ipsum dolor sit",
+    imageAlt: "outfits",
+    date: "10/10/2024",
+    title: "Lorem ipsum dolor sit",
     introduction:
       "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto l Quasi officia",
   },
   {
     id: "0003",
     image: "src/assets/images/news3.webp",
-    imageName: "outfits",
-    newsTitle: "Lorem ipsum dolor sit",
+    imageAlt: "outfits",
+    date: "10/10/2024",
+    title: "Lorem ipsum dolor sit",
     introduction:
       "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto ",
   },
 ];
 
 export default function Home() {
-  const { data } = UseApi();
 
-  console.log(data);
 
   return (
     <>

@@ -1,4 +1,4 @@
-export default function FacebookIco({className}) {
+ const FacebookIco= ({ className }) => {
   return (
     <svg
     className={`${className} m-auto`}
@@ -12,3 +12,4 @@ export default function FacebookIco({className}) {
     </svg>
   );
 }
+export default FacebookIco

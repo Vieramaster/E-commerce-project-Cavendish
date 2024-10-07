@@ -1,4 +1,4 @@
-export default function PumaLogo({className}) {
+const PumaLogo = ({ className }) => {
   return (
     <svg viewBox="0 0 68.6 34.2" className={`${className} m-auto`}>
       <g>
@@ -49,4 +49,5 @@ export default function PumaLogo({className}) {
       </g>
     </svg>
   );
-}
+};
+export default PumaLogo;

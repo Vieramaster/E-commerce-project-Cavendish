@@ -1,4 +1,4 @@
-export default function ReplaceIco({className}) {
+const ReplaceIco=({className})=> {
   return (
     <svg
     className={`${className} m-auto`}
@@ -17,3 +17,4 @@ export default function ReplaceIco({className}) {
     </svg>
   );
 }
+export default ReplaceIco

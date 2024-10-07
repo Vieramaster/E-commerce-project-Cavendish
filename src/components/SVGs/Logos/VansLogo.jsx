@@ -1,4 +1,4 @@
-export default function VansLogo({ className }) {
+const VansLogo = ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 57.1 21.8">
       <g>
@@ -26,4 +26,5 @@ export default function VansLogo({ className }) {
       </g>
     </svg>
   );
-}
+};
+export default VansLogo;

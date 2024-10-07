@@ -1,14 +1,8 @@
-// COMPONENTS
-import LogoButton from "../buttons/LogoButton";
-
-// ICONS
-import TruckICo from "../SVGs/icons/TruckIco";
-import CoinIco from "../SVGs/icons/CoinIco";
-import ReplaceIco from "../SVGs/icons/ReplaceIco";
-import ShieldDolarIco from "../SVGs/icons/ShieldDolarIco";
+import { TruckIco, CoinIco, ReplaceIco, ShieldDolarIco } from "../SVGs/icons";
+import { LogoButton } from "../buttons";
 
 const bannerIcons = [
-  { name: "Shipping", Component: TruckICo, title: "Free Shipping & Returns" },
+  { name: "Shipping", Component: TruckIco, title: "Free Shipping & Returns" },
   { name: "Guarantee", Component: CoinIco, title: "100% Money Back Guarantee" },
   {
     name: "Replacement",
@@ -55,12 +49,12 @@ const menuListFooter = [
 const footerClass =
   "w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-carbon w-full h-auto text-lightGrey py-5">
       <div className="w-full h-full lg:w-5/6 m-auto">
         <div className={`${footerClass} border-b-2 border-lightCarbon`}>
-          {bannerIcons.map(({ Component, title, name }) => (
+          {bannerIcons?.map(({ Component, title, name }) => (
             <div key={name}>
               <Component className="size-10" />
               <p className="text-center mt-3">{title}</p>
@@ -71,7 +65,7 @@ export default function Footer() {
           <div className="py-10">
             <LogoButton />
           </div>
-          {menuListFooter.map(({ key, title, items }) => (
+          {menuListFooter?.map(({ key, title, items }) => (
             <div key={key} className="py-10">
               <h3 className="text-xl">{title}</h3>
               <ul className="mt-5">
@@ -92,4 +86,5 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+export default Footer;

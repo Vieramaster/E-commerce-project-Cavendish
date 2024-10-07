@@ -1,7 +1,7 @@
 import { HoverButton, TopButtonCard } from "../buttons";
 import { HearthIco, ShoppingCartIco } from "../SVGs/icons";
 
-export default function BestSellers({ title, array }) {
+const BestSellers =({ title, array }) => {
   return (
     <section className="w-full h-auto py-16 bg-white flex items-center justify-center">
       <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start">
@@ -34,8 +34,13 @@ export default function BestSellers({ title, array }) {
                   <p className="lg:text-xl  ">{item.price}</p>
                 </div>
 
-                <HoverButton background={"bg-yellow hover:bg-esmerald"} label={"Add to cart"}>
-                  <ShoppingCartIco className={"size-6 stroke-carbon"}/>
+                <HoverButton
+                  color="primary"
+                  label={"Add to cart"}
+                >
+                  <ShoppingCartIco
+                    className={"size-6 stroke-carbon group-hover:stroke-white "}
+                  />
                 </HoverButton>
               </div>
             </div>
@@ -45,3 +50,5 @@ export default function BestSellers({ title, array }) {
     </section>
   );
 }
+
+export default BestSellers

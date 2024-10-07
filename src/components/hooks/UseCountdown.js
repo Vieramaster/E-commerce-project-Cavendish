@@ -1,27 +1,42 @@
-import { useState, useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-export default function UseCountdown(targetDate) {
-  const countDownDate = new Date(targetDate).getTime();
-  const [countDown, setCountDown] = useState(
-    countDownDate - new Date().getTime()
+const MILLISECOND = 1_000;
+const MINUTE = MILLISECOND * 60;
+const HOUR = MINUTE * 60;
+const DAY = HOUR * 24;
+
+export const currentMilliseconds = () => new Date().getTime();
+
+/**
+ * @param {number | string | Date} targetDate
+ */
+ const useCountdown = (targetDate) => {
+  const targetMilliseconds = useMemo(
+    () => new Date(targetDate).getTime(),
+    [targetDate]
+  );
+  const [countdown, setCountdown] = useState(
+    targetMilliseconds - currentMilliseconds()
   );
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCountDown(countDownDate - new Date().getTime());
-    }, 1000);
+    const interval = setInterval(
+      () => setCountdown(targetMilliseconds - currentMilliseconds()),
+      500
+    );
 
     return () => clearInterval(interval);
-  }, [countDownDate]);
+  }, [targetMilliseconds]);
 
-  const dayNumber = 1000 * 60 * 60 * 24;
-  const hourNumber = 1000 * 60 * 60;
-  const minuteNumber = 1000 * 60;
+  return useMemo(
+    () => ({
+      days: Math.floor(countdown / DAY),
+      hours: Math.floor((countdown % DAY) / HOUR),
+      minutes: Math.floor((countdown % HOUR) / MINUTE),
+      seconds: Math.floor((countdown % MINUTE) / MILLISECOND),
+    }),
+    [countdown]
+  );
+};
 
-  return {
-    days: Math.floor(countDown / dayNumber),
-    hours: Math.floor((countDown % dayNumber) / hourNumber),
-    minutes: Math.floor((countDown % hourNumber) / minuteNumber),
-    seconds: Math.floor((countDown % minuteNumber) / 1000),
-  };
-}
+export default useCountdown

@@ -1,4 +1,4 @@
-export default function YoutubeIco({ className }) {
+const YoutubeIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -14,4 +14,5 @@ export default function YoutubeIco({ className }) {
       <path d="M10 9l5 3l-5 3z" />
     </svg>
   );
-}
+};
+export default YoutubeIco;

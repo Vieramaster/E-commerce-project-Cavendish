@@ -1,18 +1,20 @@
-import ShoppingButton from "../buttons/ShoppingButton";
-import CountdownCard from "../cards/CountdownCard";
-import useCountdown from "../hooks/useCountdown";
+import { HoverButton } from "../buttons";
+import { ShoppingCartIco } from "../SVGs/icons";
+import { CountdownCard } from "../cards/";
+import { useCountdown } from "../hooks/";
 
 const titleClass =
   "font-semibold text-4xl text-center lg:text-start xl:text-5xl 2xl:text-6xl";
 
-export default function SellCounter({
+const SellCounter = ({
   discount,
   afterPrice,
   beforePrice,
   image,
-  timedate
-}) {
-  
+  timedate,
+  label,
+}) => {
+
   const { days, hours, minutes, seconds } = useCountdown(timedate);
 
   return (
@@ -22,16 +24,19 @@ export default function SellCounter({
           <h3 className={`${titleClass} text-carbon font-normal pr-6 lg:pr-0`}>
             {discount}
           </h3>
-          <img src={image} alt="shoes" />
+          <img src={image} alt={label} />
           <div className="flex gap-5 justify-center lg:justify-start">
-            <p className="border border-white text-white rounded-lg py-2 px-5 font-semibold text-xl lg:border-carbon lg:text-carbon lg:text-2xl 2xl:text-3xl">
-              <span className="font-semibold line-through">{afterPrice}</span>{" "}
+            <p className="border rounded-lg py-2 px-5 font-semibold text-xl lg:text-2xl 2xl:text-3xl border-white text-white lg:border-carbon lg:text-carbon">
+              <span className="font-semibold line-through">{afterPrice}</span>
               {beforePrice}
             </p>
-            <ShoppingButton
-              background="bg-yellow hover:bg-carbon lg:bg-carbon lg:hover:bg-semiEsmerald"
-              SVGclass="size-5 stroke-carbon lg:stroke-white lg:size-8"
-            />
+            <HoverButton
+              label="add to cart"
+              color="secondary"
+            >
+              <ShoppingCartIco className="size-5 stroke-carbon lg:stroke-white lg:size-8" />
+
+            </HoverButton>
           </div>
         </div>
         <div className="w-80 flex flex-col gap-8 lg:w-1/2 lg:justify-between lg:h-52 xl:h-68 2xl:h-72 xl:gap-20">
@@ -43,7 +48,8 @@ export default function SellCounter({
             <CountdownCard label="Seconds" count={seconds} />
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   );
-}
+};
+export default SellCounter;

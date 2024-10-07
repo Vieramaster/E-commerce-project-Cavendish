@@ -1,4 +1,4 @@
-export default function CoinIco({ className }) {
+const CoinIco = ({ className })=> {
   return (
     <svg
       className={`${className} m-auto`}
@@ -16,3 +16,4 @@ export default function CoinIco({ className }) {
     </svg>
   );
 }
+export default CoinIco
