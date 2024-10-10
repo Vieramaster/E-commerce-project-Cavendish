@@ -12,7 +12,7 @@ const SellCounter = ({
   beforePrice,
   image,
   timedate,
-  label,
+  imageAlt,
 }) => {
 
   const { days, hours, minutes, seconds } = useCountdown(timedate);
@@ -24,7 +24,7 @@ const SellCounter = ({
           <h3 className={`${titleClass} text-carbon font-normal pr-6 lg:pr-0`}>
             {discount}
           </h3>
-          <img src={image} alt={label} />
+          <img src={image} alt={imageAlt} />
           <div className="flex gap-5 justify-center lg:justify-start">
             <p className="border rounded-lg py-2 px-5 font-semibold text-xl lg:text-2xl 2xl:text-3xl border-white text-white lg:border-carbon lg:text-carbon">
               <span className="font-semibold line-through">{afterPrice}</span>

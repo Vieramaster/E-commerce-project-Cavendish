@@ -1,14 +1,17 @@
-const BottomButtonCard = ({
+/**
+ * @type {{primary: string, secondary: string}}
+ */
+const buttonStyles = {
+  primary: "bg-carbon text-white hover:bg-esmerald",
+  secondary: "bg-yellow text-darkEsmerald hover:bg-white hover:text-carbon",
+};
+
+export const BottomButtonCard = ({
   parentMethod,
   label,
   children,
   color = "primary",
 }) => {
-  const buttonStyles = {
-    primary: "bg-carbon text-white hover:bg-esmerald",
-    secondary: "bg-yellow text-darkEsmerald hover:bg-white hover:text-carbon",
-  };
-
   return (
     <button
       onClick={parentMethod}
@@ -19,5 +22,3 @@ const BottomButtonCard = ({
     </button>
   );
 };
-
-export default BottomButtonCard;

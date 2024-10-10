@@ -1,4 +1,4 @@
-import { BottomButtonCard } from "../buttons";
+
 import { MainCard, MainCardExtend } from "../cards";
 
 const MainCards = ({
@@ -19,11 +19,12 @@ const MainCards = ({
           <MainCard
             title={card1Title}
             image={imageCard1}
-            altImage={card1Title}
+            imageAlt={card1Title}
           />
           <MainCardExtend
             title={card2Title}
             image={imageCard2}
+            imageAlt={card2Title}
             subtitle={card2SubTitle}
           />
         </div>

@@ -3,7 +3,7 @@ import {
   InstagramIco,
   YoutubeIco,
   TwitterIco,
-} from "../SVGs/socialIcons";
+} from "./SVGs/socialIcons";
 
 const logoList = [
   { Component: FacebookIco, key: "Facebook" },

@@ -99,6 +99,7 @@ export default function Home() {
         discount={"-70% OFF"}
         image={"src/assets/images/shoes.webp"}
         timedate={"Oct 14, 2024 00:00:00"}
+        imageAlt={"shoes discount"}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
       <SubscribeBanner />
