@@ -1,7 +1,8 @@
-/**
- * @type {{primary: string, secondary: string}}
- */
-const buttonStyles = {
+import React from "react";
+
+//@ts-check
+
+const buttonStyles = /** @type {const} @satisfies {Record<string, string>} */ {
   primary: "bg-carbon text-white hover:bg-esmerald",
   secondary: "bg-yellow text-darkEsmerald hover:bg-white hover:text-carbon",
 };
@@ -19,6 +20,7 @@ export const BottomButtonCard = ({
       className={`${buttonStyles[color]} absolute bottom-5 right-5 px-4 py-2 rounded-lg text-sm xl:text-xl duration-200 ease-in-out`}
     >
       {children}
+      
     </button>
   );
 };
