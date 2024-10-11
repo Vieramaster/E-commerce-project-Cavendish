@@ -2,8 +2,8 @@
 import React from "react";
 import { LeftArrowIco, RightArrowIco } from "../SVGs/icons";
 
-/** @type {string} */
-const classArrows =
+
+const classArrows =/** @type {string}  */
   "stroke-white size-10 lg:size-16 hover:stroke-yellow duration-200 ease-in-out";
 
 /**
