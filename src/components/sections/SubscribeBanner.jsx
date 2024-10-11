@@ -1,4 +1,4 @@
-export default function SubscribeBanner() {
+const SubscribeBanner=()=> {
   return (
     <section className="w-full h-auto p-16 text-carbon bg-lightGrey">
       <div className="h-full w-full lg:w-1/2 m-auto text-center ">
@@ -21,3 +21,4 @@ export default function SubscribeBanner() {
     </section>
   );
 }
+export default SubscribeBanner

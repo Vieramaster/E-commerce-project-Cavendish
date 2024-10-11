@@ -1,7 +1,7 @@
-export default function InstagramIco({ className }) {
+const InstagramIco = ({ className }) => {
   return (
     <svg
-    className={`${className} m-auto`}
+      className={`${className} m-auto`}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -15,4 +15,5 @@ export default function InstagramIco({ className }) {
       <path d="M16.5 7.5l0 .01" />
     </svg>
   );
-}
+};
+export default InstagramIco;

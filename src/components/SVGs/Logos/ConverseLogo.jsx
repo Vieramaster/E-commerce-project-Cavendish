@@ -1,4 +1,4 @@
-export default function ConverseLogo({ className }) {
+const ConverseLogo = ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 51.569 34.635">
       <g transform="translate(-20.164 -25.358)">
@@ -49,4 +49,5 @@ export default function ConverseLogo({ className }) {
       </g>
     </svg>
   );
-}
+};
+export default ConverseLogo;

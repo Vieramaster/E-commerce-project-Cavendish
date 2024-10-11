@@ -1,4 +1,4 @@
-export default function SearchIco({ className }) {
+const SearchIco = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -13,4 +13,5 @@ export default function SearchIco({ className }) {
       <path d="M21 21l-6 -6" />
     </svg>
   );
-}
+};
+export default SearchIco;

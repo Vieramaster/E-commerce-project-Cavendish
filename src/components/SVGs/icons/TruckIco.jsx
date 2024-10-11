@@ -1,4 +1,4 @@
-export default function TruckIco({ className }) {
+const TruckIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -16,4 +16,5 @@ export default function TruckIco({ className }) {
       <path d="M3 9l4 0" />
     </svg>
   );
-}
+};
+export default TruckIco;

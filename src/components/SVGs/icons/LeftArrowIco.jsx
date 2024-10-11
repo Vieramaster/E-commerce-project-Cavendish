@@ -1,4 +1,4 @@
-export default function LeftArrowIco({ className }) {
+const LeftArrowIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -17,4 +17,5 @@ export default function LeftArrowIco({ className }) {
       <path d="M5 12l6 -6" />
     </svg>
   );
-}
+};
+export default LeftArrowIco;

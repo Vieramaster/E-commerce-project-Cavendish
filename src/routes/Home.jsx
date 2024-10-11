@@ -1,14 +1,14 @@
-import Header from "../components/sections/Header";
-import IntroHome from "../components/sections/IntroHome";
-import MainCards from "../components/sections/MainCards";
-import BannerLogos from "../components/sections/BannerLogos";
-import ShoppingCards from "../components/sections/ShoppingCards";
-import SellCounter from "../components/sections/SellCounter";
-import useCountdown from "../components/hooks/useCountdown";
-import News from "../components/sections/News";
-import SubscribeBanner from "../components/sections/SubscribeBanner";
-import Footer from "../components/sections/Footer"
-import UseApi from "../components/hooks/UseApi"
+import {
+  Header,
+  IntroHome,
+  MainCards,
+  BannerLogos,
+  ShoppingCards,
+  SellCounter,
+  News,
+  SubscribeBanner,
+  Footer,
+} from "../components/sections";
 
 const bestSellers = [
   {
@@ -47,39 +47,35 @@ const bestSellers = [
 
 const news = [
   {
-    id: "0001",
+    id: "news0001",
     image: "src/assets/images/news1.webp",
-    imageName: "outfits",
-    newsTitle: "Lorem ipsum dolor sit",
+    imageAlt: "outfits",
+    date: "10/10/2024",
+    title: "Lorem ipsum dolor sit",
     introduction:
       "Impedit laborum ex? Quasi officia nulla atque sunt iusto l Quasi officia",
   },
   {
-    id: "0002",
+    id: "news0002",
     image: "src/assets/images/news2.webp",
-    imageName: "outfits",
-    newsTitle: "Lorem ipsum dolor sit",
+    imageAlt: "outfits",
+    date: "10/10/2024",
+    title: "Lorem ipsum dolor sit",
     introduction:
       "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto l Quasi officia",
   },
   {
     id: "0003",
     image: "src/assets/images/news3.webp",
-    imageName: "outfits",
-    newsTitle: "Lorem ipsum dolor sit",
+    imageAlt: "outfits",
+    date: "10/10/2024",
+    title: "Lorem ipsum dolor sit",
     introduction:
       "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto ",
   },
 ];
 
-
-
-
 export default function Home() {
-
-  const {data} = UseApi()
-
-  console.log(data)
 
 
   return (
@@ -103,10 +99,11 @@ export default function Home() {
         discount={"-70% OFF"}
         image={"src/assets/images/shoes.webp"}
         timedate={"Oct 14, 2024 00:00:00"}
+        imageAlt={"shoes discount"}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
-      <SubscribeBanner/>
-      <Footer/>
+      <SubscribeBanner />
+      <Footer />
     </>
   );
 }

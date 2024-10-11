@@ -1,4 +1,4 @@
-export default function CloseResponsiveIco({ className }) {
+const CloseResponsiveIco =({ className }) =>{
   return (
     <svg
       viewBox="0 0 384 512"
@@ -9,3 +9,4 @@ export default function CloseResponsiveIco({ className }) {
     </svg>
   );
 }
+export default CloseResponsiveIco

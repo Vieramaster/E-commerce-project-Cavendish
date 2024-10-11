@@ -1,4 +1,4 @@
-export default function Crocslogo({className}) {
+const Crocslogo= ({ className }) =>{
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 69 12.913">
       <g transform="translate(-26.1 -33.6)">
@@ -31,3 +31,4 @@ export default function Crocslogo({className}) {
     </svg>
   );
 }
+export default Crocslogo

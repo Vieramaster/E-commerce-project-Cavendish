@@ -1,7 +1,7 @@
-import HearthButton from "../buttons/HearthButton";
-import ShoppingButton from "../buttons/ShoppingButton";
+import { HoverButton, TopButtonCard } from "../buttons";
+import { HearthIco, ShoppingCartIco } from "../SVGs/icons";
 
-export default function BestSellers({ title, array }) {
+const BestSellers =({ title, array }) => {
   return (
     <section className="w-full h-auto py-16 bg-white flex items-center justify-center">
       <div className="flex flex-col gap-10  w-5/6 items-center lg:items-start">
@@ -24,19 +24,24 @@ export default function BestSellers({ title, array }) {
                   alt={item.name}
                   className="w-auto h-[95%] group-hover:scale-105 duration-300 ease-in-out"
                 />
-                <HearthButton />
+                <TopButtonCard label={"Favorite"} background={false}>
+                  <HearthIco className="size-10 stroke-esmerald stroke-1 hover:fill-esmerald" />
+                </TopButtonCard>
               </div>
               <div className="flex justify-between w-full h-1/6 items-center">
                 <div>
-                  <h3 className="text-xl 2xl:text-xl">
-                    {item.name}
-                  </h3>
+                  <h3 className="text-xl 2xl:text-xl">{item.name}</h3>
                   <p className="lg:text-xl  ">{item.price}</p>
                 </div>
-                <ShoppingButton
-                  SVGclass="size-6 stroke-carbon"
-                  background={"bg-yellow hover:bg-esmerald"}
-                />
+
+                <HoverButton
+                  color="primary"
+                  label={"Add to cart"}
+                >
+                  <ShoppingCartIco
+                    className={"size-6 stroke-carbon group-hover:stroke-white "}
+                  />
+                </HoverButton>
               </div>
             </div>
           ))}
@@ -45,3 +50,5 @@ export default function BestSellers({ title, array }) {
     </section>
   );
 }
+
+export default BestSellers

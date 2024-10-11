@@ -1,7 +1,7 @@
-export default function ShieldDolarIco({ className }) {
+const ShieldDolarIco = ({ className }) => {
   return (
     <svg
-    className={`${className} m-auto`}
+      className={`${className} m-auto`}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -15,4 +15,5 @@ export default function ShieldDolarIco({ className }) {
       <path d="M19 21v1m0 -8v1" />
     </svg>
   );
-}
+};
+export default ShieldDolarIco;

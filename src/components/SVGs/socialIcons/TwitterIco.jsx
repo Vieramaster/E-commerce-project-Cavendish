@@ -1,4 +1,4 @@
-export default function TwitterIco({ className }) {
+const TwitterIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -14,4 +14,5 @@ export default function TwitterIco({ className }) {
       <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
     </svg>
   );
-}
+};
+export default TwitterIco;

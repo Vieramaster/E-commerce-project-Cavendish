@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function ShoppingCartIco({ className }) {
+const ShoppingCartIco = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -15,4 +13,5 @@ export default function ShoppingCartIco({ className }) {
       <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
     </svg>
   );
-}
+};
+export default ShoppingCartIco;

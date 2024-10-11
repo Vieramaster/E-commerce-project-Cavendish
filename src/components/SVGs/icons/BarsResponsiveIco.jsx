@@ -1,4 +1,4 @@
-export default function BarsResponsiveIco({ className }) {
+const BarsResponsiveIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -11,4 +11,5 @@ export default function BarsResponsiveIco({ className }) {
       <path d="M4 6h16M4 12h16M4 18h16" />
     </svg>
   );
-}
+};
+export default BarsResponsiveIco;

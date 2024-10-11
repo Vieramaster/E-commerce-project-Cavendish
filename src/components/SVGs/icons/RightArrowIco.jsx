@@ -1,4 +1,4 @@
-export default function RightArrowIco({ className }) {
+const RightArrowIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -17,4 +17,5 @@ export default function RightArrowIco({ className }) {
       <path d="M13 6l6 6" />
     </svg>
   );
-}
+};
+export default RightArrowIco;

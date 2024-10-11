@@ -1,4 +1,4 @@
-export default function UnderArmorLogo({className}) {
+ const UnderArmorLogo= ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 53.8 31.404">
       <g transform="translate(-1 -1)">
@@ -78,3 +78,4 @@ export default function UnderArmorLogo({className}) {
     </svg>
   );
 }
+export default UnderArmorLogo

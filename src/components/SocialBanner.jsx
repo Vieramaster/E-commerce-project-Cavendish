@@ -1,17 +1,19 @@
-import IcoFacebook from "./SVGs/socialIcons/FacebookIco";
-import IcoInstagram from "./SVGs/socialIcons/InstagramIco";
-import IcoYoutube from "./SVGs/socialIcons/YoutubeIco";
-import IcoTwitter from "./SVGs/socialIcons/TwitterIco";
+import {
+  FacebookIco,
+  InstagramIco,
+  YoutubeIco,
+  TwitterIco,
+} from "./SVGs/socialIcons";
 
 const logoList = [
-  { Component: IcoFacebook, key: "Facebook" },
-  { Component: IcoInstagram, key: "Instagram" },
-  { Component: IcoYoutube, key: "Youtube" },
-  { Component: IcoTwitter, key: "Twitter" },
+  { Component: FacebookIco, key: "Facebook" },
+  { Component: InstagramIco, key: "Instagram" },
+  { Component: YoutubeIco, key: "Youtube" },
+  { Component: TwitterIco, key: "Twitter" },
 ];
-export default function SocialBanner({ classNameUl, svgSize }) {
+export default function SocialBanner() {
   return (
-    <ul className={`${classNameUl} flex justify-center items-center gap-5`}>
+    <ul className=" w-full h-12  flex justify-center items-center gap-5 lg:h-20">
       {logoList.map(({ Component, key }) => {
         return (
           <li key={key}>
@@ -19,7 +21,11 @@ export default function SocialBanner({ classNameUl, svgSize }) {
               href="https://www.youtube.com/watch?v=QB7ACr7pUuE"
               target="_blank"
             >
-              <Component className={svgSize} />
+              <Component
+                className={
+                  "size-8 stroke-white hover:stroke-yellow duration-300 ease-in-out lg:size-10"
+                }
+              />
             </a>
           </li>
         );

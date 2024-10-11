@@ -1,9 +1,11 @@
-import AdidasLogo from "../SVGs/logos/AdidasLogo";
-import DCLogo from "../SVGs/logos/DCLogo";
-import PumaLogo from "../SVGs/logos/PumaLogo";
-import UnderArmorLogo from "../SVGs/logos/UnderArmorLogo";
-import VansLogo from "../SVGs/logos/VansLogo";
-import ConverseLogo from "../SVGs/logos/ConverseLogo";
+import {
+  AdidasLogo,
+  DCLogo,
+  PumaLogo,
+  UnderArmorLogo,
+  VansLogo,
+  ConverseLogo,
+} from "../SVGs/logos";
 
 const logos = [
   { Component: PumaLogo, key: "puma" },
@@ -14,7 +16,7 @@ const logos = [
   { Component: ConverseLogo, key: "converse" },
 ];
 
-export default function BannerLogos() {
+const BannerLogos = () => {
   return (
     <div className="h-auto w-full bg-carbon flex justify-center">
       <ul className="h-auto w-5/6 py-5 grid grid-rows-2 grid-cols-3 gap-5 lg:flex lg:flex-row lg:justify-between">
@@ -26,4 +28,6 @@ export default function BannerLogos() {
       </ul>
     </div>
   );
-}
+};
+
+export default BannerLogos;
