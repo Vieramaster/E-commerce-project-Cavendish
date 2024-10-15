@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { TruckIco } from "./SVGs/icons/TruckIco";
 import { CoinIco } from "./SVGs/icons/CoinIco";
 import { ReplaceIco } from "./SVGs/icons/ReplaceIco";

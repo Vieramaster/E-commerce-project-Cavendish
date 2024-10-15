@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { FacebookIco } from "./SVGs/socialIcons/FacebookIco";
 import { InstagramIco } from "./SVGs/socialIcons/InstagramIco";
 import { YoutubeIco } from "./SVGs/socialIcons/YoutubeIco";
