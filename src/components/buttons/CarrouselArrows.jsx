@@ -1,17 +1,16 @@
-//@ts-check
 import React from "react";
-import { LeftArrowIco, RightArrowIco } from "../SVGs/icons";
+import { LeftArrowIco } from "../SVGs/icons/LeftArrowIco";
+import { RightArrowIco } from "../SVGs/icons/RightArrowIco";
 
-
-const classArrows =/** @type {string}  */
+const classArrows =
+  /** @type {String}  */
   "stroke-white size-10 lg:size-16 hover:stroke-yellow duration-200 ease-in-out";
 
 /**
- *
- * @param {{ previous: () => void, next: () => void, isDisabled: boolean }} props
+ @param {{ previous: VoidFunction, next: VoidFunction, isDisabled: boolean }} props
  * @returns {JSX.Element}
  */
-export const BannerButtons = ({ previous, next, isDisabled }) => (
+export const CarrouselArrows = ({ previous, next, isDisabled }) => (
   <div className="absolute w-full h-20 flex justify-between items-center bottom-0">
     <button
       onClick={previous}

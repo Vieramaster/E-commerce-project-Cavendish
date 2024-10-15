@@ -1,4 +1,10 @@
-const VansLogo = ({ className }) => {
+
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const VansLogo = ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 57.1 21.8">
       <g>
@@ -27,4 +33,3 @@ const VansLogo = ({ className }) => {
     </svg>
   );
 };
-export default VansLogo;

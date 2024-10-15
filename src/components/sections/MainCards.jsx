@@ -1,13 +1,20 @@
+//@ts-check
+import React from "react";
+import { MainCard } from "../cards/MainCard";
+import { MainCardExtend } from "../cards/MainCardExtend";
 
-import { MainCard, MainCardExtend } from "../cards";
-
-const MainCards = ({
+/**
+ *
+ * @param {{mainTitle:string, imageCard1:string, imageCard2:string, card1Title:string, card2Title:string, card2Subtitle:string }} props
+ * @returns {JSX.Element}
+ */
+export const MainCards = ({
   mainTitle,
   imageCard1,
   imageCard2,
   card1Title,
   card2Title,
-  card2SubTitle,
+  card2Subtitle,
 }) => {
   return (
     <section className="w-full h-auto py-16 bg-lightGrey flex items-center justify-center">
@@ -25,12 +32,10 @@ const MainCards = ({
             title={card2Title}
             image={imageCard2}
             imageAlt={card2Title}
-            subtitle={card2SubTitle}
+            subtitle={card2Subtitle}
           />
         </div>
       </div>
     </section>
   );
 };
-
-export default MainCards;

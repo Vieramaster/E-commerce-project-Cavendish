@@ -1,4 +1,9 @@
-const CoinIco = ({ className })=> {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const CoinIco = ({ className })=> {
   return (
     <svg
       className={`${className} m-auto`}
@@ -16,4 +21,3 @@ const CoinIco = ({ className })=> {
     </svg>
   );
 }
-export default CoinIco

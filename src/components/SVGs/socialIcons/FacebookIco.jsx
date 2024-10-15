@@ -1,4 +1,9 @@
- const FacebookIco= ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const FacebookIco= ({ className }) => {
   return (
     <svg
     className={`${className} m-auto`}
@@ -12,4 +17,3 @@
     </svg>
   );
 }
-export default FacebookIco

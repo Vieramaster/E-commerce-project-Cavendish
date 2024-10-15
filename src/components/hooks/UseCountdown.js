@@ -10,7 +10,7 @@ export const currentMilliseconds = () => new Date().getTime();
 /**
  * @param {number | string | Date} targetDate
  */
- const useCountdown = (targetDate) => {
+export const useCountdown = (targetDate) => {
   const targetMilliseconds = useMemo(
     () => new Date(targetDate).getTime(),
     [targetDate]
@@ -38,5 +38,3 @@ export const currentMilliseconds = () => new Date().getTime();
     [countdown]
   );
 };
-
-export default useCountdown

@@ -1,29 +1,39 @@
-import { useState, useCallback } from "react";
-import { BarsResponsiveIco } from "../SVGs/icons";
-import { Navbar, SearchModal } from "../modals";
-import { useClickOutside } from "../hooks";
-import {
-  LogoButton,
-  ShoppingNavButton,
-  SearchButton,
-  ResponsiveButton,
-} from "../buttons";
+//@ts-check
+import { useState, useCallback, useRef } from "react";
+import React from "react";
+// Components
+import { Navbar } from "../modals/Navbar";
+import { SearchModal } from "../modals/SearchModal";
+import { useClickOutside } from "../hooks/UseClickOutside";
+// Buttons
+import { LogoButton } from "../buttons/LogoButton";
+import { ShoppingNavButton } from "../buttons/ShoppingNavButton";
+import { SearchButton } from "../buttons/SearchButton";
+import { ResponsiveButton } from "../buttons/ResponsiveButton";
+// Icons
+import { BarsResponsiveIco } from "../SVGs/icons/BarsResponsiveIco";
+import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
+import { SearchIco } from "../SVGs/icons/SearchIco";
 
-const Header = () => {
+/** @returns {JSX.Element} */
+export const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
 
-  const toggleNavbar = () => {
+  const toggleNavbar = useCallback(() => {
     setIsSearchBarOpen(false);
     setIsNavbarOpen((prevState) => !prevState);
-  };
+  }, []);
 
   const toggleSearchBar = useCallback(() => {
     setIsSearchBarOpen((prevState) => !prevState);
   }, []);
 
-  const navbarRef = useClickOutside(() => setIsNavbarOpen(false));
-  const searchModalRef = useClickOutside(() => setIsSearchBarOpen(false));
+  const navbarRef = useRef(null);
+  const searchModalRef = useRef(null);
+
+  useClickOutside(navbarRef, () => setIsNavbarOpen(false));
+  useClickOutside(searchModalRef, () => setIsSearchBarOpen(false));
 
   return (
     <>
@@ -35,19 +45,20 @@ const Header = () => {
         </div>
         <div className="w-full flex-auto flex justify-between px-3">
           <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center">
-            <ResponsiveButton parentMethod={toggleNavbar} label="Open menu">
+            <ResponsiveButton onClick={toggleNavbar} aria-label="Open menu">
               <BarsResponsiveIco className="size-full stroke-white" />
             </ResponsiveButton>
-            <SearchButton
-              parentMethod={toggleSearchBar}
-              active={isSearchBarOpen}
-            />
+            <SearchButton onClick={toggleSearchBar} active={isSearchBarOpen}>
+              <SearchIco className="size-7 stroke-white stroke-2 lg:size-10" />
+            </SearchButton>
           </div>
           <div className="h-full flex-auto grid place-content-center">
             <LogoButton />
           </div>
           <div className="h-full flex-1 flex justify-end items-center">
-            <ShoppingNavButton />
+            <ShoppingNavButton aria-label="listShop">
+              <ShoppingCartIco className="size-4 stroke-darkEsmerald stroke-2 lg:size-8" />
+            </ShoppingNavButton>
           </div>
         </div>
         <Navbar
@@ -64,5 +75,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;

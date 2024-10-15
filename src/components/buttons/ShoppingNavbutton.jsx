@@ -1,12 +1,18 @@
-import { ShoppingCartIco } from "../SVGs/icons";
-const ShoppingNavButton = () => {
+import React from "react";
+/**
+ * @param {JSX.IntrinsicElements["button"]} props
+ * @returns {JSX.Element}
+ * */
+export const ShoppingNavButton = ({ ...props }) => {
   return (
     <button
       className="flex gap-2 p-3 rounded-full items-center justify-center bg-yellow "
       aria-label="show cart"
+      {...props}
     >
-      <ShoppingCartIco className="size-4 stroke-darkEsmerald stroke-2 lg:size-8" />
+      {props.children}
     </button>
   );
 };
-export default ShoppingNavButton;
+
+

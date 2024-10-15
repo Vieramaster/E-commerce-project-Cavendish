@@ -1,4 +1,9 @@
-const HeartIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const HeartIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -14,4 +19,3 @@ const HeartIco = ({ className }) => {
     </svg>
   );
 };
-export default HeartIco;

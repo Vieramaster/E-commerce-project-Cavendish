@@ -1,17 +1,19 @@
-import {
-  FacebookIco,
-  InstagramIco,
-  YoutubeIco,
-  TwitterIco,
-} from "./SVGs/socialIcons";
+//@ts-check
+import React from "react";
+import { FacebookIco } from "./SVGs/socialIcons/FacebookIco";
+import { InstagramIco } from "./SVGs/socialIcons/InstagramIco";
+import { YoutubeIco } from "./SVGs/socialIcons/YoutubeIco";
+import { TwitterIco } from "./SVGs/socialIcons/TwitterIco";
 
-const logoList = [
+/**@type {Array<{Component:React.ComponentType<{className:string}>, key:string}>} */
+export const logoList = [
   { Component: FacebookIco, key: "Facebook" },
   { Component: InstagramIco, key: "Instagram" },
   { Component: YoutubeIco, key: "Youtube" },
   { Component: TwitterIco, key: "Twitter" },
 ];
-export default function SocialBanner() {
+/**@returns {JSX.Element} */
+export const SocialBanner = () => {
   return (
     <ul className=" w-full h-12  flex justify-center items-center gap-5 lg:h-20">
       {logoList.map(({ Component, key }) => {
@@ -32,4 +34,4 @@ export default function SocialBanner() {
       })}
     </ul>
   );
-}
+};

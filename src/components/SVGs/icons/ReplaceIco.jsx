@@ -1,4 +1,9 @@
-const ReplaceIco=({className})=> {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const ReplaceIco=({className})=> {
   return (
     <svg
     className={`${className} m-auto`}
@@ -17,4 +22,3 @@ const ReplaceIco=({className})=> {
     </svg>
   );
 }
-export default ReplaceIco

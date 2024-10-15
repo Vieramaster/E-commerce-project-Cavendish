@@ -1,4 +1,9 @@
-const YoutubeIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const YoutubeIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -15,4 +20,3 @@ const YoutubeIco = ({ className }) => {
     </svg>
   );
 };
-export default YoutubeIco;

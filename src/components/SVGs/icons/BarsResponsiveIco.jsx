@@ -1,4 +1,9 @@
-const BarsResponsiveIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const BarsResponsiveIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -12,4 +17,3 @@ const BarsResponsiveIco = ({ className }) => {
     </svg>
   );
 };
-export default BarsResponsiveIco;

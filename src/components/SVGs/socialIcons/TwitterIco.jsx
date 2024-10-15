@@ -1,4 +1,9 @@
-const TwitterIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const TwitterIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -15,4 +20,3 @@ const TwitterIco = ({ className }) => {
     </svg>
   );
 };
-export default TwitterIco;

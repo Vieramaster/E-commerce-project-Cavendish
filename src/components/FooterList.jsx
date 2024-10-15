@@ -1,5 +1,11 @@
-import { LogoButton } from "./buttons";
+//@ts-check
+import React from "react";
+import { LogoButton } from "./buttons/LogoButton";
 
+/** @typedef {Array<{path:string, label:string}>} list*/
+/** @typedef {Array<{key:string, title:string, items:list}>} listType*/
+
+/** @type { listType} */
 const menuListFooter = [
   {
     key: "HelpAndInformation",
@@ -30,7 +36,8 @@ const menuListFooter = [
   },
 ];
 
-const FooterList = () => {
+/**@returns {JSX.Element} */
+export const FooterList = () => {
   return (
     <div className="w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between">
       <div className="py-10">
@@ -56,5 +63,3 @@ const FooterList = () => {
     </div>
   );
 };
-
-export default FooterList;

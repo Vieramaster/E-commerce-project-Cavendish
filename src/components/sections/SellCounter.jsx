@@ -1,21 +1,31 @@
-import { HoverButton } from "../buttons";
-import { ShoppingCartIco } from "../SVGs/icons";
-import { CountdownCard } from "../cards/";
-import { useCountdown } from "../hooks/";
+//@ts-check
+import React from "react";
+import { useCountdown } from "../hooks/useCountdown";
 
+//components
+import { CountdownCard } from "../cards/CountdownCard";
+import { HoverButton } from "../buttons/HoverButton";
+
+//icos
+import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
+
+/**@type {string} */
 const titleClass =
   "font-semibold text-4xl text-center lg:text-start xl:text-5xl 2xl:text-6xl";
 
-const SellCounter = ({
+/**
+ * @param {{discount:string, afterPrice:string, beforePrice:string, image:string, timeDate:string, imageAlt:string}} props
+ * @returns {JSX.Element}
+ */
+export const SellCounter = ({
   discount,
   afterPrice,
   beforePrice,
   image,
-  timedate,
+  timeDate,
   imageAlt,
 }) => {
-
-  const { days, hours, minutes, seconds } = useCountdown(timedate);
+  const { days, hours, minutes, seconds } = useCountdown(timeDate);
 
   return (
     <section className="w-full h-auto py-10 bg-sellCounter flex justify-center 2xl:py-14">
@@ -30,12 +40,8 @@ const SellCounter = ({
               <span className="font-semibold line-through">{afterPrice}</span>
               {beforePrice}
             </p>
-            <HoverButton
-              label="add to cart"
-              color="secondary"
-            >
+            <HoverButton color="secondary" aria-label="add to cart">
               <ShoppingCartIco className="size-5 stroke-carbon lg:stroke-white lg:size-8" />
-
             </HoverButton>
           </div>
         </div>
@@ -48,8 +54,7 @@ const SellCounter = ({
             <CountdownCard label="Seconds" count={seconds} />
           </div>
         </div>
-      </div> 
+      </div>
     </section>
   );
 };
-export default SellCounter;

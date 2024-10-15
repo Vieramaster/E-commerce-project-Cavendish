@@ -1,4 +1,9 @@
-const ShoppingCartIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const ShoppingCartIco = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -14,4 +19,3 @@ const ShoppingCartIco = ({ className }) => {
     </svg>
   );
 };
-export default ShoppingCartIco;

@@ -1,4 +1,9 @@
- const UnderArmorLogo= ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+ export const UnderArmorLogo= ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 53.8 31.404">
       <g transform="translate(-1 -1)">
@@ -78,4 +83,3 @@
     </svg>
   );
 }
-export default UnderArmorLogo

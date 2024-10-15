@@ -1,4 +1,9 @@
-const InstagramIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const InstagramIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -16,4 +21,3 @@ const InstagramIco = ({ className }) => {
     </svg>
   );
 };
-export default InstagramIco;

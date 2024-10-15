@@ -1,19 +1,20 @@
-import {
-  Header,
-  IntroHome,
-  MainCards,
-  BannerLogos,
-  ShoppingCards,
-  SellCounter,
-  News,
-  SubscribeBanner,
-  Footer,
-} from "../components/sections";
+//@ts-check
+import React from "react";
+import { Header } from "../components/sections/Header";
+import { IntroHome } from "../components/sections/IntroHome";
+import { MainCards } from "../components/sections/MainCards";
+import { BannerLogos } from "../components/sections/BannerLogos";
+import { ShoppingCards } from "../components/sections/ShoppingCards";
+import { SellCounter } from "../components/sections/SellCounter";
+import { News } from "../components/sections/News";
+import { SubscribeBanner } from "../components/sections/SubscribeBanner";
+import { Footer } from "../components/sections/Footer";
+
 
 const bestSellers = [
   {
     name: "Green jacket",
-    img: "src/assets/images/outfit1.webp",
+    image: "src/assets/images/outfit1.webp",
     price: "$299",
     off: "-40%",
     splash: "25Deg",
@@ -21,7 +22,7 @@ const bestSellers = [
   },
   {
     name: "Green jacket",
-    img: "src/assets/images/outfit3.webp",
+    image: "src/assets/images/outfit3.webp",
     price: "$399",
     off: "-10%",
     splash: "20deg",
@@ -29,7 +30,7 @@ const bestSellers = [
   },
   {
     name: "Green jacket",
-    img: "src/assets/images/outfit3.webp",
+    image: "src/assets/images/outfit3.webp",
     price: "$399",
     off: "-10%",
     splash: "20deg",
@@ -37,7 +38,7 @@ const bestSellers = [
   },
   {
     name: "Green jacket",
-    img: "src/assets/images/outfit3.webp",
+    image: "src/assets/images/outfit3.webp",
     price: "$399",
     off: "-10%",
     splash: "20deg",
@@ -75,9 +76,8 @@ const news = [
   },
 ];
 
+/**@returns {JSX.Element} */
 export default function Home() {
-
-
   return (
     <>
       <Header />
@@ -88,17 +88,17 @@ export default function Home() {
         card1Title={"Summer Collection"}
         imageCard1={"src/assets/images/imageCard1.webp"}
         card2Title={"Men Bags Collection"}
-        card2SubTitle={"40%OFF"}
+        card2Subtitle={"40%OFF"}
         imageCard2={"src/assets/images/imageCard2.webp"}
       />
-      <ShoppingCards array={bestSellers} title={"Best Sellers"} />
+      <ShoppingCards shopArray={bestSellers} title={"Best Sellers"} />
 
       <SellCounter
         afterPrice={"$180"}
         beforePrice={"$50"}
         discount={"-70% OFF"}
         image={"src/assets/images/shoes.webp"}
-        timedate={"Oct 14, 2024 00:00:00"}
+        timeDate={"Oct 14, 2024 00:00:00"}
         imageAlt={"shoes discount"}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />

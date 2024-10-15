@@ -1,6 +1,10 @@
+//@ts-check
+import React from "react";
 import { useState, useRef } from "react";
-import { BannerButtons } from "../buttons";
+import { useChangeClassName } from "../hooks/useChangeClass";
+import { CarrouselArrows } from "../buttons/CarrouselArrows";
 
+/**@type {Array<{name:string, image:string, price:string, off:string, rotation:string}>} */
 const products = [
   {
     name: "Green jacket",
@@ -32,25 +36,12 @@ const products = [
   },
 ];
 
-const HomeCardSlider = () => {
+/** @returns {JSX.Element} */
+export const HomeCardSlider = () => {
   const [indexArray, setIndexArray] = useState(0);
   const [isDisabled, setIsDisabled] = useState(false);
 
   const frontImage = useRef(null);
-
-  const timeButton = (className) => {
-    setIsDisabled(true);
-    if (frontImage.current) {
-      frontImage.current.classList.add(className);
-    }
-
-    setTimeout(() => {
-      setIsDisabled(false);
-      if (frontImage.current) {
-        frontImage.current.classList.remove(className);
-      }
-    }, 1000);
-  };
 
   const next = () => {
     if (indexArray === products.length - 1) {
@@ -58,7 +49,7 @@ const HomeCardSlider = () => {
     } else {
       setIndexArray(indexArray + 1);
     }
-    timeButton("fadeInNext");
+    useChangeClassName(setIsDisabled, "fadeInNext", frontImage, 1000);
   };
 
   const previous = () => {
@@ -67,7 +58,7 @@ const HomeCardSlider = () => {
     } else {
       setIndexArray(indexArray - 1);
     }
-    timeButton("fadeInPrevious");
+    useChangeClassName(setIsDisabled, "fadeInPrevious", frontImage, 1000);
   };
 
   return (
@@ -82,10 +73,8 @@ const HomeCardSlider = () => {
         className=" mx-auto w-2/3 h-auto z-10 relative"
       />
       <div>
-        <BannerButtons {...{ next, previous, isDisabled }} />
+        <CarrouselArrows {...{ next, previous, isDisabled }} />
       </div>
     </div>
   );
 };
-export default HomeCardSlider;
-/*<div className="bg-darkEsmerald h-40 w-full rounded-full rotate-first" />*/

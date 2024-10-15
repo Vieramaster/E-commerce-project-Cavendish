@@ -1,4 +1,9 @@
-const ConverseLogo = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const ConverseLogo = ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 51.569 34.635">
       <g transform="translate(-20.164 -25.358)">
@@ -50,4 +55,3 @@ const ConverseLogo = ({ className }) => {
     </svg>
   );
 };
-export default ConverseLogo;

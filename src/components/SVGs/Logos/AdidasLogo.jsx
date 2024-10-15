@@ -1,4 +1,9 @@
-const AdidasLogo = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const AdidasLogo = ({ className }) => {
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 55.004 32.688">
       <g transform="translate(-1272 -525.379)">
@@ -24,4 +29,3 @@ const AdidasLogo = ({ className }) => {
     </svg>
   );
 };
-export default AdidasLogo;

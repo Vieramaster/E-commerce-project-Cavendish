@@ -1,8 +1,14 @@
-export default function CountdownCard({ count, label }) {
+import React from "react";
+
+/**
+ * @param {{ count: number, label: string }} props
+ * @returns {JSX.Element}
+ */
+export const CountdownCard = ({ count, label }) => {
   return (
     <div className="size-16 lg:size-28 xl:size-36 2xl:size-40">
       <div className="bg-semiEsmerald w-full h-5/6 flex justify-center items-center rounded-xl">
-        <p className="  text-3xl text-white lg:text-6xl 2xl:text-[5rem]">
+        <p className="text-3xl text-white lg:text-6xl 2xl:text-[5rem]">
           {count}
         </p>
       </div>
@@ -11,4 +17,4 @@ export default function CountdownCard({ count, label }) {
       </div>
     </div>
   );
-}
+};

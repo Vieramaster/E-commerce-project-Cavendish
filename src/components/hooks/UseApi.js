@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-const useApi = () => {
+/**
+ * @returns {{data: any[], error: boolean, loading: boolean}} 
+ */
+export const useApi = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -23,11 +26,8 @@ const useApi = () => {
         setLoading(false);
       }
     };
-
     fetchData();
-  }, []); //
+  }, []);
 
   return { data, error, loading };
 };
-
-export default useApi;

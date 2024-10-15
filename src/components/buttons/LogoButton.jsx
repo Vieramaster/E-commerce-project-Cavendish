@@ -1,6 +1,9 @@
+
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-const LogoButton = () => {
+/**@returns {JSX.Element} */
+export const LogoButton = () => {
   return (
     <NavLink
       to="/"
@@ -10,4 +13,3 @@ const LogoButton = () => {
     </NavLink>
   );
 };
-export default LogoButton;

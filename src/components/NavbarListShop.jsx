@@ -1,6 +1,9 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
+import { classNameObject, classNameUL } from "./modals/Navbar";
 
-const listShop = [
+/**@type {Array<{path:string, name:string}>} */
+export const listShop = [
   { path: "/NewArrivals", name: "New Arrivals" },
   { path: "/SweatersAndHoodies", name: "Sweaters & hoodies" },
   { path: "/JacketsAndCoats", name: "Jackets & coats" },
@@ -9,7 +12,8 @@ const listShop = [
   { path: "/Shoes", name: "Shoes" },
 ];
 
-const NavbarListShop = ({ classNameUL, classNameObject }) => {
+/**@returns {JSX.Element} */
+export const NavbarListShop = () => {
   return (
     <ul className={classNameUL}>
       {listShop.map((item, index) => (
@@ -27,4 +31,3 @@ const NavbarListShop = ({ classNameUL, classNameObject }) => {
     </ul>
   );
 };
-export default NavbarListShop;

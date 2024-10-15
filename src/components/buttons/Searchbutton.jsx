@@ -1,15 +1,17 @@
-import { SearchIco } from "../SVGs/icons";
+import React from "react";
 
-const SearchButton = ({ parentMethod, disabled, active }) => {
+/**
+ *  @param {JSX.IntrinsicElements["button"] & {active:boolean}} props
+ * @returns {JSX.Element}
+ * */
+export const SearchButton = ({ active, ...props }) => {
   return (
     <button
-      aria-label="search button"
-      onClick={parentMethod}
-      disabled={disabled}
       className={active ? "opacity-30 cursor-not-allowed" : ""}
+      {...props}
     >
-      <SearchIco className="size-7 stroke-white stroke-2 lg:size-10" />
+      {props.children}
     </button>
   );
 };
-export default SearchButton;
+/**      */

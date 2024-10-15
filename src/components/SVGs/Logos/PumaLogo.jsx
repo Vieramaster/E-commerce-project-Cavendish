@@ -1,4 +1,9 @@
-const PumaLogo = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const PumaLogo = ({ className }) => {
   return (
     <svg viewBox="0 0 68.6 34.2" className={`${className} m-auto`}>
       <g>
@@ -50,4 +55,4 @@ const PumaLogo = ({ className }) => {
     </svg>
   );
 };
-export default PumaLogo;
+

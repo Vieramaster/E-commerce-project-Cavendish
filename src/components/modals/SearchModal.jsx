@@ -1,7 +1,15 @@
-import { ResponsiveButton } from "../buttons";
-import { SearchIco, CloseResponsiveIco } from "../SVGs/icons";
+//@ts-check
+import React from "react";
+import { ResponsiveButton } from "../buttons/ResponsiveButton";
+import { SearchIco } from "../SVGs/icons/SearchIco";
+import { CloseResponsiveIco } from "../SVGs/icons/CloseResponsiveIco";
 
-export default function SearchModal({ toggle, componentRef, open }) {
+/**
+ * @param {{componentRef:React.RefObject<HTMLElement>, toggle:VoidFunction, open:boolean}} props
+ * @returns {JSX.Element}
+ * */
+
+export const SearchModal = ({ toggle, componentRef, open }) => {
   return (
     <div
       ref={componentRef}
@@ -23,9 +31,9 @@ export default function SearchModal({ toggle, componentRef, open }) {
           placeholder="What are you looking for?"
         />
       </fieldset>
-      <ResponsiveButton parentMethod={toggle} label={"close searchbar"}>
+      <ResponsiveButton onClick={toggle} aria-label="close searchbar">
         <CloseResponsiveIco className={"w-2/5  fill-darkGrey"} />
       </ResponsiveButton>
     </div>
   );
-}
+};

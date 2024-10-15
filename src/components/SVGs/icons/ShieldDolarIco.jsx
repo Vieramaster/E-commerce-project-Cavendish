@@ -1,4 +1,9 @@
-const ShieldDolarIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const ShieldDolarIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto`}
@@ -16,4 +21,3 @@ const ShieldDolarIco = ({ className }) => {
     </svg>
   );
 };
-export default ShieldDolarIco;

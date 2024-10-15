@@ -1,4 +1,9 @@
-const LeftArrowIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const LeftArrowIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -18,4 +23,3 @@ const LeftArrowIco = ({ className }) => {
     </svg>
   );
 };
-export default LeftArrowIco;

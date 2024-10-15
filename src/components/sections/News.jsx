@@ -1,6 +1,12 @@
-import { NewsCard } from "../cards";
+//@ts-check
+import React from "react";
+import { NewsCard } from "../cards/NewsCard";
 
-const News = ({ arrayNews, mainTitle }) => {
+/**
+ * @param {{arrayNews:Array<{id:string, image: string, imageAlt: string, date: string, title: string, introduction: string}>, mainTitle:string}} props
+ * @returns {JSX.Element}
+ */
+export const News = ({ arrayNews, mainTitle }) => {
   return (
     <section className="w-full bg-lightGrey py-16 text-carbon">
       <div className="w-full h-full lg:w-5/6 m-auto ">
@@ -16,4 +22,3 @@ const News = ({ arrayNews, mainTitle }) => {
     </section>
   );
 };
-export default News;

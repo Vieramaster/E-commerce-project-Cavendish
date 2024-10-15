@@ -1,4 +1,9 @@
-const Crocslogo= ({ className }) =>{
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const Crocslogo= ({ className }) =>{
   return (
     <svg className={`${className} m-auto`} viewBox="0 0 69 12.913">
       <g transform="translate(-26.1 -33.6)">
@@ -31,4 +36,3 @@ const Crocslogo= ({ className }) =>{
     </svg>
   );
 }
-export default Crocslogo

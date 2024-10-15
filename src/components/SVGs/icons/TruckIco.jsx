@@ -1,4 +1,9 @@
-const TruckIco = ({ className }) => {
+import React from "react";
+/**
+ * @param {{className:string}} props
+ * @returns {JSX.Element}
+ */
+export const TruckIco = ({ className }) => {
   return (
     <svg
       className={`${className} m-auto `}
@@ -17,4 +22,3 @@ const TruckIco = ({ className }) => {
     </svg>
   );
 };
-export default TruckIco;
