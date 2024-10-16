@@ -1,14 +1,11 @@
-//@ts-check
-import React from "react";
-
 /**
- * @typedef {object} ButtonClass
+ * @typedef {object} Styles
  * @property {string} primary
  * @property {string} secondary
  */
 
-/** 
- * @type {ButtonClass} 
+/**
+ * @type {Styles}
  */
 export const classHoverButton = {
   primary: "bg-yellow hover:bg-esmerald",
@@ -16,7 +13,7 @@ export const classHoverButton = {
 };
 
 /**
- * @param {{readonly color?: keyof ButtonClass} & JSX.IntrinsicElements['button']} props 
+ * @param {{readonly color?: keyof Styles} & JSX.IntrinsicElements['button']} props
  * @returns {JSX.Element}
  */
 export const HoverButton = ({ color = "primary", ...props }) => {

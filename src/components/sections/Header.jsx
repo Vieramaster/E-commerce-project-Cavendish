@@ -1,10 +1,8 @@
-//@ts-check
 import { useState, useCallback, useRef } from "react";
-import React from "react";
 // Components
 import { Navbar } from "../modals/Navbar";
 import { SearchModal } from "../modals/SearchModal";
-import { useClickOutside } from "../hooks/UseClickOutside";
+import { useClickOutside } from "../hooks/useClickOutside";
 // Buttons
 import { LogoButton } from "../buttons/LogoButton";
 import { ShoppingNavButton } from "../buttons/ShoppingNavButton";

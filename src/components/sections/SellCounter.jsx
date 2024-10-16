@@ -1,11 +1,7 @@
-//@ts-check
-import React from "react";
 import { useCountdown } from "../hooks/useCountdown";
-
 //components
 import { CountdownCard } from "../cards/CountdownCard";
 import { HoverButton } from "../buttons/HoverButton";
-
 //icos
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 

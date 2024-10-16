@@ -1,13 +1,12 @@
-import React from "react";
 import { LeftArrowIco } from "../SVGs/icons/LeftArrowIco";
 import { RightArrowIco } from "../SVGs/icons/RightArrowIco";
 
+/** @type {string} */
 const classArrows =
-  /** @type {String}  */
   "stroke-white size-10 lg:size-16 hover:stroke-yellow duration-200 ease-in-out";
 
 /**
- @param {{ previous: VoidFunction, next: VoidFunction, isDisabled: boolean }} props
+ * @param {{ previous: () => void, next: () => void, isDisabled: boolean }} props
  * @returns {JSX.Element}
  */
 export const CarrouselArrows = ({ previous, next, isDisabled }) => (

@@ -1,16 +1,23 @@
+import "./index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./routes/Home.jsx";
-import ErrorPage from "./routes/ErrorPage.jsx";
+//PAGES
+import { Home } from "./routes/Home.jsx";
+import { ErrorPage } from "./routes/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home />, errorElement: <ErrorPage /> },
 ]);
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
-);
+const rootElement = document.getElementById("root");
+
+if (rootElement) {
+  createRoot(rootElement).render(
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  );
+} else {
+  console.error("No se pudo encontrar el elemento con el id 'root'.");
+}

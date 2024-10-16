@@ -1,6 +1,3 @@
-//@ts-check
-import React from "react";
-
 //Components
 import { HoverButton } from "../buttons/HoverButton";
 import { TopButtonCard } from "../buttons/TopButtonCard";

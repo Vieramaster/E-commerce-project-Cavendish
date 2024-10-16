@@ -1,11 +1,9 @@
-//@ts-check
-import React from "react";
 import { ResponsiveButton } from "../buttons/ResponsiveButton";
 import { SearchIco } from "../SVGs/icons/SearchIco";
 import { CloseResponsiveIco } from "../SVGs/icons/CloseResponsiveIco";
 
 /**
- * @param {{componentRef:React.RefObject<HTMLElement>, toggle:VoidFunction, open:boolean}} props
+ * @param {{componentRef:React.RefObject<HTMLElement>, toggle:()=> void, open:boolean}} props
  * @returns {JSX.Element}
  * */
 

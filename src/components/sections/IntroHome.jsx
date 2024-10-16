@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { HomeCardSlider } from "../sliders/HomeCardSlider";
 import {HomeTitle} from "../HomeTitle";
 

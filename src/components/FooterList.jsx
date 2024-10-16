@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { LogoButton } from "./buttons/LogoButton";
 
 /** @typedef {Array<{path:string, label:string}>} list*/

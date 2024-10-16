@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { SocialBanner } from "../SocialBanner";
 import { ResponsiveButton } from "../buttons/ResponsiveButton";
 import { CloseResponsiveIco } from "../SVGs/icons/CloseResponsiveIco";
@@ -15,7 +13,7 @@ export const classNameUL =
   "text-white text-lg flex flex-col gap-2 mb-3 lg:text-2xl";
 
 /**
- * @param {{componentRef:React.RefObject<HTMLElement>, toggle:VoidFunction, open:boolean}} props
+ * @param {{componentRef:React.RefObject<HTMLElement>, toggle:()=>void, open:boolean}} props
  * @returns {JSX.Element}
  * */
 export const Navbar = ({ toggle, componentRef, open }) => {

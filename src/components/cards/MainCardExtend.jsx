@@ -1,4 +1,3 @@
-import React from "react";
 import { BottomButtonCard } from "../buttons/BottomButtonCard";
 
 /**
@@ -24,7 +23,7 @@ export const MainCardExtend = ({ title, subtitle, imageAlt, image }) => {
           className="w-2/3 h-auto lg:w-auto lg:h-[95%]"
         />
       </div>
-      <BottomButtonCard label={"go to page"}>Discover now</BottomButtonCard>
+      <BottomButtonCard aria-label="go to page">Discover now</BottomButtonCard>
     </div>
   );
 };

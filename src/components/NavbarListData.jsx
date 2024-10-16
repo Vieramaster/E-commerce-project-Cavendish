@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { classNameObject, classNameUL } from "./modals/Navbar";
 

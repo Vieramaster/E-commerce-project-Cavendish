@@ -1,8 +1,6 @@
-//@ts-check
-import React from "react";
-
 /**
  * @param {{ background?: boolean } & JSX.IntrinsicElements["button"]} props
+ * @returns {JSX.Element}
  */
 export const TopButtonCard = ({ background = true, ...props }) => {
   return (
@@ -16,4 +14,3 @@ export const TopButtonCard = ({ background = true, ...props }) => {
     </button>
   );
 };
-

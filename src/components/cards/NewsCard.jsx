@@ -1,4 +1,3 @@
-import React from "react";
 import { TopButtonCard } from "../buttons/TopButtonCard";
 import { RightArrowIco } from "../SVGs/icons/RightArrowIco";
 

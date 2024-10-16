@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { AdidasLogo } from "../SVGs/logos/AdidasLogo";
 import { UnderArmorLogo } from "../SVGs/logos/UnderArmorLogo";
 import { VansLogo } from "../SVGs/logos/VansLogo";

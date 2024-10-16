@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * @param {{ count: number, label: string }} props
  * @returns {JSX.Element}

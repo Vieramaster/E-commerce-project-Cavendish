@@ -1,10 +1,16 @@
 {
-    "compilerOptions": {
-      "allowJs": true,
-      "checkJs": true,
-      "strict": true,
-      "jsx": "react-jsx"
-    },
-    "include": ["src/**/*"]
-  }
-  
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"]
+}

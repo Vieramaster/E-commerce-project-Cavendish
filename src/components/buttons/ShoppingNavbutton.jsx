@@ -1,4 +1,3 @@
-import React from "react";
 /**
  * @param {JSX.IntrinsicElements["button"]} props
  * @returns {JSX.Element}

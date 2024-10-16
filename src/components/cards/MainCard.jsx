@@ -1,6 +1,4 @@
-import React from "react";
 import { BottomButtonCard } from "../buttons/BottomButtonCard";
-
 /**
  * @param {{title:string, image:string, imageAlt:string}} props
  * @returns {JSX.Element}

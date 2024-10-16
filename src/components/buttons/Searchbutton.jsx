@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  *  @param {JSX.IntrinsicElements["button"] & {active:boolean}} props
  * @returns {JSX.Element}

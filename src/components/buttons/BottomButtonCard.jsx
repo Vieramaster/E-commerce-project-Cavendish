@@ -1,13 +1,11 @@
-//@ts-check
-import React from "react";
 /**
- * @typedef {Object} ButtonStyles
+ * @typedef {Object} Styles
  * @property {string} primary
  * @property {string} secondary
  */
 
-/** 
- * @type {ButtonStyles} 
+/**
+ * @type {Styles}
  */
 export const buttonStyles = {
   primary: "bg-carbon text-white hover:bg-esmerald",
@@ -16,7 +14,7 @@ export const buttonStyles = {
 
 /**
  * Bottom buttons for cards
- * @param {{ color?: keyof ButtonStyles } & JSX.IntrinsicElements["button"]} props
+ * @param {{ color?: keyof Styles } & JSX.IntrinsicElements["button"]} props
  * @returns {JSX.Element}
  */
 export const BottomButtonCard = ({ color = "primary", ...props }) => (
@@ -27,5 +25,3 @@ export const BottomButtonCard = ({ color = "primary", ...props }) => (
     {props.children}
   </button>
 );
-
-

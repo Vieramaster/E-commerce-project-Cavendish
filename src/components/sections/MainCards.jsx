@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { MainCard } from "../cards/MainCard";
 import { MainCardExtend } from "../cards/MainCardExtend";
 

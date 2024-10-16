@@ -1,7 +1,5 @@
-//@ts-check
-import React from "react";
 import { useState, useRef } from "react";
-import { useChangeClassName } from "../hooks/useChangeClass";
+import { useChangeClassName } from "../hooks/useChangeClassName";
 import { CarrouselArrows } from "../buttons/CarrouselArrows";
 
 /**@type {Array<{name:string, image:string, price:string, off:string, rotation:string}>} */

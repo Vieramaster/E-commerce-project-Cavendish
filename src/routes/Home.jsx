@@ -1,5 +1,3 @@
-//@ts-check
-import React from "react";
 import { Header } from "../components/sections/Header";
 import { IntroHome } from "../components/sections/IntroHome";
 import { MainCards } from "../components/sections/MainCards";
@@ -77,7 +75,7 @@ const news = [
 ];
 
 /**@returns {JSX.Element} */
-export default function Home() {
+export const Home=()=> {
   return (
     <>
       <Header />

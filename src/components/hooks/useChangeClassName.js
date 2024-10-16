@@ -5,15 +5,14 @@
  * @param {number} actionTime
  */
 export const useChangeClassName = (setState, className, ref, actionTime) => {
-    setState(true);
+  setState(true);
+  if (ref.current) {
+    ref.current.classList.add(className);
+  }
+  setTimeout(() => {
+    setState(false);
     if (ref.current) {
-      ref.current.classList.add(className);
+      ref.current.classList.remove(className);
     }
-    setTimeout(() => {
-      setState(false);
-      if (ref.current) {
-        ref.current.classList.remove(className);
-      }
-    }, actionTime);
-  };
-  
+  }, actionTime);
+};
