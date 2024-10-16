@@ -1,36 +1,32 @@
 import { useState, useRef } from "react";
 import { useChangeClassName } from "../hooks/useChangeClassName";
 import { CarrouselArrows } from "../buttons/CarrouselArrows";
+import { SliderPoint } from "../SliderPoint";
 
-/**@type {Array<{name:string, image:string, price:string, off:string, rotation:string}>} */
+/**
+ * @type {Array<{name: string, image: string, discountCircle: string, off: string, rotationSplash: string}>}
+ */
 const products = [
   {
     name: "Green jacket",
     image: "src/assets/images/outfit1.webp",
-    price: "$299",
     off: "-40%",
-    rotation: "rotate-12",
+    rotationSplash: "rotate-first",
+    discountCircle: "top-24 right-20",
   },
   {
     name: "Green jacket",
     image: "src/assets/images/outfit2.webp",
-    price: "$249",
     off: "-25%",
-    rotation: "-rotate-12",
+    rotationSplash: "-rotate-first",
+    discountCircle: "top-20 right-14",
   },
   {
     name: "Green jacket",
     image: "src/assets/images/outfit3.webp",
-    price: "$399",
     off: "-10%",
-    rotation: "rotate-12",
-  },
-  {
-    name: "Green jacket",
-    image: "src/assets/images/outfit4.webp",
-    price: "$399",
-    off: "-10%",
-    rotation: "-rotate-12",
+    rotationSplash: "rotate-0",
+    discountCircle: "top-20 right-12",
   },
 ];
 
@@ -38,8 +34,7 @@ const products = [
 export const HomeCardSlider = () => {
   const [indexArray, setIndexArray] = useState(0);
   const [isDisabled, setIsDisabled] = useState(false);
-
-  const frontImage = useRef(null);
+  const boxImage = useRef(null);
 
   const next = () => {
     if (indexArray === products.length - 1) {
@@ -47,7 +42,7 @@ export const HomeCardSlider = () => {
     } else {
       setIndexArray(indexArray + 1);
     }
-    useChangeClassName(setIsDisabled, "fadeInNext", frontImage, 1000);
+    useChangeClassName(setIsDisabled, "fadeInNext", boxImage, 1000);
   };
 
   const previous = () => {
@@ -56,22 +51,34 @@ export const HomeCardSlider = () => {
     } else {
       setIndexArray(indexArray - 1);
     }
-    useChangeClassName(setIsDisabled, "fadeInPrevious", frontImage, 1000);
+    useChangeClassName(setIsDisabled, "fadeInPrevious", boxImage, 1000);
   };
 
   return (
-    <div className="  relative h-auto w-80 m-auto pt-10 lg:mb-0 lg:mr-0 lg:w-auto bg-red-300">
-      <span
-        className={`${products[indexArray].rotation} absolute  w-full h-52 translate-y-1/2 -translate-x-1/2 rounded-full bg-darkEsmerald z-0`}
-      />
-      <img
-        ref={frontImage}
-        src={products[indexArray]?.image}
-        alt={products[indexArray]?.name}
-        className=" mx-auto w-2/3 h-auto z-10 relative"
-      />
-      <div>
-        <CarrouselArrows {...{ next, previous, isDisabled }} />
+    <div className="relative w-80 h-96 m-auto pt-10 lg:mb-0 lg:mr-0 lg:w-[35rem] lg:h-full 2xl:w-[45rem]">
+      <div className="w-full h-full" ref={boxImage}>
+        <span
+          className={`${products[indexArray].rotationSplash} absolute translate-y-1/2 -translate-x-1/2 rounded-full bg-darkEsmerald w-72 h-48 lg:w-full lg:h-80`}
+        />
+        <img
+          src={products[indexArray]?.image}
+          alt={products[indexArray]?.name}
+          className="mx-auto w-auto h-full z-10 relative"
+        />
+        <div
+          className={`absolute ${products[indexArray].discountCircle} size-16 rounded-full bg-yellow z-20 grid place-content-center discountCircle`}
+        >
+          <p className="text-carbon font-semibold">
+            {products[indexArray].off} OFF
+          </p>
+        </div>
+      </div>
+
+      <CarrouselArrows {...{ next, previous, isDisabled }} />
+      <div className="absolute top-1/2 right-0 flex flex-col gap-4">
+        <SliderPoint {...{ indexArray }} index={0} />
+        <SliderPoint {...{ indexArray }} index={1} />
+        <SliderPoint {...{ indexArray }} index={2} />
       </div>
     </div>
   );

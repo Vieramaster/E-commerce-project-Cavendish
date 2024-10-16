@@ -20,7 +20,8 @@ export default {
         ubuntu: ['Ubuntu', 'sans-serif'],
       },
       rotate: {
-        first: "25deg",
+        first: "20deg",
+        second:"30deg"
       },
     },
   },
