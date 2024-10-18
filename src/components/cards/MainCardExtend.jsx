@@ -20,7 +20,7 @@ export const MainCardExtend = ({ title, subtitle, imageAlt, image }) => {
         <img
           src={image}
           alt={imageAlt}
-          className="w-2/3 h-auto lg:w-auto lg:h-[95%]"
+          className="h-[95%] w-auto"
         />
       </div>
       <BottomButtonCard aria-label="go to page">Discover now</BottomButtonCard>

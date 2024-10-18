@@ -1,5 +1,5 @@
 import { HomeCardSlider } from "../sliders/HomeCardSlider";
-import {HomeTitle} from "../HomeTitle";
+import { HomeTitle } from "../HomeTitle";
 
 /**@returns {JSX.Element} */
 export const IntroHome = () => {
@@ -10,6 +10,7 @@ export const IntroHome = () => {
           year={"2025"}
           title={"Summer Jackets"}
           subtitle={"Summer Sale / up to 50% OFF"}
+          buttonTitle="Open collection"
         />
         <HomeCardSlider />
       </div>

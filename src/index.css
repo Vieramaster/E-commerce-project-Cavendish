@@ -61,7 +61,6 @@
     background: linear-gradient(to right, #fee161 35%, #3b5e48 30%);
   }
 }
-.discountCircle {
-  transition: none; 
+.no-transition {
+  transition: none !important;
 }
-

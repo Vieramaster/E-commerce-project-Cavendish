@@ -8,7 +8,8 @@
  * @type {Styles}
  */
 export const classHoverButton = {
-  primary: "bg-yellow hover:bg-esmerald",
+  primary:
+    "bg-yellow   text-lightCarbon hover:bg-esmerald hover:text-lightGrey ",
   secondary: "bg-yellow hover:bg-carbon lg:bg-carbon lg:hover:bg-semiEsmerald",
 };
 
@@ -19,7 +20,7 @@ export const classHoverButton = {
 export const HoverButton = ({ color = "primary", ...props }) => {
   return (
     <button
-      className={`p-3 rounded-lg duration-200 ease-in-out group ${classHoverButton[color]}`}
+      className={` font-medium  p-3 rounded-lg duration-200 ease-in-out group md:text-xl lg:text-2xl 2xl:text-3xl ${classHoverButton[color]}`}
       {...props}
     />
   );
