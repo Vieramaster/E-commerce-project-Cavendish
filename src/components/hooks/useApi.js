@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 /**
- * @param {{ url: string }} props
+ * 
  * @returns {{ data: JSON[] | null, error: boolean, loading: boolean }}
  */
-export const useFetch = ({ url }) => {
+export const useApi = ( /** @type {string} */ url ) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);

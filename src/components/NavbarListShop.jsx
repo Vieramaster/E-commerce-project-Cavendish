@@ -4,10 +4,11 @@ import { classNameObject, classNameUL } from "./modals/Navbar";
 /**@type {Array<{path:string, name:string}>} */
 export const listShop = [
   { path: "/NewArrivals", name: "New Arrivals" },
-  { path: "/SweatersAndHoodies", name: "Sweaters & hoodies" },
-  { path: "/JacketsAndCoats", name: "Jackets & coats" },
-  { path: "/T-shirtsAndShirts", name: "T-shirts & shirts" },
-  { path: "/Pants", name: "Pants" },
+  { path: "/SweatersAndHoodies", name: "Sweaters & Hoodies" },
+  { path: "/JacketsAndCoats", name: "Jackets & Coats" },
+  { path: "/T-shirtsAndPolos", name: "T-shirts & Polos" },
+  { path: "/Pants&Jeans", name: "Pants & Jeans" },
+  { path: "/Shirts", name: "Shirts" },
   { path: "/Shoes", name: "Shoes" },
 ];
 

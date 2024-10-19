@@ -43,7 +43,7 @@ export const ShoppingCards = ({ title, shopArray }) => {
                   <p className="lg:text-xl  ">{item.price}</p>
                 </div>
 
-                <HoverButton aria-label="Add to cart">
+                <HoverButton toPage="/">
                   <ShoppingCartIco
                     className={"size-6 stroke-carbon group-hover:stroke-white "}
                   />

@@ -7,7 +7,7 @@ export const ErrorPage = () => {
   return (
     <>
       <Header />
-      <section className="w-full h-screen bg-lightGrey">
+      <section className="w-full h-screen bg-lightgrey">
         <div className="  w-5/6 h-full pt-24 lg:pt-28 gap-10 mx-auto text-lightCarbon flex flex-col justify-center items-center 2xl:gap-12">
           <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl ">
             Opps!, This page Not Found!
@@ -21,7 +21,7 @@ export const ErrorPage = () => {
           <h2 className="text-lg md:text-xl lg:text-2xl">
             The link might be corrupted
           </h2>
-          <HoverButton>Go to main page</HoverButton>
+          <HoverButton toPage="/">Go to main page</HoverButton>
         </div>
       </section>
       <Footer />

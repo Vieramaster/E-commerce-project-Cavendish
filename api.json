@@ -71,3 +71,48 @@
   "T-shirtsAndShirts": {},
   "Pants": {}
 }
+{
+  "idProduct": "",
+  "name": "",
+  "description": "",
+  "category": "",
+  "price": "",
+  "realPrice": "",
+  "discount": false,
+  "newArrival": false,
+  "outlet": true,
+  "colors": {
+    "color": {
+      "hex": "",
+      "imagesColor": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sizes": {
+        "s": 10,
+        "m": 3,
+        "l": 5,
+        "xl": 5,
+        "2xl": 3
+      }
+    },
+    "color": {
+      "hex": "#",
+      "imagesColor": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sizes": {
+        "s": 10,
+        "m": 3,
+        "l": 5,
+        "xl": 5,
+        "2xl": 3
+      }
+    }
+  },
+},

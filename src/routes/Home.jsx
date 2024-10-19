@@ -7,6 +7,7 @@ import { SellCounter } from "../components/sections/SellCounter";
 import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { Footer } from "../components/sections/Footer";
+import {useApi} from "../components/hooks/useApi"
 
 
 const bestSellers = [
@@ -76,6 +77,10 @@ const news = [
 
 /**@returns {JSX.Element} */
 export const Home=()=> {
+
+  const { data: dataApi } = useApi("/data/pageData.json");
+
+  console.log(dataApi);
   return (
     <>
       <Header />
