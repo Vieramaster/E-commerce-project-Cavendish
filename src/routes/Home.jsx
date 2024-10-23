@@ -9,7 +9,7 @@ import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { Footer } from "../components/sections/Footer";
 import {useApi} from "../components/hooks/useApi"
 
-
+/** 
 const bestSellers = [
   {
     name: "Green jacket",
@@ -44,7 +44,7 @@ const bestSellers = [
     key: "brown",
   },
 ];
-
+*/
 const news = [
   {
     id: "news0001",
@@ -78,9 +78,9 @@ const news = [
 /**@returns {JSX.Element} */
 export const Home=()=> {
 
-  const { data: dataApi } = useApi("/data/pageData.json");
+  const { data: dataBestSellers } = useApi("/data/BestSellers.json");
 
-  console.log(dataApi);
+  console.log(dataBestSellers);
   return (
     <>
       <Header />
@@ -94,7 +94,7 @@ export const Home=()=> {
         card2Subtitle={"40%OFF"}
         imageCard2={"src/assets/images/imageCard2.webp"}
       />
-      <ShoppingCards shopArray={bestSellers} title={"Best Sellers"} />
+      <ShoppingCards shopArray={dataBestSellers} title={"Best Sellers"} />
 
       <SellCounter
         afterPrice={"$180"}

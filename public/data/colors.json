@@ -1,0 +1,71 @@
+{
+  "colors": {
+    "white": "#ffffff",
+    "oatmeal": "#f2eee9",
+    "off white": "#e1e4ed",
+    "black": "#000000",
+    "light grey": "#cfcfd1",
+    "beige": "#cdac97",
+    "navy": "#13192c",
+    "blue": "#0f2237",
+    "ladrillo": "#9a372f",
+    "red": "#d3251d",
+    "aero": "#2d3f59",
+    "brown": "#554838",
+    "yellow": "#fae5ae",
+    "pink": "#f0d0c6",
+    "bubblegum pink": "#e58895",
+    "salmon": "#ffcca2",
+    "green army": "#7e7e55",
+    "esmerald": "#0f443f",
+    "sky blue": "#466e90",
+    "grey": "#a09ea2",
+    "kaki": "#9b7846",
+    "dark grey": "#303030"
+  }
+},
+{
+  "idProduct": "",
+  "name": " ",
+  "description": "",
+  "category": "",
+  "price": "$",
+  "realPrice": "$",
+  "discount": ,
+  "newArrival": ,
+  "outlet": ,
+  "colors": [
+    {
+      "name": "",
+      "hex": "#",
+      "imagesColor": [
+        "",
+        "",
+        ""
+      ],
+      "sizes": {
+        "s": 10,
+        "m": 3,
+        "l": 5,
+        "xl": 5,
+        "2xl": 3
+      }
+    },
+    {
+      "name": "",
+      "hex": "#",
+      "imagesColor": [
+        "",
+        "",
+        ""
+      ],
+      "sizes": {
+        "s": 10,
+        "m": 3,
+        "l": 5,
+        "xl": 5,
+        "2xl": 3
+      }
+    },
+  ]
+},

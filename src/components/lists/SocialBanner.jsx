@@ -1,7 +1,7 @@
-import { FacebookIco } from "./SVGs/socialIcons/FacebookIco";
-import { InstagramIco } from "./SVGs/socialIcons/InstagramIco";
-import { YoutubeIco } from "./SVGs/socialIcons/YoutubeIco";
-import { TwitterIco } from "./SVGs/socialIcons/TwitterIco";
+import { FacebookIco } from "../SVGs/socialIcons/FacebookIco";
+import { InstagramIco } from "../SVGs/socialIcons/InstagramIco";
+import { YoutubeIco } from "../SVGs/socialIcons/YoutubeIco";
+import { TwitterIco } from "../SVGs/socialIcons/TwitterIco";
 
 /**@type {Array<{Component:React.ComponentType<{className:string}>, key:string}>} */
 export const logoList = [
@@ -31,6 +31,5 @@ export const SocialBanner = () => {
         );
       })}
     </ul>
-
   );
 };

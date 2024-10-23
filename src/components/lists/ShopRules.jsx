@@ -1,7 +1,7 @@
-import { TruckIco } from "./SVGs/icons/TruckIco";
-import { CoinIco } from "./SVGs/icons/CoinIco";
-import { ReplaceIco } from "./SVGs/icons/ReplaceIco";
-import { ShieldDolarIco } from "./SVGs/icons/ShieldDolarIco";
+import { TruckIco } from "../SVGs/icons/TruckIco";
+import { CoinIco } from "../SVGs/icons/CoinIco";
+import { ReplaceIco } from "../SVGs/icons/ReplaceIco";
+import { ShieldDolarIco } from "../SVGs/icons/ShieldDolarIco";
 
 /** @type {Array<{name:string, Component: React.ComponentType<{className: string}>, title: string}>} */
 export const bannerIcons = [

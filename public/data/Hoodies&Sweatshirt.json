@@ -1,0 +1,510 @@
+[
+    {
+        "idProduct": "0010",
+        "name": "Shadow hoodie jacket",
+        "description": "loren12",
+        "category": "hoodie",
+        "price": "$65",
+        "realPrice": "$65",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05475033/xg/05475033_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05475033/g/05475033_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05475033/g/05475033_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "light grey",
+                "hex": "#cfcfd1",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05475056/xg/05475056_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05475056/g/05475056_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05475056/g/05475056_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0011",
+        "name": "Special Peak hoodie jacket ",
+        "description": "loren28",
+        "category": "hoodie",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05478901/xg/05478901_5.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478901/g/05478901_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478901/g/05478901_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05478903/xg/05478903_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478903/g/05478903_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478903/g/05478903_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0012",
+        "name": "Special Wave hoodie jacket ",
+        "description": "lorem25",
+        "category": "hoodie",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05478904/xg/05478904_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478904/g/05478904_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478904/g/05478904_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05478901/xg/05478901_5.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478901/g/05478901_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05478901/g/05478901_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0013",
+        "name": "Closed Sweatshirt",
+        "description": "loren12",
+        "category": "sweatshirt",
+        "price": "$40",
+        "realPrice": "$40",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047F8902/xg/047f8902_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/047F8902/g/047f8902_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/047F8902/g/047f8902_6.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047F8901/xg/047f8901-(6).webp",
+                    "https://www.kvnstatic.com/foto-prod/047F8901/g/047f8901-(1).webp",
+                    "https://www.kvnstatic.com/foto-prod/047F8901/g/047f8901-(3).webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0014",
+        "name": "Overlay hoodie",
+        "description": "loren14",
+        "category": "hoodie",
+        "price": "$35",
+        "realPrice": "$45",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047E7076/xg/047E7076_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E7076/g/047E7076_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E7076/g/047E7076_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0015",
+        "name": "Wells sweatshirt",
+        "description": "loren25",
+        "category": "sweatshirt",
+        "price": "$30",
+        "realPrice": "$35",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "esmerald",
+                "hex": "#0f443f",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047C7437/xg/047c7437_1-buzo--wells-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/047C7437/g/047c7437_2-buzo--wells-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/047C7437/g/047c7437_3-buzo--wells-kevingston-hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "brown",
+                "hex": "#554838",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047C7078/xg/047c7078_1-buzo-wells-liso-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/047C7078/g/047c7078_2-buzo-wells-liso-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/047C7078/g/047c7078_3-buzo-wells-liso-kevingston-hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0016",
+        "name": "Wolter sweatshirt",
+        "description": "loren14",
+        "category": "sweatshirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047F3731/xg/047f3731_5-buzo.webp",
+                    "https://www.kvnstatic.com/foto-prod/047F3731/g/047f3731_1-buzo-.webp",
+                    "https://www.kvnstatic.com/foto-prod/047F3731/g/047f3731_2-buzo-wolter-liso-kevingston-hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0017",
+        "name": "Rigger sweatshirt",
+        "description": "lorem25",
+        "category": "sweatshirt",
+        "price": "$40",
+        "realPrice": "$20",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "aero",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047E9017/xg/047e9017_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E9017/g/047e9017_2.webp,",
+                    "https://www.kvnstatic.com/foto-prod/047E9017/g/047e9017_4.webp"
+                ],
+                "sizes": {
+                    "s": 0,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "light grey",
+                "hex": "#cfcfd1",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047E9051/xg/047E9051_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E9051/g/047E9051_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E9051/g/047E9051_3.webp"
+                ],
+                "sizes": {
+                    "s": 0,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 1
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047E9123/xg/047e9123_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E9123/g/047e9123_4.webp",
+                    "https://www.kvnstatic.com/foto-prod/047E9123/g/047e9123_2.webp"
+                ],
+                "sizes": {
+                    "s": 0,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 2,
+                    "2xl": 0
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0018",
+        "name": "Kip hoodie jacket",
+        "description": "loren14",
+        "category": "hoodie",
+        "price": "$35",
+        "realPrice": "$35",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05394534/xg/05394534_1-Campera-Kip-II-canguro-Modern-fit-Kevingston-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/05394534/g/05394534_2-Campera-Kip-II-canguro-Modern-fit-Kevingston-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/05394534/g/05394534_3-Campera-Kip-II-canguro-Modern-fit-Kevingston-Hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05394070/xg/05394070_1-Campera-Kip-II-Modernfit-Lisas-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/05394070/g/05394070_2-Campera-Kip-II-Modernfit-Lisas-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/05394070/g/05394070_3-Campera-Kip-II-Modernfit-Lisas-Hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0019",
+        "name": "Kipper hoodie jacket",
+        "description": "loren15",
+        "category": "hoodie",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "bublegum pink",
+                "hex": "#e58895",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05470389/xg/05470389_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05470389/g/05470389_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05470389/g/05470389_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05470059/xg/05470059_1-campera-kipper-negra-lisa-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/05470059/g/05470059_2-campera-kipper-negra-lisa-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/05470059/g/05470059_3-campera-kipper-negra-lisa-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "blue",
+                "hex": "#0f2237",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05470011/xg/05470011_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05470011/g/05470011_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05470011/g/05470011_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0020",
+        "name": "Relaxed sweashirt",
+        "description": "lorem20",
+        "category": "sweatshirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/047C5901/xg/047C5901_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/047C5901/g/047C5901_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/047C5901/g/047C5901_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0021",
+        "name": "Rise Up hoodie Jacket ",
+        "description": "lorem12",
+        "category": "hoodie",
+        "price": "$55",
+        "realPrice": "$60",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/05466053/xg/05466053_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/05466053/g/05466053_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/05466053/g/05466053_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            }
+        ]
+    }
+]

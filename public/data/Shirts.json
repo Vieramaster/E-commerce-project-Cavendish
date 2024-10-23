@@ -1,0 +1,558 @@
+[
+    {
+        "idProduct": "0070",
+        "name": "Zug shirt",
+        "description": "lorem20",
+        "category": "shirt",
+        "price": "$45",
+        "realPrice": "$45",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "brown",
+                "hex": "#554838",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A5035/xg/010a5035_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A5035/g/010a5035_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A5035/g/010a5035_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A5052/xg/010a5052_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A5052/g/010a5052_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A5052/g/010a5052_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "dark grey",
+                "hex": "#303030",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A5002/xg/010a5002_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A5002/g/010a5002_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A5002/g/010a5002_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0071",
+        "name": "Havanna shirt",
+        "description": "lorem20",
+        "category": "shirt",
+        "price": "$80",
+        "realPrice": "$80",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "off white",
+                "hex": "#e1e4ed",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010B01BU/xg/010b01bu_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B01BU/g/010b01bu_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B01BU/g/010b01bu_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "brown",
+                "hex": "#554838",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010B05BU/xg/010b05bu_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B05BU/g/010b05bu_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B05BU/g/010b05bu_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010B03BU/xg/010b03bu_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B03BU/g/010b03bu_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B03BU/g/010b03bu_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0072",
+        "name": "Greek shirt ",
+        "description": "loren12",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$55",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/012B7308/xg/012b7308_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/012B7308/g/012b7308_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/012B7308/g/012b7308_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0073",
+        "name": "Pond shirt",
+        "description": "loren12",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$55",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/012C4403/xg/012c4403_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/012C4403/g/012c4403_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/012C4403/g/012c4403_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0074",
+        "name": "Jon shirt",
+        "description": "loren12",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$65",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010B18BO/xg/010b18bo_1-camisa-jon-escocesa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B18BO/g/010b18bo_3-camisa-jon-escocesa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B18BO/g/010b18bo_2-camisa-jon-escocesa-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010B17BO/xg/010b17bo_1-camisa-jon-escocesa-manga-corta-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B17BO/g/010b17bo_4-camisa-jon-escocesa-manga-corta-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/010B17BO/g/010b17bo_4-camisa-jon-escocesa-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 0,
+                    "m": 0,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0075",
+        "name": "Crow shirt",
+        "description": "loren12",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$55",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A75AT/xg/010a75at_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A75AT/g/010a75at_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A75AT/g/010a75at_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "light grey",
+                "hex": "#cfcfd1",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A79AU/xg/010a79au_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A79AU/g/010a79au_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A79AU/g/010a79au_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0076",
+        "name": "Ross shirt",
+        "description": "loren12",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$55",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A37BU/xg/010a37bu_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A37BU/g/010a37bu_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A37BU/g/010a37bu_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A36BU/xg/010a36bu_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A36BU/g/010a36bu_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A36BU/g/010a36bu_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "light grey",
+                "hex": "#cfcfd1",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A36BV/xg/010a36bv_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A36BV/g/010a36bv_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A36BV/g/010a36bv_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0077",
+        "name": "york shirt",
+        "description": "loren13",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$65",
+        "discount": true,
+        "newArrival": true,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "blue",
+                "hex": "#0f2237",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/012B39BJ/xg/012b39bj_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/012B39BJ/g/012b39bj_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/012B39BJ/g/012b39bj_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/012B35BJ/g/012B35BJ_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/012B35BJ/g/012B35BJ_4.webp",
+                    "https://www.kvnstatic.com/foto-prod/012B35BJ/g/012B35BJ_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0078",
+        "name": "Country Style shirt",
+        "description": "loren15",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$55",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A96BO/xg/010a96bo_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A96BO/g/010a96bo_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A96BO/g/010a96bo_2.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A95BO/xg/010a95bo_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A95BO/g/010a95bo_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A95BO/g/010a95bo_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0079",
+        "name": "Mercey shirt",
+        "description": "loren16",
+        "category": "shirt",
+        "price": "$55",
+        "realPrice": "$65",
+        "discount": true,
+        "newArrival": false,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A63BV/xg/010a63bv_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A63BV/g/010a63bv_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A63BV/g/010a63bv_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A62BV/xg/010a62bv_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A62BV/g/010a62bv_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A62BV/g/010a62bv_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0080",
+        "name": "Fusion shirt",
+        "description": "loren20",
+        "category": "shirt",
+        "price": "$70",
+        "realPrice": "$70",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A25BF/xg/010a25bf02_7.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A25BF/g/010a25bf02-1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A25BF/g/010a25bf02_14.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "blue",
+                "hex": "#0f2237",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010A22BF/xg/010a22bf_1-camisa-fusion-estampada-palmeras-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A22BF/g/010a22bf_3-camisa-fusion-estampada-palmeras-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/010A22BF/g/010a22bf_2-camisa-fusion-estampada-palmeras-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0081",
+        "name": " Paradise shirt",
+        "description": "loren20",
+        "category": "shirt",
+        "price": "$",
+        "realPrice": "$",
+        "discount": ,
+        "newArrival": ,
+        "outlet": ,
+        "colors": [
+          {
+            "name": "",
+            "hex": "#",
+            "imagesColor": [
+              "",
+              "",
+              ""
+            ],
+            "sizes": {
+              "s": 10,
+              "m": 3,
+              "l": 5,
+              "xl": 5,
+              "2xl": 3
+            }
+          },
+          {
+            "name": "",
+            "hex": "#",
+            "imagesColor": [
+              "",
+              "",
+              ""
+            ],
+            "sizes": {
+              "s": 10,
+              "m": 3,
+              "l": 5,
+              "xl": 5,
+              "2xl": 3
+            }
+          }
+        ]
+      }
+]

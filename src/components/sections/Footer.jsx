@@ -1,5 +1,5 @@
-import { FooterList } from "../FooterList";
-import { ShopRules } from "../ShopRules";
+import { FooterList } from "../lists/FooterList";
+import { ShopRules } from "../lists/ShopRules";
 
 /**@returns {JSX.Element} */
 export const Footer = () => {

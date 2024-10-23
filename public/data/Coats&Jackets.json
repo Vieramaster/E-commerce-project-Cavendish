@@ -1,0 +1,150 @@
+[
+    {
+        "idProduct": "0022",
+        "name": "Gabardine Jacket",
+        "description": "lorem20",
+        "category": "jacket",
+        "price": "$80",
+        "realPrice": "$80",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/050A6071/xg/050a6071_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/050A6071/g/050a6071_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/050A6071/g/050a6071_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0023",
+        "name": "Quick Jacket",
+        "description": "lorem13",
+        "category": "jacket",
+        "price": "$90",
+        "realPrice": "$90",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/052A2011/xg/052a2011_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/052A2011/g/052a2011_6.webp",
+                    "https://www.kvnstatic.com/foto-prod/052A2011/g/052a2011_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0023",
+        "name": "Bayport Windbraker jacket",
+        "description": "loren12",
+        "category": "jacket",
+        "price": "$70",
+        "realPrice": "$70",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/053A7001/xg/053a7001-campera.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A7001/g/053a7001_6.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A7001/g/053a7001_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "red",
+                "hex": "#d3251d",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/053A7040/xg/053a7040-campera-.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A7040/g/053a7040_5-rompeviento-bayport.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A7040/g/053a7040_2-rompeviento-bayport.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0024",
+        "name": "Windstorm Windbraker jacket",
+        "description": "loren12",
+        "category": "jacket",
+        "price": "$70",
+        "realPrice": "$70",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/053A8395/xg/053a8395_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A8395/g/053a8395_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A8395/g/053a8395_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/053A8010/xg/053a8010_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A8010/g/053a8010_5.webp",
+                    "https://www.kvnstatic.com/foto-prod/053A8010/g/053a8010_7.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    }
+]

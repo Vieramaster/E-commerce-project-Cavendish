@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
-import { classNameObject, classNameUL } from "./modals/Navbar";
+import { classNameObject, classNameUL } from "../modals/Navbar";
 
 /**@type {Array<{path:string, name:string}>} */
 export const listShop = [
   { path: "/NewArrivals", name: "New Arrivals" },
-  { path: "/SweatersAndHoodies", name: "Sweaters & Hoodies" },
+  { path: "/SweatshirtsAndHoodies", name: "Sweatshirts & Hoodies" },
   { path: "/JacketsAndCoats", name: "Jackets & Coats" },
   { path: "/T-shirtsAndPolos", name: "T-shirts & Polos" },
-  { path: "/Pants&Jeans", name: "Pants & Jeans" },
+  { path: "/Pants", name: "Pants & Jeans" },
+  { path: "/Sweaters", name: "Sweaters" },
   { path: "/Shirts", name: "Shirts" },
   { path: "/Shoes", name: "Shoes" },
 ];

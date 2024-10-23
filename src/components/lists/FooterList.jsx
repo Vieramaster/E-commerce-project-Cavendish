@@ -1,4 +1,4 @@
-import { LogoButton } from "./buttons/LogoButton";
+import { LogoButton } from "../buttons/LogoButton";
 
 /** @typedef {Array<{path:string, label:string}>} list*/
 /** @typedef {Array<{key:string, title:string, items:list}>} listType*/

@@ -1,8 +1,8 @@
-import { SocialBanner } from "../SocialBanner";
+import { SocialBanner } from "../lists/SocialBanner";
 import { ResponsiveButton } from "../buttons/ResponsiveButton";
 import { CloseResponsiveIco } from "../SVGs/icons/CloseResponsiveIco";
-import { NavbarListShop } from "../NavbarListShop";
-import { NavbarListData } from "../NavbarListData";
+import { NavbarListShop } from "../lists/NavbarListShop";
+import { NavbarListData } from "../lists/NavbarListData";
 
 /** @type {string} */
 export const classNameObject =

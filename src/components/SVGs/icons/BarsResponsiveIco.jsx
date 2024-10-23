@@ -1,4 +1,4 @@
-import React from "react";
+
 /**
  * @param {{className:string}} props
  * @returns {JSX.Element}

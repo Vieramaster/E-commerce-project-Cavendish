@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { classNameObject, classNameUL } from "./modals/Navbar";
+import { classNameObject, classNameUL } from "../modals/Navbar";
 
 /**@type {Array<{path:string, name:string}>} */
 export const ListEmprise = [

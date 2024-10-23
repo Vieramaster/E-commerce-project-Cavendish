@@ -1,0 +1,889 @@
+[
+    {
+        "idProduct": "025",
+        "name": "Drum II t-shirt",
+        "description": "lorem20",
+        "category": "t-shirt",
+        "price": "$25",
+        "realPrice": "$25",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032I4930/xg/032i4930_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032I4930/g/032i4930_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/032I4930/g/032i4930_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032I4921/xg/032I4921-Remera-Drum-II-Manga-Corta-Kevingston-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/032I4921/g/032I4921_2-Remera-Drum-II-Manga-Corta-Kevingston-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/032I4921/g/032I4921_4-Remera-Drum-II-Manga-Corta-Kevingston-Hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0026",
+        "name": "Rad II t-shirt ",
+        "description": "lorem14",
+        "category": "t-shirt",
+        "price": "$25",
+        "realPrice": "$25",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "pink",
+                "hex": "#f0d0c6",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K8913/xg/032k8913_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8913/g/032k8913_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8913/g/032k8913_2.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K8911/xg/032k8911_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8911/g/032k8911_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8911/g/032k8911_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K8915/xg/032k8915_1-remera-rad-ii-estampada-manga-cortas-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8915/g/032k8915_2-remera-rad-ii-estampada-manga-cortas-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8915/g/032k8915_4-remera-rad-ii-estampada-manga-cortas-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0027",
+        "name": " Vibes t-shirt",
+        "description": "loren20",
+        "category": "t-shirt",
+        "price": "$20",
+        "realPrice": "$20",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K8918/xg/032k8918_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8918/g/032k8918_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8918/g/032k8918_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K8909/xg/032k8909_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8909/g/032k8909_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K8909/g/032k8909_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0028",
+        "name": "San Martin T-shirt",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": "$35",
+        "realPrice": "$20",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032J8950/xg/032j8950_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032J8950/g/032j8950_4.webp",
+                    "https://www.kvnstatic.com/foto-prod/032J8950/g/032j8950_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 0,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0029",
+        "name": "Pocket t-shirt ",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B7550/xg/031b7550_1-remera-tom-pocket-gris-mangas-cortas-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B7550/g/031b7550_2-remera-tom-pocket-gris-mangas-cortas-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B7550/g/031b7550_4-remera-tom-pocket-gris-mangas-cortas-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B7713/xg/031b7713_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B7713/g/031b7713_5.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B7713/g/031b7713_2.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0030",
+        "name": "Radder t-shirt",
+        "description": "lorem14",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B4550/xg/031b4550_1-remera-radder-lisa-manga-corta-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4550/g/031b4550_2-remera-radder-lisa-manga-corta-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4550/g/031b4550_5-remera-radder-lisa-manga-corta-kevingston-hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B4363/xg/031b4363_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4363/g/031b4363_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4363/g/031b4363_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B4000/xg/031b4000_1-remera-radder-lisa-blanca-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4000/g/031b4000_2-remera-radder-lisa-blanca-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4000/g/031b4000_4-remera-radder-lisa-blanca-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B4305/xg/031b4305_1-remera-radder-lisa.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4305/g/031b4305_3-remera-radder-lisa.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4305/g/031b4305_4-remera-radder-lisa.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 0,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/031B4076/xg/031b4076_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4076/g/031b4076_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/031B4076/g/031b4076_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0031",
+        "name": "Rider t-shirt",
+        "description": "lorem20",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K0911/xg/032k0911_1-remera-radder-estampada--manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K0911/g/032k0911_3-remera-radder-estampada--manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K0911/g/032k0911_4-remera-radder-estampada--manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032K0904/xg/032k0904_1-remera-radder-estampada-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K0904/g/032k0904_3-remera-radder-estampada-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032K0904/g/032k0904_4-remera-radder-estampada-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "00032",
+        "name": "Motocicle t-shirt",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": false,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032J9907/xg/032j9907_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032J9907/g/032j9907_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/032J9907/g/032j9907_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0033",
+        "name": "Rugby Action t-shirt",
+        "description": "lroem18",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032L2907/xg/032l2907_2-remera-drummer-ii-blanca-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032L2907/g/032l2907_1-remera-drummer-ii-blanca-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/032L2907/g/032l2907_5-remera-drummer-ii-blanca-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0034",
+        "name": "Drummer Rubgy t-shirt",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032L2901/xg/032l2901_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032L2901/g/032l2901_5.webp",
+                    "https://www.kvnstatic.com/foto-prod/032L2901/g/032l2901_6.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/032L2902/xg/032l2902_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/032L2902/g/032l2902_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/032L2902/g/032l2902_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0036",
+        "name": "Scared t-shirt",
+        "description": "lorem23",
+        "category": "t-shirt",
+        "price": "$20",
+        "realPrice": "$30",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/04548971/xg/04548971_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/04548971/g/04548971_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/04548971/g/04548971_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0037",
+        "name": "Malvinas t-shirt",
+        "description": "lorem23",
+        "category": "t-shirt",
+        "price": "$30",
+        "realPrice": "$30",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/03144994/xg/03144994_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/03144994/g/03144994_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/03144994/g/03144994_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/03144993/xg/03144993_1-remera-malvinas-estampada-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/03144993/g/03144993_2-remera-malvinas-estampada-kevingston-hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/03144993/g/03144993_4-remera-malvinas-estampada-kevingston-hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0038",
+        "name": "Casquito polo",
+        "description": "lorem12",
+        "category": "polo",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02012H11/xg/02012h11_2-chomba-casquito-lisa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012H11/g/02012h11_3-chomba-casquito-lisa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012H11/g/02012h11_5-chomba-casquito-lisa-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02012D15/xg/02012d15_1-chomba-casquito-lisa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012D15/g/02012d15_2-chomba-casquito-lisa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012D15/g/02012d15_5-chomba-casquito-lisa-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02012E32/xg/02012E32_1-Chomba-Casquito-Classic-Fit-Manga-Corta-Lisa-Kevingston-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012E32/g/02012E32_3-Chomba-Casquito-Classic-Fit-Manga-Corta-Lisa-Kevingston-Hombre.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012E32/g/02012E32_4-Chomba-Casquito-Classic-Fit-Manga-Corta-Lisa-Kevingston-Hombre.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02012I06/xg/02012I06_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012I06/g/02012I06_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/02012I06/g/02012I06_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0039",
+        "name": "Steel polo",
+        "description": "lorem20",
+        "category": "polo",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02B25017/xg/02b25017-chomba-steel-lisa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B25017/g/02b25017_1-chomba-steel-lisa-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B25017/g/02b25017_5-chomba-steel-lisa-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "brown",
+                "hex": "#554838",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02B25078/xg/02b25078_1-chomba-steel-marron-lisa-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B25078/g/02b25078_2-chomba-steel-marron-lisa-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B25078/g/02b25078_5-chomba-steel-marron-lisa-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0040",
+        "name": "Barahona polo",
+        "description": "lorem18",
+        "category": "polo",
+        "price": "$60",
+        "realPrice": "$75",
+        "discount": true,
+        "newArrival": false,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/020K2902/xg/020k2902_1-chomba-barahona-rayada-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K2902/g/020k2902_2-chomba-barahona-rayada-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K2902/g/020k2902_2-chomba-barahona-rayada-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "blue",
+                "hex": "#0f2237",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/020K2904/xg/020k2904_1-chomba-barahona-rayada-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K2904/g/020k2904_2-chomba-barahona-rayada-manga-corta-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K2904/g/020k2904_5-chomba-barahona-rayada-manga-corta-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0041",
+        "name": "Dagger polo",
+        "description": "lorem10",
+        "category": "polo",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02B11063/xg/02b11063_1-chomba-dagger-lisa-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B11063/g/02b11063_2-chomba-dagger-lisa-kevingston-hombres.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B11063/g/02b11063_5-chomba-dagger-lisa-kevingston-hombres.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "light grey",
+                "hex": "#cfcfd1",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02B11056/xg/02B11056_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B11056/g/02B11056_4.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B11056/g/02B11056_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0042",
+        "name": "Malvinas polo",
+        "description": "lorem20",
+        "category": "polo",
+        "price": "$75",
+        "realPrice": "$75",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02B16033/xg/02b16033_-kevingston-chomba.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B16033/g/02b16033_1_kevingston.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B16033/g/02B16033_6.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/02B16010/xg/02B16010_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B16010/g/02B16010_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/02B16010/g/02B16010_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0043",
+        "name": "Edge polo",
+        "description": "lorem23",
+        "category": "polo",
+        "price": "$60",
+        "realPrice": "$60",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "pink",
+                "hex": "#f0d0c6",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/020L1088/xg/020l1088_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/020L1088/g/020l1088_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/020L1088/g/020l1088_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/020L1035/xg/020l1035_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/020L1035/g/020l1035_3.webp",
+                    "https://www.kvnstatic.com/foto-prod/020L1035/g/020l1035_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0045",
+        "name": " Cave polo",
+        "description": "lorem10",
+        "category": "polo",
+        "price": "$60",
+        "realPrice": "$75",
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/020K4901/xg/020K4901_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K4901/g/020K4901_5.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K4901/g/020K4901_4.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "salmon",
+                "hex": "#ffcca2",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/020K4902/xg/020K4902_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K4902/g/020K4902_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/020K4902/g/020K4902_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            }
+        ]
+    }
+]
