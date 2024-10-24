@@ -1,45 +1,61 @@
 [
   {
-    "idProduct": "0013",
-    "name": "Closed sweater",
-    "description": "loren12",
-    "category": "sweatshirt",
-    "price": "$40",
-    "realPrice": "$40",
+    "idProduct": "0001",
+    "name": "Britain sweater",
+    "description": "lorem24",
+    "category": "sweater",
+    "price": "$35",
+    "realPrice": "$35",
     "discount": false,
     "newArrival": true,
     "outlet": false,
     "colors": [
       {
-        "nameColor": "beige",
-        "hex": "#cdac97",
+        "name": "black",
+        "hex": "#000000",
         "imagesColor": [
-          "https://www.kvnstatic.com/foto-prod/047F8902/xg/047f8902_1.webp",
-          "https://www.kvnstatic.com/foto-prod/047F8902/g/047f8902_2.webp",
-          "https://www.kvnstatic.com/foto-prod/047F8902/g/047f8902_6.webp"
-        ],
-        "sizes": {
-          "s": 10,
-          "m": 3,
-          "l": 0,
-          "xl": 5,
-          "2xl": 3
-        }
-      },
-      {
-        "nameColor": "white",
-        "hex": "#ffffff",
-        "imagesColor": [
-          "https://www.kvnstatic.com/foto-prod/047F8901/xg/047f8901-(6).webp",
-          "https://www.kvnstatic.com/foto-prod/047F8901/g/047f8901-(1).webp",
-          "https://www.kvnstatic.com/foto-prod/047F8901/g/047f8901-(3).webp"
+          "https://www.kvnstatic.com/foto-prod/06529001/xg/06529001_1-sw.webp",
+          "https://www.kvnstatic.com/foto-prod/06529001/g/06529001_4-sw.webp",
+          "https://www.kvnstatic.com/foto-prod/06529001/g/06529001_2-sw.webp"
         ],
         "sizes": {
           "s": 10,
           "m": 3,
           "l": 5,
           "xl": 5,
-          "2xl": 0
+          "2xl": 3
+        }
+      },
+      {
+        "name": "light grey",
+        "hex": "#cfcfd1",
+        "imagesColor": [
+          "https://www.kvnstatic.com/foto-prod/06529350/xg/06529350_1-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
+          "https://www.kvnstatic.com/foto-prod/06529350/g/06529350_2-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
+          "https://www.kvnstatic.com/foto-prod/06529350/g/06529350_3-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp"
+        ],
+        "sizes": {
+          "s": 10,
+          "m": 3,
+          "l": 5,
+          "xl": 5,
+          "2xl": 3
+        }
+      },
+      {
+        "name": "beige",
+        "hex": "#cdac97",
+        "imagesColor": [
+          "https://www.kvnstatic.com/foto-prod/06529076/xg/06529076_1-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
+          "https://www.kvnstatic.com/foto-prod/06529076/g/06529076_2-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
+          "https://www.kvnstatic.com/foto-prod/06529076/g/06529076_3-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp"
+        ],
+        "sizes": {
+          "s": 10,
+          "m": 3,
+          "l": 5,
+          "xl": 5,
+          "2xl": 3
         }
       }
     ]
@@ -119,30 +135,50 @@
     ]
   },
   {
-    "idProduct": "0016",
-    "name": "Sweatshirt Wolter",
-    "description": "loren14",
-    "category": "sweatshirt",
-    "price": "$30",
-    "realPrice": "$30",
+    "idProduct": "0050",
+    "name": "Chester cargo",
+    "description": "lorem10",
+    "category": "cargo",
+    "price": "$80",
+    "realPrice": "$80",
     "discount": false,
     "newArrival": true,
     "outlet": false,
     "colors": [
       {
-        "nameColor": "green army",
-        "hex": "#7e7e55",
+        "name": "brown",
+        "hex": "#554838",
         "imagesColor": [
-          "https://www.kvnstatic.com/foto-prod/047F3731/xg/047f3731_5-buzo.webp",
-          "https://www.kvnstatic.com/foto-prod/047F3731/g/047f3731_1-buzo-.webp",
-          "https://www.kvnstatic.com/foto-prod/047F3731/g/047f3731_2-buzo-wolter-liso-kevingston-hombre.webp"
+          "https://www.kvnstatic.com/foto-prod/07094078/xg/07094078_1-babucha-cargo-chester-marron-kevingston-hombres.webp",
+          "https://www.kvnstatic.com/foto-prod/07094078/g/07094078_2-babucha-cargo-chester-marron-kevingston-hombres.webp",
+          "https://www.kvnstatic.com/foto-prod/07094078/g/07094078_5-babucha-cargo-chester-marron-kevingston-hombres.webp"
         ],
         "sizes": {
-          "s": 10,
-          "m": 3,
-          "l": 5,
-          "xl": 5,
-          "2xl": 3
+          "40": 10,
+          "42": 3,
+          "44": 5,
+          "46": 5,
+          "48": 3,
+          "52": 0,
+          "54": 2
+        }
+      },
+      {
+        "name": "black",
+        "hex": "#000000",
+        "imagesColor": [
+          "https://www.kvnstatic.com/foto-prod/07094001/xg/07094001_1.webp",
+          "https://www.kvnstatic.com/foto-prod/07094001/g/07094001_3.webp",
+          "https://www.kvnstatic.com/foto-prod/07094001/g/07094001_5.webp"
+        ],
+        "sizes": {
+          "40": 10,
+          "42": 3,
+          "44": 5,
+          "46": 5,
+          "48": 3,
+          "52": 0,
+          "54": 2
         }
       }
     ]

@@ -9,8 +9,7 @@ export const listShop = [
   { path: "/T-shirtsAndPolos", name: "T-shirts & Polos" },
   { path: "/Pants", name: "Pants & Jeans" },
   { path: "/Sweaters", name: "Sweaters" },
-  { path: "/Shirts", name: "Shirts" },
-  { path: "/Shoes", name: "Shoes" },
+  { path: "/Shirts", name: "Shirts" }
 ];
 
 /**@returns {JSX.Element} */

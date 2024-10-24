@@ -153,6 +153,7 @@
     {
         "idProduct": "0073",
         "name": "Pond shirt",
+        
         "description": "loren12",
         "category": "shirt",
         "price": "$55",
@@ -515,44 +516,44 @@
         "name": " Paradise shirt",
         "description": "loren20",
         "category": "shirt",
-        "price": "$",
-        "realPrice": "$",
-        "discount": ,
-        "newArrival": ,
-        "outlet": ,
+        "price": "$75",
+        "realPrice": "$75",
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
         "colors": [
-          {
-            "name": "",
-            "hex": "#",
-            "imagesColor": [
-              "",
-              "",
-              ""
-            ],
-            "sizes": {
-              "s": 10,
-              "m": 3,
-              "l": 5,
-              "xl": 5,
-              "2xl": 3
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010803AZ/xg/010803AZ_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010803AZ/g/010803AZ_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010803AZ/g/010803AZ_3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "red",
+                "hex": "#d3251d",
+                "imagesColor": [
+                    "https://www.kvnstatic.com/foto-prod/010802AY/xg/010802AY_1.webp",
+                    "https://www.kvnstatic.com/foto-prod/010802AY/g/010802AY_2.webp",
+                    "https://www.kvnstatic.com/foto-prod/010802AY/g/010802AY_5.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
             }
-          },
-          {
-            "name": "",
-            "hex": "#",
-            "imagesColor": [
-              "",
-              "",
-              ""
-            ],
-            "sizes": {
-              "s": 10,
-              "m": 3,
-              "l": 5,
-              "xl": 5,
-              "2xl": 3
-            }
-          }
         ]
-      }
+    }
 ]

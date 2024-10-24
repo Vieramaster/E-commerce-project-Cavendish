@@ -1,4 +1,3 @@
-import { Header } from "../components/sections/Header";
 import { IntroHome } from "../components/sections/IntroHome";
 import { MainCards } from "../components/sections/MainCards";
 import { BannerLogos } from "../components/sections/BannerLogos";
@@ -6,45 +5,8 @@ import { ShoppingCards } from "../components/sections/ShoppingCards";
 import { SellCounter } from "../components/sections/SellCounter";
 import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
-import { Footer } from "../components/sections/Footer";
-import {useApi} from "../components/hooks/useApi"
+import { useApi } from "../components/hooks/useApi";
 
-/** 
-const bestSellers = [
-  {
-    name: "Green jacket",
-    image: "src/assets/images/outfit1.webp",
-    price: "$299",
-    off: "-40%",
-    splash: "25Deg",
-    key: "green",
-  },
-  {
-    name: "Green jacket",
-    image: "src/assets/images/outfit3.webp",
-    price: "$399",
-    off: "-10%",
-    splash: "20deg",
-    key: "red",
-  },
-  {
-    name: "Green jacket",
-    image: "src/assets/images/outfit3.webp",
-    price: "$399",
-    off: "-10%",
-    splash: "20deg",
-    key: "blue",
-  },
-  {
-    name: "Green jacket",
-    image: "src/assets/images/outfit3.webp",
-    price: "$399",
-    off: "-10%",
-    splash: "20deg",
-    key: "brown",
-  },
-];
-*/
 const news = [
   {
     id: "news0001",
@@ -75,15 +37,11 @@ const news = [
   },
 ];
 
-/**@returns {JSX.Element} */
-export const Home=()=> {
-
+export const Home = () => {
   const { data: dataBestSellers } = useApi("/data/BestSellers.json");
 
-  console.log(dataBestSellers);
   return (
     <>
-      <Header />
       <IntroHome />
       <BannerLogos />
       <MainCards
@@ -106,7 +64,6 @@ export const Home=()=> {
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
       <SubscribeBanner />
-      <Footer />
     </>
   );
-}
+};

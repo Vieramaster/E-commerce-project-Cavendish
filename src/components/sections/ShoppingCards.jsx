@@ -1,10 +1,7 @@
 //Components
 import { HoverButton } from "../buttons/HoverButton";
-import { TopButtonCard } from "../buttons/TopButtonCard";
-
-//Icos
-import { HeartIco } from "../SVGs/icons/HeartIco";
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
+import { Link } from "react-router-dom";
 
 /**
  * @typedef {object[]} BestSellersColors
@@ -21,11 +18,12 @@ import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
  * @property {string} name
  * @property {boolean} discount
  * @property {BestSellersColors} colors
+ * @property {string} category
+ * @property {boolean} discount
  */
 
 /**
  * @param {{title:string, shopArray:BestSellersArray | null  }} props
- * @returns {JSX.Element}
  */
 export const ShoppingCards = ({ title, shopArray }) => {
   return (
@@ -38,26 +36,28 @@ export const ShoppingCards = ({ title, shopArray }) => {
           {shopArray?.map((item, index) => (
             <div
               key={item.idProduct}
-              className={`relative w-[20rem] h-[30rem] rounded-xl flex flex-col  items-center lg:w-[24rem] lg:h-[34rem] xl:w-[30rem] 2xl:w-1/4 2xl:h-[35rem] ${
+              className={`relative w-[20rem] h-[30rem] rounded-xl flex flex-col  items-center lg:w-[24rem] lg:h-[34rem] xl:w-[30rem] 2xl:w-1/4 2xl:h-[35rem]  ${
                 index === 0 || index === 2
                   ? "lg:justify-self-start lg:self-start"
                   : ""
               }`}
             >
-              <div className=" bg-darkGrey h-5/6 w-full rounded-2xl  relative flex flex-col justify-end items-center overflow-hidden group">
+              <Link
+                className="h-5/6 w-full rounded-2xl  relative flex flex-col justify-end items-center overflow-hidden group "
+                to={`/${item.category}/${item.name}`}
+              >
                 <img
                   src={item.colors[0].imagesColor[0]}
                   alt={item.name}
                   className=" w-full h-full object-cover group-hover:scale-105 duration-300 ease-in-out "
                 />
-                <TopButtonCard aria-label="Favorite" background={false}>
-                  <HeartIco className="size-10 stroke-esmerald stroke-1 hover:fill-esmerald" />
-                </TopButtonCard>
-              </div>
-              <div className="flex justify-between w-full h-1/6 items-center">
+              </Link>
+              <div className="flex justify-between w-full h-1/6 items-center text-carbon">
                 <div>
-                  <h3 className="text-xl 2xl:text-xl">{item.name}</h3>
-                  <p className="lg:text-xl  ">{item.price}</p>
+                  <h3 className="text-2xl font-semibold ">{item.name}</h3>
+                  <p className="text-xl lg:text-2xl font-medium  ">
+                    {item.price}
+                  </p>
                 </div>
 
                 <HoverButton toPage="/">

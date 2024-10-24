@@ -1,14 +1,8 @@
 import "./index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-//PAGES
-import { Home } from "./routes/Home.jsx";
-import { ErrorPage } from "./routes/ErrorPage.jsx";
-
-const router = createBrowserRouter([
-  { path: "/", element: <Home />, errorElement: <ErrorPage /> },
-]);
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/index";
 
 const rootElement = document.getElementById("root");
 
@@ -19,5 +13,5 @@ if (rootElement) {
     </StrictMode>
   );
 } else {
-  console.error("No se pudo encontrar el elemento con el id 'root'.");
+  console.error("press F to pay respects");
 }

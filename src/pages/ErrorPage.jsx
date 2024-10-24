@@ -1,9 +1,12 @@
+import { useRouteError } from "react-router-dom";
+import { HoverButton } from "../components/buttons/HoverButton";
 import { Header } from "../components/sections/Header";
 import { Footer } from "../components/sections/Footer";
-import { HoverButton } from "../components/buttons/HoverButton";
 
-/** @returns {JSX.Element} */
 export const ErrorPage = () => {
+  const error = useRouteError();
+  console.log(error);
+
   return (
     <>
       <Header />
