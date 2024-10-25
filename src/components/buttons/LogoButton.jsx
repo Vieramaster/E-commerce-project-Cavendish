@@ -7,7 +7,7 @@ export const LogoButton = () => {
       to="/"
       className="text-white text-2xl font-semibold tracking-wider sm:text-3xl lg:text-4xl"
     >
-      ALIGATOR
+      Cavendish
     </NavLink>
   );
 };

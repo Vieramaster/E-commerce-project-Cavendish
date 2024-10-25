@@ -1,33 +1,29 @@
 import { useRouteLoaderData } from "react-router-dom";
-
-/**
- * @typedef {object} BestSellersColor
- * @property {string} hex
- * @property {string} nameColor
- * @property {Array<string>} imagesColor
- */
-
-/**
- * @typedef {object} ObjectClothes
- * @property {string} idProduct
- * @property {string} price
- * @property {string} name
- * @property {boolean} discount
- * @property {BestSellersColor} colors
- * @property {string} category
- * @property {boolean} newArrival
- * @property {boolean} outlet
- */
+import { FilterMobile } from "../components/FilterMobile";
+import { ShopCard } from "../components/cards/ShopCard";
+import "../components/types";
 
 export const Shop = () => {
   /** @type {{ data?: ObjectClothes[] }} */
   const { data } = useRouteLoaderData("shop-loader");
-  console.log(data);
+
   return (
-    <section>
-      {data?.map((item) => {
-        return <h1 key={item.idProduct}>{item.idProduct}</h1>;
-      })}
+    <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
+      <FilterMobile />
+      <div className="h-full w-5/6 mx-auto min-w-80 grid gap-8 grid-cols-1 p-10">
+        {data?.map((item) => {
+          return (
+            <ShopCard
+              key={item.idProduct}
+              link={item.idProduct}
+              imagesArray={item.colors[0].imagesColor}
+              name={item.name}
+              price={item.price}
+              colorsArray={item.colors}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };
@@ -42,3 +38,6 @@ export const LoaderShop = async ({ params }) => {
   const data = await res.json();
   return { data };
 };
+/**
+ *
+ */

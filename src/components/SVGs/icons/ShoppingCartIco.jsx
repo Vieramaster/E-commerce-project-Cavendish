@@ -6,16 +6,19 @@ import React from "react";
 export const ShoppingCartIco = ({ className }) => {
   return (
     <svg
-      viewBox="0 0 24 24"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
       className={`${className} m-auto`}
+      role="presentation"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
       fill="none"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
-      <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M7.5 2.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25V3h-5zM6 4.5v3h1.5v-3h5v3H14v-3h4.5v12.75c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25V4.5zM6 3v-.25A2.75 2.75 0 0 1 8.75 0h2.5A2.75 2.75 0 0 1 14 2.75V3h6v14.25A2.75 2.75 0 0 1 17.25 20H2.75A2.75 2.75 0 0 1 0 17.25V3z"
+        fill="currentColor"
+      ></path>
     </svg>
   );
 };

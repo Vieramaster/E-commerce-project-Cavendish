@@ -2,28 +2,11 @@
 import { HoverButton } from "../buttons/HoverButton";
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 import { Link } from "react-router-dom";
+import "../types"
+
 
 /**
- * @typedef {object[]} BestSellersColors
- * @property {string} hex
- * @property {string} nameColor
- * @property {Array<string>} imagesColor
- *
- */
-
-/**
- * @typedef {Object[]} BestSellersArray
- * @property {string} idProduct
- * @property {string} price
- * @property {string} name
- * @property {boolean} discount
- * @property {BestSellersColors} colors
- * @property {string} category
- * @property {boolean} discount
- */
-
-/**
- * @param {{title:string, shopArray:BestSellersArray | null  }} props
+ * @param {{title:string, shopArray:ObjectClothes[] | null  }} props
  */
 export const ShoppingCards = ({ title, shopArray }) => {
   return (

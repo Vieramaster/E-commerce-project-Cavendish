@@ -15,7 +15,6 @@ export const buttonStyles = {
 /**
  * Bottom buttons for cards
  * @param {{ color?: keyof Styles } & JSX.IntrinsicElements["button"]} props
- * @returns {JSX.Element}
  */
 export const BottomButtonCard = ({ color = "primary", ...props }) => (
   <button

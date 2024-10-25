@@ -16,7 +16,6 @@ export const classHoverButton = {
 
 /**
  * @param {{ readonly color?: keyof Styles, toPage: string , children: string | JSX.Element }} props
- * @returns {JSX.Element}
  */
 export const HoverButton = ({ color = "primary", toPage, children }) => {
   return (

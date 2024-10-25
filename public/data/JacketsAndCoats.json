@@ -1,7 +1,7 @@
 [
     {
         "idProduct": "0022",
-        "name": "Gabardine Jacket",
+        "name": "Gabardine jacket",
         "description": "lorem20",
         "category": "jacket",
         "price": "$80",
@@ -30,7 +30,7 @@
     },
     {
         "idProduct": "0023",
-        "name": "Quick Jacket",
+        "name": "Quick jacket",
         "description": "lorem13",
         "category": "jacket",
         "price": "$90",
@@ -59,7 +59,7 @@
     },
     {
         "idProduct": "0023",
-        "name": "Bayport Windbraker jacket",
+        "name": "Bayport windbraker jacket",
         "description": "loren12",
         "category": "jacket",
         "price": "$70",
@@ -104,7 +104,7 @@
     },
     {
         "idProduct": "0024",
-        "name": "Windstorm Windbraker jacket",
+        "name": "Windstorm  jacket",
         "description": "loren12",
         "category": "jacket",
         "price": "$70",
