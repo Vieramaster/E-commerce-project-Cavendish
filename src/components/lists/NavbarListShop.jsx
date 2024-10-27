@@ -3,13 +3,13 @@ import { classNameObject, classNameUL } from "../modals/Navbar";
 
 /**@type {Array<{path:string, name:string}>} */
 export const listShop = [
-  { path: "/NewArrivals", name: "New Arrivals" },
-  { path: "/SweatshirtsAndHoodies", name: "Sweatshirts & Hoodies" },
-  { path: "/JacketsAndCoats", name: "Jackets & Coats" },
-  { path: "/T-shirtsAndPolos", name: "T-shirts & Polos" },
-  { path: "/Pants", name: "Pants & Jeans" },
-  { path: "/Sweaters", name: "Sweaters" },
-  { path: "/Shirts", name: "Shirts" }
+  { path: "/new_arrivals", name: "New Arrivals" },
+  { path: "/sweatshirts_and_hoodies", name: "Sweatshirts & Hoodies" },
+  { path: "/jackets_and_coats", name: "Jackets & Coats" },
+  { path: "/polos_and_t-shirts", name: "T-shirts & Polos" },
+  { path: "/pants", name: "Pants & Jeans" },
+  { path: "/sweaters", name: "Sweaters" },
+  { path: "/shirts", name: "Shirts" },
 ];
 
 /**@returns {JSX.Element} */

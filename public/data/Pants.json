@@ -4,8 +4,8 @@
         "name": "Chester cargo",
         "description": "lorem10",
         "category": "cargo",
-        "price": "$80",
-        "realPrice": "$80",
+        "price": 80,
+        "realPrice": 80,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -14,9 +14,9 @@
                 "name": "brown",
                 "hex": "#554838",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07094078/xg/07094078_1-babucha-cargo-chester-marron-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/07094078/g/07094078_2-babucha-cargo-chester-marron-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/07094078/g/07094078_5-babucha-cargo-chester-marron-kevingston-hombres.webp"
+                    "/images/pants/chester_cargo_brown1.webp",
+                    "/images/pants/chester_cargo_brown2.webp",
+                    "/images/pants/chester_cargo_brown3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -32,9 +32,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07094001/xg/07094001_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/07094001/g/07094001_3.webp",
-                    "https://www.kvnstatic.com/foto-prod/07094001/g/07094001_5.webp"
+                    "/images/pants/chester_cargo_black1.webp",
+                    "/images/pants/chester_cargo_black2.webp",
+                    "/images/pants/chester_cargo_black3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -53,8 +53,8 @@
         "name": "Fulton stretch jean",
         "description": "lorem20",
         "category": "stretch jean",
-        "price": "$80",
-        "realPrice": "$80",
+        "price": 80,
+        "realPrice": 80,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -63,9 +63,9 @@
                 "name": "green army",
                 "hex": "#7e7e55",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07088437/xg/07088437_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/07088437/g/07088437_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/07088437/g/07088437_5.webp"
+                    "/images/pants/fulton_stretch_green_army1.webp",
+                    "/images/pants/fulton_stretch_green_army2.webp",
+                    "/images/pants/fulton_stretch_green_army3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -81,9 +81,9 @@
                 "name": "navy",
                 "hex": "#13192c",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07088010/xg/07088010_1-pantalon-fulton-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/07088010/g/07088010_3-pantalon-fulton-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/07088010/g/07088010_2-pantalon-fulton-kevingston-hombre.webp"
+                    "/images/pants/fulton_stretch_navy1.webp",
+                    "/images/pants/fulton_stretch_navy2.webp",
+                    "/images/pants/fulton_stretch_navy3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -102,8 +102,8 @@
         "name": "Joiner carpenter pants",
         "description": "loren10",
         "category": "carpenter",
-        "price": "$",
-        "realPrice": "$",
+        "price": 70,
+        "realPrice": 70,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -112,9 +112,9 @@
                 "name": "oatmeal",
                 "hex": "#f2eee9",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07093071/xg/07093071_3-pantalon-joiner-gabardina-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/07093071/g/07093071_2-1-pantalon-joiner-gabardina-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/07093071/g/07093071_4-pantalon-joiner-gabardina-liso-kevingston-hombres.webp"
+                    "/images/pants/joiner_carpenter_oatmeal1.webp",
+                    "/images/pants/joiner_carpenter_oatmeal2.webp",
+                    "/images/pants/joiner_carpenter_oatmeal3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -130,9 +130,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07093001/xg/07093001_4-pantalon-joiner-gabardina-negro-kevingston-mujer.webp",
-                    "https://www.kvnstatic.com/foto-prod/07093001/g/07093001_1-pantalon-joiner-gabardina-negro-kevingston-mujer.webp",
-                    "https://www.kvnstatic.com/foto-prod/07093001/g/07093001_2-pantalon-joiner-gabardina-negro-kevingston-mujer%C2%BA.webp"
+                    "/images/pants/joiner_carpenter_black1.webp",
+                    "/images/pants/joiner_carpenter_black2.webp",
+                    "/images/pants/joiner_carpenter_black3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -151,8 +151,8 @@
         "name": "Toledo gabardine chino pants",
         "description": "lorem20",
         "category": "chino",
-        "price": "$95",
-        "realPrice": "$95",
+        "price": 95,
+        "realPrice": 95,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -161,9 +161,9 @@
                 "name": "beige",
                 "hex": "#cdac97",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07018166/xg/07018166_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/07018166/g/07018166_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/07018166/g/07018166_6.webp"
+                    "/images/pants/toledo_gabardine_beige1.webp",
+                    "/images/pants/toledo_gabardine_beige2.webp",
+                    "/images/pants/toledo_gabardine_beige3.webp"
                 ],
                 "sizes": {
                     "40": 0,
@@ -179,9 +179,9 @@
                 "name": "navy",
                 "hex": "#13192c",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07018010/xg/07018010_1-pantalon-toledo-azul-gabardina-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/07018010/g/07018010_2-pantalon-toledo-azul-gabardina-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/07018010/g/07018010_5-pantalon-toledo-azul-gabardina-liso-kevingston-hombres.webp"
+                    "/images/pants/toledo_gabardine_navy1.webp",
+                    "/images/pants/toledo_gabardine_navy2.webp",
+                    "/images/pants/toledo_gabardine_navy3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -197,11 +197,11 @@
     },
     {
         "idProduct": "0055",
-        "name": "Chester Drawstring pants ",
+        "name": "Chester drawstring pants ",
         "description": "lorem20",
-        "category": "Drawstring",
-        "price": "$55",
-        "realPrice": "$55",
+        "category": "drawstring",
+        "price": 55,
+        "realPrice": 55,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -210,9 +210,9 @@
                 "name": "kaki",
                 "hex": "#9b7846",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/071D1035/xg/071d1035_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/071D1035/g/071d1035_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/071D1035/g/071d1035_3.webp"
+                    "/images/pants/chester_drawstring1_kaki1.webp",
+                    "/images/pants/chester_drawstring2_kaki2.webp",
+                    "/images/pants/chester_drawstring3_kaki3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -228,9 +228,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/071D1001/xg/071d1001_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/071D1001/g/071d1001_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/071D1001/g/071d1001_3.webp"
+                    "/images/pants/chester_drawstring1_black1.webp",
+                    "/images/pants/chester_drawstring2_black2.webp",
+                    "/images/pants/chester_drawstring3_black3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -249,8 +249,8 @@
         "name": "Abbey stretch jean",
         "description": "lorem20",
         "category": "stretch jean",
-        "price": "$85",
-        "realPrice": "$85",
+        "price": 85,
+        "realPrice": 85,
         "discount": true,
         "newArrival": false,
         "outlet": true,
@@ -259,9 +259,9 @@
                 "name": "green army",
                 "hex": "#7e7e55",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07150534/xg/07150534_1-Pantalon-Abbey-Gabardina-Kevingston-Hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/07150534/g/07150534_2-Pantalon-Abbey-Gabardina-Kevingston-Hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/07150534/g/07150534_3-Pantalon-Abbey-Gabardina-Kevingston-Hombre.webp"
+                    "/images/pants/abbbey_stretch_green_army1.webp",
+                    "/images/pants/abbbey_stretch_green_army2.webp",
+                    "/images/pants/abbbey_stretch_green_army3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -277,9 +277,9 @@
                 "name": "kaki",
                 "hex": "#9b7846",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/07150574/xg/07150574.webp",
-                    "https://www.kvnstatic.com/foto-prod/07150574/g/07150574_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/07150574/g/07150574_4.webp"
+                    "/images/pants/abbbey_stretch_kaki1.webp",
+                    "/images/pants/abbbey_stretch_kaki2.webp",
+                    "/images/pants/abbbey_stretch_kaki3.webp"
                 ],
                 "sizes": {
                     "40": 0,
@@ -298,8 +298,8 @@
         "name": "Fulton jean",
         "description": "lorem10",
         "category": "jean",
-        "price": "$85",
-        "realPrice": "$85",
+        "price": 85,
+        "realPrice": 85,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -308,9 +308,9 @@
                 "name": "blue",
                 "hex": "#0f2237",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/0765739G/xg/0765739g_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/0765739G/g/0765739g_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/0765739G/g/0765739g_5.webp"
+                    "/images/pants/fulton_jean_blue1.webp",
+                    "/images/pants/fulton_jean_blue2.webp",
+                    "/images/pants/fulton_jean_blue3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -326,9 +326,9 @@
                 "name": "sky blue",
                 "hex": "#466e90",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/076575U9/xg/076575u9_2-jean-fulton-v-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/076575U9/g/076575u9_3-jean-fulton-v-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/076575U9/g/076575u9_4-jean-fulton-v-denim-kevingston-hombres.webp"
+                    "/images/pants/fulton_jean_sky_blue1.webp",
+                    "/images/pants/fulton_jean_sky_blue2.webp",
+                    "/images/pants/fulton_jean_sky_blue3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -347,8 +347,8 @@
         "name": "Zumo slim jean",
         "description": "lorem20",
         "category": "jean",
-        "price": "$70",
-        "realPrice": "$70",
+        "price": 70,
+        "realPrice": 70,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -357,9 +357,9 @@
                 "name": "sky blue",
                 "hex": "#466e90",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/076326A4/xg/076326a4_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/076326A4/g/076326a4_4.webp",
-                    "https://www.kvnstatic.com/foto-prod/076326A4/g/076326a4_3.webp"
+                    "/images/pants/zumo_jean_sky_blue1.webp",
+                    "/images/pants/zumo_jean_sky_blue2.webp",
+                    "/images/pants/zumo_jean_sky_blue3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -375,9 +375,9 @@
                 "name": "navy",
                 "hex": "#13192c",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/0763238U/xg/0763238u_2-jean-zumo-iv-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/0763238U/g/0763238u_1-jean-zumo-iv-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/0763238U/g/0763238u_5-jean-zumo-iv-denim-kevingston-hombres.webp"
+                    "/images/pants/zumo_jean_navy1.webp",
+                    "/images/pants/zumo_jean_navy2.webp",
+                    "/images/pants/zumo_jean_navy3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -396,8 +396,8 @@
         "name": "Copenhagen jean",
         "description": "lorem20",
         "category": "jean",
-        "price": "$80",
-        "realPrice": "$95",
+        "price": 80,
+        "realPrice": 95,
         "discount": true,
         "newArrival": false,
         "outlet": false,
@@ -406,9 +406,9 @@
                 "name": "sky blue",
                 "hex": "#466e90",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/0767239H/xg/0767239h_1-jean-copenhagen-v-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/0767239H/g/0767239h_2-jean-copenhagen-v-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/0767239H/g/0767239h_5-jean-copenhagen-v-denim-kevingston-hombres.webp"
+                    "/images/pants/copenhagen_jean_sky_blue1.webp",
+                    "/images/pants/copenhagen_jean_sky_blue2.webp",
+                    "/images/pants/copenhagen_jean_sky_blue3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -424,9 +424,9 @@
                 "name": "navy",
                 "hex": "#13192c",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/0767237X/xg/0767237x_1-jean-copenhagen-v-denim-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/0767237X/g/0767237x_3-jean-copenhagen-v-denim-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/0767237X/g/0767237x_5-jean-copenhagen-v-denim-kevingston-hombre.webp"
+                    "/images/pants/copenhagen_jean_navy1.webp",
+                    "/images/pants/copenhagen_jean_navy2.webp",
+                    "/images/pants/copenhagen_jean_navy3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -442,11 +442,11 @@
     },
     {
         "idProduct": "0060",
-        "name": "Joiner jean carpenter",
+        "name": "JoinerFix jean carpenter",
         "description": "loren20",
         "category": "carpenter",
-        "price": "$70",
-        "realPrice": "$85",
+        "price": 70,
+        "realPrice": 85,
         "discount": true,
         "newArrival": false,
         "outlet": true,
@@ -455,9 +455,9 @@
                 "name": "sky blue",
                 "hex": "#466e90",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/076H75W4/xg/076h75w4_5.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H75W4/g/076h75w4_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H75W4/g/076h75w4_1.webp"
+                    "/images/pants/joiner_carpenter_sky_blue1.webp",
+                    "/images/pants/joiner_carpenter_sky_blue2.webp",
+                    "/images/pants/joiner_carpenter_sky_blue3.webp"
                 ],
                 "sizes": {
                     "40": 0,
@@ -476,8 +476,8 @@
         "name": "Loose jean",
         "description": "lorem20",
         "category": "jean",
-        "price": "$80",
-        "realPrice": "$80",
+        "price": 80,
+        "realPrice": 80,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -486,9 +486,9 @@
                 "name": "dark grey",
                 "hex": "#303030",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/076H17H1/xg/076h17h1_1-jean-loose-iii-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H17H1/g/076h17h1_2-jean-loose-iii-denim-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H17H1/g/076h17h1_5-jean-loose-iii-denim-kevingston-hombres.webp"
+                    "/images/pants/loose_jean_dark_grey1.webp",
+                    "/images/pants/loose_jean_dark_grey2.webp",
+                    "/images/pants/loose_jean_dark_grey3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -504,9 +504,9 @@
                 "name": "sky blue",
                 "hex": "#466e90",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/076H15U8/xg/076h15u8_1-jean-loose-iii-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H15U8/g/076h15u8_2-jean-loose-iii-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H15U8/g/076h15u8_3-jean-loose-iii-kevingston-hombre.webp"
+                    "/images/pants/loose_jean_sky_blue1.webp",
+                    "/images/pants/loose_jean_sky_blue2.webp",
+                    "/images/pants/loose_jean_sky_blue3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -525,8 +525,8 @@
         "name": "Loose II jean",
         "description": "lorem20",
         "category": "jean",
-        "price": "$60",
-        "realPrice": "$60",
+        "price": 80,
+        "realPrice": 80,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -535,9 +535,9 @@
                 "name": "light grey",
                 "hex": "#cfcfd1",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/076H2814/xg/076h2814_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H2814/g/076h2814_3.webp",
-                    "https://www.kvnstatic.com/foto-prod/076H2814/g/076h2814_2.webp"
+                    "/images/pants/looseII_jean_light_grey1.webp",
+                    "/images/pants/looseII_jean_light_grey2.webp",
+                    "/images/pants/looseII_jean_light_grey3.webp"
                 ],
                 "sizes": {
                     "40": 10,
@@ -556,8 +556,8 @@
         "name": "Distracted joggins",
         "description": "lorem20",
         "category": "joggins",
-        "price": "$40",
-        "realPrice": "$40",
+        "price": 70,
+        "realPrice": 70,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -566,9 +566,9 @@
                 "name": "grey",
                 "hex": "#a09ea2",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/071C9204/xg/071c9204_1-jogging-new-distracter-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/071C9204/g/071c9204_2-jogging-new-distracter-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/071C9204/g/071c9204_3-jogging-new-distracter-liso-kevingston-hombres.webp"
+                    "/images/pants/distracted_joggins_grey1.webp",
+                    "/images/pants/distracted_joggins_grey2.webp",
+                    "/images/pants/distracted_joggins_grey3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -582,9 +582,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/071C9300/xg/071c9300_1-jogging-new-distracter-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/071C9300/g/071c9300_3-jogging-new-distracter-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/071C9300/g/071c9300_4-jogging-new-distracter-liso-kevingston-hombres.webp"
+                    "/images/pants/distracted_joggins_black1.webp",
+                    "/images/pants/distracted_joggins_black2.webp",
+                    "/images/pants/distracted_joggins_black3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -601,8 +601,8 @@
         "name": "Ravara joggins",
         "description": "loren21",
         "category": "joggins",
-        "price": "$45",
-        "realPrice": "$45",
+        "price": 45,
+        "realPrice": 45,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -611,9 +611,9 @@
                 "name": "grey",
                 "hex": "#a09ea2",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/070G6901/xg/070g6901_1-jogging-distracter-gris-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/070G6901/g/070g6901_2-jogging-distracter-gris-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/070G6901/g/070g6901_4-jogging-distracter-gris-liso-kevingston-hombres.webp"
+                    "/images/pants/ravara_joggins_grey1.webp",
+                    "/images/pants/ravara_joggins_grey2.webp",
+                    "/images/pants/ravara_joggins_grey3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -627,9 +627,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/070G6902/xg/070g6902_1-jogging-distracter-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/070G6902/g/070g6902_3-jogging-distracter-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/070G6902/g/070g6902_4-jogging-distracter-kevingston-hombre.webp"
+                    "/images/pants/ravara_joggins_black1.webp",
+                    "/images/pants/ravara_joggins_black2.webp",
+                    "/images/pants/ravara_joggins_black3.webp"
                 ],
                 "sizes": {
                     "s": 10,

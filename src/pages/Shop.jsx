@@ -1,5 +1,5 @@
 import { useRouteLoaderData } from "react-router-dom";
-import { FilterMobile } from "../components/FilterMobile";
+import { FilterMobile } from "../components/mobile/FilterMobile";
 import { ShopCard } from "../components/cards/ShopCard";
 import "../components/types";
 
@@ -15,11 +15,7 @@ export const Shop = () => {
           return (
             <ShopCard
               key={item.idProduct}
-              link={item.idProduct}
-              imagesArray={item.colors[0].imagesColor}
-              name={item.name}
-              price={item.price}
-              colorsArray={item.colors}
+              arrayObject={item}
             />
           );
         })}

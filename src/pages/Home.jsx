@@ -6,6 +6,7 @@ import { SellCounter } from "../components/sections/SellCounter";
 import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { useApi } from "../components/hooks/useApi";
+import "../components/types";
 
 const news = [
   {
@@ -38,7 +39,7 @@ const news = [
 ];
 
 export const Home = () => {
-  const { data: dataBestSellers } = useApi("/data/BestSellers.json");
+  const { data: newArrivals } = useApi("/data/best_sellers.json");
 
   return (
     <>
@@ -52,7 +53,7 @@ export const Home = () => {
         card2Subtitle={"40%OFF"}
         imageCard2={"src/assets/images/imageCard2.webp"}
       />
-      <ShoppingCards shopArray={dataBestSellers} title={"Best Sellers"} />
+      <ShoppingCards shopArray={newArrivals} title={"Best Sellers"} />
 
       <SellCounter
         afterPrice={"$180"}

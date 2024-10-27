@@ -1,0 +1,889 @@
+[
+    {
+        "idProduct": "025",
+        "name": "Drum II t-shirt",
+        "description": "lorem20",
+        "category": "t-shirt",
+        "price": 25,
+        "realPrice": 25,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/drum_t-shirt_white1.webp",
+                    "/images/polo_and_t-shirts/drum_t-shirt_white2.webp",
+                    "/images/polo_and_t-shirts/drum_t-shirt_white3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/drum_t-shirt_black1.webp",
+                    "/images/polo_and_t-shirts/drum_t-shirt_black2.webp",
+                    "/images/polo_and_t-shirts/drum_t-shirt_black3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0026",
+        "name": "Rad II t-shirt ",
+        "description": "lorem14",
+        "category": "t-shirt",
+        "price": 25,
+        "realPrice": 25,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "pink",
+                "hex": "#f0d0c6",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/rad_t-shirt_pink1.webp",
+                    "/images/polo_and_t-shirts/rad_t-shirt_pink2.webp",
+                    "/images/polo_and_t-shirts/rad_t-shirt_pink3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/rad_t-shirt_aero1.webp",
+                    "/images/polo_and_t-shirts/rad_t-shirt_aero2.webp",
+                    "/images/polo_and_t-shirts/rad_t-shirt_aero3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/rad_t-shirt_grey1.webp",
+                    "/images/polo_and_t-shirts/rad_t-shirt_grey2.webp",
+                    "/images/polo_and_t-shirts/rad_t-shirt_grey3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0027",
+        "name": " Vibes t-shirt",
+        "description": "loren20",
+        "category": "t-shirt",
+        "price": 20,
+        "realPrice": 20,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/vibes_t-shirt_white1.webp",
+                    "/images/polo_and_t-shirts/vibes_t-shirt_white2.webp",
+                    "/images/polo_and_t-shirts/vibes_t-shirt_white3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/vibes_t-shirt_aero1.webp",
+                    "/images/polo_and_t-shirts/vibes_t-shirt_aero2.webp",
+                    "/images/polo_and_t-shirts/vibes_t-shirt_aero3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0028",
+        "name": "San Martin T-shirt",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 35,
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/san_martin_t-shirt1.webp",
+                    "/images/polo_and_t-shirts/san_martin_t-shirt2.webp",
+                    "/images/polo_and_t-shirts/san_martin_t-shirt3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 0,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0029",
+        "name": "Pocket t-shirt ",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 30,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/pocket_t-shirt_grey1.webp",
+                    "/images/polo_and_t-shirts/pocket_t-shirt_grey2.webp",
+                    "/images/polo_and_t-shirts/pocket_t-shirt_grey3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue1.webp",
+                    "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue2.webp",
+                    "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0030",
+        "name": "Radder t-shirt",
+        "description": "lorem14",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 30,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "grey",
+                "hex": "#a09ea2",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/radder_t-shirt_grey1.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_grey2.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_grey3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/radder_t-shirt_yellow1.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_yellow2.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_yellow3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/radder_t-shirt_white1.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_white2.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_white3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "black",
+                "hex": "#000000",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/radder_t-shirt_black1.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_black2.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_black3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 0,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/radder_t-shirt_beige1.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_beige2.webp",
+                    "/images/polo_and_t-shirts/radder_t-shirt_beige3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0031",
+        "name": "Rider t-shirt",
+        "description": "lorem20",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 35,
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/rider_t-shirt_oatmeal1.webp",
+                    "/images/polo_and_t-shirts/rider_t-shirt_oatmeal2.webp",
+                    "/images/polo_and_t-shirts/rider_t-shirt_oatmeal3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/rider_t-shirt_white1.webp",
+                    "/images/polo_and_t-shirts/rider_t-shirt_white2.webp",
+                    "/images/polo_and_t-shirts/rider_t-shirt_white3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "00032",
+        "name": "Motocycle t-shirt",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 30,
+        "discount": false,
+        "newArrival": false,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal1.webp",
+                    "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal2.webp",
+                    "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0033",
+        "name": "Rugby Action t-shirt",
+        "description": "lroem18",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 30,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "white",
+                "hex": "#ffffff",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/rubgy_action_t-shirt_white1.webp",
+                    "/images/polo_and_t-shirts/rubgy_action_t-shirt_white2.webp",
+                    "/images/polo_and_t-shirts/rubgy_action_t-shirt_white3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0034",
+        "name": "Drummer Rubgy t-shirt",
+        "description": "lorem10",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 30,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/drummer_rugby_t-shirt_biege1.webp",
+                    "/images/polo_and_t-shirts/drummer_rugby_t-shirt_biege2.webp",
+                    "/images/polo_and_t-shirts/drummer_rugby_t-shirt_biege3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "oatmeal",
+                "hex": "#f2eee9",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal1.webp",
+                    "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal2.webp",
+                    "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0036",
+        "name": "Scared t-shirt",
+        "description": "lorem23",
+        "category": "t-shirt",
+        "price": 20,
+        "realPrice": 30,
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/scared_t-shirt_navy1.webp",
+                    "/images/polo_and_t-shirts/scared_t-shirt_navy2.webp",
+                    "/images/polo_and_t-shirts/scared_t-shirt_navy3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0037",
+        "name": "Malvinas t-shirt",
+        "description": "lorem23",
+        "category": "t-shirt",
+        "price": 30,
+        "realPrice": 30,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/malvinas_t-shirt_navy1.webp",
+                    "/images/polo_and_t-shirts/malvinas_t-shirt_navy2.webp",
+                    "/images/polo_and_t-shirts/malvinas_t-shirt_navy3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/malvinas_t-shirt_green_army1.webp",
+                    "/images/polo_and_t-shirts/malvinas_t-shirt_green_army2.webp",
+                    "/images/polo_and_t-shirts/malvinas_t-shirt_green_army3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0038",
+        "name": "Casquito polo",
+        "description": "lorem12",
+        "category": "polo",
+        "price": 60,
+        "realPrice": 60,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "beige",
+                "hex": "#cdac97",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/casquito_polo_beige1.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_beige2.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_beige3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/casquito_polo_sky_blue1.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_sky_blue2.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_sky_blue3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/casquito_polo_green_army1.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_green_army2.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_green_army3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 0
+                }
+            },
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/casquito_polo_yellow1.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_yellow2.webp",
+                    "/images/polo_and_t-shirts/casquito_polo_yellow3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0039",
+        "name": "Steel polo",
+        "description": "lorem20",
+        "category": "polo",
+        "price": 60,
+        "realPrice": 60,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "aero",
+                "hex": "#2d3f59",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/steel_polo_aero1.webp",
+                    "/images/polo_and_t-shirts/steel_polo_aero2.webp",
+                    "/images/polo_and_t-shirts/steel_polo_aero3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "brown",
+                "hex": "#554838",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/steel_polo_brown1.webp",
+                    "/images/polo_and_t-shirts/steel_polo_brown2.webp",
+                    "/images/polo_and_t-shirts/steel_polo_brown3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0040",
+        "name": "Barahona polo",
+        "description": "lorem18",
+        "category": "polo",
+        "price": 60,
+        "realPrice": 75,
+        "discount": true,
+        "newArrival": false,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "sky blue",
+                "hex": "#466e90",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/barahona_polo_sky_blue1.webp",
+                    "/images/polo_and_t-shirts/barahona_polo_sky_blue2.webp",
+                    "/images/polo_and_t-shirts/barahona_polo_sky_blue3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "blue",
+                "hex": "#0f2237",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/barahona_polo_blue1.webp",
+                    "/images/polo_and_t-shirts/barahona_polo_blue2.webp",
+                    "/images/polo_and_t-shirts/barahona_polo_blue3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0041",
+        "name": "Dagger polo",
+        "description": "lorem10",
+        "category": "polo",
+        "price": 60,
+        "realPrice": 60,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/dagger_polo_yellow1.webp",
+                    "/images/polo_and_t-shirts/dagger_polo_yellow2.webp",
+                    "/images/polo_and_t-shirts/dagger_polo_yellow3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "light grey",
+                "hex": "#cfcfd1",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/dagger_polo_light_grey1.webp",
+                    "/images/polo_and_t-shirts/dagger_polo_light_grey2.webp",
+                    "/images/polo_and_t-shirts/dagger_polo_light_grey3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0042",
+        "name": "Malvinas polo",
+        "description": "lorem20",
+        "category": "polo",
+        "price": 75,
+        "realPrice": 75,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/malvinas_polo_green_army1.webp",
+                    "/images/polo_and_t-shirts/malvinas_polo_green_army2.webp",
+                    "/images/polo_and_t-shirts/malvinas_polo_green_army3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "navy",
+                "hex": "#13192c",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/malvinas_polo_navy1.webp",
+                    "/images/polo_and_t-shirts/malvinas_polo_navy2.webp",
+                    "/images/polo_and_t-shirts/malvinas_polo_navy3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0043",
+        "name": "Edge polo",
+        "description": "lorem23",
+        "category": "polo",
+        "price": 60,
+        "realPrice": 60,
+        "discount": false,
+        "newArrival": true,
+        "outlet": false,
+        "colors": [
+            {
+                "name": "pink",
+                "hex": "#f0d0c6",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/edge_polo_pink1.webp",
+                    "/images/polo_and_t-shirts/edge_polo_pink2.webp",
+                    "/images/polo_and_t-shirts/edge_polo_pink3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "green army",
+                "hex": "#7e7e55",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/edge_polo_green_army1.webp",
+                    "/images/polo_and_t-shirts/edge_polo_green_army2.webp",
+                    "/images/polo_and_t-shirts/edge_polo_green_army3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 5,
+                    "xl": 5,
+                    "2xl": 3
+                }
+            }
+        ]
+    },
+    {
+        "idProduct": "0045",
+        "name": " Cave polo",
+        "description": "lorem10",
+        "category": "polo",
+        "price": 60,
+        "realPrice": 75,
+        "discount": true,
+        "newArrival": false,
+        "outlet": true,
+        "colors": [
+            {
+                "name": "yellow",
+                "hex": "#fae5ae",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/cave_polo_yellow1.webp",
+                    "/images/polo_and_t-shirts/cave_polo_yellow2.webp",
+                    "/images/polo_and_t-shirts/cave_polo_yellow3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 3
+                }
+            },
+            {
+                "name": "salmon",
+                "hex": "#ffcca2",
+                "imagesColor": [
+                    "/images/polo_and_t-shirts/cave_polo_salmon1.webp",
+                    "/images/polo_and_t-shirts/cave_polo_salmon2.webp",
+                    "/images/polo_and_t-shirts/cave_polo_salmon3.webp"
+                ],
+                "sizes": {
+                    "s": 10,
+                    "m": 3,
+                    "l": 0,
+                    "xl": 0,
+                    "2xl": 0
+                }
+            }
+        ]
+    }
+]

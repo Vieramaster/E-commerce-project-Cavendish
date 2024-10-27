@@ -4,8 +4,8 @@
         "name": "Britain sweater",
         "description": "lorem24",
         "category": "sweater",
-        "price": "$35",
-        "realPrice": "$35",
+        "price": 35,
+        "realPrice": 35,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -14,9 +14,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06529001/xg/06529001_1-sw.webp",
-                    "https://www.kvnstatic.com/foto-prod/06529001/g/06529001_4-sw.webp",
-                    "https://www.kvnstatic.com/foto-prod/06529001/g/06529001_2-sw.webp"
+                    "/images/sweaters/britain_sweater_black1.webp",
+                    "/images/sweaters/britain_sweater_black2.webp",
+                    "/images/sweaters/britain_sweater_black3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -30,9 +30,9 @@
                 "name": "light grey",
                 "hex": "#cfcfd1",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06529350/xg/06529350_1-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/06529350/g/06529350_2-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/06529350/g/06529350_3-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp"
+                    "/images/sweaters/britain_sweater_light_grey1.webp",
+                    "/images/sweaters/britain_sweater_light_grey2.webp",
+                    "/images/sweaters/britain_sweater_light_grey3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -46,9 +46,9 @@
                 "name": "beige",
                 "hex": "#cdac97",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06529076/xg/06529076_1-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/06529076/g/06529076_2-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/06529076/g/06529076_3-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp"
+                    "/images/sweaters/britain_sweater_beige1.webp",
+                    "/images/sweaters/britain_sweater_beige2.webp",
+                    "/images/sweaters/britain_sweater_beige3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -65,8 +65,8 @@
         "name": "Dass sweater",
         "description": "lorem20",
         "category": "sweater",
-        "price": "$25",
-        "realPrice": "$40",
+        "price": 25,
+        "realPrice": 40,
         "discount": true,
         "newArrival": false,
         "outlet": true,
@@ -75,9 +75,9 @@
                 "name": "beige",
                 "hex": "#cdac97",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06535073/xg/06535073_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06535073/xg/06535073_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06535073/xg/06535073_3.webp"
+                    "/images/sweaters/dass_sweater_beige1.webp",
+                    "/images/sweaters/dass_sweater_beige2.webp",
+                    "/images/sweaters/dass_sweater_beige3.webp"
                 ],
                 "sizes": {
                     "s": 0,
@@ -94,8 +94,8 @@
         "name": "Neptune sweater V",
         "description": "lorem18",
         "category": "sweater",
-        "price": "$45",
-        "realPrice": "$45",
+        "price": 45,
+        "realPrice": 45,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -104,9 +104,9 @@
                 "name": "brick",
                 "hex": "#9a372f",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06534092/xg/06534092_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06534092/xg/06534092_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06534092/xg/06534092_3.webp"
+                    "/images/sweaters/neptune_sweater_v_brick1.webp",
+                    "/images/sweaters/neptune_sweater_v_brick2.webp",
+                    "/images/sweaters/neptune_sweater_v_brick3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -120,9 +120,9 @@
                 "name": "aero",
                 "hex": "#2d3f59",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06534312/06534312_1-sweater-urano-special-esc-v-kevingston-hombre.jpg",
-                    "https://www.kvnstatic.com/foto-prod/06534312/g/06534312_2-sweater-urano-special-esc-v-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06534312/g/06534312_3-sweater-urano-special-esc-v-kevingston-hombre.webp"
+                    "/images/sweaters/neptune_sweater_v_aero1.webp",
+                    "/images/sweaters/neptune_sweater_v_aero2.webp",
+                    "/images/sweaters/neptune_sweater_v_aero3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -139,8 +139,8 @@
         "name": "Winston sweater jacket",
         "description": "lorem25",
         "category": "sweater jacket",
-        "price": "36",
-        "realPrice": "49",
+        "price": 35,
+        "realPrice": 50,
         "discount": true,
         "newArrival": false,
         "outlet": true,
@@ -149,9 +149,9 @@
                 "name": "aero",
                 "hex": "#2d3f59",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06518017/xg/06518017_1-campera-floyd-lisa-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06518017/g/06518017_2-campera-floyd-lisa-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06518017/g/06518017_3-campera-floyd-lisa-kevingston-hombre.webp"
+                    "/images/sweaters/winston_sweater_jacket_aero1.webp",
+                    "/images/sweaters/winston_sweater_jacket_aero2.webp",
+                    "/images/sweaters/winston_sweater_jacket_aero3.webp"
                 ],
                 "sizes": {
                     "s": 1,
@@ -165,9 +165,9 @@
                 "name": "brown",
                 "hex": "#554838",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06518033/xg/06518033_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06518033/g/06518033_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06518033/g/06518033_3.webp"
+                    "/images/sweaters/winston_sweater_jacket_brown1.webp",
+                    "/images/sweaters/winston_sweater_jacket_brown2.webp",
+                    "/images/sweaters/winston_sweater_jacket_brown3.webp"
                 ],
                 "sizes": {
                     "s": 0,
@@ -181,9 +181,9 @@
                 "name": "black",
                 "hex": "#000000",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06518001/xg/06518001_1-campera-floyd-lisa-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06518001/g/06518001_2-campera-floyd-lisa-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06518001/g/06518001_4-campera-floyd-lisa-kevingston-hombre.webp"
+                    "/images/sweaters/winston_sweater_jacket_black1.webp",
+                    "/images/sweaters/winston_sweater_jacket_black2.webp",
+                    "/images/sweaters/winston_sweater_jacket_black3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -200,8 +200,8 @@
         "name": "Mercury sweater",
         "description": "lorem19",
         "category": "sweater",
-        "price": "$60",
-        "realPrice": "$60",
+        "price": 60,
+        "realPrice": 60,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -210,9 +210,9 @@
                 "name": "light yellow",
                 "hex": "#f5e6a2",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06533095/xg/06533095_1-sweater-mercurio-special-liso-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06533095/g/06533095_2-sweater-mercurio-special-liso-kevingston-hombre.webp",
-                    "https://www.kvnstatic.com/foto-prod/06533095/g/06533095_3-sweater-mercurio-special-liso-kevingston-hombre.webp"
+                    "/images/sweaters/mercury_sweater_light_yellow1.webp",
+                    "/images/sweaters/mercury_sweater_light_yellow2.webp",
+                    "/images/sweaters/mercury_sweater_light_yellow3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -226,9 +226,9 @@
                 "name": "pink",
                 "hex": "#f0d0c6",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06533182/xg/06533182_1-sw.webp",
-                    "https://www.kvnstatic.com/foto-prod/06533182/g/06533182_4-sw.webp",
-                    "https://www.kvnstatic.com/foto-prod/06533182/g/06533182_3-sw.webp"
+                    "/images/sweaters/mercury_sweater_light_pink1.webp",
+                    "/images/sweaters/mercury_sweater_light_pink2.webp",
+                    "/images/sweaters/mercury_sweater_light_pink3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -242,9 +242,9 @@
                 "name": "salmon",
                 "hex": "#ffcca2",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06533471/xg/06533471_1-sweater-mercurio-special-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/06533471/g/06533471_2-sweater-mercurio-special-liso-kevingston-hombres.webp",
-                    "https://www.kvnstatic.com/foto-prod/06533471/g/06533471_4-sweater-mercurio-special-liso-kevingston-hombres.webp"
+                    "/images/sweaters/mercury_sweater_salmon1.webp",
+                    "/images/sweaters/mercury_sweater_salmon2.webp",
+                    "/images/sweaters/mercury_sweater_salmon3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -261,8 +261,8 @@
         "name": "Constellation sweater",
         "description": "lorem25",
         "category": "sweater",
-        "price": "$25",
-        "realPrice": "$25",
+        "price": 25,
+        "realPrice": 25,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -271,9 +271,9 @@
                 "name": "blue",
                 "hex": "#0f2237",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06541219/xg/06541219_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06541219/g/06541219_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06541219/g/06541219_3.webp"
+                    "/images/sweaters/constellation_sweater_blue1.webp",
+                    "/images/sweaters/constellation_sweater_blue2.webp",
+                    "/images/sweaters/constellation_sweater_blue3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -287,9 +287,9 @@
                 "name": "beige",
                 "hex": "#cdac97",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06541174/xg/06541174_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06541174/g/06541174_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06541174/g/06541174_3.webp"
+                    "/images/sweaters/constellation_sweater_beige1.webp",
+                    "/images/sweaters/constellation_sweater_beige2.webp",
+                    "/images/sweaters/constellation_sweater_beige3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -303,9 +303,9 @@
                 "name": "light grey",
                 "hex": "#cfcfd1",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06541033/xg/06541033_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06541033/g/06541033_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06541033/g/06541033_4.webp"
+                    "/images/sweaters/constellation_sweater_light_grey1.webp",
+                    "/images/sweaters/constellation_sweater_light_grey2.webp",
+                    "/images/sweaters/constellation_sweater_light_grey3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -322,8 +322,8 @@
         "name": "Triton sweater",
         "description": "lorem12",
         "category": "sweater",
-        "price": "$20",
-        "realPrice": "$35",
+        "price": 20,
+        "realPrice": 35,
         "discount": true,
         "newArrival": false,
         "outlet": true,
@@ -332,9 +332,9 @@
                 "name": "brick",
                 "hex": "#9a372f",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06536092/xg/06536092_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06536092/g/06536092_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06536092/g/06536092_3.webp"
+                    "/images/sweaters/triton_sweater_brick1.webp",
+                    "/images/sweaters/triton_sweater_brick2.webp",
+                    "/images/sweaters/triton_sweater_brick3.webp"
                 ],
                 "sizes": {
                     "s": 10,
@@ -351,8 +351,8 @@
         "name": "Eclipse sweater",
         "description": "lorem25",
         "category": "sweater",
-        "price": "$50",
-        "realPrice": "$50",
+        "price": 50,
+        "realPrice": 50,
         "discount": false,
         "newArrival": true,
         "outlet": false,
@@ -361,9 +361,9 @@
                 "name": "navy",
                 "hex": "#13192c",
                 "imagesColor": [
-                    "https://www.kvnstatic.com/foto-prod/06540010/xg/06540010_1.webp",
-                    "https://www.kvnstatic.com/foto-prod/06540010/g/06540010_2.webp",
-                    "https://www.kvnstatic.com/foto-prod/06540010/g/06540010_3.webp"
+                    "/images/sweaters/eclipse_sweater_navy1.webp",
+                    "/images/sweaters/eclipse_sweater_navy2.webp",
+                    "/images/sweaters/eclipse_sweater_navy3.webp"
                 ],
                 "sizes": {
                     "s": 10,
