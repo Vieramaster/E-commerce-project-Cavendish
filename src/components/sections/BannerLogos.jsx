@@ -7,7 +7,7 @@ import { PumaLogo } from "../SVGs/logos/PumaLogo";
 
 /** @type {Array<{Component: React.ComponentType<{className: string}>, key: string}>} */
 
-const logos = [
+export const logos = [
   { Component: UnderArmorLogo, key: "UnderArmor" },
   { Component: AdidasLogo, key: "Adidas" },
   { Component: VansLogo, key: "vans" },
@@ -16,9 +16,7 @@ const logos = [
   { Component: PumaLogo, key: "Puma" },
 ];
 
-/**
- * @returns {JSX.Element}
- */
+
 export const BannerLogos = () => {
   return (
     <div className="h-auto w-full bg-carbon flex justify-center">

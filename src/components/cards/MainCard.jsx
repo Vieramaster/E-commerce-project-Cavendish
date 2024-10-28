@@ -1,8 +1,6 @@
 import { BottomButtonCard } from "../buttons/BottomButtonCard";
-/**
- * @param {{title:string, image:string, imageAlt:string}} props
- * @returns {JSX.Element}
- * */
+
+/** @param {{title:string, image:string, imageAlt:string}} props */
 
 export const MainCard = ({ title, image, imageAlt }) => {
   return (

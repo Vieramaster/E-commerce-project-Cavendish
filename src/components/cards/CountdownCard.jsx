@@ -1,6 +1,5 @@
 /**
  * @param {{ count: number, label: string }} props
- * @returns {JSX.Element}
  */
 export const CountdownCard = ({ count, label }) => {
   return (

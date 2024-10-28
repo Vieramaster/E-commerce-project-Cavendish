@@ -1,9 +1,7 @@
 import { NewsCard } from "../cards/NewsCard";
 
-/**
- * @param {{arrayNews:Array<{id:string, image: string, imageAlt: string, date: string, title: string, introduction: string}>, mainTitle:string}} props
- * @returns {JSX.Element}
- */
+/** @param {{arrayNews:Array<{id:string, image: string, imageAlt: string, date: string, title: string, introduction: string}>, mainTitle:string}} props*/
+
 export const News = ({ arrayNews, mainTitle }) => {
   return (
     <section className="w-full bg-lightGrey py-16 text-carbon">

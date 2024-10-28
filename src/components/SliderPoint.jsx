@@ -1,7 +1,4 @@
-/**
- * @param {{indexArray:number , index:number}} props
- * @returns {JSX.Element}
- * */
+/**@param {{indexArray:number , index:number}} props*/
 export const SliderPoint = ({ indexArray, index }) => {
   return (
     <div

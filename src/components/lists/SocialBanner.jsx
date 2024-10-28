@@ -10,7 +10,7 @@ export const logoList = [
   { Component: YoutubeIco, key: "Youtube" },
   { Component: TwitterIco, key: "Twitter" },
 ];
-/**@returns {JSX.Element} */
+
 export const SocialBanner = () => {
   return (
     <ul className=" w-full h-12  flex justify-center items-center gap-5 lg:h-20">

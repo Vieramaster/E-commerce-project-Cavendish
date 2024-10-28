@@ -1,21 +1,12 @@
 import { Link } from "react-router-dom";
 
-/**
- * @typedef {object} Styles
- * @property {string} primary
- * @property {string} secondary
- */
-
-/**
- * @type {Styles}
- */
 export const classHoverButton = {
   primary: "bg-yellow text-lightCarbon hover:bg-esmerald hover:text-lightGrey",
   secondary: "bg-yellow hover:bg-carbon lg:bg-carbon lg:hover:bg-semiEsmerald",
 };
 
 /**
- * @param {{ readonly color?: keyof Styles, toPage: string , children: string | JSX.Element }} props
+ * @param {{ readonly color?: "primary" | "secondary", toPage: string, children: React.ReactNode }} props
  */
 export const HoverButton = ({ color = "primary", toPage, children }) => {
   return (

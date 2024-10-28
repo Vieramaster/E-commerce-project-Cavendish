@@ -1,17 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { DiscountCircle } from "../../DiscountCircle";
-import { ArrowCardButton } from "../../buttons/ArrowCardButton";
-import { MinimalistArrow } from "../../SVGs/icons/MinimalistArrow";
-import {
-  NextImageCard,
-  PreviousImageCard,
-} from "../../hooks/useCarrouselArrows";
-import "../../types";
+import { DiscountCircle } from "../DiscountCircle";
+import { ArrowCardButton } from "../buttons/ArrowCardButton";
+import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
+import { NextImageCard, PreviousImageCard } from "../hooks/useCarrouselArrows";
+import "../types";
 
-/** @param {{array:ObjectClothes}} props */
-export const ImagesShopCard = ({ array }) => {
-  
+/** @param {{array:ObjectClothes, maxSizeArrows: boolean}} props */
+export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
 
   const previousImage = () => PreviousImageCard(setPositionImage);
@@ -32,7 +28,7 @@ export const ImagesShopCard = ({ array }) => {
         opacity={booleanImageStart()}
         disabled={booleanImageStart()}
       >
-        <MinimalistArrow className="size-8" />
+        <MinimalistArrow className={maxSizeArrows ? "size-8" : "size-14"} />
       </ArrowCardButton>
       <ArrowCardButton
         right={true}
@@ -40,7 +36,9 @@ export const ImagesShopCard = ({ array }) => {
         opacity={booleanImageFinish()}
         disabled={booleanImageFinish()}
       >
-        <MinimalistArrow className="size-8 rotate-180" />
+        <MinimalistArrow
+          className={`rotate-180 ${maxSizeArrows ? "size-8" : "size-14"}`}
+        />
       </ArrowCardButton>
       <Link
         to={array.idProduct}

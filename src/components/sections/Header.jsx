@@ -13,8 +13,8 @@ import { BarsResponsiveIco } from "../SVGs/icons/BarsResponsiveIco";
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 import { SearchIco } from "../SVGs/icons/SearchIco";
 
-/** @returns {JSX.Element} */
 export const Header = () => {
+
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
 
@@ -31,6 +31,7 @@ export const Header = () => {
   const searchModalRef = useRef(null);
 
   useClickOutside(navbarRef, () => setIsNavbarOpen(false));
+
   useClickOutside(searchModalRef, () => setIsSearchBarOpen(false));
 
   return (

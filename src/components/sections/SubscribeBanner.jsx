@@ -1,6 +1,4 @@
-/**
- * @returns {JSX.Element}
- */
+
 export const SubscribeBanner = () => {
   return (
     <section className="w-full h-auto p-16 text-carbon bg-lightGrey">

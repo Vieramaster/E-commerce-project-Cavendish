@@ -1,9 +1,6 @@
 import { MainButton } from "./buttons/MainButton";
 
-/**
- * @param {{title:string, subtitle:string, year:string, buttonTitle:string}} props
- * @returns {JSX.Element}
- */
+/** @param {{title:string, subtitle:string, year:string, buttonTitle:string}} props*/
 export const HomeTitle = ({ title, subtitle, year, buttonTitle }) => {
   return (
     <div className="  w-80 h-auto m-auto lg:w-[22rem] lg:items-start lg:text-left lg:ml-0 2xl:w-[32rem]">

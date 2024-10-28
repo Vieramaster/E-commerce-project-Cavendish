@@ -2,11 +2,7 @@ import { ResponsiveButton } from "../buttons/ResponsiveButton";
 import { SearchIco } from "../SVGs/icons/SearchIco";
 import { CloseResponsiveIco } from "../SVGs/icons/CloseResponsiveIco";
 
-/**
- * @param {{componentRef:React.RefObject<HTMLElement>, toggle:()=> void, open:boolean}} props
- * @returns {JSX.Element}
- * */
-
+/**@param {{componentRef: React.RefObject<HTMLDivElement>, toggle: () => void, open: boolean}} props*/
 export const SearchModal = ({ toggle, componentRef, open }) => {
   return (
     <div
@@ -30,7 +26,7 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
         />
       </fieldset>
       <ResponsiveButton onClick={toggle} aria-label="close searchbar">
-        <CloseResponsiveIco className={"w-2/5  fill-darkGrey"} />
+        <CloseResponsiveIco className={"w-2/5 fill-darkGrey"} />
       </ResponsiveButton>
     </div>
   );

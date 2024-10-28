@@ -9,7 +9,7 @@ export const ListEmprise = [
   { path: "/Help", name: "Help" },
 ];
 
-/**@returns {JSX.Element} */
+
 export const NavbarListData = () => {
   return (
     <ul className={classNameUL}>

@@ -1,22 +1,25 @@
-import { ImagesShopCard } from "./card_components/ImagesShopCard";
+import { ImagesShopSlider } from "../sliders/ImagesShopSlider";
 import { DescriptionShopCard } from "./card_components/DescriptionShopCard";
-
 import "../types";
 
-/**@param {{arrayObject: ObjectClothes}} props */
+const maxSize = "w-[40rem] h-[50rem]";
+const minSize = "w-80 h-[25rem]";
 
-export const ShopCard = ({ arrayObject }) => {
-  /**@param {number} index @param {string[]} array*/
-  const nextCard = (index, array) =>
-    index !== array.length - 1 ? index + 1 : index;
+/**@param {{arrayObject: ObjectClothes, toggleSize : boolean}} props */
 
-  /**@param {number} index @returns {number} */
-  const previousCard = (index) => (index !== 0 ? index - 1 : index);
-
+export const ShopCard = ({ arrayObject, toggleSize }) => {
   return (
-    <div className=" relavite bg-semiEsmerald relative w-80 h-[25rem] mx-auto rounded-lg text-lightGrey ">
-      <ImagesShopCard array={arrayObject} />
-      <DescriptionShopCard array={arrayObject} />
+    <div
+      className={`${
+        toggleSize ? minSize : maxSize
+      } relavite bg-semiEsmerald relative w-80 h-[25rem] mx-auto rounded-lg text-lightGrey`}
+    >
+      <ImagesShopSlider
+        array={arrayObject}
+        {...{ toggleSize }}
+        maxSizeArrows={toggleSize}
+      />
+      <DescriptionShopCard array={arrayObject} {...{ toggleSize }} />
     </div>
   );
 };

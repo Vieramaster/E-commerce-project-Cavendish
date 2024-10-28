@@ -5,14 +5,11 @@ import { HoverButton } from "../buttons/HoverButton";
 //icos
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 
-/**@type {string} */
 const titleClass =
   "font-semibold text-4xl text-center lg:text-start xl:text-5xl 2xl:text-6xl";
 
-/**
- * @param {{discount:string, afterPrice:string, beforePrice:string, image:string, timeDate:string, imageAlt:string}} props
- * @returns {JSX.Element}
- */
+/** @param {{discount:string, afterPrice:string, beforePrice:string, image:string, timeDate:string, imageAlt:string}} props*/
+
 export const SellCounter = ({
   discount,
   afterPrice,
@@ -36,7 +33,7 @@ export const SellCounter = ({
               <span className="font-semibold line-through">{afterPrice}</span>
               {beforePrice}
             </p>
-            <HoverButton color="secondary" aria-label="add to cart">
+            <HoverButton color="secondary" aria-label="add to cart" toPage="/">
               <ShoppingCartIco className="size-5 stroke-carbon lg:stroke-white lg:size-8" />
             </HoverButton>
           </div>

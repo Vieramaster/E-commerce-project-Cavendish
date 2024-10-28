@@ -1,7 +1,6 @@
 /** 
  * Button for letters in cards 
  * @param {JSX.IntrinsicElements['button']} props 
- * @returns {JSX.Element} 
  */
 export const ExploreButton = ({ ...props }) => {
   return (

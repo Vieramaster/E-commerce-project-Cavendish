@@ -1,12 +1,3 @@
-/**
- * @typedef {Object} Styles
- * @property {string} primary
- * @property {string} secondary
- */
-
-/**
- * @type {Styles}
- */
 export const buttonStyles = {
   primary: "bg-carbon text-white hover:bg-esmerald",
   secondary: "bg-yellow text-darkEsmerald hover:bg-white hover:text-carbon",
@@ -14,7 +5,7 @@ export const buttonStyles = {
 
 /**
  * Bottom buttons for cards
- * @param {{ color?: keyof Styles } & JSX.IntrinsicElements["button"]} props
+ * @param {{ readonly color?: "primary" | "secondary" } & JSX.IntrinsicElements["button"]} props
  */
 export const BottomButtonCard = ({ color = "primary", ...props }) => (
   <button

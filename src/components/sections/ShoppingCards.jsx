@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 import "../types"
 
 
-/**
- * @param {{title:string, shopArray:ObjectClothes[] | null  }} props
- */
+/**@param {{title:string, shopArray:ObjectClothes[] | null  }} props*/
+
 export const ShoppingCards = ({ title, shopArray }) => {
   return (
     <section className="w-full h-auto py-16 bg-white flex items-center justify-center">

@@ -12,7 +12,7 @@ export const listShop = [
   { path: "/shirts", name: "Shirts" },
 ];
 
-/**@returns {JSX.Element} */
+
 export const NavbarListShop = () => {
   return (
     <ul className={classNameUL}>

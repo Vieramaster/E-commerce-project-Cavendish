@@ -34,7 +34,7 @@ const menuListFooter = [
   },
 ];
 
-/**@returns {JSX.Element} */
+
 export const FooterList = () => {
   return (
     <div className="w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between">

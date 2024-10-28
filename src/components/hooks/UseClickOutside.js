@@ -1,14 +1,9 @@
 import { useEffect } from "react";
 
-/**
- * @param {React.RefObject<HTMLElement>} ref
- * @param {() => void} callback
- */
+/*** @param {React.RefObject<HTMLElement>} ref @param {() => void} callback */
 export const useClickOutside = (ref, callback) => {
   useEffect(() => {
-    /**
-     * @param {MouseEvent} event
-     */
+    /*** @param {MouseEvent} event*/
     const handleClickOutside = (event) => {
       if (
         ref.current &&

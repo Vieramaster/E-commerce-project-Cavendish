@@ -1,10 +1,8 @@
 import { TopButtonCard } from "../buttons/TopButtonCard";
 import { RightArrowIco } from "../SVGs/icons/RightArrowIco";
 
-/**
- * @param {{image: string, imageAlt: string, date: string, title: string, introduction: string}} props
- * @returns {JSX.Element}
- */
+/** @param {{image: string, imageAlt: string, date: string, title: string, introduction: string}} props*/
+
 export const NewsCard = ({ image, imageAlt, date, title, introduction }) => {
   return (
     <div className="w-80 h-96 rounded-xl flex flex-col gap-1 lg:w-1/3 lg:h-auto">

@@ -1,6 +1,5 @@
 /**
  * @param {JSX.IntrinsicElements["button"]} props
- * @returns {JSX.Element}
  * */
 export const ShoppingNavButton = ({ ...props }) => {
   return (

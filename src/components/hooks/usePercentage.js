@@ -1,6 +1,5 @@
 /**  calculate the percentage between realprice and price
- * @param {number} numb1 @param {number} numb2
- * @returns {number}
+ * @param {number} numb1 @param {number} numb2 @returns {number}
  * */
 
 export const usePercentage = (numb1, numb2) => {

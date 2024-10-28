@@ -19,7 +19,6 @@ export const bannerIcons = [
   },
 ];
 
-/**@returns {JSX.Element} */
 export const ShopRules = () => {
   return (
     <div className="w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between border-b-2 border-lightCarbon">

@@ -1,7 +1,7 @@
 import { HomeCardSlider } from "../sliders/HomeCardSlider";
 import { HomeTitle } from "../HomeTitle";
 
-/**@returns {JSX.Element} */
+
 export const IntroHome = () => {
   return (
     <section className="w-full h-auto  bg-gradient-to-br  from-darkEsmerald to-esmerald pt-24 lg:h-[50rem] 2xl:h-screen">

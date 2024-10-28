@@ -1,11 +1,7 @@
 import { MainCard } from "../cards/MainCard";
 import { MainCardExtend } from "../cards/MainCardExtend";
 
-/**
- *
- * @param {{mainTitle:string, imageCard1:string, imageCard2:string, card1Title:string, card2Title:string, card2Subtitle:string }} props
- * @returns {JSX.Element}
- */
+/** @param {{mainTitle:string, imageCard1:string, imageCard2:string, card1Title:string, card2Title:string, card2Subtitle:string }} props*/
 export const MainCards = ({
   mainTitle,
   imageCard1,

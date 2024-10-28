@@ -1,6 +1,5 @@
 /**
  *  @param {JSX.IntrinsicElements["button"] & {active:boolean}} props
- * @returns {JSX.Element}
  * */
 export const SearchButton = ({ active, ...props }) => {
   return (

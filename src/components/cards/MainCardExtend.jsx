@@ -1,9 +1,6 @@
 import { BottomButtonCard } from "../buttons/BottomButtonCard";
 
-/**
- * @param {{title:string, subtitle:string, imageAlt:string, image:string}} props
- * @returns {JSX.Element}
- */
+/** @param {{title:string, subtitle:string, imageAlt:string, image:string}} props*/
 export const MainCardExtend = ({ title, subtitle, imageAlt, image }) => {
   return (
     <div className="bg-yellow  relative rounded-3xl w-[20rem] h-[30rem]  flex flex-col justify-between items-center lg:flex-auto lg:flex-row-reverse 2xl:h-[36rem]">

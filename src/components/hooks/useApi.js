@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../types";
 /**
- *
+ *@param {string} url
  * @returns {{ data: ObjectClothes[] | null, error: boolean, loading: boolean }}
  */
-export const useApi = (/** @type {string} */ url) => {
+export const useApi = (url) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
