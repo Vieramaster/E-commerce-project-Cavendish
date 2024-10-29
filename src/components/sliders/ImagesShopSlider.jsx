@@ -27,6 +27,7 @@ export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
         onClick={previousImage}
         opacity={booleanImageStart()}
         disabled={booleanImageStart()}
+        aria-label="previousImage"
       >
         <MinimalistArrow className={maxSizeArrows ? "size-8" : "size-14"} />
       </ArrowCardButton>
@@ -35,6 +36,7 @@ export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
         onClick={nextImage}
         opacity={booleanImageFinish()}
         disabled={booleanImageFinish()}
+        aria-label="next image"
       >
         <MinimalistArrow
           className={`rotate-180 ${maxSizeArrows ? "size-8" : "size-14"}`}

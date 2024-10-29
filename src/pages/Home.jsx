@@ -38,7 +38,7 @@ const news = [
   },
 ];
 
-export const Home = () => {
+const Home = () => {
   const { data: newArrivals } = useApi("/data/best_sellers.json");
 
   return (
@@ -68,3 +68,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home

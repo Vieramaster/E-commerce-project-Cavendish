@@ -3,7 +3,7 @@ import "../../types";
 /**@param {{array : ObjectClothes, toggleSize: boolean}} props*/
 export const DescriptionShopCard = ({ array, toggleSize }) => {
   return (
-    <div className="flex justify-between px-3 h-1/6 w-full ">
+    <div className="flex justify-between px-3 h-1/6 w-full bg-esmerald">
       <div className="h-full w-5/6 flex flex-col ">
         <div className="h-1/2 w-auto text-start  place-content-center">
           <h3

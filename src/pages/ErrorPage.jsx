@@ -3,7 +3,7 @@ import { HoverButton } from "../components/buttons/HoverButton";
 import { Header } from "../components/sections/Header";
 import { Footer } from "../components/sections/Footer";
 
-export const ErrorPage = () => {
+const ErrorPage = () => {
   const error = useRouteError();
   console.log(error);
 
@@ -31,3 +31,4 @@ export const ErrorPage = () => {
     </>
   );
 };
+export default ErrorPage;

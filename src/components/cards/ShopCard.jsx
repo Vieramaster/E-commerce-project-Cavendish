@@ -1,25 +1,17 @@
-import { ImagesShopSlider } from "../sliders/ImagesShopSlider";
-import { DescriptionShopCard } from "./card_components/DescriptionShopCard";
 import "../types";
 
 const maxSize = "w-[40rem] h-[50rem]";
 const minSize = "w-80 h-[25rem]";
 
-/**@param {{arrayObject: ObjectClothes, toggleSize : boolean}} props */
-
-export const ShopCard = ({ arrayObject, toggleSize }) => {
+/** @param {{ toggleSize: boolean, children: React.ReactNode}} props */
+export const ShopCard = ({ toggleSize, children }) => {
   return (
     <div
       className={`${
         toggleSize ? minSize : maxSize
-      } relavite bg-semiEsmerald relative w-80 h-[25rem] mx-auto rounded-lg text-lightGrey`}
+      } relative bg-lightGrey  w-80 h-[25rem] mx-auto rounded-lg text-lightGrey flex flex-col justify-center items-center`}
     >
-      <ImagesShopSlider
-        array={arrayObject}
-        {...{ toggleSize }}
-        maxSizeArrows={toggleSize}
-      />
-      <DescriptionShopCard array={arrayObject} {...{ toggleSize }} />
+      {children}
     </div>
   );
 };

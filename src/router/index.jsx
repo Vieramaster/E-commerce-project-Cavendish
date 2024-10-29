@@ -1,27 +1,47 @@
+import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { LayoutPublic } from "../layout/LayoutPublic.jsx";
+import { LoaderShop } from "../pages/Shop";
 
-//PAGES
-import { ErrorPage } from "../pages/ErrorPage.jsx";
-import { Home } from "../pages/Home.jsx";
-import { Shop } from "../pages/Shop.jsx";
-import { LoaderShop } from "../pages/Shop.jsx";
+const LayoutPublic = lazy(() => import("../layout/LayoutPublic"));
+const Home = lazy(() => import("../pages/Home"));
+const Shop = lazy(() => import("../pages/Shop"));
+const ErrorPage = lazy(() => import("../pages/ErrorPage"));
+
+const SuspenseWrapper = ({ children }) => (
+  <Suspense fallback={<div>Cargando...</div>}>{children}</Suspense>
+);
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <LayoutPublic />,
-    errorElement: <ErrorPage />,
+    element: (
+      <SuspenseWrapper>
+        <LayoutPublic />
+      </SuspenseWrapper>
+    ),
+    errorElement: (
+      <SuspenseWrapper>
+        <ErrorPage />
+      </SuspenseWrapper>
+    ),
     children: [
       {
         index: true,
-        element: <Home />,
+        element: (
+          <SuspenseWrapper>
+            <Home />
+          </SuspenseWrapper>
+        ),
       },
       {
         path: "/:category",
-        element: <Shop />,
+        element: (
+          <SuspenseWrapper>
+            <Shop />
+          </SuspenseWrapper>
+        ),
         loader: LoaderShop,
-        id: "shop-loader"
+        id: "shop-loader",
       },
     ],
   },
