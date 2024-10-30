@@ -2,8 +2,7 @@
 import { HoverButton } from "../buttons/HoverButton";
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 import { Link } from "react-router-dom";
-import "../types"
-
+import "../../types";
 
 /**@param {{title:string, shopArray:ObjectClothes[] | null  }} props*/
 

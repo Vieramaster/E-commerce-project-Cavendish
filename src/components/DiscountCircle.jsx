@@ -1,5 +1,5 @@
-import { usePercentage } from "./hooks/usePercentage";
-import "./types";
+import { usePercentage } from "../hooks/usePercentage";
+import "../types";
 
 /**@param {{discount:boolean, realPrice:number, price:number }} props*/
 

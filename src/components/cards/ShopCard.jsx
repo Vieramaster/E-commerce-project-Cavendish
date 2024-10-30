@@ -1,4 +1,4 @@
-import "../types";
+import "../../types";
 
 const maxSize = "w-[40rem] h-[50rem]";
 const minSize = "w-80 h-[25rem]";

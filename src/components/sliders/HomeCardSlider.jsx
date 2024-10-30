@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { useChangeClassName } from "../hooks/useChangeClassName";
+import { useChangeClassName } from "../../hooks/useChangeClassName";
 import { CarrouselArrows } from "../buttons/CarrouselArrows";
 import { SliderPoint } from "../SliderPoint";
 

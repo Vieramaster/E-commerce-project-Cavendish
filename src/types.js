@@ -6,7 +6,7 @@
  */
 
 /**
- * @typedef {object} ObjectClothes
+ * @typedef {object} ClothesObject
  * @property {string} idProduct
  * @property {string} name
  * @property {string} description

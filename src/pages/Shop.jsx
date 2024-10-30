@@ -1,60 +1,65 @@
-// HOOKS
-import { useState, useEffect, Suspense } from "react";
-// COMPONENTS
-import { useRouteLoaderData } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useFetch } from "../hooks/useFetch";
+import { useParams } from "react-router-dom";
 import { FilterMobile } from "../components/mobile/FilterMobile";
 import { DescriptionShopCard } from "../components/cards/card_components/DescriptionShopCard";
 import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { ShopCard } from "../components/cards/ShopCard";
-import { useResizeWindow } from "../components/hooks/useResizeWindow";
+import { useResizeWindow } from "../hooks/useResizeWindow";
 import { LoaderCircle } from "../components/loaders/LoaderCircle";
-import "../components/types";
+import "../types";
+import { DefaultButton } from "../components/buttons/DefaultButton";
 
 const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 
 export const Shop = () => {
-  /** @type {{ data?: ObjectClothes[] }} */
-  // @ts-ignore
-  const { data } = useRouteLoaderData("shop-loader");
-
   const [toggleGrid, setToggleGrid] = useState(true);
-  const [loading, setLoading] = useState(true);
-  const [progressiveArray, setProgesiveArray] = useState([]);
+  const [numberArray, setNumberArray] = useState([0, 8]);
+  /** @type {ClothesObject[]} */
+  const [progressiveArray, setProgressiveArray] = useState(/** @type {ClothesObject[]} */ ([]));
 
-  const cloneData = data ? [...data] : [];
+
   useResizeWindow(976, setToggleGrid);
-
-  /** @param {number} prevNumber @param {number} newNumber @param {ObjectClothes[]} array @returns {ObjectClothes[]} */
-  const nexCards = (prevNumber, newNumber, array) => {
-    return array.slice(prevNumber, newNumber);
-  };
+  const { category } = useParams();
+  const { data, loading, error } = useFetch(category);
 
   const gridChangeToggle = () => {
     setToggleGrid((prevState) => !prevState);
   };
-  let cardNumber = [0, 8];
-  let gato = nexCards(cardNumber[0], cardNumber[1], cloneData);
 
+  /**
+   * @param {number} prevNumber
+   * @param {number} newNumber
+   * @param {ClothesObject[]} array
+   * @returns {ClothesObject[]}
+   */
+  const nexCards = (prevNumber, newNumber, array) => {
+    return array.slice(prevNumber, newNumber);
+  };
 
-  const handleScroll = () => {
-    console.log("heigth:", document.documentElement.scrollHeight);
-    console.log("top:", document.documentElement.scrollTop);
-    console.log("window:", window.innerHeight);
-    if (
-      window.innerHeight + document.documentElement.scrollTop + 1 >=
-      document.documentElement.scrollHeight
-    ) {
-      
+  useEffect(() => {
+    if (Array.isArray(data)) {
+      setProgressiveArray(nexCards(numberArray[0], numberArray[1], data));
+    }
+  }, [data, numberArray]);
+
+  const handleMoreData = () => {
+    if (Array.isArray(data) && progressiveArray.length < data.length) {
+      setNumberArray((prev) => {
+        const newNumbers = [prev[0] + 8, prev[1] + 8];
+        const newCards = nexCards(newNumbers[0], newNumbers[1], data);
+        
+        // Evita duplicados en progressiveArray
+        if (!progressiveArray.some(item => newCards.includes(item))) {
+          setProgressiveArray((prevArray) => [...prevArray, ...newCards]);
+        }
+        
+        return newNumbers;
+      });
     }
   };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  console.log(progressiveArray);
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
       <FilterMobile toggleGrid={gridChangeToggle} booleanGrid={toggleGrid} />
@@ -63,34 +68,24 @@ export const Shop = () => {
           toggleGrid ? gridCompact : gridGiant
         }`}
       >
-        <Suspense>
-          {loading
-            ? Array.from({ length: 4 }).map((_, index) => (
-                <ShopCard toggleSize={toggleGrid} key={index}>
-                  <LoaderCircle />
-                </ShopCard>
-              ))
-            : progressiveArray?.map((item) => (
-                <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
-                  <ImagesShopSlider array={item} maxSizeArrows={toggleGrid} />
-                  <DescriptionShopCard array={item} toggleSize={toggleGrid} />
-                </ShopCard>
-              ))}
-        </Suspense>
+        {loading
+          ? Array.from({ length: 4 }).map((_, index) => (
+              <ShopCard toggleSize={toggleGrid} key={index}>
+                <LoaderCircle />
+              </ShopCard>
+            ))
+          : progressiveArray.map((item) => (
+              <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
+                <ImagesShopSlider array={item} maxSizeArrows={toggleGrid} />
+                <DescriptionShopCard array={item} toggleSize={toggleGrid} />
+              </ShopCard>
+            ))}
+      </div>
+      <div className="w-full h-20 grid place-content-center">
+        <DefaultButton onClick={handleMoreData}>Load more...</DefaultButton>
       </div>
     </section>
   );
 };
 
 export default Shop;
-
-/**
- * @param {import('react-router-dom').LoaderFunctionArgs} props
- * @returns {Promise<{data?: ObjectClothes[]}>}
- */
-export const LoaderShop = async ({ params }) => {
-  const category = params.category;
-  const res = await fetch(`/public/data/${category}.json`);
-  const data = await res.json();
-  return { data };
-};

@@ -2,7 +2,7 @@ import { useState, useCallback, useRef } from "react";
 // Components
 import { Navbar } from "../modals/Navbar";
 import { SearchModal } from "../modals/SearchModal";
-import { useClickOutside } from "../hooks/useClickOutside";
+import { useClickOutside } from "../../hooks/useClickOutside";
 // Buttons
 import { LogoButton } from "../buttons/LogoButton";
 import { ShoppingNavButton } from "../buttons/ShoppingNavButton";
@@ -14,7 +14,6 @@ import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 import { SearchIco } from "../SVGs/icons/SearchIco";
 
 export const Header = () => {
-
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
 

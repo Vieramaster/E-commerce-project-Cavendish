@@ -1,13 +1,13 @@
-import "../../types";
+import "../../../types";
 
 /**@param {{array : ObjectClothes, toggleSize: boolean}} props*/
 export const DescriptionShopCard = ({ array, toggleSize }) => {
   return (
-    <div className="flex justify-between px-3 h-1/6 w-full bg-esmerald">
+    <div className="flex justify-between px-3 h-1/6 w-full bg-offWhite text-lightCarbon">
       <div className="h-full w-5/6 flex flex-col ">
         <div className="h-1/2 w-auto text-start  place-content-center">
           <h3
-            className={`font-semibold   ${toggleSize ? "text-lg" : "text-3xl"}`}
+            className={`font-medium   ${toggleSize ? "text-lg" : "text-3xl"}`}
           >
             {array.name}
           </h3>
@@ -18,7 +18,7 @@ export const DescriptionShopCard = ({ array, toggleSize }) => {
               <span
                 key={array.idProduct + index}
                 style={{ backgroundColor: `${item.hex}` }}
-                className={`rounded-sm border border-lightGrey ${
+                className={`rounded-sm  ${
                   toggleSize ? "w-10 h-4" : "w-20 h-8 "
                 }`}
                 aria-label={item.nameColor}
@@ -27,8 +27,10 @@ export const DescriptionShopCard = ({ array, toggleSize }) => {
           })}
         </div>
       </div>
-      <div className="h-full w-1/6 grid place-content-center">
-        <p className={`font-semibold ${toggleSize ? "text-3xl" : "text-6xl"}`}>${array.price}</p>
+      <div className="h-full w-1/6 grid place-content-center ">
+        <p className={`font-semibold ${toggleSize ? "text-3xl" : "text-6xl"}`}>
+          ${array.price}
+        </p>
       </div>
     </div>
   );

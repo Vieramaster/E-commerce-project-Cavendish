@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { LoaderShop } from "../pages/Shop";
+
 
 const LayoutPublic = lazy(() => import("../layout/LayoutPublic"));
 const Home = lazy(() => import("../pages/Home"));
@@ -40,8 +40,6 @@ export const router = createBrowserRouter([
             <Shop />
           </SuspenseWrapper>
         ),
-        loader: LoaderShop,
-        id: "shop-loader",
       },
     ],
   },

@@ -5,8 +5,8 @@ import { ShoppingCards } from "../components/sections/ShoppingCards";
 import { SellCounter } from "../components/sections/SellCounter";
 import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
-import { useApi } from "../components/hooks/useApi";
-import "../components/types";
+import { useApi } from "../hooks/useApi";
+import "../types";
 
 const news = [
   {
@@ -69,4 +69,4 @@ const Home = () => {
   );
 };
 
-export default Home
+export default Home;

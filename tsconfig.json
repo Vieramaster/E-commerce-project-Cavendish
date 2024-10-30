@@ -6,7 +6,7 @@
     "jsx": "react-jsx",
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
-    "module": "esnext",  
+    "module": "esnext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,5 +14,5 @@
     "resolveJsonModule": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "build", "src/components/hooks"]
+  "exclude": ["node_modules", "dist", "build", "src/hooks"]
 }

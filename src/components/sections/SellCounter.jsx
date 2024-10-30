@@ -1,4 +1,4 @@
-import { useCountdown } from "../hooks/useCountdown";
+import { useCountdown } from "../../hooks/useCountdown";
 //components
 import { CountdownCard } from "../cards/CountdownCard";
 import { HoverButton } from "../buttons/HoverButton";

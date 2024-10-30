@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { DiscountCircle } from "../DiscountCircle";
 import { ArrowCardButton } from "../buttons/ArrowCardButton";
 import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
-import { NextImageCard, PreviousImageCard } from "../hooks/useCarrouselArrows";
-import "../types";
+import {
+  NextImageCard,
+  PreviousImageCard,
+} from "../../hooks/useCarrouselArrows";
+import "../../types";
 
 /** @param {{array:ObjectClothes, maxSizeArrows: boolean}} props */
 export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
