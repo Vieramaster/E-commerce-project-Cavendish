@@ -6,7 +6,7 @@ export const listShop = [
   { path: "/new_arrivals", name: "New Arrivals" },
   { path: "/sweatshirts_and_hoodies", name: "Sweatshirts & Hoodies" },
   { path: "/jackets_and_coats", name: "Jackets & Coats" },
-  { path: "/polos_and_t-shirts", name: "T-shirts & Polos" },
+  { path: "/polos_and_t_shirts", name: "T-shirts & Polos" },
   { path: "/pants", name: "Pants & Jeans" },
   { path: "/sweaters", name: "Sweaters" },
   { path: "/shirts", name: "Shirts" },

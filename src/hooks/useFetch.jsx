@@ -2,12 +2,11 @@ import { useState, useEffect } from "react";
 import "../types";
 
 /**
- * @param {string | undefined} category
- * @returns {{data: ClothesObject[], loading: boolean, error: Error | null}}
+ * @param {string | undefined } category
+ * @returns {{ data:ClothesObject[] , loading: boolean, error: Error | null}}
  */
 export const useFetch = (category) => {
-  const [data, setData] = useState(/** @type {ClothesObject[]} */ ([]));
-
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -21,14 +20,8 @@ export const useFetch = (category) => {
         response.ok ? response.json() : Promise.reject(new Error("trow error"))
       )
       .then((jsonData) => {
-        if (!jsonData) throw new Error("invalid data");
-        if (category) {
-          const slicedData = jsonData[category];
-          if (!slicedData) throw new Error("Category not found");
-          setData(slicedData);
-        } else {
-          setData(jsonData);
-        }
+        const slicedData = category ? jsonData[category] : jsonData
+        setData(slicedData);
       })
       .catch((error) => {
         if (error.name !== "error") {

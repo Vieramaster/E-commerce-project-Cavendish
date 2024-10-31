@@ -9,7 +9,7 @@ import {
 } from "../../hooks/useCarrouselArrows";
 import "../../types";
 
-/** @param {{array:ObjectClothes, maxSizeArrows: boolean}} props */
+/** @param {{array:ClothesObject, maxSizeArrows: boolean}} props */
 export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
 

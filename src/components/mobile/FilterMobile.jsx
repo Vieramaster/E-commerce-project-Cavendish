@@ -6,8 +6,10 @@ import { SquareIco } from "../SVGs/icons/SquareIco";
 const classFilters =
   "h-full border border-lineGrey flex gap-5 items-center justify-center border-b border-r border-lineGrey";
 
-/**@param {{toggleGrid:()=>void, booleanGrid: boolean }} props*/
-export const FilterMobile = ({ toggleGrid, booleanGrid }) => {
+/**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>}} props*/
+export const FilterMobile = ({ toggleGrid, booleanGrid, handleSelect }) => {
+
+  
   return (
     <div className="w-full h-12 flex text-lightCarbon font-medium">
       <button className={`${classFilters} w-1/2 lg:w-2/5`} aria-label="Filter">
@@ -25,8 +27,7 @@ export const FilterMobile = ({ toggleGrid, booleanGrid }) => {
         <select
           name="sort_by"
           className="absolute inset-0 opacity-0 cursor-pointer bg-transparent"
-          value={"default"}
-          onChange={() => "hola"}
+          onChange={handleSelect}
         >
           <option value="default">Featured</option>
           <option value="title-ascending">Alphabetically, A-Z</option>

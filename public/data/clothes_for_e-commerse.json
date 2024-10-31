@@ -59,7 +59,7 @@
             ]
         },
         {
-            "idProduct": "0023",
+            "idProduct": "0123",
             "name": "Bayport windbraker jacket",
             "description": "loren12",
             "category": "jacket",
@@ -793,7 +793,7 @@
             ]
         }
     ],
-    "polos_and_t-shirts": [
+    "polos_and_t_shirts": [
         {
             "idProduct": "025",
             "name": "Drum II t-shirt",
