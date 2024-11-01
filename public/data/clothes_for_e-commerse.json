@@ -15,9 +15,9 @@
                     "name": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/coats_and_jackets/gabardine_jacket_beige1.webp",
-                        "/images/coats_and_jackets/gabardine_jacket_beige2.webp",
-                        "/images/coats_and_jackets/gabardine_jacket_beige3.webp"
+                        "/images/jackets_and_coats/gabardine_jacket_beige1.webp",
+                        "/images/jackets_and_coats/gabardine_jacket_beige2.webp",
+                        "/images/jackets_and_coats/gabardine_jacket_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -44,9 +44,9 @@
                     "name": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/coats_and_jackets/gabardine_jacket_black1.webp",
-                        "/images/coats_and_jackets/gabardine_jacket_black2.webp",
-                        "/images/coats_and_jackets/gabardine_jacket_black3.webp"
+                        "/images/jackets_and_coats/quick_jacket_black1.webp",
+                        "/images/jackets_and_coats/quick_jacket_black2.webp",
+                        "/images/jackets_and_coats/quick_jacket_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -73,9 +73,9 @@
                     "name": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/coats_and_jackets/bayport_windbraker_black1.webp",
-                        "/images/coats_and_jackets/bayport_windbraker_black2.webp",
-                        "/images/coats_and_jackets/bayport_windbraker_black3.webp"
+                        "/images/jackets_and_coats/bayport_windbraker_black1.webp",
+                        "/images/jackets_and_coats/bayport_windbraker_black2.webp",
+                        "/images/jackets_and_coats/bayport_windbraker_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -89,9 +89,9 @@
                     "name": "red",
                     "hex": "#d3251d",
                     "imagesColor": [
-                        "/images/coats_and_jackets/bayport_windbraker_red1.webp",
-                        "/images/coats_and_jackets/bayport_windbraker_red2.webp",
-                        "/images/coats_and_jackets/bayport_windbraker_red3.webp"
+                        "/images/jackets_and_coats/bayport_windbraker_red1.webp",
+                        "/images/jackets_and_coats/bayport_windbraker_red2.webp",
+                        "/images/jackets_and_coats/bayport_windbraker_red3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -118,9 +118,9 @@
                     "name": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/coats_and_jackets/windstorm_jacket_beige1.webp",
-                        "/images/coats_and_jackets/windstorm_jacket_beige2.webp",
-                        "/images/coats_and_jackets/windstorm_jacket_beige3.webp"
+                        "/images/jackets_and_coats/windstorm_jacket_beige1.webp",
+                        "/images/jackets_and_coats/windstorm_jacket_beige2.webp",
+                        "/images/jackets_and_coats/windstorm_jacket_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -134,9 +134,9 @@
                     "name": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/coats_and_jackets/windstorm_jacket_navy1.webp",
-                        "/images/coats_and_jackets/windstorm_jacket_navy2.webp",
-                        "/images/coats_and_jackets/windstorm_jacket_navy3.webp"
+                        "/images/jackets_and_coats/windstorm_jacket_navy1.webp",
+                        "/images/jackets_and_coats/windstorm_jacket_navy2.webp",
+                        "/images/jackets_and_coats/windstorm_jacket_navy3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -263,9 +263,9 @@
                     "name": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/pants/joiner_carpenter_oatmeal1.webp",
-                        "/images/pants/joiner_carpenter_oatmeal2.webp",
-                        "/images/pants/joiner_carpenter_oatmeal3.webp"
+                        "/images/pants/joiner_carpenter_pants_oatmeal1.webp",
+                        "/images/pants/joiner_carpenter_pants_oatmeal2.webp",
+                        "/images/pants/joiner_carpenter_pants_oatmeal3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -281,9 +281,27 @@
                     "name": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/joiner_carpenter_black1.webp",
-                        "/images/pants/joiner_carpenter_black2.webp",
-                        "/images/pants/joiner_carpenter_black3.webp"
+                        "/images/pants/joiner_carpenter_pants_black1.webp",
+                        "/images/pants/joiner_carpenter_pants_black2.webp",
+                        "/images/pants/joiner_carpenter_pants_black3.webp"
+                    ],
+                    "sizes": {
+                        "40": 10,
+                        "42": 3,
+                        "44": 0,
+                        "46": 5,
+                        "48": 3,
+                        "52": 0,
+                        "54": 2
+                    }
+                },
+                {
+                    "name": "sky blue",
+                    "hex": "#466e90",
+                    "imagesColor": [
+                        "/images/pants/joiner_carpenter_pants_sky_blue1.webp",
+                        "/images/pants/joiner_carpenter_pants_sky_blue2.webp",
+                        "/images/pants/joiner_carpenter_pants_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -299,7 +317,7 @@
         },
         {
             "idProduct": "0054",
-            "name": "Toledo gabardine chino pants",
+            "name": "Toledo chino pants",
             "description": "lorem20",
             "category": "chino",
             "price": 95,
@@ -361,9 +379,9 @@
                     "name": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
-                        "/images/pants/chester_drawstring1_kaki1.webp",
-                        "/images/pants/chester_drawstring2_kaki2.webp",
-                        "/images/pants/chester_drawstring3_kaki3.webp"
+                        "/images/pants/chester_drawstring_kaki1.webp",
+                        "/images/pants/chester_drawstring_kaki2.webp",
+                        "/images/pants/chester_drawstring_kaki3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -379,9 +397,9 @@
                     "name": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/chester_drawstring1_black1.webp",
-                        "/images/pants/chester_drawstring2_black2.webp",
-                        "/images/pants/chester_drawstring3_black3.webp"
+                        "/images/pants/chester_drawstring_black1.webp",
+                        "/images/pants/chester_drawstring_black2.webp",
+                        "/images/pants/chester_drawstring_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -410,9 +428,9 @@
                     "name": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/pants/abbbey_stretch_green_army1.webp",
-                        "/images/pants/abbbey_stretch_green_army2.webp",
-                        "/images/pants/abbbey_stretch_green_army3.webp"
+                        "/images/pants/abbey_stretch_green_army1.webp",
+                        "/images/pants/abbey_stretch_green_army2.webp",
+                        "/images/pants/abbey_stretch_green_army3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -428,9 +446,9 @@
                     "name": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
-                        "/images/pants/abbbey_stretch_kaki1.webp",
-                        "/images/pants/abbbey_stretch_kaki2.webp",
-                        "/images/pants/abbbey_stretch_kaki3.webp"
+                        "/images/pants/abbey_stretch_kaki1.webp",
+                        "/images/pants/abbey_stretch_kaki2.webp",
+                        "/images/pants/abbey_stretch_kaki3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -960,9 +978,9 @@
                     "name": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/san_martin_t-shirt1.webp",
-                        "/images/polo_and_t-shirts/san_martin_t-shirt2.webp",
-                        "/images/polo_and_t-shirts/san_martin_t-shirt3.webp"
+                        "/images/polo_and_t-shirts/san_martin_t-shirt_black1.webp",
+                        "/images/polo_and_t-shirts/san_martin_t-shirt_black2.webp",
+                        "/images/polo_and_t-shirts/san_martin_t-shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1201,9 +1219,9 @@
                     "name": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rubgy_action_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/rubgy_action_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/rubgy_action_t-shirt_white3.webp"
+                        "/images/polo_and_t-shirts/rugby_action_t-shirt_white1.webp",
+                        "/images/polo_and_t-shirts/rugby_action_t-shirt_white2.webp",
+                        "/images/polo_and_t-shirts/rugby_action_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1230,9 +1248,9 @@
                     "name": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_biege1.webp",
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_biege2.webp",
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_biege3.webp"
+                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige1.webp",
+                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige2.webp",
+                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,

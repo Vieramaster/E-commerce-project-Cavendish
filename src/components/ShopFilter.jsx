@@ -1,26 +1,23 @@
-import { FilterIco } from "../SVGs/icons/FilterIco";
-import { SortIco } from "../SVGs/icons/SortIco";
-import { GridIco } from "../SVGs/icons/GridIco";
-import { SquareIco } from "../SVGs/icons/SquareIco";
+import { FilterIco } from "./SVGs/icons/FilterIco";
+import { SortIco } from "./SVGs/icons/SortIco";
+import { GridIco } from "./SVGs/icons/GridIco";
+import { SquareIco } from "./SVGs/icons/SquareIco";
+import { FilterNavButton } from "./buttons/FilterNavButton";
 
-const classFilters =
-  "h-full border border-lineGrey flex gap-5 items-center justify-center border-b border-r border-lineGrey";
+export const classFilter =
+  "h-full border border-lineGrey flex gap-5 items-center justify-center border-b border-r cursor-pointer relative ";
 
 /**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>}} props*/
-export const FilterMobile = ({ toggleGrid, booleanGrid, handleSelect }) => {
-
-  
+export const ShopFilter = ({ toggleGrid, booleanGrid, handleSelect }) => {
   return (
     <div className="w-full h-12 flex text-lightCarbon font-medium">
-      <button className={`${classFilters} w-1/2 lg:w-2/5`} aria-label="Filter">
+      <FilterNavButton aria-label="Filter">
         <FilterIco className="size-7" /> Filter
-      </button>
-
-      <button
-        aria-haspopup="listbox"
-        aria-expanded="false"
-        className={`${classFilters} w-1/2  cursor-pointer relative lg:w-2/5 `}
+      </FilterNavButton>
+      <FilterNavButton
         aria-label="Sort by"
+        aria-expanded="false"
+        aria-haspopup="listbox"
       >
         <SortIco className="size-7" />
         Sort by
@@ -35,9 +32,9 @@ export const FilterMobile = ({ toggleGrid, booleanGrid, handleSelect }) => {
           <option value="price-ascending">Price, low to high</option>
           <option value="price-descending">Price, high to low</option>
         </select>
-      </button>
+      </FilterNavButton>
 
-      <div className={`${classFilters} w-1/5 hidden lg:flex lg:w-1/5`}>
+      <div className={`${classFilter} w-1/5 hidden lg:flex lg:w-1/5`}>
         <button onClick={toggleGrid} disabled={booleanGrid}>
           <GridIco
             classNameSquares={`${
@@ -48,7 +45,7 @@ export const FilterMobile = ({ toggleGrid, booleanGrid, handleSelect }) => {
             classNameSvg={"size-7 "}
           />
         </button>
-        <button onClick={toggleGrid} disabled={!booleanGrid} className=" ">
+        <button onClick={toggleGrid} disabled={!booleanGrid}>
           <SquareIco
             classNameSquare={`${
               booleanGrid

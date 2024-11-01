@@ -18,7 +18,7 @@ export const DescriptionShopCard = ({ array, toggleSize }) => {
               <span
                 key={array.idProduct + index}
                 style={{ backgroundColor: `${item.hex}` }}
-                className={`rounded-sm  ${
+                className={`rounded-sm border border-lightCarbon ${
                   toggleSize ? "w-10 h-4" : "w-20 h-8 "
                 }`}
                 aria-label={item.nameColor}

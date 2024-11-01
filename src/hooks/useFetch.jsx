@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import "../types";
 
 /**
- * @param {string | undefined } category
- * @returns {{ data:ClothesObject[] , loading: boolean, error: Error | null}}
+ * @param {string | undefined } category 
+ * @returns {{ data: ClothesObject[], loading: boolean, error: Error | null }} 
  */
 export const useFetch = (category) => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState( ([]));
+  const [loading, setLoading] = useState( (true));
+  const [error, setError] = useState( (null));
 
   useEffect(() => {
     const controller = new AbortController();
@@ -17,14 +17,14 @@ export const useFetch = (category) => {
 
     fetch("/data/clothes_for_e-commerse.json", { signal })
       .then((response) =>
-        response.ok ? response.json() : Promise.reject(new Error("trow error"))
+        response.ok ? response.json() : Promise.reject(new Error("throw error"))
       )
       .then((jsonData) => {
-        const slicedData = category ? jsonData[category] : jsonData
+        const slicedData = category ? jsonData[category] : jsonData;
         setData(slicedData);
       })
       .catch((error) => {
-        if (error.name !== "error") {
+        if (error.name !== "AbortError") {
           setError(error);
         }
       })

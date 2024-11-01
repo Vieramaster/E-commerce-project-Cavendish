@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useFetch } from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
-import { FilterMobile } from "../components/mobile/FilterMobile";
+import { ShopFilter } from "../components/ShopFilter";
 import { DescriptionShopCard } from "../components/cards/card_components/DescriptionShopCard";
 import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { ShopCard } from "../components/cards/ShopCard";
@@ -19,8 +19,8 @@ export const Shop = () => {
   const [dataButton, setDataButton] = useState(true);
   const [numberArray, setNumberArray] = useState([0, 8]);
   const [selectedOption, setSelectedOption] = useState("");
-  const [progressiveArray, setProgressiveArray] = useState<ClothesObject[]>([]);
-  ;
+  /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
+  const [progressiveArray, setProgressiveArray] = useState([]);
 
   /**
    * @param {number} prevNumber
@@ -41,17 +41,20 @@ export const Shop = () => {
   const { category } = useParams();
   const { data, loading } = useFetch(category);
 
-const handleMoreData = () => {
-  if (Array.isArray(data) && Array.isArray(progressiveArray) && progressiveArray.length < data.length) {
-    const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
-    setNumberArray(newNumbers);
-    const newCards = nextCards(newNumbers[0], newNumbers[1], data);
-    setProgressiveArray((prev) => [...prev, ...newCards]);
-  } else {
-    setDataButton(false);
-  }
-};
-
+  const handleMoreData = () => {
+    if (
+      Array.isArray(data) &&
+      Array.isArray(progressiveArray) &&
+      progressiveArray.length < data.length
+    ) {
+      const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
+      setNumberArray(newNumbers);
+      const newCards = nextCards(newNumbers[0], newNumbers[1], data);
+      setProgressiveArray((prev) => [...prev, ...newCards]);
+    } else {
+      setDataButton(false);
+    }
+  };
 
   /**
    * @param {React.ChangeEvent<HTMLSelectElement>} event
@@ -60,23 +63,22 @@ const handleMoreData = () => {
     setSelectedOption(event.target.value);
   };
 
+  const filters = {
+    "title-ascending": () => alphabeticFilter(data, setProgressiveArray, true),
+    "title-descending": () =>
+      alphabeticFilter(data, setProgressiveArray, false),
+    "price-ascending": () => priceFilter(data, setProgressiveArray, true),
+    "price-descending": () => priceFilter(data, setProgressiveArray, false),
+    default: () => setProgressiveArray(data),
+  };
+
   useEffect(() => {
     if (data) {
-      let changeArray = nextCards(numberArray[0], numberArray[1], data)
-      setProgressiveArray();
+      let changeArray = nextCards(numberArray[0], numberArray[1], data);
+      setProgressiveArray(changeArray);
       setNumberArray([0, 8]);
       setDataButton(true);
     }
-
-    const filters = {
-      "title-ascending": () =>
-        alphabeticFilter(data, setProgressiveArray, true),
-      "title-descending": () =>
-        alphabeticFilter(data, setProgressiveArray, false),
-      "price-ascending": () => priceFilter(data, setProgressiveArray, true),
-      "price-descending": () => priceFilter(data, setProgressiveArray, false),
-      default: () => setProgressiveArray(data),
-    };
 
     if (selectedOption) {
       filters[selectedOption]();
@@ -85,7 +87,7 @@ const handleMoreData = () => {
 
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
-      <FilterMobile
+      <ShopFilter
         toggleGrid={gridChangeToggle}
         booleanGrid={toggleGrid}
         {...{ handleSelect }}
@@ -95,7 +97,7 @@ const handleMoreData = () => {
           toggleGrid ? gridCompact : gridGiant
         }`}
       >
-        {loading
+        {loading || progressiveArray.length === 0
           ? Array.from({ length: 4 }).map((_, index) => (
               <ShopCard toggleSize={toggleGrid} key={index}>
                 <LoaderCircle />
