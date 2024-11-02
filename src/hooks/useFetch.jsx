@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import "../types";
 
 /**
- * @param {string | undefined } category 
- * @returns {{ data: ClothesObject[], loading: boolean, error: Error | null }} 
+ * @param {string | undefined } category
+ * @returns {{ data: ClothesObject[] | ClothesCategory, loading: boolean, error: Error | null }}
  */
 export const useFetch = (category) => {
-  const [data, setData] = useState( ([]));
-  const [loading, setLoading] = useState( (true));
-  const [error, setError] = useState( (null));
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const controller = new AbortController();

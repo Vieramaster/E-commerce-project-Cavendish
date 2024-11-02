@@ -41,6 +41,16 @@ export const Shop = () => {
   const { category } = useParams();
   const { data, loading } = useFetch(category);
 
+  const fafa = () => {
+    let sizesArray = []; // Cambié el nombre de la variable a sizesArray para mayor claridad
+      data.forEach(element => {
+        sizesArray.push(...element.colors)
+      });
+    return sizesArray; // Devolvemos el array con todos los tamaños
+  };
+  
+  console.log(fafa());
+
   const handleMoreData = () => {
     if (
       Array.isArray(data) &&

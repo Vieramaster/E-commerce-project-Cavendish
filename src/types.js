@@ -14,14 +14,14 @@
  * @property {number} price
  * @property {number} realPrice
  * @property {boolean} discount
- *  * @property {boolean} newArrival
+ * @property {boolean} newArrival
  * @property {boolean} outlet
  * @property {ClothesColor[]} colors
  * 
 
  */
 /**
- * @typedef ClothesCategory
+ * @typedef {object } ClothesCategory
  * @property {ClothesObject[]} jackets_and_coats
  * @property {ClothesObject[]} pants
  * @property {ClothesObject[]} polos_and_t_shirts

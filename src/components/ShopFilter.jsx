@@ -4,13 +4,18 @@ import { GridIco } from "./SVGs/icons/GridIco";
 import { SquareIco } from "./SVGs/icons/SquareIco";
 import { FilterNavButton } from "./buttons/FilterNavButton";
 
+
 export const classFilter =
   "h-full border border-lineGrey flex gap-5 items-center justify-center border-b border-r cursor-pointer relative ";
 
+
+
 /**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>}} props*/
 export const ShopFilter = ({ toggleGrid, booleanGrid, handleSelect }) => {
+
+  
   return (
-    <div className="w-full h-12 flex text-lightCarbon font-medium">
+    <div className="w-full h-12 flex text-lightCarbon font-medium relative">
       <FilterNavButton aria-label="Filter">
         <FilterIco className="size-7" /> Filter
       </FilterNavButton>
@@ -56,6 +61,7 @@ export const ShopFilter = ({ toggleGrid, booleanGrid, handleSelect }) => {
           />
         </button>
       </div>
+
     </div>
   );
 };
