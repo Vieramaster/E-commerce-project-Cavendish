@@ -62,3 +62,19 @@
     background: linear-gradient(to right, #fee161 35%, #3b5e48 30%);
   }
 }
+
+@keyframes filterButtons {
+  0% {
+    transform: left(-100%);
+
+  }
+
+  100% {
+    transform: left(100%);
+
+  }
+}
+.filterButtons {
+  animation: filterButtons ease-in-out 2s both;
+}
+

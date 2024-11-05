@@ -1,4 +1,4 @@
-{
+[{
   "colors": {
     "white": "#ffffff",
     "oatmeal": "#f2eee9",
@@ -8,7 +8,7 @@
     "beige": "#cdac97",
     "navy": "#13192c",
     "blue": "#0f2237",
-    "ladrillo": "#9a372f",
+    "brick": "#9a372f",
     "red": "#d3251d",
     "aero": "#2d3f59",
     "brown": "#554838",
@@ -36,7 +36,7 @@
   "outlet": ,
   "colors": [
     {
-      "name": "",
+      "colorName": "",
       "hex": "#",
       "imagesColor": [
         "",
@@ -69,7 +69,7 @@
     },
   ]
 },
-
+]
 "/images/polo_and_t-shirts/1.webp",
 "/images/polo_and_t-shirts/2.webp",
 "/images/polo_and_t-shirts/3.webp"

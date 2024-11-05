@@ -12,7 +12,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/jackets_and_coats/gabardine_jacket_beige1.webp",
@@ -24,7 +24,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -41,7 +41,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/jackets_and_coats/quick_jacket_black1.webp",
@@ -53,7 +53,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -70,7 +70,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/jackets_and_coats/bayport_windbraker_black1.webp",
@@ -82,11 +82,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "red",
+                    "colorName": "red",
                     "hex": "#d3251d",
                     "imagesColor": [
                         "/images/jackets_and_coats/bayport_windbraker_red1.webp",
@@ -98,7 +98,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -115,7 +115,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/jackets_and_coats/windstorm_jacket_beige1.webp",
@@ -127,11 +127,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/jackets_and_coats/windstorm_jacket_navy1.webp",
@@ -143,7 +143,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -162,7 +162,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "/images/pants/chester_cargo_brown1.webp",
@@ -180,7 +180,7 @@
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/pants/chester_cargo_black1.webp",
@@ -211,7 +211,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/pants/fulton_stretch_green_army1.webp",
@@ -229,7 +229,7 @@
                     }
                 },
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/pants/fulton_stretch_navy1.webp",
@@ -260,7 +260,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/pants/joiner_carpenter_pants_oatmeal1.webp",
@@ -278,7 +278,7 @@
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/pants/joiner_carpenter_pants_black1.webp",
@@ -296,7 +296,7 @@
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/pants/joiner_carpenter_pants_sky_blue1.webp",
@@ -327,7 +327,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/pants/toledo_gabardine_beige1.webp",
@@ -345,7 +345,7 @@
                     }
                 },
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/pants/toledo_gabardine_navy1.webp",
@@ -376,7 +376,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "kaki",
+                    "colorName": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
                         "/images/pants/chester_drawstring_kaki1.webp",
@@ -394,7 +394,7 @@
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/pants/chester_drawstring_black1.webp",
@@ -425,7 +425,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/pants/abbey_stretch_green_army1.webp",
@@ -443,7 +443,7 @@
                     }
                 },
                 {
-                    "name": "kaki",
+                    "colorName": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
                         "/images/pants/abbey_stretch_kaki1.webp",
@@ -474,7 +474,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "blue",
+                    "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
                         "/images/pants/fulton_jean_blue1.webp",
@@ -492,7 +492,7 @@
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/pants/fulton_jean_sky_blue1.webp",
@@ -523,7 +523,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/pants/zumo_jean_sky_blue1.webp",
@@ -541,7 +541,7 @@
                     }
                 },
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/pants/zumo_jean_navy1.webp",
@@ -572,7 +572,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/pants/copenhagen_jean_sky_blue1.webp",
@@ -590,7 +590,7 @@
                     }
                 },
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/pants/copenhagen_jean_navy1.webp",
@@ -621,7 +621,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/pants/joiner_carpenter_sky_blue1.webp",
@@ -652,7 +652,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "dark grey",
+                    "colorName": "dark grey",
                     "hex": "#303030",
                     "imagesColor": [
                         "/images/pants/loose_jean_dark_grey1.webp",
@@ -670,7 +670,7 @@
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/pants/loose_jean_sky_blue1.webp",
@@ -701,7 +701,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/pants/looseII_jean_light_grey1.webp",
@@ -732,7 +732,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/pants/distracted_joggins_grey1.webp",
@@ -744,11 +744,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/pants/distracted_joggins_black1.webp",
@@ -760,7 +760,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -777,7 +777,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/pants/ravara_joggins_grey1.webp",
@@ -789,11 +789,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/pants/ravara_joggins_black1.webp",
@@ -805,7 +805,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -824,7 +824,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/drum_t-shirt_white1.webp",
@@ -836,11 +836,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/drum_t-shirt_black1.webp",
@@ -852,7 +852,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -869,7 +869,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "pink",
+                    "colorName": "pink",
                     "hex": "#f0d0c6",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/rad_t-shirt_pink1.webp",
@@ -881,11 +881,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/rad_t-shirt_aero1.webp",
@@ -897,11 +897,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/rad_t-shirt_grey1.webp",
@@ -913,7 +913,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -930,7 +930,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/vibes_t-shirt_white1.webp",
@@ -942,11 +942,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/vibes_t-shirt_aero1.webp",
@@ -958,7 +958,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -975,7 +975,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/san_martin_t-shirt_black1.webp",
@@ -987,7 +987,7 @@
                         "m": 0,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1004,7 +1004,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/pocket_t-shirt_grey1.webp",
@@ -1016,11 +1016,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue1.webp",
@@ -1032,7 +1032,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1049,7 +1049,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/radder_t-shirt_grey1.webp",
@@ -1061,11 +1061,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "yellow",
+                    "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/radder_t-shirt_yellow1.webp",
@@ -1077,11 +1077,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/radder_t-shirt_white1.webp",
@@ -1093,11 +1093,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/radder_t-shirt_black1.webp",
@@ -1109,11 +1109,11 @@
                         "m": 0,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/radder_t-shirt_beige1.webp",
@@ -1125,7 +1125,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1142,7 +1142,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/rider_t-shirt_oatmeal1.webp",
@@ -1154,11 +1154,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/rider_t-shirt_white1.webp",
@@ -1170,7 +1170,7 @@
                         "m": 3,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -1187,7 +1187,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal1.webp",
@@ -1199,7 +1199,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1216,7 +1216,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/rugby_action_t-shirt_white1.webp",
@@ -1228,7 +1228,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1245,7 +1245,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige1.webp",
@@ -1257,11 +1257,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal1.webp",
@@ -1273,7 +1273,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1290,7 +1290,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/scared_t-shirt_navy1.webp",
@@ -1302,7 +1302,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -1319,7 +1319,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/malvinas_t-shirt_navy1.webp",
@@ -1331,11 +1331,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/malvinas_t-shirt_green_army1.webp",
@@ -1347,7 +1347,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1364,7 +1364,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/casquito_polo_beige1.webp",
@@ -1376,11 +1376,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/casquito_polo_sky_blue1.webp",
@@ -1392,11 +1392,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/casquito_polo_green_army1.webp",
@@ -1408,11 +1408,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "yellow",
+                    "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/casquito_polo_yellow1.webp",
@@ -1424,7 +1424,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1441,7 +1441,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/steel_polo_aero1.webp",
@@ -1453,11 +1453,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/steel_polo_brown1.webp",
@@ -1469,7 +1469,7 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1486,7 +1486,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/barahona_polo_sky_blue1.webp",
@@ -1498,11 +1498,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "blue",
+                    "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/barahona_polo_blue1.webp",
@@ -1514,7 +1514,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1531,7 +1531,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "yellow",
+                    "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/dagger_polo_yellow1.webp",
@@ -1543,11 +1543,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/dagger_polo_light_grey1.webp",
@@ -1559,7 +1559,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1576,7 +1576,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/malvinas_polo_green_army1.webp",
@@ -1588,11 +1588,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/malvinas_polo_navy1.webp",
@@ -1604,7 +1604,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1621,7 +1621,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "pink",
+                    "colorName": "pink",
                     "hex": "#f0d0c6",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/edge_polo_pink1.webp",
@@ -1633,11 +1633,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/edge_polo_green_army1.webp",
@@ -1649,7 +1649,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1666,7 +1666,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "yellow",
+                    "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/cave_polo_yellow1.webp",
@@ -1678,11 +1678,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "salmon",
+                    "colorName": "salmon",
                     "hex": "#ffcca2",
                     "imagesColor": [
                         "/images/polo_and_t-shirts/cave_polo_salmon1.webp",
@@ -1694,7 +1694,7 @@
                         "m": 3,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -1713,7 +1713,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "/images/shirts/zug_shirt_brown1.webp",
@@ -1725,11 +1725,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/shirts/zug_shirt_oatmeal1.webp",
@@ -1741,11 +1741,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "dark grey",
+                    "colorName": "dark grey",
                     "hex": "#303030",
                     "imagesColor": [
                         "/images/shirts/zug_shirt_dark_grey1.webp",
@@ -1757,7 +1757,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1774,7 +1774,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "off white",
+                    "colorName": "off white",
                     "hex": "#e1e4ed",
                     "imagesColor": [
                         "/images/shirts/havanna_shirt_off_white1.webp",
@@ -1786,11 +1786,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "/images/shirts/havanna_shirt_brown.webp",
@@ -1802,11 +1802,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/shirts/havanna_shirt_sky_blue.webp",
@@ -1818,7 +1818,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1835,7 +1835,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/shirts/greek_shirt_black1.webp",
@@ -1847,7 +1847,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1864,7 +1864,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/shirts/pond_shirt_sky_blue1.webp",
@@ -1876,7 +1876,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1893,7 +1893,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/shirts/jon_shirt_sky_blue1.webp",
@@ -1905,11 +1905,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/shirts/jon_shirt_grey1.webp",
@@ -1921,7 +1921,7 @@
                         "m": 0,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1938,7 +1938,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/shirts/crow_shirt_aero1.webp",
@@ -1950,11 +1950,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/shirts/crow_shirt_light_grey1.webp",
@@ -1966,7 +1966,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -1983,7 +1983,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/shirts/ross_shirt_aero1.webp",
@@ -1995,11 +1995,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/shirts/ross_shirt_green_army1.webp",
@@ -2011,11 +2011,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/shirts/ross_shirt_light_grey1.webp",
@@ -2027,7 +2027,7 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2044,7 +2044,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "blue",
+                    "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
                         "/images/shirts/york_shirt_blue1.webp",
@@ -2056,11 +2056,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/shirts/york_shirt_blue1.webp",
@@ -2072,7 +2072,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2089,7 +2089,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/shirts/country_style_shirt_beige1.webp",
@@ -2101,11 +2101,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/shirts/country_style_shirt_grey1.webp",
@@ -2117,7 +2117,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2134,7 +2134,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/shirts/mercey_shirt_green_army1.webp",
@@ -2146,11 +2146,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/shirts/mercey_shirt_aero1.webp",
@@ -2162,7 +2162,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2179,7 +2179,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/shirts/fusion_shirt_black1.webp",
@@ -2191,11 +2191,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "blue",
+                    "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
                         "/images/shirts/fusion_shirt_blue1.webp",
@@ -2207,7 +2207,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2224,7 +2224,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/shirts/paradise_shirt_black1.webp",
@@ -2236,11 +2236,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "red",
+                    "colorName": "red",
                     "hex": "#d3251d",
                     "imagesColor": [
                         "/images/shirts/paradise_shirt_red1.webp",
@@ -2252,7 +2252,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2271,7 +2271,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/sweaters/britain_sweater_black1.webp",
@@ -2283,11 +2283,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/sweaters/britain_sweater_light_grey1.webp",
@@ -2299,11 +2299,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/sweaters/britain_sweater_beige1.webp",
@@ -2315,7 +2315,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2332,7 +2332,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/sweaters/dass_sweater_beige1.webp",
@@ -2344,7 +2344,7 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2361,7 +2361,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "brick",
+                    "colorName": "brick",
                     "hex": "#9a372f",
                     "imagesColor": [
                         "/images/sweaters/neptune_sweater_v_brick1.webp",
@@ -2373,11 +2373,11 @@
                         "m": 0,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/sweaters/neptune_sweater_v_aero1.webp",
@@ -2389,7 +2389,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2406,7 +2406,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
                         "/images/sweaters/winston_sweater_jacket_aero1.webp",
@@ -2418,11 +2418,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "/images/sweaters/winston_sweater_jacket_brown1.webp",
@@ -2434,11 +2434,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/sweaters/winston_sweater_jacket_black1.webp",
@@ -2450,7 +2450,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2479,11 +2479,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "pink",
+                    "colorName": "pink",
                     "hex": "#f0d0c6",
                     "imagesColor": [
                         "/images/sweaters/mercury_sweater_light_pink1.webp",
@@ -2495,11 +2495,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "salmon",
+                    "colorName": "salmon",
                     "hex": "#ffcca2",
                     "imagesColor": [
                         "/images/sweaters/mercury_sweater_salmon1.webp",
@@ -2511,7 +2511,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2528,7 +2528,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "blue",
+                    "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
                         "/images/sweaters/constellation_sweater_blue1.webp",
@@ -2540,11 +2540,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/sweaters/constellation_sweater_beige1.webp",
@@ -2556,11 +2556,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/sweaters/constellation_sweater_light_grey1.webp",
@@ -2572,7 +2572,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2589,7 +2589,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "brick",
+                    "colorName": "brick",
                     "hex": "#9a372f",
                     "imagesColor": [
                         "/images/sweaters/triton_sweater_brick1.webp",
@@ -2601,7 +2601,7 @@
                         "m": 3,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -2618,7 +2618,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "navy",
+                    "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
                         "/images/sweaters/eclipse_sweater_navy1.webp",
@@ -2630,7 +2630,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2649,7 +2649,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green1.webp",
@@ -2661,11 +2661,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_light_grey1.webp",
@@ -2677,7 +2677,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2694,7 +2694,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/special_peak_hoodie_black1.webp",
@@ -2706,11 +2706,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/special_peak_hoodie_white1.webp",
@@ -2722,7 +2722,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2739,7 +2739,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/special_wave_hoodie_white1.webp",
@@ -2751,11 +2751,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/special_wave_hoodie_black1.webp",
@@ -2767,7 +2767,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2784,7 +2784,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/closed_sweatshirt_beige1.webp",
@@ -2796,11 +2796,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "white",
+                    "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/closed_sweatshirt_white1.webp",
@@ -2812,7 +2812,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -2829,7 +2829,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/overlay_hoodie_beige1.webp",
@@ -2841,7 +2841,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2858,7 +2858,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "esmerald",
+                    "colorName": "esmerald",
                     "hex": "#0f443f",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/wells_sweatshirt_esmerald1.webp",
@@ -2870,11 +2870,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/wells_sweatshirt_brown1.webp",
@@ -2886,7 +2886,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2903,7 +2903,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/wolter_sweatshirt_green_army1.webp",
@@ -2915,7 +2915,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -2932,7 +2932,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "aero",
+                    "colorName": "aero",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/rigger_sweatshirt_aero1.webp",
@@ -2944,11 +2944,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey1.webp",
@@ -2960,11 +2960,11 @@
                         "m": 3,
                         "l": 0,
                         "xl": 0,
-                        "2xl": 1
+                        "xxl": 1
                     }
                 },
                 {
-                    "name": "sky blue",
+                    "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue1.webp",
@@ -2976,7 +2976,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 2,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -2993,7 +2993,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "green army",
+                    "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/kip_hoodie_green_army1.webp",
@@ -3005,11 +3005,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/kip_hoodie_oatmeal1.webp",
@@ -3021,7 +3021,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -3038,7 +3038,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "bublegum pink",
+                    "colorName": "bublegum pink",
                     "hex": "#e58895",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink1.webp",
@@ -3050,11 +3050,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/kipper_hoodie_black1.webp",
@@ -3066,11 +3066,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "blue",
+                    "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/kipper_hoodie_blue1.webp",
@@ -3082,7 +3082,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -3099,7 +3099,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "grey",
+                    "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/relaxed_sweatshirt_grey1.webp",
@@ -3111,7 +3111,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -3128,7 +3128,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "name": "oatmeal",
+                    "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
                         "/images/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal1.webp",
@@ -3140,7 +3140,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 }
             ]
@@ -3159,7 +3159,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/06529001/xg/06529001_1-sw.webp",
@@ -3171,11 +3171,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "light grey",
+                    "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/06529350/xg/06529350_1-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
@@ -3187,11 +3187,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 },
                 {
-                    "name": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/06529076/xg/06529076_1-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
@@ -3203,7 +3203,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -3220,7 +3220,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "nameColor": "beige",
+                    "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/047E7076/xg/047E7076_3.webp",
@@ -3232,7 +3232,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -3249,7 +3249,7 @@
             "outlet": true,
             "colors": [
                 {
-                    "nameColor": "esmerald",
+                    "colorName": "esmerald",
                     "hex": "#0f443f",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/047C7437/xg/047c7437_1-buzo--wells-kevingston-hombre.webp",
@@ -3261,11 +3261,11 @@
                         "m": 3,
                         "l": 5,
                         "xl": 5,
-                        "2xl": 0
+                        "xxl": 0
                     }
                 },
                 {
-                    "nameColor": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/047C7078/xg/047c7078_1-buzo-wells-liso-kevingston-hombre.webp",
@@ -3277,7 +3277,7 @@
                         "m": 3,
                         "l": 5,
                         "xl": 0,
-                        "2xl": 3
+                        "xxl": 3
                     }
                 }
             ]
@@ -3294,7 +3294,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "brown",
+                    "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/07094078/xg/07094078_1-babucha-cargo-chester-marron-kevingston-hombres.webp",
@@ -3312,7 +3312,7 @@
                     }
                 },
                 {
-                    "name": "black",
+                    "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
                         "https://www.kvnstatic.com/foto-prod/07094001/xg/07094001_1.webp",

@@ -8,7 +8,13 @@ import { ShopCard } from "../components/cards/ShopCard";
 import { useResizeWindow } from "../hooks/useResizeWindow";
 import { LoaderCircle } from "../components/loaders/LoaderCircle";
 import { DefaultButton } from "../components/buttons/DefaultButton";
-import { alphabeticFilter, priceFilter } from "../hooks/useSelectFilters";
+import {
+  alphabeticFilter,
+  priceFilter,
+  colorFilter,
+  sizesFilter,
+  typeFilter,
+} from "../hooks/useSelectFilters";
 import "../types";
 
 const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
@@ -39,24 +45,22 @@ export const Shop = () => {
   };
 
   const { category } = useParams();
+  /**@type {{data:ClothesObject[], loading: boolean}} */
   const { data, loading } = useFetch(category);
 
-  const fafa = () => {
-    let sizesArray = []; // Cambié el nombre de la variable a sizesArray para mayor claridad
-      data.forEach(element => {
-        sizesArray.push(...element.colors)
-      });
-    return sizesArray; // Devolvemos el array con todos los tamaños
-  };
-  
-  console.log(fafa());
+  const arrayForFilters = [
+    sizesFilter(data),
+    colorFilter(data),
+    typeFilter(data),
+  ];
+
+
+
+
+
 
   const handleMoreData = () => {
-    if (
-      Array.isArray(data) &&
-      Array.isArray(progressiveArray) &&
-      progressiveArray.length < data.length
-    ) {
+    if (progressiveArray.length < data.length) {
       const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
       setNumberArray(newNumbers);
       const newCards = nextCards(newNumbers[0], newNumbers[1], data);
@@ -66,9 +70,7 @@ export const Shop = () => {
     }
   };
 
-  /**
-   * @param {React.ChangeEvent<HTMLSelectElement>} event
-   */
+  /** @param {React.ChangeEvent<HTMLSelectElement>} event*/
   const handleSelect = (event) => {
     setSelectedOption(event.target.value);
   };
@@ -101,6 +103,7 @@ export const Shop = () => {
         toggleGrid={gridChangeToggle}
         booleanGrid={toggleGrid}
         {...{ handleSelect }}
+        filterButtons={arrayForFilters}
       />
       <div
         className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${

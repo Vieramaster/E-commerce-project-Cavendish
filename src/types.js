@@ -1,8 +1,9 @@
 /** Clothes array.
  * @typedef {object} ClothesColor
- * @property {string} nameColor
+ * @property {string} colorName
  * @property {string} hex
  * @property {string[]} imagesColor
+ * @property {Object<string, number>} sizes
  */
 
 /**
@@ -19,17 +20,7 @@
  * @property {ClothesColor[]} colors
  * 
 
- */
-/**
- * @typedef {object } ClothesCategory
- * @property {ClothesObject[]} jackets_and_coats
- * @property {ClothesObject[]} pants
- * @property {ClothesObject[]} polos_and_t_shirts
- * @property {ClothesObject[]} shirts
- * @property {ClothesObject[]} sweaters
- * @property {ClothesObject[]} sweatshirts_and_hoodies
- * @property {ClothesObject[]} best_sellers
- */
+
 
 /** ArrowCards
  * @typedef {Object} ArrowsFunctionProps
@@ -50,8 +41,27 @@
  * @returns {ClothesObject[]}
  */
 /**
- * 
+ *
  * @typedef {Object} FilterFunction
- * @property {ClothesObject[]} data 
+ * @property {ClothesObject[]} data
  * @property {React.Dispatch<React.SetStateAction<ClothesObject[]>>} setState
+ */
+
+/**
+ * @typedef {Object} SizeAvailability
+ * @property {boolean} s
+ * @property {boolean} m
+ * @property {boolean} l
+ * @property {boolean} xl
+ * @property {boolean} xxl
+ */
+
+/**
+ * @typedef {Object} Color
+ * @property {string} name
+ * @property {string} hex
+ */
+
+/**
+ * @typedef { [SizeAvailability, Color[], string[]] } ArrayButtons
  */

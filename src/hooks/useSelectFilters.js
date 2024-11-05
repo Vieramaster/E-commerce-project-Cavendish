@@ -13,3 +13,44 @@ export const priceFilter = (data, setState, ascending) => {
   );
   setState(sorted);
 };
+
+/**@param {ClothesObject[]} array  @return {Array<{name: string, hex: string}>}*/
+export const colorFilter = (array) => {
+  const uniqueMap = new Map();
+  array.flatMap((element) =>
+    element.colors.forEach((item) => {
+      const key = `${item.colorName}-${item.hex}`;
+      if (!uniqueMap.has(key)) {
+        uniqueMap.set(key, { name: item.colorName, hex: item.hex });
+      }
+    })
+  );
+
+  return Array.from(uniqueMap.values());
+};
+
+/**@param {ClothesObject[]} array  @returns {Object<string, boolean>} */
+export const sizesFilter = (array) => {
+  /**@type {Object<string, boolean>} */
+  const sizeAvailability = {};
+
+  array.forEach((product) => {
+    product.colors.forEach((color) => {
+      Object.entries(color.sizes).forEach(([size, quantity]) => {
+        if (!(size in sizeAvailability)) {
+          sizeAvailability[size] = false;
+        }
+        if (quantity > 0) {
+          sizeAvailability[size] = true;
+        }
+      });
+    });
+  });
+
+  return sizeAvailability;
+};
+
+/**@param {ClothesObject[]} array @return {Array<string>} */
+export const typeFilter = (array) => {
+  return [...new Set(array.flatMap((element) => element.category))];
+};

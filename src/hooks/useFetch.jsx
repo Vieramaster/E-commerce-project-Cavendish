@@ -3,7 +3,7 @@ import "../types";
 
 /**
  * @param {string | undefined } category
- * @returns {{ data: ClothesObject[] | ClothesCategory, loading: boolean, error: Error | null }}
+ * @returns {{ data: ClothesObject[], loading: boolean, error: Error | null }}
  */
 export const useFetch = (category) => {
   const [data, setData] = useState([]);
@@ -20,7 +20,9 @@ export const useFetch = (category) => {
         response.ok ? response.json() : Promise.reject(new Error("throw error"))
       )
       .then((jsonData) => {
-        const slicedData = category ? jsonData[category] : jsonData;
+        const slicedData = category
+          ? jsonData[category]
+          : Object.values(jsonData).flatMap((arr) => arr);
         setData(slicedData);
       })
       .catch((error) => {
