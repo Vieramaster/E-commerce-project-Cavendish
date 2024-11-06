@@ -23,41 +23,37 @@ const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 export const Shop = () => {
   const [toggleGrid, setToggleGrid] = useState(true);
   const [dataButton, setDataButton] = useState(true);
+  
   const [numberArray, setNumberArray] = useState([0, 8]);
   const [selectedOption, setSelectedOption] = useState("");
   /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
   const [progressiveArray, setProgressiveArray] = useState([]);
 
-  /**
-   * @param {number} prevNumber
-   * @param {number} newNumber
-   * @param {ClothesObject[]} array
-   * @returns {ClothesObject[]}
-   */
+  /*** @param {number} prevNumber @param {number} newNumber @param {ClothesObject[]} array @returns {ClothesObject[]} */
   const nextCards = (prevNumber, newNumber, array) => {
     return array.slice(prevNumber, newNumber);
   };
 
+  //Grid
   useResizeWindow(976, setToggleGrid);
 
   const gridChangeToggle = () => {
     setToggleGrid((prevState) => !prevState);
   };
 
+  //The React Router param is used to know what data to look for depending on the URL
   const { category } = useParams();
   /**@type {{data:ClothesObject[], loading: boolean}} */
   const { data, loading } = useFetch(category);
 
+  // data is subtracted to create filter buttons
+
+  /** @type {ProductAttributes} */
   const arrayForFilters = [
-    sizesFilter(data),
-    colorFilter(data),
-    typeFilter(data),
+    /** @type {Sizes} */ (sizesFilter(data)),
+    /** @type {Color[]} */ (colorFilter(data)),
+    /** @type {ClothingTypes} */ (typeFilter(data)),
   ];
-
-
-
-
-
 
   const handleMoreData = () => {
     if (progressiveArray.length < data.length) {
@@ -70,6 +66,7 @@ export const Shop = () => {
     }
   };
 
+  //
   /** @param {React.ChangeEvent<HTMLSelectElement>} event*/
   const handleSelect = (event) => {
     setSelectedOption(event.target.value);

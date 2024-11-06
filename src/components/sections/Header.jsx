@@ -19,11 +19,11 @@ export const Header = () => {
 
   const toggleNavbar = useCallback(() => {
     setIsSearchBarOpen(false);
-    setIsNavbarOpen((prevState) => !prevState);
+    setIsNavbarOpen((prev) => !prev);
   }, []);
 
   const toggleSearchBar = useCallback(() => {
-    setIsSearchBarOpen((prevState) => !prevState);
+    setIsSearchBarOpen((prev) => !prev);
   }, []);
 
   const navbarRef = useRef(null);

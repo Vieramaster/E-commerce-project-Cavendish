@@ -9,7 +9,7 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
       ref={componentRef}
       className={`fixed ${
         open ? "top-24 opacity-100 lg:top-28" : "top-5 opacity-0"
-      } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-30`}
+      } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-40`}
     >
       <fieldset className="w-5/6 max-w-[40rem] h-2/3 flex items-center justify-center rounded-md relative">
         <span className="h-full w-8 px-5 grid place-content-center bg-lightGrey lg:w-20">

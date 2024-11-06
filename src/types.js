@@ -48,7 +48,8 @@
  */
 
 /**
- * @typedef {Object} SizeAvailability
+ *
+ * @typedef {object} Sizes
  * @property {boolean} s
  * @property {boolean} m
  * @property {boolean} l
@@ -57,11 +58,12 @@
  */
 
 /**
- * @typedef {Object} Color
+ * Objeto que representa un color.
+ * @typedef {object} Color
  * @property {string} name
  * @property {string} hex
  */
 
-/**
- * @typedef { [SizeAvailability, Color[], string[]] } ArrayButtons
- */
+/**  @typedef {string[]} ClothingTypes*/
+
+/** @typedef { [Sizes, Color[], ClothingTypes] } ProductAttributes*/

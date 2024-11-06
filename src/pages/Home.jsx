@@ -5,7 +5,7 @@ import { ShoppingCards } from "../components/sections/ShoppingCards";
 import { SellCounter } from "../components/sections/SellCounter";
 import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
-import { useApi } from "../hooks/useApi";
+import { useFetch } from "../hooks/useFetch";
 import "../types";
 
 const news = [
@@ -39,7 +39,7 @@ const news = [
 ];
 
 const Home = () => {
-  const { data: newArrivals } = useApi("/data/best_sellers.json");
+  const { data: newArrivals } = useFetch("best_sellers");
 
   return (
     <>
