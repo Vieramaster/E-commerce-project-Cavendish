@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { useState, useEffect } from "react";
 import { useFetch } from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
@@ -23,7 +25,7 @@ const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 export const Shop = () => {
   const [toggleGrid, setToggleGrid] = useState(true);
   const [dataButton, setDataButton] = useState(true);
-  
+  const [selectionFilter, setSelectionFilter] = useState([[], [], []]);
   const [numberArray, setNumberArray] = useState([0, 8]);
   const [selectedOption, setSelectedOption] = useState("");
   /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
@@ -72,6 +74,42 @@ export const Shop = () => {
     setSelectedOption(event.target.value);
   };
 
+  //add strings to filter the data
+  /** @param {React.MouseEvent<HTMLButtonElement>} event  */
+  const handleExtendFilter = ({ target }) => {
+    const {
+      id: ID,
+      dataset: { id: buttonData },
+    } = target;
+    const index = { sizeButton: 0, colorButton: 1, typeButton: 2 }[buttonData];
+
+    if (index !== undefined && !selectionFilter[index].includes(ID)) {
+      setSelectionFilter((prev) => {
+        const newFilter = [...prev[index], ID];
+        return [
+          index === 0 ? newFilter : prev[0],
+          index === 1 ? newFilter : prev[1],
+          index === 2 ? newFilter : prev[2],
+        ];
+      });
+    }
+  };
+  //delete strings to filter the data
+  /** @param {React.MouseEvent<HTMLButtonElement>} event  */
+  const deleteFilterTag = ({ target }) => {
+    const {
+      dataset: { id: ID },
+    } = target;
+
+    setSelectionFilter((prev) => {
+      return prev.map((element) => {
+        return element.includes(ID)
+          ? element.filter((item) => item !== ID)
+          : [...element];
+      });
+    });
+  };
+
   const filters = {
     "title-ascending": () => alphabeticFilter(data, setProgressiveArray, true),
     "title-descending": () =>
@@ -94,13 +132,32 @@ export const Shop = () => {
     }
   }, [data, selectedOption]);
 
+  const cleanFilters = () => {
+    setSelectionFilter([[], [], []]);
+  };
+
+  const searchFilter = () => {
+    const first = data.map((element) => {
+      return element.colors.map((color) => {
+        return selectionFilter[0].map((filter) => {
+          color.sizes.filter > 0;
+        });
+      });
+    });
+    console.log(first);
+  };
+
+  console.log(selectionFilter);
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
       <ShopFilter
         toggleGrid={gridChangeToggle}
         booleanGrid={toggleGrid}
-        {...{ handleSelect }}
+        {...{ handleSelect, handleExtendFilter, selectionFilter }}
         filterButtons={arrayForFilters}
+        handleDeletetag={deleteFilterTag}
+        handleCleanFilters={cleanFilters}
+        handleSearchFilter={searchFilter}
       />
       <div
         className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${

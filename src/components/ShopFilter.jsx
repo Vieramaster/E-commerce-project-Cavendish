@@ -4,18 +4,23 @@ import { SortIco } from "./SVGs/icons/SortIco";
 import { GridIco } from "./SVGs/icons/GridIco";
 import { SquareIco } from "./SVGs/icons/SquareIco";
 import { FilterNavButton } from "./buttons/FilterNavButton";
-import { ExtendFilterShop } from "../ExtendFilterShop";
+import { ExtendFilterShop } from "./ExtendFilterShop";
 import { useClickOutside } from "../hooks/useClickOutside";
 
 export const classFilter =
   "h-full border border-lineGrey flex gap-5 items-center justify-center border-b border-r cursor-pointer relative ";
 
-/**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes}} props*/
+/**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleExtendFilter: ()=>void, selectionFilter:[string[],string[],string[]] | null, handleDeletetag: ()=>void, handleCleanFilters: ()=>void, handleSearchFilter: ()=>void}} props*/
 export const ShopFilter = ({
   toggleGrid,
   booleanGrid,
   handleSelect,
   filterButtons,
+  handleExtendFilter,
+  selectionFilter,
+  handleDeletetag,
+  handleCleanFilters,
+  handleSearchFilter,
 }) => {
   const [toggleShopMenu, setToggleShopMenu] = useState(false);
 
@@ -24,7 +29,7 @@ export const ShopFilter = ({
   };
   const extenderFilterRef = useRef(null);
 
-  useClickOutside(extenderFilterRef, () =>setToggleShopMenu(false))
+  useClickOutside(extenderFilterRef, () => setToggleShopMenu(false));
 
   return (
     <>
@@ -83,6 +88,9 @@ export const ShopFilter = ({
         array={filterButtons}
         toggleMenu={toggleShopMenu}
         componentRef={extenderFilterRef}
+        handleEvent={handleExtendFilter}
+        filterTags={selectionFilter}
+        {...{ handleDeletetag, handleCleanFilters, handleSearchFilter }}
       />
     </>
   );
