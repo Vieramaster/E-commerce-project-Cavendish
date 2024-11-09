@@ -5,7 +5,7 @@ const LayoutPublic = lazy(() => import("../layout/LayoutPublic"));
 const Home = lazy(() => import("../pages/Home"));
 const Shop = lazy(() => import("../pages/Shop"));
 const ErrorPage = lazy(() => import("../pages/ErrorPage"));
-const Product = lazy(() => import("../pages/Product"));
+const ShopProduct = lazy(() => import("../pages/ShopProduct"));
 
 const SuspenseWrapper = ({ children }) => (
   <Suspense fallback={<div>Cargando...</div>}>{children}</Suspense>
@@ -46,7 +46,7 @@ export const router = createBrowserRouter([
         path: "/:category/:idProduct",
         element: (
           <SuspenseWrapper>
-            <Product />
+            <ShopProduct />
           </SuspenseWrapper>
         ),
       },

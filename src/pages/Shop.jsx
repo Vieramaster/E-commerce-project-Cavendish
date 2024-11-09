@@ -37,8 +37,6 @@ export const Shop = () => {
     return array.slice(prevNumber, newNumber);
   };
 
-
-  
   //Grid
   useResizeWindow(976, setToggleGrid);
 
@@ -48,7 +46,7 @@ export const Shop = () => {
 
   //The React Router param is used to know what data to look for depending on the URL
   const { category } = useParams();
- 
+
   /**@type {{data:ClothesObject[], loading: boolean}} */
   const { data, loading } = useFetch(
     category !== "new_arrivals" ? category : undefined
@@ -163,8 +161,6 @@ export const Shop = () => {
   };
 
   useEffect(() => {
-    
-
     if (data) {
       setLoadingData(true);
       let changeArray = nextCards(numberArray[0], numberArray[1], data);
@@ -206,7 +202,12 @@ export const Shop = () => {
           ? "No se encontró nada"
           : progressiveArray.map((item) => (
               <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
-                <ImagesShopSlider array={item} maxSizeArrows={toggleGrid} category={category}/>
+                <ImagesShopSlider
+                  array={item}
+                  maxSizeArrows={toggleGrid}
+                  category={category}
+                  itsALink={true}
+                />
                 <DescriptionShopCard array={item} toggleSize={toggleGrid} />
               </ShopCard>
             ))}

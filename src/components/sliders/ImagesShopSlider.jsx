@@ -9,14 +9,21 @@ import {
 } from "../../hooks/useCarrouselArrows";
 import "../../types";
 
-/** @param {{array:ClothesObject, maxSizeArrows: boolean , category:string}} props */
-export const ImagesShopSlider = ({ array, maxSizeArrows, category }) => {
+/** @param {{array:ClothesObject, maxSizeArrows: boolean , category:string, itsALink:boolean}} props */
+export const ImagesShopSlider = ({
+  array,
+  maxSizeArrows,
+  category,
+  itsALink,
+}) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
 
   const previousImage = () => PreviousImageCard(setPositionImage);
   const nextImage = () => NextImageCard(setPositionImage);
   const booleanImageStart = () => positionImage[1] === 0;
   const booleanImageFinish = () => positionImage[1] === 2;
+
+  const Container = itsALink ? Link : "div";
 
   return (
     <div className="w-full h-5/6 bg-darkGrey group relative rounded-t-md overflow-hidden">
@@ -45,22 +52,45 @@ export const ImagesShopSlider = ({ array, maxSizeArrows, category }) => {
           className={`rotate-180 ${maxSizeArrows ? "size-8" : "size-14"}`}
         />
       </ArrowCardButton>
-      <Link
-        to={`/${category}/${array.idProduct}`}
-        style={{ transform: `translateX(-${positionImage[0]}%)` }}
-        className="w-[300%] h-full flex duration-500 ease-in-out"
-      >
-        {array?.colors[0]?.imagesColor?.map((item, index) => (
-          <img
-            key={array.idProduct + index}
-            src={item}
-            alt="clothes photo"
-            className={`bg-cover w-1/3 h-full transition duration-500 ease-in-out ${
-              index === positionImage[1] ? "group-hover:scale-105" : ""
-            }`}
-          />
-        ))}
-      </Link>
+      <Container
+            {...(itsALink ? { to: `/${category}/${array.idProduct}` } : {})}
+            style={{ transform: `translateX(-${positionImage[0]}%)` }}
+            className="w-[300%] h-full flex duration-500 ease-in-out">
+            {array?.colors[0]?.imagesColor?.map((item, index) => (
+                <img
+                    key={array.idProduct + index}
+                    src={item}
+                    alt="clothes photo"
+                    className={`bg-cover w-1/3 h-full transition duration-500 ease-in-out ${
+                        index === positionImage[1]
+                            ? "group-hover:scale-105"
+                            : ""
+                    }`}
+                />
+            ))}
+        </Container>
     </div>
   );
 };
+
+/**
+ * 
+ * <Link
+          to={`/${category}/${array.idProduct}`}
+          style={{ transform: `translateX(-${positionImage[0]}%)` }}
+          className="w-[300%] h-full flex duration-500 ease-in-out"
+        >
+          {array?.colors[0]?.imagesColor?.map((item, index) => (
+            <img
+              key={array.idProduct + index}
+              src={item}
+              alt="clothes photo"
+              className={`bg-cover w-1/3 h-full transition duration-500 ease-in-out ${
+                index === positionImage[1] ? "group-hover:scale-105" : ""
+              }`}
+            />
+          ))}
+        </Link>
+
+               
+ */
