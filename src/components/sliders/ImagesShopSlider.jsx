@@ -9,8 +9,8 @@ import {
 } from "../../hooks/useCarrouselArrows";
 import "../../types";
 
-/** @param {{array:ClothesObject, maxSizeArrows: boolean}} props */
-export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
+/** @param {{array:ClothesObject, maxSizeArrows: boolean , category:string}} props */
+export const ImagesShopSlider = ({ array, maxSizeArrows, category }) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
 
   const previousImage = () => PreviousImageCard(setPositionImage);
@@ -46,7 +46,7 @@ export const ImagesShopSlider = ({ array, maxSizeArrows }) => {
         />
       </ArrowCardButton>
       <Link
-        to={array.idProduct}
+        to={`/${category}/${array.idProduct}`}
         style={{ transform: `translateX(-${positionImage[0]}%)` }}
         className="w-[300%] h-full flex duration-500 ease-in-out"
       >

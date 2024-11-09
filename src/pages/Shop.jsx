@@ -28,6 +28,7 @@ export const Shop = () => {
   const [selectionFilter, setSelectionFilter] = useState([[], [], []]);
   const [numberArray, setNumberArray] = useState([0, 8]);
   const [selectedOption, setSelectedOption] = useState("");
+  const [loadingData, setLoadingData] = useState(false);
   /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
   const [progressiveArray, setProgressiveArray] = useState([]);
 
@@ -36,6 +37,8 @@ export const Shop = () => {
     return array.slice(prevNumber, newNumber);
   };
 
+
+  
   //Grid
   useResizeWindow(976, setToggleGrid);
 
@@ -45,8 +48,11 @@ export const Shop = () => {
 
   //The React Router param is used to know what data to look for depending on the URL
   const { category } = useParams();
+ 
   /**@type {{data:ClothesObject[], loading: boolean}} */
-  const { data, loading } = useFetch(category);
+  const { data, loading } = useFetch(
+    category !== "new_arrivals" ? category : undefined
+  );
 
   // data is subtracted to create filter buttons
 
@@ -110,6 +116,43 @@ export const Shop = () => {
     });
   };
 
+  //Clean actual filters
+  const cleanFilters = () => {
+    setSelectionFilter([[], [], []]);
+  };
+
+  const searchFilter = () => {
+    let filteredResults = data;
+
+    if (selectionFilter[0].length > 0) {
+      // size filter
+      filteredResults = filteredResults.filter((product) =>
+        product.colors.some((color) =>
+          selectionFilter[0].some((productSize) => color.sizes[productSize] > 0)
+        )
+      );
+    }
+
+    if (selectionFilter[1].length > 0) {
+      // color filter
+      filteredResults = filteredResults.filter((product) =>
+        product.colors.some((color) =>
+          selectionFilter[1].some((name) => color.colorName === name)
+        )
+      );
+    }
+
+    if (selectionFilter[2].length > 0) {
+      // type filter
+      filteredResults = filteredResults.filter((product) =>
+        selectionFilter[2].some(
+          (productName) => product.category === productName
+        )
+      );
+    }
+    setProgressiveArray(filteredResults);
+  };
+
   const filters = {
     "title-ascending": () => alphabeticFilter(data, setProgressiveArray, true),
     "title-descending": () =>
@@ -120,11 +163,15 @@ export const Shop = () => {
   };
 
   useEffect(() => {
+    
+
     if (data) {
+      setLoadingData(true);
       let changeArray = nextCards(numberArray[0], numberArray[1], data);
       setProgressiveArray(changeArray);
       setNumberArray([0, 8]);
       setDataButton(true);
+      setLoadingData(false);
     }
 
     if (selectedOption) {
@@ -132,22 +179,6 @@ export const Shop = () => {
     }
   }, [data, selectedOption]);
 
-  const cleanFilters = () => {
-    setSelectionFilter([[], [], []]);
-  };
-
-  const searchFilter = () => {
-    const first = data.map((element) => {
-      return element.colors.map((color) => {
-        return selectionFilter[0].map((filter) => {
-          color.sizes.filter > 0;
-        });
-      });
-    });
-    console.log(first);
-  };
-
-  console.log(selectionFilter);
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
       <ShopFilter
@@ -164,15 +195,18 @@ export const Shop = () => {
           toggleGrid ? gridCompact : gridGiant
         }`}
       >
-        {loading || progressiveArray.length === 0
+        {loadingData
           ? Array.from({ length: 4 }).map((_, index) => (
               <ShopCard toggleSize={toggleGrid} key={index}>
                 <LoaderCircle />
               </ShopCard>
             ))
+          : null}
+        {progressiveArray.length === 0
+          ? "No se encontró nada"
           : progressiveArray.map((item) => (
               <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
-                <ImagesShopSlider array={item} maxSizeArrows={toggleGrid} />
+                <ImagesShopSlider array={item} maxSizeArrows={toggleGrid} category={category}/>
                 <DescriptionShopCard array={item} toggleSize={toggleGrid} />
               </ShopCard>
             ))}
