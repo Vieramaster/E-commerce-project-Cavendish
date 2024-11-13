@@ -2,15 +2,122 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-Thin.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-ThinItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-SemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-Heavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tobias";
+  src: url("/src/assets/fonts/Tobias-HeavyItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alternative";
+  src: url("/src/assets/fonts/SuisseIntl-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alternative";
+  src: url("/src/assets/fonts/SuisseIntl-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alternative";
+  src: url("/src/assets/fonts/SuisseIntl-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
 
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "inter", sans-serif;
-  font-weight: 400;
+  font-family: "Tobias", sans-serif;
+  font-weight: 300;
 }
 
 .h-menuScreen {
@@ -66,15 +173,12 @@
 @keyframes filterButtons {
   0% {
     transform: left(-100%);
-
   }
 
   100% {
     transform: left(100%);
-
   }
 }
 .filterButtons {
   animation: filterButtons ease-in-out 2s both;
 }
-

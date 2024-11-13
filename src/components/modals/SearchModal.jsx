@@ -1,6 +1,6 @@
-import { ResponsiveButton } from "../buttons/ResponsiveButton";
+import { BasicButton } from "../buttons/BasicButton";
 import { SearchIco } from "../SVGs/icons/SearchIco";
-import { CloseResponsiveIco } from "../SVGs/icons/CloseResponsiveIco";
+import { XIco } from "../SVGs/icons/XIco";
 
 /**@param {{componentRef: React.RefObject<HTMLDivElement>, toggle: () => void, open: boolean}} props*/
 export const SearchModal = ({ toggle, componentRef, open }) => {
@@ -8,12 +8,12 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
     <div
       ref={componentRef}
       className={`fixed ${
-        open ? "top-24 opacity-100 lg:top-28" : "top-5 opacity-0"
-      } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-40`}
+        open ? "top-28 opacity-100" : "top-5 opacity-0"
+      } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-40 gap-5`}
     >
-      <fieldset className="w-5/6 max-w-[40rem] h-2/3 flex items-center justify-center rounded-md relative">
-        <span className="h-full w-8 px-5 grid place-content-center bg-lightGrey lg:w-20">
-          <SearchIco className="stroke-darkGrey size-6 stroke-2 lg:size-8" />
+      <fieldset className="w-4/6 max-w-[40rem] h-2/3 flex items-center justify-center rounded-md relative lg:w-5/6">
+        <span className="h-full w-10 grid place-content-center bg-lightGrey lg:w-20 text-lightTextColor ">
+          <SearchIco />
         </span>
         <span className="h-2/3 w-[0.1rem] bg-customGrey absolute left-10 lg:left-16"></span>
         <input
@@ -25,9 +25,14 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
           placeholder="What are you looking for?"
         />
       </fieldset>
-      <ResponsiveButton onClick={toggle} aria-label="close searchbar">
-        <CloseResponsiveIco className={"w-2/5 fill-darkGrey"} />
-      </ResponsiveButton>
+
+      <BasicButton
+        onClick={toggle}
+        aria-label="close searchbar"
+        responsive={false}
+      >
+        <XIco/>
+      </BasicButton>
     </div>
   );
 };

@@ -13,7 +13,7 @@ export const logoList = [
 
 export const SocialBanner = () => {
   return (
-    <ul className=" w-full h-12  flex justify-center items-center gap-5 lg:h-20">
+    <ul className="bg-mainColor w-full h-12  flex justify-center items-center gap-5 lg:h-20">
       {logoList.map(({ Component, key }) => {
         return (
           <li key={key}>

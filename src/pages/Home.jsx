@@ -1,4 +1,3 @@
-import { IntroHome } from "../components/sections/IntroHome";
 import { MainCards } from "../components/sections/MainCards";
 import { BannerLogos } from "../components/sections/BannerLogos";
 import { ShoppingCards } from "../components/sections/ShoppingCards";
@@ -6,6 +5,7 @@ import { SellCounter } from "../components/sections/SellCounter";
 import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { useFetch } from "../hooks/useFetch";
+import { Introduction } from "../components/sections/Introduction";
 import "../types";
 
 const news = [
@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <>
-      <IntroHome />
+      <Introduction />
       <BannerLogos />
       <MainCards
         mainTitle={"New Collection"}

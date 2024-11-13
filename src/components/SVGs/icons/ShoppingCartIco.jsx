@@ -1,12 +1,7 @@
-import React from "react";
-/**
- * @param {{className:string}} props
- * @returns {JSX.Element}
- */
-export const ShoppingCartIco = ({ className }) => {
+export const ShoppingCartIco = () => {
   return (
     <svg
-      className={`${className} m-auto`}
+      className=" m-auto w-full h-full"
       role="presentation"
       width="20"
       height="20"

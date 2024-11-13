@@ -55,6 +55,7 @@ export const ExtendFilterShop = ({
               return (
                 <li key={item.name + index}>
                   <ColorButton
+                  mainProduct
                     name={item.name}
                     hex={item.hex}
                     onClick={handleEvent}

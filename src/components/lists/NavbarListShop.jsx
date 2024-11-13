@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
-import { classNameObject, classNameUL } from "../modals/Navbar";
+import { NavListLinks } from "../links/NavListLinks";
+import { NavbarUL } from "../simpleContainers/NavbarUL";
 
 /**@type {Array<{path:string, name:string}>} */
+
 export const listShop = [
   { path: "/new_arrivals", name: "New Arrivals" },
   { path: "/sweatshirts_and_hoodies", name: "Sweatshirts & Hoodies" },
@@ -12,22 +13,18 @@ export const listShop = [
   { path: "/shirts", name: "Shirts" },
 ];
 
-
 export const NavbarListShop = () => {
   return (
-    <ul className={classNameUL}>
-      {listShop.map((item, index) => (
-        <li className={`${index === 0 ? "h-12 lg:h-14" : ""}`} key={item.name}>
-          <NavLink
-            to={item.path}
-            className={`${
-              index === 0 ? "text-3xl lg:text-4xl text-yellow" : ""
-            } ${classNameObject}`}
-          >
-            {item.name}
-          </NavLink>
-        </li>
-      ))}
-    </ul>
+    <NavbarUL>
+      {listShop.map(({ path, name }, index) => {
+        return (
+          <li key={name} className={index === 0 ? "h-12 lg:h-14" : ""}>
+            <NavListLinks toPage={path} title={index === 0 ? true : false}>
+              {name}
+            </NavListLinks>
+          </li>
+        );
+      })}
+    </NavbarUL>
   );
 };

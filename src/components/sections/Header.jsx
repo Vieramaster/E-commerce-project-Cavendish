@@ -5,9 +5,7 @@ import { SearchModal } from "../modals/SearchModal";
 import { useClickOutside } from "../../hooks/useClickOutside";
 // Buttons
 import { LogoButton } from "../buttons/LogoButton";
-import { ShoppingNavButton } from "../buttons/ShoppingNavButton";
-import { SearchButton } from "../buttons/SearchButton";
-import { ResponsiveButton } from "../buttons/ResponsiveButton";
+import { BasicButton } from "../buttons/BasicButton";
 // Icons
 import { BarsResponsiveIco } from "../SVGs/icons/BarsResponsiveIco";
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
@@ -26,6 +24,7 @@ export const Header = () => {
     setIsSearchBarOpen((prev) => !prev);
   }, []);
 
+  const toggleCart = () => {};
   const navbarRef = useRef(null);
   const searchModalRef = useRef(null);
 
@@ -33,38 +32,66 @@ export const Header = () => {
 
   useClickOutside(searchModalRef, () => setIsSearchBarOpen(false));
 
+  /** @type {Array<{Component: React.ComponentType, key: string, handleEvent: () => void, label: string}>} */
+  const iconList = [
+    {
+      Component: SearchIco,
+      key: "searchButton",
+      handleEvent: toggleSearchBar,
+      label: "Toggle search bar",
+    },
+    {
+      Component: ShoppingCartIco,
+      key: "ShoppingCart",
+      handleEvent: toggleCart,
+      label: "View shopping cart",
+    },
+    {
+      Component: BarsResponsiveIco,
+      key: "OpenResponsive",
+      handleEvent: toggleNavbar,
+      label: "Open navigation menu",
+    },
+  ];
+
   return (
     <>
-      <header className="flex flex-col w-full h-24 lg:h-28 z-50 fixed bg-darkEsmerald">
-        <div className="h-7 w-full bg-carbon">
-          <h2 className="text-white text-center">
-            Free U.S. shipping on orders $125+
-          </h2>
+      <header className=" bg-background flex flex-col w-full h-28 z-50 fixed border-b border-border">
+        <div className="h-8 w-full bg-mainColor grid place-content-center flex-1">
+          <p
+            className="text-contrast text-center font-semibold font-sans text-sm"
+            role="presentation"
+          >
+            Free standard shipping from $75 nationwide
+          </p>
         </div>
-        <div className="w-full flex-auto flex justify-between px-3">
-          <div className="flex gap-3 w-auto h-full flex-1 justify-start items-center">
-            <ResponsiveButton onClick={toggleNavbar} aria-label="Open menu">
-              <BarsResponsiveIco className="size-full stroke-white" />
-            </ResponsiveButton>
-            <SearchButton onClick={toggleSearchBar} active={isSearchBarOpen}>
-              <SearchIco className="size-7 stroke-white stroke-2 lg:size-10" />
-            </SearchButton>
-          </div>
-          <div className="h-full flex-auto grid place-content-center">
-            <LogoButton />
-          </div>
-          <div className="h-full flex-1 flex justify-end items-center">
-            <ShoppingNavButton aria-label="listShop">
-              <ShoppingCartIco className="size-4 stroke-darkEsmerald stroke-2 lg:size-8" />
-            </ShoppingNavButton>
-          </div>
+        <div className="w-full mx-auto h-20 px-5 flex justify-between items-center md:px-0 md:w-5/6">
+          <LogoButton />
+          <ul className="flex  gap-5 w-auto h-full items-center justify-center text-lightTextColor ">
+            {iconList.map(({ key, Component, handleEvent, label }, index) => {
+              return (
+                <li key={key}  className="flex place-content-center">
+                  <BasicButton
+                    responsive={index === 2 ? true : false}
+                    onClick={handleEvent}
+                    aria-label={label}
+                    disabled={index === 0 && isSearchBarOpen ? true : false}
+                  >
+                    <Component />
+                  </BasicButton>
+                </li>
+              );
+            })}
+          </ul>
         </div>
+
         <Navbar
           componentRef={navbarRef}
           toggle={toggleNavbar}
           open={isNavbarOpen}
         />
       </header>
+
       <SearchModal
         toggle={toggleSearchBar}
         componentRef={searchModalRef}

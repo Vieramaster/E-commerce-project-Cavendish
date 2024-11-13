@@ -1,19 +1,20 @@
 
-/**
- * @param {{className:string}} props
- * @returns {JSX.Element}
- */
-export const BarsResponsiveIco = ({ className }) => {
+export const BarsResponsiveIco = () => {
   return (
     <svg
-      className={`${className} m-auto`}
+      className="m-auto w-full h-full"
+      role="presentation"
+      width="24"
+      height="24"
+      viewBox="0 0 24 18"
       fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      viewBox="0 0 24 24"
     >
-      <path d="M0 0h24v24H0z" stroke="none" />
-      <path d="M4 6h16M4 12h16M4 18h16" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0 .75h24v1.5H0zm0 7.5h24v1.5H0zm24 7.5H0v1.5h24z"
+        fill="currentColor"
+      ></path>
     </svg>
   );
 };

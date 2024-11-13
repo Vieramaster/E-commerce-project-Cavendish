@@ -1,5 +1,5 @@
 import { TopButtonCard } from "../buttons/TopButtonCard";
-import { RightArrowIco } from "../SVGs/icons/RightArrowIco";
+
 
 /** @param {{image: string, imageAlt: string, date: string, title: string, introduction: string}} props*/
 
@@ -16,7 +16,7 @@ export const NewsCard = ({ image, imageAlt, date, title, introduction }) => {
           <p className="font-semibold">{date}</p>
         </div>
         <TopButtonCard>
-          <RightArrowIco className="size-8" />
+
         </TopButtonCard>
       </div>
       <div className="w-full h-1/3 flex flex-col gap-2 text-center lg:text-left text-wrap overflow-hidden truncate">
