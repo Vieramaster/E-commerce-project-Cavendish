@@ -8,7 +8,7 @@ export const ShopCard = ({ toggleSize, children }) => {
   return (
     <div
       className={`${
-        toggleSize ? minSize : maxSize
+        toggleSize ? maxSize : minSize
       } relative bg-lightGrey  w-80 h-[25rem] mx-auto rounded-lg text-lightGrey flex flex-col justify-center items-center`}
     >
       {children}

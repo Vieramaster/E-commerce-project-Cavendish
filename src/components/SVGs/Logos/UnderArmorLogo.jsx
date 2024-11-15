@@ -1,11 +1,6 @@
-import React from "react";
-/**
- * @param {{className:string}} props
- * @returns {JSX.Element}
- */
- export const UnderArmorLogo= ({ className }) => {
+ export const UnderArmorLogo= () => {
   return (
-    <svg className={`${className} m-auto`} viewBox="0 0 53.8 31.404">
+    <svg className="m-auto w-full h-full" viewBox="0 0 53.8 31.404">
       <g transform="translate(-1 -1)">
         <g transform="translate(7.991 1)">
           <path

@@ -1,12 +1,12 @@
-/**@param {{classNameSquare:string,classNameSvg:string}} props*/
+/**@param {{classNameSquare:string}} props*/
 
-export const SquareIco = ({ classNameSquare, classNameSvg }) => {
+export const SquareIco = ({ classNameSquare }) => {
   return (
     <svg
       role="presentation"
       viewBox="0 0 18 18"
       fill="none"
-      className={classNameSvg}
+      className="w-full h-full m-auto"
     >
       <rect
         x=".5"

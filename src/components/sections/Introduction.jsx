@@ -10,21 +10,21 @@ const componentList = [
     text: "New summer collection 2025",
     positionTitle: "left",
     backgroundImage: "/images/main/background2.webp",
-    toPage: "/",
+    toPage: "/new_arrivals",
   },
   {
     title: "Luxury",
-    text: "Best clothes quality",
+    text: "Best jackets quality",
     positionTitle: "right",
     backgroundImage: "/images/main/background1.webp",
-    toPage: "/",
+    toPage: "/jackets_and_coats",
   },
   {
     title: "Premium ",
     text: "Shirts with the best quality",
     positionTitle: "center",
     backgroundImage: "/images/main/background3.webp",
-    toPage: "/",
+    toPage: "/shirts",
   },
 ];
 

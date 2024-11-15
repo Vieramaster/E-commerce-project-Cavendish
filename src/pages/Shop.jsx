@@ -23,7 +23,7 @@ const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 
 export const Shop = () => {
-  const [toggleGrid, setToggleGrid] = useState(true);
+  const [toggleGrid, setToggleGrid] = useState(false);
   const [dataButton, setDataButton] = useState(true);
   const [selectionFilter, setSelectionFilter] = useState([[], [], []]);
   const [numberArray, setNumberArray] = useState([0, 8]);
@@ -188,7 +188,7 @@ export const Shop = () => {
       />
       <div
         className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
-          toggleGrid ? gridCompact : gridGiant
+          toggleGrid ? gridGiant : gridCompact
         }`}
       >
         {loadingData
@@ -215,7 +215,7 @@ export const Shop = () => {
       <div className="w-full h-20 grid place-content-center">
         <DefaultButton
           onClick={handleMoreData}
-          color={dataButton ? "primary" : "disabled"}
+          color="primary"
           disabled={!dataButton}
         >
           {dataButton ? "More clothes..." : "No more products"}

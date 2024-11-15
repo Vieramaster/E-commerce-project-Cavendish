@@ -4,7 +4,7 @@ import { Navbar } from "../modals/Navbar";
 import { SearchModal } from "../modals/SearchModal";
 import { useClickOutside } from "../../hooks/useClickOutside";
 // Buttons
-import { LogoButton } from "../buttons/LogoButton";
+import { PageLogo } from "../links/PageLogo";
 import { BasicButton } from "../buttons/BasicButton";
 // Icons
 import { BarsResponsiveIco } from "../SVGs/icons/BarsResponsiveIco";
@@ -66,11 +66,11 @@ export const Header = () => {
           </p>
         </div>
         <div className="w-full mx-auto h-20 px-5 flex justify-between items-center md:px-0 md:w-5/6">
-          <LogoButton />
+          <PageLogo color="main"/>
           <ul className="flex  gap-5 w-auto h-full items-center justify-center text-lightTextColor ">
             {iconList.map(({ key, Component, handleEvent, label }, index) => {
               return (
-                <li key={key}  className="flex place-content-center">
+                <li key={key} className="flex place-content-center">
                   <BasicButton
                     responsive={index === 2 ? true : false}
                     onClick={handleEvent}

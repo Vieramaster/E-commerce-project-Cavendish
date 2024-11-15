@@ -4,11 +4,10 @@ import { SortIco } from "./SVGs/icons/SortIco";
 import { GridIco } from "./SVGs/icons/GridIco";
 import { SquareIco } from "./SVGs/icons/SquareIco";
 import { FilterNavButton } from "./buttons/FilterNavButton";
-import { ExtendFilterShop } from "./ExtendFilterShop";
+import { ExtendFilterShop } from "../components/modals/ExtendFilterShop";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-export const classFilter =
-  "h-full border border-lineGrey flex gap-5 items-center justify-center border-b border-r cursor-pointer relative ";
+export const classFilter = " ";
 
 /**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleExtendFilter: ()=>void, selectionFilter:[string[],string[],string[]] | null, handleDeletetag: ()=>void, handleCleanFilters: ()=>void, handleSearchFilter: ()=>void}} props*/
 export const ShopFilter = ({
@@ -39,14 +38,19 @@ export const ShopFilter = ({
           aria-haspopup="listbox"
           onClick={toggleFilterMenu}
         >
-          <FilterIco className="size-7" /> Filter
+          <span className="size-7">
+            <FilterIco />
+          </span>
+          Filter
         </FilterNavButton>
         <FilterNavButton
           aria-label="Sort by"
           aria-expanded="false"
           aria-haspopup="listbox"
         >
-          <SortIco className="size-7" />
+          <span className="size-7">
+            <SortIco />
+          </span>
           Sort by
           <select
             name="sort_by"
@@ -61,25 +65,31 @@ export const ShopFilter = ({
           </select>
         </FilterNavButton>
 
-        <div className={`${classFilter} w-1/5 hidden lg:flex lg:w-1/5`}>
-          <button onClick={toggleGrid} disabled={booleanGrid}>
+        <div className="h-full border border-lineGrey  gap-5 items-center justify-center border-b border-r cursor-pointer relative w-1/5 hidden lg:flex lg:w-1/5">
+          <button
+            onClick={toggleGrid}
+            disabled={booleanGrid}
+            className="size-7"
+          >
             <GridIco
               classNameSquares={`${
                 !booleanGrid
                   ? "stroke-lightCarbon fill-none"
                   : "fill-lightCarbon stroke-currentColor"
               } `}
-              classNameSvg={"size-7 "}
             />
           </button>
-          <button onClick={toggleGrid} disabled={!booleanGrid}>
+          <button
+            onClick={toggleGrid}
+            disabled={!booleanGrid}
+            className="size-7"
+          >
             <SquareIco
               classNameSquare={`${
                 booleanGrid
                   ? "stroke-lightCarbon fill-none"
                   : "fill-lightCarbon stroke-transparent"
               }  `}
-              classNameSvg={"size-7"}
             />
           </button>
         </div>

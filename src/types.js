@@ -12,6 +12,7 @@
  * @property {string} name
  * @property {string} description
  * @property {string} category
+ * @property {string} clothes
  * @property {number} price
  * @property {number} realPrice
  * @property {boolean} discount

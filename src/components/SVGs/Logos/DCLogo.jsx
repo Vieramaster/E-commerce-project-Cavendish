@@ -1,11 +1,6 @@
-import React from "react";
-/**
- * @param {{className:string}} props
- * @returns {JSX.Element}
- */
-export const DCLogo = ({ className }) => {
+export const DCLogo = () => {
   return (
-    <svg className={`${className} m-auto`} viewBox="0 0 37.4 31.3">
+    <svg className="w-full h-full m-auto" viewBox="0 0 37.4 31.3">
       <path
         d="M34.1,13.2l-1-2.4l-1,2.4l-2.4-0.7l1.3,2.2l-2.1,1.5l2.5,0.4l-0.2,2.6l1.9-1.7l1.9,1.7l-0.2-2.6l2.5-0.4l-2.1-1.5l1.3-2.2
 	L34.1,13.2z M29.9,20.7l0,4.1l-1.9,0c0,0-0.6,0-1.8-0.2c-0.8-0.1-1.7-0.3-2.5-0.6L23.5,24l0.1-0.1c0.5-0.6,1.7-2.4,2.2-4.6

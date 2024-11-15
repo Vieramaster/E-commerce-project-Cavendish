@@ -1,4 +1,6 @@
 /**@param {JSX.IntrinsicElements["button"]} props*/
+
+
 export const DefaultButton2 = ({ ...props }) => {
   return (
     <button

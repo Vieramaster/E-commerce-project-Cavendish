@@ -1,7 +1,7 @@
-/**@param {{classNameSquares:string ,classNameSvg:string}} props*/
-export const GridIco = ({ classNameSquares, classNameSvg }) => {
+/**@param {{classNameSquares:string }} props*/
+export const GridIco = ({ classNameSquares }) => {
   return (
-    <svg viewBox="0 0 17 17" className={classNameSvg} fill="none">
+    <svg viewBox="0 0 17 17" className="w-full h-full m-auto" fill="none">
       <rect
         x=".5"
         y=".5"

@@ -1,8 +1,8 @@
-/**@param {{className:string}} props*/
-export const SortIco = ({className}) => {
+
+export const SortIco = () => {
   return (
     <svg
-    className={className}
+    className= "w-full h-full m-auto"
       role="presentation"
       width="18"
       height="14"

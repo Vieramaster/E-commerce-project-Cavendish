@@ -9,7 +9,7 @@ export default {
         darkEsmerald: "#1c2d23",
         white: "#fff",
         offWhite: "#f4f4f0",
-        yellow: "#fee161",
+        yellow: "#fbe37f",
         lightCarbon: "#404040",
         carbon: "#191919",
         lightGrey: "#e9e9e9",
@@ -33,9 +33,8 @@ export default {
         tobias: ["Tobias", "sans-serif"],
         alternative :["Alternative", "sans-serif"]
       },
-      rotate: {
-        first: "20deg",
-        second: "30deg",
+      backgroundImage: {
+        'sell-counter': 'linear-gradient(to bottom, #fbe37f 35%, #414930 30%)',
       },
     },
   },

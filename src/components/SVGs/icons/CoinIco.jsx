@@ -1,13 +1,8 @@
-import React from "react";
 
-/**
- * @param {{className:string}} props
- * @returns {JSX.Element}
- */
-export const CoinIco = ({ className })=> {
+export const CoinIco = ()=> {
   return (
     <svg
-      className={`${className} m-auto`}
+      className="w-full h-full m-auto"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

@@ -15,7 +15,6 @@ export const ImagesShopSlider = ({
   maxSizeArrows,
   category,
   itsALink,
-  
 }) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
   const previousImage = () => PreviousImageCard(setPositionImage);
@@ -25,11 +24,12 @@ export const ImagesShopSlider = ({
 
   const Container = itsALink ? Link : "div";
   const booleanImageStart = () => positionImage[1] === 0;
-  const booleanImageFinish = () => positionImage[1] === imagesOfImages;
+  const booleanImageFinish = () => positionImage[1] === imagesOfImages - 1;
 
   return (
     <div className="w-full h-5/6 bg-darkGrey group relative rounded-t-md overflow-hidden">
       <DiscountCircle
+        maxSize={maxSizeArrows}
         discount={array.discount}
         realPrice={array.realPrice}
         price={array.price}
@@ -40,8 +40,9 @@ export const ImagesShopSlider = ({
         opacity={booleanImageStart()}
         disabled={booleanImageStart()}
         aria-label="previousImage"
+        maxSize={maxSizeArrows}
       >
-        <MinimalistArrow className={maxSizeArrows ? "size-8" : "size-14"} />
+        <MinimalistArrow directionArrow="left" />
       </ArrowCardButton>
       <ArrowCardButton
         right={true}
@@ -49,22 +50,19 @@ export const ImagesShopSlider = ({
         opacity={booleanImageFinish()}
         disabled={booleanImageFinish()}
         aria-label="next image"
+        maxSize={maxSizeArrows}
       >
-        <MinimalistArrow
-          className={`rotate-180 ${maxSizeArrows ? "size-8" : "size-14"}`}
-        />
+        <MinimalistArrow directionArrow="right" />
       </ArrowCardButton>
       <div className="absolute w-1/2 bottom-5 z-10 translate-x-1/2 flex gap-5 justify-center ">
-        {Array.from({ length: imagesOfImages }).map(
-          (_, index) => (
-            <div
-              className={`${
-                positionImage[1] === index ? "bg-yellow" : "bg-lightCarbon"
-              } rounded-md  w-1/5 h-1`}
-              key={index + "span"}
-            />
-          )
-        )}
+        {Array.from({ length: imagesOfImages }).map((_, index) => (
+          <div
+            className={`${
+              positionImage[1] === index ? "bg-yellow" : "bg-lightCarbon"
+            } rounded-md  w-1/5 h-1`}
+            key={index + "span"}
+          />
+        ))}
       </div>
 
       <Container
@@ -78,7 +76,9 @@ export const ImagesShopSlider = ({
             src={item}
             alt="clothes photo"
             className={`bg-cover w-1/3 h-full transition duration-500 ease-in-out ${
-              index === positionImage[1] && itsALink ? "group-hover:scale-105" : ""
+              index === positionImage[1] && itsALink
+                ? "group-hover:scale-105"
+                : ""
             }`}
           />
         ))}

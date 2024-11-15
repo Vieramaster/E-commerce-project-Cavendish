@@ -1,8 +1,7 @@
-/** * @param {{className:string}} props*/
-export const TruckIco = ({ className }) => {
+export const TruckIco = () => {
   return (
     <svg
-      className={`${className} m-auto stroke-1 `}
+      className="w-full h-full m-auto"
       role="presentation"
       viewBox="0 0 20 17"
       fill="none"

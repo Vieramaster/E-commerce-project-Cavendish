@@ -1,8 +1,8 @@
-/**@param {{className:string}} props*/
-export const FilterIco = ({ className }) => {
+
+export const FilterIco = () => {
   return (
     <svg
-      className={className}
+      className="w-full h-full m-auto"
       role="presentation"
       viewBox="0 0 20 16"
       fill="none"

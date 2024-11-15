@@ -1,10 +1,10 @@
-import { DescriptionButton } from "./buttons/DescriptionButton";
-import { ColorButton } from "./buttons/ColorButton";
-import { DefaultButton2 } from "./buttons/DefaultButton2";
+import { DescriptionButton } from "../buttons/DescriptionButton";
+import { ColorButton } from "../buttons/ColorButton";
+import { DefaultButton } from "../buttons/DefaultButton";
 
 const classTitle = "p-2 font-semibold ";
-const classDiv = "w-full h-1/3 lg: h-full w-1/3 p-3";
-const classUl = "flex justify-center gap-5  flex-wrap ";
+const classDiv = "w-full h-1/3 lg: h-full w-1/3 p-3 ";
+const classUl = "flex justify-center gap-5  flex-wrap  ";
 
 /**@param {{array :ProductAttributes, toggleMenu:boolean, componentRef:React.RefObject<HTMLElement>, handleEvent:()=>void, filterTags:[string[],string[],string[]] | null, handleDeletetag: ()=>void,handleCleanFilters: ()=>void, handleSearchFilter: ()=>void}} props */
 
@@ -21,11 +21,11 @@ export const ExtendFilterShop = ({
   return (
     <nav
       ref={componentRef}
-      className={` absolute z-20 w-full h-auto bg-lightGrey text-center font-semibold border-b-2 border-lightCarbon duration-500 ease-in-out min-h-36 p-3  ${
+      className={` absolute z-20 w-full h-auto bg-background text-center font-semibold border-b-2 border-textColor duration-500 ease-in-out min-h-28 p-3  ${
         toggleMenu ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className=" w-full h-2/3 text-center  text-lightCarbon text-md font-semibold  lg:flex items-start ">
+      <div className=" w-full h-2/3 text-center  text-textColor text-md font-semibold  lg:flex items-start  ">
         <div className={classDiv}>
           <h3 className={classTitle}>Sizes:</h3>
           <ul className={classUl}>
@@ -51,16 +51,18 @@ export const ExtendFilterShop = ({
         <div className={classDiv}>
           <h3 className={classTitle}>Colors:</h3>
           <ul className={classUl}>
-            {array[1].map((item, index) => {
+            {array[1].map(({ name, hex }, index) => {
               return (
-                <li key={item.name + index}>
+                <li key={name + index}>
                   <ColorButton
-                  mainProduct
-                    name={item.name}
-                    hex={item.hex}
+                    mainProduct
+                    name={name}
+                    aria-label={`${name} color button`}
                     onClick={handleEvent}
-                    id={item.name}
+                    id={name}
                     data-id="colorButton"
+                    style={{ backgroundColor: `${hex}` }}
+                    title={name}
                   />
                 </li>
               );
@@ -114,8 +116,12 @@ export const ExtendFilterShop = ({
         </ul>
 
         <div className="w-full h-1/2 flex justify-center items-end gap-5 text-md font-semibold ">
-          <DefaultButton2 onClick={handleCleanFilters}>Clean</DefaultButton2>
-          <DefaultButton2 onClick={handleSearchFilter}>Apply</DefaultButton2>
+          <DefaultButton color="primary" onClick={handleCleanFilters}>
+            Clean
+          </DefaultButton>
+          <DefaultButton color="primary" onClick={handleSearchFilter}>
+            Apply
+          </DefaultButton>
         </div>
       </div>
     </nav>

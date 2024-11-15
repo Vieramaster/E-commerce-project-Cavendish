@@ -44,15 +44,7 @@ const Home = () => {
   return (
     <>
       <Introduction />
-      <BannerLogos />
-      <MainCards
-        mainTitle={"New Collection"}
-        card1Title={"Summer Collection"}
-        imageCard1={"src/assets/images/imageCard1.webp"}
-        card2Title={"Men Bags Collection"}
-        card2Subtitle={"40%OFF"}
-        imageCard2={"src/assets/images/imageCard2.webp"}
-      />
+      <BannerLogos />   
       <ShoppingCards shopArray={newArrivals} title={"Best Sellers"} />
 
       <SellCounter
@@ -60,7 +52,7 @@ const Home = () => {
         beforePrice={"$50"}
         discount={"-70% OFF"}
         image={"src/assets/images/shoes.webp"}
-        timeDate={"Oct 14, 2024 00:00:00"}
+        timeDate={"Dec 14, 2024 00:00:00"}
         imageAlt={"shoes discount"}
       />
       <News mainTitle={"Latest News"} arrayNews={news} />

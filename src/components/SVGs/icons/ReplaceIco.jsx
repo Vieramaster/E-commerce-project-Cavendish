@@ -1,8 +1,8 @@
-/** @param {{className:string}} props*/
-export const ReplaceIco = ({ className }) => {
+
+export const ReplaceIco = () => {
   return (
     <svg
-      className={`${className} m-auto`}
+      className="w-full h-auto m-auto"
       role="presentation"
       viewBox="0 0 21 21"
       fill="none"
