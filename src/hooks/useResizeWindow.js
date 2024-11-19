@@ -6,7 +6,7 @@ export const useResizeWindow = (windowSize, setState) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < windowSize) {
-        setState(true);
+        setState(false);
       }
     };
 

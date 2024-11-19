@@ -1,11 +1,18 @@
-/**@param {{  mainProduct:boolean} & JSX.IntrinsicElements["button"]} props*/
+const showClass =
+  "before:absolute before:h-[1px] before:bg-lightTextColor before:-bottom-2 before:-translate-x-1/2 before:duration-200 before:ease-in-out";
 
-export const ColorButton = ({ mainProduct = false, ...props }) => {
+/**@param {{  mainProduct:boolean, isActive:boolean} & JSX.IntrinsicElements["button"]} props*/
+export const ColorButton = ({ mainProduct = false, isActive, ...props }) => {
   return (
     <button
-      className={`${
-        mainProduct ? "w-16 h-6 " : "w-10 h-6 "
-      } duration-200 ease-in-out hover:scale-105 active:translate-x-[1px] active:translate-y-[1px] button-hover  border border-lightTextColor rounded-sm`}
+      type="button"
+      className={`${mainProduct ? ` w-16 h-6 ${showClass} ` : "w-10 h-6 "}
+      ${
+        isActive
+          ? `${showClass} before:w-full`
+          : " before:w-[0px] hover:before:w-full"
+      }
+       border border-lightTextColor rounded-sm relative  `}
       {...props}
     />
   );

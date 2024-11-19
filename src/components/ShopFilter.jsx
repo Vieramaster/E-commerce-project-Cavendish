@@ -7,21 +7,17 @@ import { FilterNavButton } from "./buttons/FilterNavButton";
 import { ExtendFilterShop } from "../components/modals/ExtendFilterShop";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-export const classFilter = " ";
-
-/**@param {{toggleGrid:()=>void, booleanGrid: boolean , handleSelect:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleExtendFilter: ()=>void, selectionFilter:[string[],string[],string[]] | null, handleDeletetag: ()=>void, handleCleanFilters: ()=>void, handleSearchFilter: ()=>void}} props*/
+/**@param {{toggleGrid:()=>void, booleanGrid: boolean , onChangeFilter:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleSubmit:(event:React.MouseEvent<HTMLButtonElement>)=>void} } props*/
 export const ShopFilter = ({
   toggleGrid,
   booleanGrid,
-  handleSelect,
+  onChangeFilter,
   filterButtons,
-  handleExtendFilter,
-  selectionFilter,
-  handleDeletetag,
-  handleCleanFilters,
-  handleSearchFilter,
+  handleSubmit,
 }) => {
   const [toggleShopMenu, setToggleShopMenu] = useState(false);
+  /**@type {[string[], React.Dispatch<React.SetStateAction<string[]>>]} */
+  const [selectedButton, setSelectedButton] = useState([""]);
 
   const toggleFilterMenu = () => {
     setToggleShopMenu((prev) => !prev);
@@ -29,6 +25,23 @@ export const ShopFilter = ({
   const extenderFilterRef = useRef(null);
 
   useClickOutside(extenderFilterRef, () => setToggleShopMenu(false));
+
+  /** @param {React.MouseEvent<HTMLButtonElement>} event */
+  const activeFilters = ({ target }) => {
+    const { id: buttonActive } = /** @type {HTMLButtonElement} */ (target);
+
+    if (buttonActive) {
+      setSelectedButton((prev) =>
+        prev.includes(buttonActive)
+          ? prev.filter((item) => item !== buttonActive)
+          : [...prev, buttonActive]
+      );
+    }
+  };
+
+  const cleanFilters = () => {
+    setSelectedButton([]);
+  };
 
   return (
     <>
@@ -55,7 +68,7 @@ export const ShopFilter = ({
           <select
             name="sort_by"
             className="absolute inset-0 opacity-0 cursor-pointer bg-transparent"
-            onChange={handleSelect}
+            onChange={onChangeFilter}
           >
             <option value="default">Featured</option>
             <option value="title-ascending">Alphabetically, A-Z</option>
@@ -68,27 +81,27 @@ export const ShopFilter = ({
         <div className="h-full border border-lineGrey  gap-5 items-center justify-center border-b border-r cursor-pointer relative w-1/5 hidden lg:flex lg:w-1/5">
           <button
             onClick={toggleGrid}
-            disabled={booleanGrid}
+            disabled={!booleanGrid}
             className="size-7"
           >
             <GridIco
               classNameSquares={`${
                 !booleanGrid
-                  ? "stroke-lightCarbon fill-none"
-                  : "fill-lightCarbon stroke-currentColor"
+                  ? "fill-lightCarbon stroke-currentColor"
+                  : "stroke-lightCarbon fill-none"
               } `}
             />
           </button>
           <button
             onClick={toggleGrid}
-            disabled={!booleanGrid}
+            disabled={booleanGrid}
             className="size-7"
           >
             <SquareIco
               classNameSquare={`${
                 booleanGrid
-                  ? "stroke-lightCarbon fill-none"
-                  : "fill-lightCarbon stroke-transparent"
+                  ? "fill-lightCarbon stroke-transparent"
+                  : "stroke-lightCarbon fill-none"
               }  `}
             />
           </button>
@@ -98,9 +111,10 @@ export const ShopFilter = ({
         array={filterButtons}
         toggleMenu={toggleShopMenu}
         componentRef={extenderFilterRef}
-        handleEvent={handleExtendFilter}
-        filterTags={selectionFilter}
-        {...{ handleDeletetag, handleCleanFilters, handleSearchFilter }}
+        handleActive={activeFilters}
+        handleReset={cleanFilters}
+        selectedButton={selectedButton}
+        {...{ handleSubmit }}
       />
     </>
   );
