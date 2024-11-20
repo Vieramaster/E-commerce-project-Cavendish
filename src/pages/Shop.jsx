@@ -21,11 +21,13 @@ const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 
 export const Shop = () => {
+  const { category } = useParams();
   const [toggleGrid, setToggleGrid] = useState(false);
   const [dataButton, setDataButton] = useState(true);
-  const [numberArray, setNumberArray] = useState([8, 16]);
+  const [numberArray, setNumberArray] = useState([0, 0]);
   const [selectedOption, setSelectedOption] = useState("");
   const [loadingData, setLoadingData] = useState(false);
+  const [previousCategory, setPreviousCategory] = useState(category);
 
   /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
   const [progressiveArray, setProgressiveArray] = useState(
@@ -39,14 +41,9 @@ export const Shop = () => {
     setToggleGrid((prevState) => !prevState);
   };
 
-  //The React Router param is used to know what data to look for depending on the URL
-  const { category } = useParams();
-
   /**@type {{data:ClothesObject[]}} */
   const { data } = useFetch(category !== "new_arrivals" ? category : undefined);
 
-  console.log("data", data);
-  console.log("array", progressiveArray);
   // data is subtracted to create filter buttons
   /** @type {ProductAttributes} */
   const arrayForFilters = [
@@ -66,19 +63,27 @@ export const Shop = () => {
   };
 
   const handleMoreData = () => {
-    setNumberArray((prev) => [prev[0] + 8, prev[1] + 8]);
-    console.log(numberArray)
-    if (numberArray[1] < data.length) {
-      const cutData = data.slice(numberArray[0], numberArray[1]);
-      setProgressiveArray((prev) => [...prev, ...cutData]);
+    if (progressiveArray.length < data.length) {
+      const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
+      setNumberArray(newNumbers);
+      const newCards = data.slice(newNumbers[0], newNumbers[1]);
+      setProgressiveArray((prev) => [...prev, ...newCards]);
+    } else {
+      setDataButton(false);
     }
   };
 
   useEffect(() => {
-    if (data && data.length > 0) {
-      setProgressiveArray(data.slice(0, 8));
+    if (data) {
+      setNumberArray([0, 8]);
+      setLoadingData(true);
+      let changeArray = data.slice(0, Math.min(8, data.length));
+      setProgressiveArray(changeArray);
+
+      setDataButton(true);
+      setLoadingData(false);
     }
-  }, [data]);
+  }, [data, selectedOption]);
 
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-28">
