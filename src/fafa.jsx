@@ -18,26 +18,9 @@
       });
     }
   };
-  //delete strings to filter the data
-  /** @param {React.MouseEvent<HTMLButtonElement>} event  */
-  const deleteFilterTag = ({ target }) => {
-    const {
-      dataset: { id: ID },
-    } =  /** @type {HTMLButtonElement} */ (target);
 
-    setSelectionFilter((prev) => {
-      return prev.map((element) => {
-        return element.includes(ID)
-          ? element.filter((item) => item !== ID)
-          : [...element];
-      });
-    });
-  };
 
   //Clean actual filters
-  const cleanFilters = () => {
-    setSelectionFilter([[], [], []]);
-  };
 
   const searchFilter = () => {
     let filteredResults = data;
@@ -74,49 +57,3 @@
 
 
     //generate more cards for the screen
-    const handleMoreData = () => {
-        if (progressiveArray.length < data.length) {
-          const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
-          setNumberArray(newNumbers);
-          const newCards = nextCards(newNumbers[0], newNumbers[1], data);
-          setProgressiveArray((prev) => [...prev, ...newCards]);
-        } else {
-          setDataButton(false);
-        }
-      };
-    
-      /** @param {React.ChangeEvent<HTMLSelectElement>} event*/
-      const handleSelect = (event) => {
-        setSelectedOption(event.target.value);
-      };
-    
-      const filters = {
-        "title-ascending": () => alphabeticFilter(data, setProgressiveArray, true),
-        "title-descending": () =>
-          alphabeticFilter(data, setProgressiveArray, false),
-        "price-ascending": () => priceFilter(data, setProgressiveArray, true),
-        "price-descending": () => priceFilter(data, setProgressiveArray, false),
-        default: () => setProgressiveArray(data),
-      };
-    
-      useEffect(() => {
-        if (data) {
-          setLoadingData(true);
-          let changeArray = nextCards(numberArray[0], numberArray[1], data);
-          setProgressiveArray(changeArray);
-          setNumberArray([0, 8]);
-          setDataButton(true);
-          setLoadingData(false);
-        }
-    
-        if (selectedOption) {
-          filters[selectedOption]();
-        }
-      }, [data, selectedOption]);
-
-  
-      /*** @param {number} prevNumber @param {number} newNumber @param {ClothesObject[]} array @returns {ClothesObject[]} */
-      const nextCards = (prevNumber, newNumber, array) => {
-        return array.slice(prevNumber, newNumber);
-      };
-    

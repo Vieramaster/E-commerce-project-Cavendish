@@ -8,7 +8,7 @@
 
 /**
  * @typedef  ClothesObject
- * @property {string} idProduct
+ * @property {number} idProduct
  * @property {string} name
  * @property {string} description
  * @property {string} category

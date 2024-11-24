@@ -7,13 +7,13 @@ import { FilterNavButton } from "./buttons/FilterNavButton";
 import { ExtendFilterShop } from "../components/modals/ExtendFilterShop";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-/**@param {{toggleGrid:()=>void, booleanGrid: boolean , onChangeFilter:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleSubmit:(event:React.MouseEvent<HTMLButtonElement>)=>void} } props*/
+/**@param {{toggleGrid:()=>void, booleanGrid: boolean , onChangeFilter:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleFormData:React.FormEventHandler} } props*/
 export const ShopFilter = ({
   toggleGrid,
   booleanGrid,
   onChangeFilter,
   filterButtons,
-  handleSubmit,
+  handleFormData,
 }) => {
   const [toggleShopMenu, setToggleShopMenu] = useState(false);
   /**@type {[string[], React.Dispatch<React.SetStateAction<string[]>>]} */
@@ -114,7 +114,7 @@ export const ShopFilter = ({
         handleActive={activeFilters}
         handleReset={cleanFilters}
         selectedButton={selectedButton}
-        {...{ handleSubmit }}
+        {...{ handleFormData }}
       />
     </>
   );
