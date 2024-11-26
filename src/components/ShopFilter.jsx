@@ -7,17 +7,30 @@ import { FilterNavButton } from "./buttons/FilterNavButton";
 import { ExtendFilterShop } from "../components/modals/ExtendFilterShop";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-/**@param {{toggleGrid:()=>void, booleanGrid: boolean , onChangeFilter:React.ChangeEventHandler<HTMLSelectElement>, filterButtons:ProductAttributes, handleFormData:React.FormEventHandler} } props*/
+/**
+ * @param {{
+ *  toggleGrid:()=>void,
+ *  booleanGrid: boolean ,
+ *  onChangeFilter:React.ChangeEventHandler<HTMLSelectElement>,
+ *  filterButtons:ProductAttributes,
+ *  handleExtendfilter: (event:React.MouseEvent<HTMLButtonElement>) => void ,
+ *  handleCleanFilter:()=>void,
+ *  handleFormData:React.FormEventHandler,
+ *  selectedButton:string[]
+ * }} props
+ */
+
 export const ShopFilter = ({
   toggleGrid,
   booleanGrid,
   onChangeFilter,
   filterButtons,
   handleFormData,
+  handleExtendfilter,
+  handleCleanFilter,
+  selectedButton,
 }) => {
   const [toggleShopMenu, setToggleShopMenu] = useState(false);
-  /**@type {[string[], React.Dispatch<React.SetStateAction<string[]>>]} */
-  const [selectedButton, setSelectedButton] = useState([""]);
 
   const toggleFilterMenu = () => {
     setToggleShopMenu((prev) => !prev);
@@ -25,23 +38,6 @@ export const ShopFilter = ({
   const extenderFilterRef = useRef(null);
 
   useClickOutside(extenderFilterRef, () => setToggleShopMenu(false));
-
-  /** @param {React.MouseEvent<HTMLButtonElement>} event */
-  const activeFilters = ({ target }) => {
-    const { id: buttonActive } = /** @type {HTMLButtonElement} */ (target);
-
-    if (buttonActive) {
-      setSelectedButton((prev) =>
-        prev.includes(buttonActive)
-          ? prev.filter((item) => item !== buttonActive)
-          : [...prev, buttonActive]
-      );
-    }
-  };
-
-  const cleanFilters = () => {
-    setSelectedButton([]);
-  };
 
   return (
     <>
@@ -111,10 +107,8 @@ export const ShopFilter = ({
         array={filterButtons}
         toggleMenu={toggleShopMenu}
         componentRef={extenderFilterRef}
-        handleActive={activeFilters}
-        handleReset={cleanFilters}
         selectedButton={selectedButton}
-        {...{ handleFormData }}
+        {...{ handleFormData, handleExtendfilter, handleCleanFilter }}
       />
     </>
   );

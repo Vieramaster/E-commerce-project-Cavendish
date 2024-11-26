@@ -29,10 +29,19 @@ export const Shop = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [loadingData, setLoadingData] = useState(false);
 
+  /** @type {[ExtendFilters, React.Dispatch<React.SetStateAction<ExtendFilters>>]} */
+  const [extendFilters, setExtendFilters] = useState(
+    /** @type {ExtendFilters} */ ({
+      size: [],
+      color: [],
+      type: [],
+    })
+  );
   /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
   const [progressiveArray, setProgressiveArray] = useState(
     /** @type {ClothesObject[]} */ ([])
   );
+
 
   //restart the grid for screen changes
   useResizeWindow(976, setToggleGrid);
@@ -47,11 +56,11 @@ export const Shop = () => {
   const productData = useMemo(() => structuredClone(data), [data]);
 
   // data is subtracted to create filter buttons
-  /** @type {ProductAttributes} */
+  /**@type {ProductAttributes} */
   const arrayForFilters = [
-    /** @type {Sizes} */ (sizesFilter(productData)),
-    /** @type {Color[]} */ (colorFilter(productData)),
-    /** @type {ClothingTypes} */ (typeFilter(productData)),
+    sizesFilter(productData),
+    colorFilter(productData),
+    typeFilter(productData),
   ];
 
   //Filter select
@@ -60,6 +69,7 @@ export const Shop = () => {
     setSelectedOption(event.target.value);
   };
 
+  // add more cards
   const handleMoreData = () => {
     if (progressiveArray.length < productData.length) {
       const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
@@ -81,10 +91,7 @@ export const Shop = () => {
 
   /** @param {React.FormEvent<HTMLFormElement>} event */
   const handleFormData = (event) => {
-    setLoadingData(true)
     event.preventDefault();
-    console.log(event)
-
   };
 
   const pageReset = () => {
@@ -94,6 +101,38 @@ export const Shop = () => {
     setProgressiveArray(changeArray);
     setDataButton(true);
     setLoadingData(false);
+  };
+
+  /** @param {React.MouseEvent<HTMLButtonElement>} event */
+  const handleExtendfilter = ({ target }) => {
+    const {
+      value: buttonValue,
+      dataset: { id: buttonData },
+    } = /** @type {HTMLButtonElement} */ (target);
+
+    setExtendFilters((prev) => {
+      /**@type {"size" | "color" | "type"} */
+      let filterKey;
+
+      if (buttonData === "sizeButton") filterKey = "size";
+      else if (buttonData === "colorButton") filterKey = "color";
+      else if (buttonData === "typeButton") filterKey = "type";
+      else return prev;
+
+      const updatedFilter = prev[filterKey].includes(buttonValue)
+        ? prev[filterKey].filter((item) => item !== buttonValue)
+        : [...prev[filterKey], buttonValue];
+
+      return {
+        ...prev,
+        [filterKey]: updatedFilter,
+      };
+    });
+  };
+
+  console.log(extendFilters)
+  const handleCleanFilter = () => {
+    setSelectedButton([]);
   };
 
   useEffect(() => {
@@ -113,7 +152,12 @@ export const Shop = () => {
         toggleGrid={gridChangeToggle}
         booleanGrid={toggleGrid}
         filterButtons={arrayForFilters}
-        {...{ handleFormData }}
+        {...{
+          handleFormData,
+          handleCleanFilter,
+          handleExtendfilter,
+          selectedButton,
+        }}
       />
       <div
         className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${

@@ -49,22 +49,17 @@
  */
 
 /**
- *
- * @typedef {object} Sizes
- * @property {boolean} s
- * @property {boolean} m
- * @property {boolean} l
- * @property {boolean} xl
- * @property {boolean} xxl
- */
-
-/**
- * Objeto que representa un color.
  * @typedef {object} Color
  * @property {string} name
  * @property {string} hex
  */
 
-/**  @typedef {string[]} ClothingTypes*/
+/** @typedef { [Object<string,boolean>, Color[], string[]] } ProductAttributes*/
 
-/** @typedef { [Sizes, Color[], ClothingTypes] } ProductAttributes*/
+
+  /**
+   * @typedef {Object} ExtendFilters
+   * @property {string[]} size 
+   * @property {string[]} color 
+   * @property {string[]} type 
+   */

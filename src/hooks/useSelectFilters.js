@@ -46,6 +46,7 @@ export const sizesFilter = (array) => {
           sizeAvailability[size] = true;
         }
       });
+      
     });
   });
 
