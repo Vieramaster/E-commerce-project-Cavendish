@@ -56,10 +56,22 @@
 
 /** @typedef { [Object<string,boolean>, Color[], string[]] } ProductAttributes*/
 
+/**
+ * @typedef {Object} ExtendFilters
+ * @property {string[]} size
+ * @property {string[]} color
+ * @property {string[]} type
+ */
 
-  /**
-   * @typedef {Object} ExtendFilters
-   * @property {string[]} size 
-   * @property {string[]} color 
-   * @property {string[]} type 
-   */
+/**
+ * @typedef {Object} Filters
+ * @property {() => void} title_ascending
+ * @property {() => void} title_descending
+ * @property {() => void} price_ascending
+ * @property {() => void} price_descending
+ * @property {() => void} default
+ */
+
+/**
+ * @typedef {"title_ascending" | "title_descending" | "price_ascending" | "price_descending" | "default"} FiltersString
+ */

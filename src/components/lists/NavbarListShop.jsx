@@ -8,7 +8,7 @@ export const listShop = [
   { path: "/sweatshirts_and_hoodies", name: "Sweatshirts & Hoodies" },
   { path: "/jackets_and_coats", name: "Jackets & Coats" },
   { path: "/polos_and_t_shirts", name: "T-shirts & Polos" },
-  { path: "/pants", name: "Pants & Jeans" },
+  { path: "/pants_and_jeans", name: "Pants & Jeans" },
   { path: "/sweaters", name: "Sweaters" },
   { path: "/shirts", name: "Shirts" },
 ];

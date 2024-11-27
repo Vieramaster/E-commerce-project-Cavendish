@@ -107,7 +107,7 @@
             ]
         },
         {
-            "idProduct":4,
+            "idProduct": 4,
             "name": "Windstorm  jacket",
             "description": "loren12",
             "category": "jacket",
@@ -153,13 +153,13 @@
             ]
         }
     ],
-    "pants": [
+    "pants_and_jeans": [
         {
             "idProduct": 5,
             "name": "Chester cargo",
             "description": "lorem10",
             "category": "cargo",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 80,
             "realPrice": 80,
             "discount": false,
@@ -170,9 +170,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/pants/chester_cargo_brown1.webp",
-                        "/images/pants/chester_cargo_brown2.webp",
-                        "/images/pants/chester_cargo_brown3.webp"
+                        "/images/pants_and_jeans/chester_cargo_brown1.webp",
+                        "/images/pants_and_jeans/chester_cargo_brown2.webp",
+                        "/images/pants_and_jeans/chester_cargo_brown3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -188,9 +188,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/chester_cargo_black1.webp",
-                        "/images/pants/chester_cargo_black2.webp",
-                        "/images/pants/chester_cargo_black3.webp"
+                        "/images/pants_and_jeans/chester_cargo_black1.webp",
+                        "/images/pants_and_jeans/chester_cargo_black2.webp",
+                        "/images/pants_and_jeans/chester_cargo_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -209,7 +209,7 @@
             "name": "Fulton stretch jean",
             "description": "lorem20",
             "category": "stretch jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 80,
             "realPrice": 80,
             "discount": false,
@@ -220,9 +220,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/pants/fulton_stretch_green_army1.webp",
-                        "/images/pants/fulton_stretch_green_army2.webp",
-                        "/images/pants/fulton_stretch_green_army3.webp"
+                        "/images/pants_and_jeans/fulton_stretch_green_army1.webp",
+                        "/images/pants_and_jeans/fulton_stretch_green_army2.webp",
+                        "/images/pants_and_jeans/fulton_stretch_green_army3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -238,9 +238,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants/fulton_stretch_navy1.webp",
-                        "/images/pants/fulton_stretch_navy2.webp",
-                        "/images/pants/fulton_stretch_navy3.webp"
+                        "/images/pants_and_jeans/fulton_stretch_navy1.webp",
+                        "/images/pants_and_jeans/fulton_stretch_navy2.webp",
+                        "/images/pants_and_jeans/fulton_stretch_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -256,10 +256,10 @@
         },
         {
             "idProduct": 7,
-            "name": "Joiner carpenter pants",
+            "name": "Joiner carpenter",
             "description": "loren10",
             "category": "carpenter",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 70,
             "realPrice": 70,
             "discount": false,
@@ -270,9 +270,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/pants/joiner_carpenter_pants_oatmeal1.webp",
-                        "/images/pants/joiner_carpenter_pants_oatmeal2.webp",
-                        "/images/pants/joiner_carpenter_pants_oatmeal3.webp"
+                        "/images/pants_and_jeans/joiner_carpenter_pants_oatmeal1.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_pants_oatmeal2.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_pants_oatmeal3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -288,9 +288,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/joiner_carpenter_pants_black1.webp",
-                        "/images/pants/joiner_carpenter_pants_black2.webp",
-                        "/images/pants/joiner_carpenter_pants_black3.webp"
+                        "/images/pants_and_jeans/joiner_carpenter_pants_black1.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_pants_black2.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_pants_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -306,9 +306,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants/joiner_carpenter_pants_sky_blue1.webp",
-                        "/images/pants/joiner_carpenter_pants_sky_blue2.webp",
-                        "/images/pants/joiner_carpenter_pants_sky_blue3.webp"
+                        "/images/pants_and_jeans/joiner_carpenter_pants_sky_blue1.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_pants_sky_blue2.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_pants_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -324,10 +324,10 @@
         },
         {
             "idProduct": 8,
-            "name": "Toledo chino pants",
+            "name": "Toledo chino garbardine",
             "description": "lorem20",
             "category": "chino",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 95,
             "realPrice": 95,
             "discount": false,
@@ -338,9 +338,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/pants/toledo_gabardine_beige1.webp",
-                        "/images/pants/toledo_gabardine_beige2.webp",
-                        "/images/pants/toledo_gabardine_beige3.webp"
+                        "/images/pants_and_jeans/toledo_gabardine_beige1.webp",
+                        "/images/pants_and_jeans/toledo_gabardine_beige2.webp",
+                        "/images/pants_and_jeans/toledo_gabardine_beige3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -356,9 +356,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants/toledo_gabardine_navy1.webp",
-                        "/images/pants/toledo_gabardine_navy2.webp",
-                        "/images/pants/toledo_gabardine_navy3.webp"
+                        "/images/pants_and_jeans/toledo_gabardine_navy1.webp",
+                        "/images/pants_and_jeans/toledo_gabardine_navy2.webp",
+                        "/images/pants_and_jeans/toledo_gabardine_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -374,10 +374,10 @@
         },
         {
             "idProduct": 9,
-            "name": "Chester drawstring pants ",
+            "name": "Chester drawstring pants",
             "description": "lorem20",
             "category": "drawstring",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 55,
             "realPrice": 55,
             "discount": false,
@@ -388,9 +388,9 @@
                     "colorName": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
-                        "/images/pants/chester_drawstring_kaki1.webp",
-                        "/images/pants/chester_drawstring_kaki2.webp",
-                        "/images/pants/chester_drawstring_kaki3.webp"
+                        "/images/pants_and_jeans/chester_drawstring_kaki1.webp",
+                        "/images/pants_and_jeans/chester_drawstring_kaki2.webp",
+                        "/images/pants_and_jeans/chester_drawstring_kaki3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -406,9 +406,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/chester_drawstring_black1.webp",
-                        "/images/pants/chester_drawstring_black2.webp",
-                        "/images/pants/chester_drawstring_black3.webp"
+                        "/images/pants_and_jeans/chester_drawstring_black1.webp",
+                        "/images/pants_and_jeans/chester_drawstring_black2.webp",
+                        "/images/pants_and_jeans/chester_drawstring_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -427,9 +427,9 @@
             "name": "Abbey stretch jean",
             "description": "lorem20",
             "category": "stretch jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 85,
-            "realPrice": 85,
+            "realPrice": 120,
             "discount": true,
             "newArrival": false,
             "outlet": true,
@@ -438,9 +438,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/pants/abbey_stretch_green_army1.webp",
-                        "/images/pants/abbey_stretch_green_army2.webp",
-                        "/images/pants/abbey_stretch_green_army3.webp"
+                        "/images/pants_and_jeans/abbey_stretch_green_army1.webp",
+                        "/images/pants_and_jeans/abbey_stretch_green_army2.webp",
+                        "/images/pants_and_jeans/abbey_stretch_green_army3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -456,9 +456,9 @@
                     "colorName": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
-                        "/images/pants/abbey_stretch_kaki1.webp",
-                        "/images/pants/abbey_stretch_kaki2.webp",
-                        "/images/pants/abbey_stretch_kaki3.webp"
+                        "/images/pants_and_jeans/abbey_stretch_kaki1.webp",
+                        "/images/pants_and_jeans/abbey_stretch_kaki2.webp",
+                        "/images/pants_and_jeans/abbey_stretch_kaki3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -477,7 +477,7 @@
             "name": "Fulton jean",
             "description": "lorem10",
             "category": "jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 85,
             "realPrice": 85,
             "discount": false,
@@ -488,9 +488,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/pants/fulton_jean_blue1.webp",
-                        "/images/pants/fulton_jean_blue2.webp",
-                        "/images/pants/fulton_jean_blue3.webp"
+                        "/images/pants_and_jeans/fulton_jean_blue1.webp",
+                        "/images/pants_and_jeans/fulton_jean_blue2.webp",
+                        "/images/pants_and_jeans/fulton_jean_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -506,9 +506,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants/fulton_jean_sky_blue1.webp",
-                        "/images/pants/fulton_jean_sky_blue2.webp",
-                        "/images/pants/fulton_jean_sky_blue3.webp"
+                        "/images/pants_and_jeans/fulton_jean_sky_blue1.webp",
+                        "/images/pants_and_jeans/fulton_jean_sky_blue2.webp",
+                        "/images/pants_and_jeans/fulton_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -527,7 +527,7 @@
             "name": "Zumo slim jean",
             "description": "lorem20",
             "category": "jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 70,
             "realPrice": 70,
             "discount": false,
@@ -538,9 +538,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants/zumo_jean_sky_blue1.webp",
-                        "/images/pants/zumo_jean_sky_blue2.webp",
-                        "/images/pants/zumo_jean_sky_blue3.webp"
+                        "/images/pants_and_jeans/zumo_jean_sky_blue1.webp",
+                        "/images/pants_and_jeans/zumo_jean_sky_blue2.webp",
+                        "/images/pants_and_jeans/zumo_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -556,9 +556,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants/zumo_jean_navy1.webp",
-                        "/images/pants/zumo_jean_navy2.webp",
-                        "/images/pants/zumo_jean_navy3.webp"
+                        "/images/pants_and_jeans/zumo_jean_navy1.webp",
+                        "/images/pants_and_jeans/zumo_jean_navy2.webp",
+                        "/images/pants_and_jeans/zumo_jean_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -577,7 +577,7 @@
             "name": "Copenhagen jean",
             "description": "lorem20",
             "category": "jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 80,
             "realPrice": 95,
             "discount": true,
@@ -588,9 +588,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants/copenhagen_jean_sky_blue1.webp",
-                        "/images/pants/copenhagen_jean_sky_blue2.webp",
-                        "/images/pants/copenhagen_jean_sky_blue3.webp"
+                        "/images/pants_and_jeans/copenhagen_jean_sky_blue1.webp",
+                        "/images/pants_and_jeans/copenhagen_jean_sky_blue2.webp",
+                        "/images/pants_and_jeans/copenhagen_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -606,9 +606,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants/copenhagen_jean_navy1.webp",
-                        "/images/pants/copenhagen_jean_navy2.webp",
-                        "/images/pants/copenhagen_jean_navy3.webp"
+                        "/images/pants_and_jeans/copenhagen_jean_navy1.webp",
+                        "/images/pants_and_jeans/copenhagen_jean_navy2.webp",
+                        "/images/pants_and_jeans/copenhagen_jean_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -627,7 +627,7 @@
             "name": "JoinerFix jean carpenter",
             "description": "loren20",
             "category": "carpenter",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 70,
             "realPrice": 85,
             "discount": true,
@@ -638,9 +638,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants/joiner_carpenter_sky_blue1.webp",
-                        "/images/pants/joiner_carpenter_sky_blue2.webp",
-                        "/images/pants/joiner_carpenter_sky_blue3.webp"
+                        "/images/pants_and_jeans/joiner_carpenter_sky_blue1.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_sky_blue2.webp",
+                        "/images/pants_and_jeans/joiner_carpenter_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -659,7 +659,7 @@
             "name": "Loose jean",
             "description": "lorem20",
             "category": "jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 80,
             "realPrice": 80,
             "discount": false,
@@ -670,9 +670,9 @@
                     "colorName": "dark grey",
                     "hex": "#303030",
                     "imagesColor": [
-                        "/images/pants/loose_jean_dark_grey1.webp",
-                        "/images/pants/loose_jean_dark_grey2.webp",
-                        "/images/pants/loose_jean_dark_grey3.webp"
+                        "/images/pants_and_jeans/loose_jean_dark_grey1.webp",
+                        "/images/pants_and_jeans/loose_jean_dark_grey2.webp",
+                        "/images/pants_and_jeans/loose_jean_dark_grey3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -688,9 +688,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants/loose_jean_sky_blue1.webp",
-                        "/images/pants/loose_jean_sky_blue2.webp",
-                        "/images/pants/loose_jean_sky_blue3.webp"
+                        "/images/pants_and_jeans/loose_jean_sky_blue1.webp",
+                        "/images/pants_and_jeans/loose_jean_sky_blue2.webp",
+                        "/images/pants_and_jeans/loose_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -709,7 +709,7 @@
             "name": "Loose II jean",
             "description": "lorem20",
             "category": "jean",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 80,
             "realPrice": 80,
             "discount": false,
@@ -720,9 +720,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/pants/looseII_jean_light_grey1.webp",
-                        "/images/pants/looseII_jean_light_grey2.webp",
-                        "/images/pants/looseII_jean_light_grey3.webp"
+                        "/images/pants_and_jeans/looseII_jean_light_grey1.webp",
+                        "/images/pants_and_jeans/looseII_jean_light_grey2.webp",
+                        "/images/pants_and_jeans/looseII_jean_light_grey3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -741,7 +741,7 @@
             "name": "Distracted joggins",
             "description": "lorem20",
             "category": "joggins",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 70,
             "realPrice": 70,
             "discount": false,
@@ -752,9 +752,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/pants/distracted_joggins_grey1.webp",
-                        "/images/pants/distracted_joggins_grey2.webp",
-                        "/images/pants/distracted_joggins_grey3.webp"
+                        "/images/pants_and_jeans/distracted_joggins_grey1.webp",
+                        "/images/pants_and_jeans/distracted_joggins_grey2.webp",
+                        "/images/pants_and_jeans/distracted_joggins_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -768,9 +768,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/distracted_joggins_black1.webp",
-                        "/images/pants/distracted_joggins_black2.webp",
-                        "/images/pants/distracted_joggins_black3.webp"
+                        "/images/pants_and_jeans/distracted_joggins_black1.webp",
+                        "/images/pants_and_jeans/distracted_joggins_black2.webp",
+                        "/images/pants_and_jeans/distracted_joggins_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -787,7 +787,7 @@
             "name": "Ravara joggins",
             "description": "loren21",
             "category": "joggins",
-            "clothes": "pants",
+            "clothes": "pants_and_jeans",
             "price": 45,
             "realPrice": 45,
             "discount": false,
@@ -798,9 +798,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/pants/ravara_joggins_grey1.webp",
-                        "/images/pants/ravara_joggins_grey2.webp",
-                        "/images/pants/ravara_joggins_grey3.webp"
+                        "/images/pants_and_jeans/ravara_joggins_grey1.webp",
+                        "/images/pants_and_jeans/ravara_joggins_grey2.webp",
+                        "/images/pants_and_jeans/ravara_joggins_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -814,9 +814,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants/ravara_joggins_black1.webp",
-                        "/images/pants/ravara_joggins_black2.webp",
-                        "/images/pants/ravara_joggins_black3.webp"
+                        "/images/pants_and_jeans/ravara_joggins_black1.webp",
+                        "/images/pants_and_jeans/ravara_joggins_black2.webp",
+                        "/images/pants_and_jeans/ravara_joggins_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1506,7 +1506,7 @@
             ]
         },
         {
-            "idProduct":35,
+            "idProduct": 35,
             "name": "Barahona polo",
             "description": "lorem18",
             "category": "polo",
@@ -2312,7 +2312,7 @@
             "name": "Britain sweater",
             "description": "lorem24",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 35,
             "realPrice": 35,
             "discount": false,
@@ -2374,7 +2374,7 @@
             "name": "Dass sweater",
             "description": "lorem20",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 25,
             "realPrice": 40,
             "discount": true,
@@ -2404,7 +2404,7 @@
             "name": "Neptune sweater V",
             "description": "lorem18",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 45,
             "realPrice": 45,
             "discount": false,
@@ -2450,7 +2450,7 @@
             "name": "Winston sweater jacket",
             "description": "lorem25",
             "category": "sweater jacket",
-            "clothes": "sweater",
+            "clothes": "sweatesr",
             "price": 35,
             "realPrice": 50,
             "discount": true,
@@ -2512,7 +2512,7 @@
             "name": "Mercury sweater",
             "description": "lorem19",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 60,
             "realPrice": 60,
             "discount": false,
@@ -2574,7 +2574,7 @@
             "name": "Constellation sweater",
             "description": "lorem25",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 25,
             "realPrice": 25,
             "discount": false,
@@ -2636,7 +2636,7 @@
             "name": "Triton sweater",
             "description": "lorem12",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 20,
             "realPrice": 35,
             "discount": true,
@@ -2666,7 +2666,7 @@
             "name": "Eclipse sweater",
             "description": "lorem25",
             "category": "sweater",
-            "clothes": "sweater",
+            "clothes": "sweaters",
             "price": 50,
             "realPrice": 50,
             "discount": false,
@@ -3216,149 +3216,11 @@
     ],
     "best_sellers": [
         {
-            "idProduct": 75,
-            "name": "Britain sweater",
-            "description": "lorem24",
-            "category": "sweater",
-            "clothes": "sweaters",
-            "price": 35,
-            "realPrice": 35,
-            "discount": false,
-            "newArrival": true,
-            "outlet": false,
-            "colors": [
-                {
-                    "colorName": "black",
-                    "hex": "#000000",
-                    "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/06529001/xg/06529001_1-sw.webp",
-                        "https://www.kvnstatic.com/foto-prod/06529001/g/06529001_4-sw.webp",
-                        "https://www.kvnstatic.com/foto-prod/06529001/g/06529001_2-sw.webp"
-                    ],
-                    "sizes": {
-                        "s": 10,
-                        "m": 3,
-                        "l": 5,
-                        "xl": 5,
-                        "xxl": 3
-                    }
-                },
-                {
-                    "colorName": "light grey",
-                    "hex": "#cfcfd1",
-                    "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/06529350/xg/06529350_1-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
-                        "https://www.kvnstatic.com/foto-prod/06529350/g/06529350_2-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp",
-                        "https://www.kvnstatic.com/foto-prod/06529350/g/06529350_3-sweater-brixham-escote-v-liso-gris-claro-kevingston-hombres.webp"
-                    ],
-                    "sizes": {
-                        "s": 10,
-                        "m": 3,
-                        "l": 5,
-                        "xl": 5,
-                        "xxl": 3
-                    }
-                },
-                {
-                    "colorName": "beige",
-                    "hex": "#cdac97",
-                    "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/06529076/xg/06529076_1-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
-                        "https://www.kvnstatic.com/foto-prod/06529076/g/06529076_2-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp",
-                        "https://www.kvnstatic.com/foto-prod/06529076/g/06529076_3-sweaters-brixham-escote-en-v-beige-kevingston-hombres.webp"
-                    ],
-                    "sizes": {
-                        "s": 10,
-                        "m": 3,
-                        "l": 5,
-                        "xl": 5,
-                        "xxl": 3
-                    }
-                }
-            ]
-        },
-        {
-            "idProduct": 76,
-            "name": "Hoodie Overlay",
-            "description": "loren14",
-            "category": "hoodie",
-            "clothes": "sweatshirts_and_hoodies",
-            "price": 35,
-            "realPrice": 45,
-            "discount": true,
-            "newArrival": false,
-            "outlet": true,
-            "colors": [
-                {
-                    "colorName": "beige",
-                    "hex": "#cdac97",
-                    "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/047E7076/xg/047E7076_3.webp",
-                        "https://www.kvnstatic.com/foto-prod/047E7076/g/047E7076_2.webp",
-                        "https://www.kvnstatic.com/foto-prod/047E7076/g/047E7076_4.webp"
-                    ],
-                    "sizes": {
-                        "s": 10,
-                        "m": 3,
-                        "l": 5,
-                        "xl": 5,
-                        "xxl": 3
-                    }
-                }
-            ]
-        },
-        {
-            "idProduct": 78,
-            "name": "Sweatshirt Wells",
-            "description": "loren25",
-            "category": "sweatshirt",
-            "clothes": "sweatshirts_and_hoodies",
-            "price": 30,
-            "realPrice": 35,
-            "discount": true,
-            "newArrival": false,
-            "outlet": true,
-            "colors": [
-                {
-                    "colorName": "esmerald",
-                    "hex": "#0f443f",
-                    "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/047C7437/xg/047c7437_1-buzo--wells-kevingston-hombre.webp",
-                        "https://www.kvnstatic.com/foto-prod/047C7437/g/047c7437_2-buzo--wells-kevingston-hombre.webp",
-                        "https://www.kvnstatic.com/foto-prod/047C7437/g/047c7437_3-buzo--wells-kevingston-hombre.webp"
-                    ],
-                    "sizes": {
-                        "s": 10,
-                        "m": 3,
-                        "l": 5,
-                        "xl": 5,
-                        "xxl": 0
-                    }
-                },
-                {
-                    "colorName": "brown",
-                    "hex": "#554838",
-                    "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/047C7078/xg/047c7078_1-buzo-wells-liso-kevingston-hombre.webp",
-                        "https://www.kvnstatic.com/foto-prod/047C7078/g/047c7078_2-buzo-wells-liso-kevingston-hombre.webp",
-                        "https://www.kvnstatic.com/foto-prod/047C7078/g/047c7078_3-buzo-wells-liso-kevingston-hombre.webp"
-                    ],
-                    "sizes": {
-                        "s": 10,
-                        "m": 3,
-                        "l": 5,
-                        "xl": 0,
-                        "xxl": 3
-                    }
-                }
-            ]
-        },
-        {
-            "idProduct": 79,
+            "idProduct": 5,
             "name": "Chester cargo",
             "description": "lorem10",
             "category": "cargo",
-            "clothes":"pants",
+            "clothes": "pants_and_jeans",
             "price": 80,
             "realPrice": 80,
             "discount": false,
@@ -3369,9 +3231,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/07094078/xg/07094078_1-babucha-cargo-chester-marron-kevingston-hombres.webp",
-                        "https://www.kvnstatic.com/foto-prod/07094078/g/07094078_2-babucha-cargo-chester-marron-kevingston-hombres.webp",
-                        "https://www.kvnstatic.com/foto-prod/07094078/g/07094078_5-babucha-cargo-chester-marron-kevingston-hombres.webp"
+                        "/images/pants_and_jeans/chester_cargo_brown1.webp",
+                        "/images/pants_and_jeans/chester_cargo_brown2.webp",
+                        "/images/pants_and_jeans/chester_cargo_brown3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -3387,9 +3249,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "https://www.kvnstatic.com/foto-prod/07094001/xg/07094001_1.webp",
-                        "https://www.kvnstatic.com/foto-prod/07094001/g/07094001_3.webp",
-                        "https://www.kvnstatic.com/foto-prod/07094001/g/07094001_5.webp"
+                        "/images/pants_and_jeans/chester_cargo_black1.webp",
+                        "/images/pants_and_jeans/chester_cargo_black2.webp",
+                        "/images/pants_and_jeans/chester_cargo_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -3399,6 +3261,128 @@
                         "48": 3,
                         "52": 0,
                         "54": 2
+                    }
+                }
+            ]
+        },
+        {
+            "idProduct": 20,
+            "name": "Drum II t-shirt",
+            "description": "lorem20",
+            "category": "t-shirt",
+            "clothes": "polos_and_t_shirts",
+            "price": 25,
+            "realPrice": 25,
+            "discount": false,
+            "newArrival": true,
+            "outlet": false,
+            "colors": [
+                {
+                    "colorName": "white",
+                    "hex": "#ffffff",
+                    "imagesColor": [
+                        "/images/polo_and_t-shirts/drum_t-shirt_white1.webp",
+                        "/images/polo_and_t-shirts/drum_t-shirt_white2.webp",
+                        "/images/polo_and_t-shirts/drum_t-shirt_white3.webp"
+                    ],
+                    "sizes": {
+                        "s": 10,
+                        "m": 3,
+                        "l": 5,
+                        "xl": 5,
+                        "xxl": 3
+                    }
+                },
+                {
+                    "colorName": "black",
+                    "hex": "#000000",
+                    "imagesColor": [
+                        "/images/polo_and_t-shirts/drum_t-shirt_black1.webp",
+                        "/images/polo_and_t-shirts/drum_t-shirt_black2.webp",
+                        "/images/polo_and_t-shirts/drum_t-shirt_black3.webp"
+                    ],
+                    "sizes": {
+                        "s": 10,
+                        "m": 3,
+                        "l": 5,
+                        "xl": 5,
+                        "xxl": 3
+                    }
+                }
+            ]
+        },
+        {
+            "idProduct": 54,
+            "name": "Dass sweater",
+            "description": "lorem20",
+            "category": "sweater",
+            "clothes": "sweaters",
+            "price": 25,
+            "realPrice": 40,
+            "discount": true,
+            "newArrival": false,
+            "outlet": true,
+            "colors": [
+                {
+                    "colorName": "beige",
+                    "hex": "#cdac97",
+                    "imagesColor": [
+                        "/images/sweaters/dass_sweater_beige1.webp",
+                        "/images/sweaters/dass_sweater_beige2.webp",
+                        "/images/sweaters/dass_sweater_beige3.webp"
+                    ],
+                    "sizes": {
+                        "s": 0,
+                        "m": 3,
+                        "l": 0,
+                        "xl": 5,
+                        "xxl": 3
+                    }
+                }
+            ]
+        },
+        {
+            "idProduct": 64,
+            "name": "Special Wave hoodie jacket ",
+            "description": "lorem25",
+            "category": "hoodie",
+            "clothes": "sweatshirts_and_hoodies",
+            "price": 60,
+            "realPrice": 60,
+            "discount": false,
+            "newArrival": true,
+            "outlet": false,
+            "colors": [
+                {
+                    "colorName": "white",
+                    "hex": "#ffffff",
+                    "imagesColor": [
+                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white1.webp",
+                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white2.webp",
+                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white3.webp"
+                    ],
+                    "sizes": {
+                        "s": 10,
+                        "m": 3,
+                        "l": 0,
+                        "xl": 5,
+                        "xxl": 3
+                    }
+                },
+                {
+                    "colorName": "black",
+                    "hex": "#000000",
+                    "imagesColor": [
+                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black1.webp",
+                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black2.webp",
+                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black3.webp"
+                    ],
+                    "sizes": {
+                        "s": 10,
+                        "m": 3,
+                        "l": 5,
+                        "xl": 5,
+                        "xxl": 3
                     }
                 }
             ]

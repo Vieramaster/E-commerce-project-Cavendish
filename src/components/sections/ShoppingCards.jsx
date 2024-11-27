@@ -2,7 +2,6 @@ import { ShopCard } from "../cards/ShopCard";
 import { ImagesShopSlider } from "../sliders/ImagesShopSlider";
 import { DescriptionShopCard } from "../cards/card_components/DescriptionShopCard";
 
-
 import "../../types";
 
 /**@param {{title:string, shopArray:ClothesObject[] | null  }} props*/
@@ -21,13 +20,11 @@ export const ShoppingCards = ({ title, shopArray }) => {
                 <ImagesShopSlider
                   array={shopArray[index]}
                   maxSizeArrows={false}
-                  category={shopArray[index].clothes}
                   itsALink={true}
                 />
                 <DescriptionShopCard
                   array={shopArray[index]}
                   toggleSize={false}
-                
                 />
               </ShopCard>
             );

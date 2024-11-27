@@ -33,9 +33,7 @@ export default {
         tobias: ["Tobias", "sans-serif"],
         alternative :["Alternative", "sans-serif"]
       },
-      backgroundImage: {
-        'sell-counter': 'linear-gradient(to bottom, #fbe37f 35%, #414930 30%)',
-      },
+
     },
   },
   plugins: [],

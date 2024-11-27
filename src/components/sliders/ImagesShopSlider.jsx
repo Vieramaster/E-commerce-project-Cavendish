@@ -9,13 +9,8 @@ import {
 } from "../../hooks/useCarrouselArrows";
 import "../../types";
 
-/** @param {{array:ClothesObject, maxSizeArrows: boolean , category:string, itsALink:boolean}} props */
-export const ImagesShopSlider = ({
-  array,
-  maxSizeArrows,
-  category,
-  itsALink,
-}) => {
+/** @param {{array:ClothesObject, maxSizeArrows: boolean , itsALink:boolean}} props */
+export const ImagesShopSlider = ({ array, maxSizeArrows, itsALink }) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
   const previousImage = () => PreviousImageCard(setPositionImage);
   const nextImage = () => NextImageCard(setPositionImage);
@@ -66,7 +61,7 @@ export const ImagesShopSlider = ({
       </div>
 
       <Container
-        {...(itsALink ? { to: `/${category}/${array.idProduct}` } : {})}
+        {...(itsALink ? { to: `/${array.clothes}/${array.idProduct}` } : {})}
         style={{ transform: `translateX(-${positionImage[0]}%)` }}
         className="w-[300%] h-full flex duration-500 ease-in-out"
       >

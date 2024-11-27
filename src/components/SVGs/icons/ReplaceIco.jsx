@@ -2,7 +2,7 @@
 export const ReplaceIco = () => {
   return (
     <svg
-      className="w-full h-auto m-auto"
+      className="w-full h-full m-auto"
       role="presentation"
       viewBox="0 0 21 21"
       fill="none"

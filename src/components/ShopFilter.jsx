@@ -16,7 +16,7 @@ import { useClickOutside } from "../hooks/useClickOutside";
  *  handleExtendfilter: (event:React.MouseEvent<HTMLButtonElement>) => void ,
  *  handleCleanFilter:()=>void,
  *  handleFormData:React.FormEventHandler,
- *  selectedButton:string[]
+ *  selectedButton: ExtendFilters
  * }} props
  */
 
@@ -67,10 +67,10 @@ export const ShopFilter = ({
             onChange={onChangeFilter}
           >
             <option value="default">Featured</option>
-            <option value="title-ascending">Alphabetically, A-Z</option>
-            <option value="title-descending">Alphabetically, Z-A</option>
-            <option value="price-ascending">Price, low to high</option>
-            <option value="price-descending">Price, high to low</option>
+            <option value="title_ascending">Alphabetically, A-Z</option>
+            <option value="title_descending">Alphabetically, Z-A</option>
+            <option value="price_ascending">Price, low to high</option>
+            <option value="price_descending">Price, high to low</option>
           </select>
         </FilterNavButton>
 
@@ -107,8 +107,8 @@ export const ShopFilter = ({
         array={filterButtons}
         toggleMenu={toggleShopMenu}
         componentRef={extenderFilterRef}
-        selectedButton={selectedButton}
-        {...{ handleFormData, handleExtendfilter, handleCleanFilter }}
+       
+        {...{ handleFormData, handleExtendfilter, handleCleanFilter, selectedButton }}
       />
     </>
   );

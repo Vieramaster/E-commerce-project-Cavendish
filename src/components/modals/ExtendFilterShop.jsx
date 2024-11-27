@@ -9,7 +9,7 @@ const ulClasses = "flex justify-center gap-5 flex-wrap";
  *   array: ProductAttributes,
  *   toggleMenu: boolean,
  *   componentRef: React.LegacyRef<HTMLFieldSetElement>,
- *   selectedButton: string[],
+ *   selectedButton: ExtendFilters,
  *   handleExtendfilter: (event: React.MouseEvent<HTMLButtonElement>) => void,
  *   handleCleanFilter: () => void,
  *   handleFormData: React.FormEventHandler
@@ -28,8 +28,16 @@ export const ExtendFilterShop = ({
   const colors = array[1];
   const types = array[2];
 
-  //avoid recreating Set on every render.
-  const selectedSet = new Set(selectedButton);
+  const {
+    size: selectedSize,
+    color: selectedColor,
+    type: selectedType,
+  } = selectedButton;
+
+  //If there are no filters the button submit is disabled
+  const disabledSubmit = Object.values(selectedButton).some(
+    (array) => array.length > 0
+  );
 
   return (
     <fieldset
@@ -52,7 +60,7 @@ export const ExtendFilterShop = ({
                 value={item[0]}
                 data-id="sizeButton"
                 onClick={handleExtendfilter}
-                isActive={selectedSet.has(item[0])}
+                isActive={selectedSize.includes(item[0])}
               >
                 {item[0]}
               </FilterProductButton>
@@ -64,7 +72,7 @@ export const ExtendFilterShop = ({
           {colors.map(({ name, hex }) => (
             <li key={name}>
               <ColorButton
-                isActive={selectedSet.has(name)}
+                isActive={selectedColor.includes(name)}
                 mainProduct
                 name={name}
                 aria-label={`${name} color button`}
@@ -87,27 +95,30 @@ export const ExtendFilterShop = ({
                 value={type}
                 data-id="typeButton"
                 onClick={handleExtendfilter}
-                isActive={selectedSet.has(type)}
+                isActive={selectedType.includes(type)}
               >
                 {type}
               </FilterProductButton>
             </li>
           ))}
         </ul>
+        <div className="w-full h-16 flex justify-center items-center gap-5 text-md font-semibold">
+          <DefaultButton
+            color="primary"
+            type="reset"
+            onClick={handleCleanFilter}
+          >
+            Clean
+          </DefaultButton>
+          <DefaultButton
+            color="primary"
+            type="submit"
+            disabled={!disabledSubmit}
+          >
+            Apply
+          </DefaultButton>
+        </div>
       </form>
-
-      <div className="w-full h-16 flex justify-center items-center gap-5 text-md font-semibold">
-        <DefaultButton color="primary" type="reset" onClick={handleCleanFilter}>
-          Clean
-        </DefaultButton>
-        <DefaultButton
-          color="primary"
-          type="submit"
-          disabled={selectedButton.length === 0}
-        >
-          Apply
-        </DefaultButton>
-      </div>
     </fieldset>
   );
 };

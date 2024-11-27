@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { useFetch } from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { ShopFilter } from "../components/ShopFilter";
@@ -24,10 +24,11 @@ const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 export const Shop = () => {
   const { category } = useParams();
   const [toggleGrid, setToggleGrid] = useState(false);
-  const [canLoadMore, setDataButton] = useState(true);
-  const [numberArray, setNumberArray] = useState([0, 0]);
-  const [selectedOption, setSelectedOption] = useState("");
+  const [loadCards, setLoadCards] = useState(true);
   const [loadingData, setLoadingData] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(
+    /** @type {FiltersString} */ ("default")
+  );
 
   /** @type {[ExtendFilters, React.Dispatch<React.SetStateAction<ExtendFilters>>]} */
   const [extendFilters, setExtendFilters] = useState(
@@ -42,7 +43,6 @@ export const Shop = () => {
     /** @type {ClothesObject[]} */ ([])
   );
 
-
   //restart the grid for screen changes
   useResizeWindow(976, setToggleGrid);
 
@@ -52,54 +52,28 @@ export const Shop = () => {
 
   /**@type {{data:ClothesObject[]}} */
   const { data } = useFetch(category !== "new_arrivals" ? category : undefined);
+  const minCut = data.slice(0, Math.min(8, data.length));
 
-  const productData = useMemo(() => structuredClone(data), [data]);
 
   // data is subtracted to create filter buttons
   /**@type {ProductAttributes} */
   const arrayForFilters = [
-    sizesFilter(productData),
-    colorFilter(productData),
-    typeFilter(productData),
+    sizesFilter(data),
+    colorFilter(data),
+    typeFilter(data),
   ];
 
   //Filter select
-  /**@type {React.ChangeEventHandler<HTMLSelectElement>} */
-  const changeFilter = (event) => {
-    setSelectedOption(event.target.value);
+  /** @type {React.ChangeEventHandler<HTMLSelectElement>} */
+  const changeFilter = ({ target }) => {
+    setSelectedOption(/** @type {FiltersString} */ (target.value));
   };
 
-  // add more cards
-  const handleMoreData = () => {
-    if (progressiveArray.length < productData.length) {
-      const newNumbers = [numberArray[0] + 8, numberArray[1] + 8];
-      setNumberArray(newNumbers);
-      const newCards = productData.slice(newNumbers[0], newNumbers[1]);
-      setProgressiveArray((prev) => [...prev, ...newCards]);
-    } else {
-      setDataButton(false);
-    }
-  };
-
-  const filters = {
-    "title-ascending": () => alphabeticFilter(productData, true),
-    "title-descending": () => alphabeticFilter(productData, false),
-    "price-ascending": () => priceFilter(productData, true),
-    "price-descending": () => priceFilter(productData, false),
-    default: () => defaultFilter(productData),
-  };
-
-  /** @param {React.FormEvent<HTMLFormElement>} event */
-  const handleFormData = (event) => {
-    event.preventDefault();
-  };
 
   const pageReset = () => {
-    setNumberArray([0, 8]);
     setLoadingData(true);
-    let changeArray = productData.slice(0, Math.min(8, data.length));
-    setProgressiveArray(changeArray);
-    setDataButton(true);
+    setProgressiveArray(minCut);
+    setLoadCards(true);
     setLoadingData(false);
   };
 
@@ -114,10 +88,13 @@ export const Shop = () => {
       /**@type {"size" | "color" | "type"} */
       let filterKey;
 
-      if (buttonData === "sizeButton") filterKey = "size";
-      else if (buttonData === "colorButton") filterKey = "color";
-      else if (buttonData === "typeButton") filterKey = "type";
-      else return prev;
+      if (buttonData === "sizeButton") {
+        filterKey = "size";
+      } else if (buttonData === "colorButton") {
+        filterKey = "color";
+      } else if (buttonData === "typeButton") {
+        filterKey = "type";
+      } else return prev;
 
       const updatedFilter = prev[filterKey].includes(buttonValue)
         ? prev[filterKey].filter((item) => item !== buttonValue)
@@ -130,20 +107,84 @@ export const Shop = () => {
     });
   };
 
-  console.log(extendFilters)
   const handleCleanFilter = () => {
-    setSelectedButton([]);
+    setExtendFilters({
+      size: [],
+      color: [],
+      type: [],
+    });
+    setProgressiveArray(minCut);
   };
 
+  /** @param {React.FormEvent<HTMLFormElement>} event */
+  const handleFormData = (event) => {
+    event.preventDefault();
+
+    let filteredResults = data;
+
+    const {
+      size: sizeFilter,
+      color: colorFilter,
+      type: typeFilter,
+    } = extendFilters;
+
+    if (sizeFilter.length > 0) {
+      filteredResults = filteredResults.filter((product) => {
+        return product.colors.some((color) => {
+          return sizeFilter.some((size) => color.sizes[size] > 0);
+        });
+      });
+    }
+
+    if (colorFilter.length > 0) {
+      filteredResults = filteredResults.filter((product) => {
+        return product.colors.some((color) =>
+          colorFilter.includes(color.colorName)
+        );
+      });
+    }
+
+    if (typeFilter.length > 0) {
+      filteredResults = filteredResults.filter((product) => {
+        return typeFilter.includes(product.name);
+      });
+    }
+    setProgressiveArray(filteredResults);
+    
+
+  };
+
+    // add more cards
+    const handleMoreData = () => {
+      if (progressiveArray.length < data.length) {
+        const nextCards = data.slice(
+          progressiveArray.length,
+          progressiveArray.length +  Math.min(8, data.length)
+        );
+        setProgressiveArray((prev) => [...prev, ...nextCards]);
+      } else setLoadCards(false);
+    };
+  
+  /**@type {Filters} */
+  const filters = {
+    title_ascending: () => alphabeticFilter(data, true),
+    title_descending: () => alphabeticFilter(data, false),
+    price_ascending: () => priceFilter(data, false),
+    price_descending: () => priceFilter(data, true),
+    default: () => defaultFilter(data),
+  };
+
+  console.log(progressiveArray)
   useEffect(() => {
-    if (productData) {
+    if (data) {
       pageReset();
     }
     if (selectedOption) {
+      
       filters[selectedOption]();
-      setProgressiveArray(productData.slice(0, 8));
+      setProgressiveArray(minCut);
     }
-  }, [productData, selectedOption]);
+  }, [data, selectedOption]);
 
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-28">
@@ -152,11 +193,11 @@ export const Shop = () => {
         toggleGrid={gridChangeToggle}
         booleanGrid={toggleGrid}
         filterButtons={arrayForFilters}
+        selectedButton={extendFilters}
         {...{
           handleFormData,
           handleCleanFilter,
           handleExtendfilter,
-          selectedButton,
         }}
       />
       <div
@@ -179,7 +220,6 @@ export const Shop = () => {
               <ImagesShopSlider
                 array={item}
                 maxSizeArrows={toggleGrid}
-                category={category || ""}
                 itsALink={true}
               />
               <DescriptionShopCard array={item} toggleSize={toggleGrid} />
@@ -190,9 +230,9 @@ export const Shop = () => {
         <DefaultButton
           onClick={handleMoreData}
           color="primary"
-          disabled={!canLoadMore}
+          disabled={!loadCards}
         >
-          {canLoadMore ? "More clothes..." : "No more products"}
+          {loadCards ? "More clothes..." : "No more products"}
         </DefaultButton>
       </div>
     </section>
