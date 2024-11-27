@@ -2,8 +2,14 @@ import { ShopSizeButton } from "./buttons/ShopSizeButton";
 import { ColorButton } from "./buttons/ColorButton";
 import "../types";
 
-/**@param {{product: ClothesObject}} props*/
-export const ObjectPropertyShop = ({ product }) => {
+/**@param {{product: ClothesObject, disabledColor:number, handleChangeClothes: React.MouseEventHandler<HTMLButtonElement>, handleChoiseSize:React.MouseEventHandler<HTMLButtonElement>, disabledSize:string}} props*/
+export const ObjectPropertyShop = ({
+  product,
+  disabledColor,
+  handleChoiseSize,
+  handleChangeClothes,
+  disabledSize
+}) => {
   return (
     <div className="w-full h-auto  flex flex-col gap-5   ">
       <article className="text-textColor flex flex-col gap-3">
@@ -26,10 +32,14 @@ export const ObjectPropertyShop = ({ product }) => {
               key={index + colorName}
             >
               <ColorButton
-                isActive
+                isActive={disabledColor === index}
+                disabled={disabledColor === index}
                 style={{ backgroundColor: hex }}
                 name={colorName}
                 mainProduct={true}
+                id={colorName}
+                value={index}
+                onClick={handleChangeClothes}
               />
             </li>
           );
@@ -43,10 +53,11 @@ export const ObjectPropertyShop = ({ product }) => {
                 disabled={item[1] === 0}
                 borderButton={item[1] > 0}
                 aria-label={`${item[0]} size button`}
-                id={item[0]}
-                onClick={() => "void"}
+                value={item[0]}
+                onClick={handleChoiseSize}
                 data-id="sizeButton"
-                selected={false}
+                selected={disabledSize === item[0]}
+                
               >
                 {item[0]}
               </ShopSizeButton>

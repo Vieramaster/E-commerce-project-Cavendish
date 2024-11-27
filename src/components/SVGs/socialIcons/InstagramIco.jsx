@@ -1,15 +1,9 @@
-import React from "react";
-/**
- * @param {{className:string}} props
- * @returns {JSX.Element}
- */
-export const InstagramIco = ({ className }) => {
+export const InstagramIco = () => {
   return (
     <svg
-      className={`${className} m-auto`}
+      className="w-full h-full m-auto"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
       strokeWidth="1"
       strokeLinecap="round"
       strokeLinejoin="round"

@@ -3,7 +3,7 @@ import { InstagramIco } from "../SVGs/socialIcons/InstagramIco";
 import { YoutubeIco } from "../SVGs/socialIcons/YoutubeIco";
 import { TwitterIco } from "../SVGs/socialIcons/TwitterIco";
 
-/**@type {Array<{Component:React.ComponentType<{className:string}>, key:string}>} */
+/**@type {Array<{Component:React.ComponentType, key:string}>} */
 export const logoList = [
   { Component: FacebookIco, key: "Facebook" },
   { Component: InstagramIco, key: "Instagram" },
@@ -16,16 +16,13 @@ export const SocialBanner = () => {
     <ul className="bg-mainColor w-full h-12  flex justify-center items-center gap-5 lg:h-20">
       {logoList.map(({ Component, key }) => {
         return (
-          <li key={key}>
+          <li key={key} className="size-8 lg:size-10">
             <a
               href="https://www.youtube.com/watch?v=QB7ACr7pUuE"
               target="_blank"
+              className=" stroke-white hover:stroke-yellow duration-300 ease-in-out "
             >
-              <Component
-                className={
-                  "size-8 stroke-white hover:stroke-yellow duration-300 ease-in-out lg:size-10"
-                }
-              />
+              <Component />
             </a>
           </li>
         );

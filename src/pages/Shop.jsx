@@ -21,39 +21,39 @@ const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 
 const sorts = {
-  title_ascending: /** @param {ClothesObject[]} data */ data =>
+  title_ascending: /** @param {ClothesObject[]} data */ (data) =>
     alphabeticFilter(data, true),
-  title_descending: /** @param {ClothesObject[]} data */ data =>
+  title_descending: /** @param {ClothesObject[]} data */ (data) =>
     alphabeticFilter(data, false),
-  price_ascending: /** @param {ClothesObject[]} data */ data =>
+  price_ascending: /** @param {ClothesObject[]} data */ (data) =>
     priceFilter(data, true),
-  price_descending: /** @param {ClothesObject[]} data */ data =>
+  price_descending: /** @param {ClothesObject[]} data */ (data) =>
     priceFilter(data, false),
-  default: /** @param {ClothesObject[]} data */ data => defaultFilter(data),
+  default: /** @param {ClothesObject[]} data */ (data) => defaultFilter(data),
 };
 
 const skip = () => true;
 
 const filters = {
   /** @param {string[]} values */
-  size: values =>
+  size: (values) =>
     values.length === 0
       ? skip
-      : /** @param {ClothesObject} product */ product =>
-          product.colors.some(color =>
-            values.some(size => color.sizes[size] > 0),
+      : /** @param {ClothesObject} product */ (product) =>
+          product.colors.some((color) =>
+            values.some((size) => color.sizes[size] > 0)
           ),
   /** @param {string[]} values */
-  color: values =>
+  color: (values) =>
     values.length === 0
       ? skip
-      : /** @param {ClothesObject} product */ product =>
-          product.colors.some(color => values.includes(color.colorName)),
+      : /** @param {ClothesObject} product */ (product) =>
+          product.colors.some((color) => values.includes(color.colorName)),
   /** @param {string[]} values */
-  type: values =>
+  type: (values) =>
     values.length === 0
       ? skip
-      : /** @param {ClothesObject} product */ product =>
+      : /** @param {ClothesObject} product */ (product) =>
           values.includes(product.category),
 };
 
@@ -64,7 +64,7 @@ export const Shop = () => {
   const [toggleGrid, setToggleGrid] = useState(false);
   const [sort, setSort] = useState(/** @type {FiltersString} */ ("default"));
   const [extendFilters, setExtendFilters] = useState(
-    /** @type {ExtendFilters} */ ({ size: [], color: [], type: [] }),
+    /** @type {ExtendFilters} */ ({ size: [], color: [], type: [] })
   );
   const [page, setPage] = useState(1);
   const resetPagination = useCallback(() => setPage(1), []);
@@ -73,8 +73,8 @@ export const Shop = () => {
   useResizeWindow(976, setToggleGrid);
 
   const gridChangeToggle = useCallback(
-    () => setToggleGrid(prevState => !prevState),
-    [],
+    () => setToggleGrid((prevState) => !prevState),
+    []
   );
 
   /** @type {{data:ClothesObject[]}} */
@@ -84,7 +84,7 @@ export const Shop = () => {
   /** @type {ProductAttributes} */
   const arrayForFilters = useMemo(
     () => [sizesFilter(data), colorFilter(data), typeFilter(data)],
-    [data],
+    [data]
   );
 
   // Filter select
@@ -102,7 +102,7 @@ export const Shop = () => {
         dataset: { id: buttonData },
       } = /** @type {HTMLButtonElement} */ (currentTarget);
 
-      setExtendFilters(prev => {
+      setExtendFilters((prev) => {
         /**@type {"size" | "color" | "type"} */
         let filterKey;
 
@@ -115,7 +115,7 @@ export const Shop = () => {
         } else return prev;
 
         const updatedFilter = prev[filterKey].includes(buttonValue)
-          ? prev[filterKey].filter(item => item !== buttonValue)
+          ? prev[filterKey].filter((item) => item !== buttonValue)
           : [...prev[filterKey], buttonValue];
 
         return {
@@ -124,7 +124,7 @@ export const Shop = () => {
         };
       });
     },
-    [resetPagination],
+    [resetPagination]
   );
 
   const handleCleanFilter = useCallback(() => {
@@ -138,26 +138,27 @@ export const Shop = () => {
         (result, [filterName, filterValues]) =>
           result.filter(
             filters[/** @type {keyof typeof filters} */ (filterName)](
-              filterValues,
-            ),
+              filterValues
+            )
           ),
-        sort ? sorts[sort](data) : data,
+        sort ? sorts[sort](data) : data
       ),
-    [extendFilters, data, sort],
+    [extendFilters, data, sort]
   );
 
   const filteredResultsSliced = useMemo(
     () => filteredResults.slice(0, page * PAGE_SIZE),
-    [filteredResults, page],
+    [filteredResults, page]
   );
 
   const loadCards = useMemo(
     () => filteredResultsSliced.length < filteredResults.length,
-    [filteredResults.length, filteredResultsSliced.length],
+    [filteredResults.length, filteredResultsSliced.length]
   );
 
   // add more cards
-  const handleMoreData = useCallback(() => () => setPage(page + 1), [page]);
+  const handleMoreData = useCallback(() => setPage((prevPage) => prevPage + 1), []);
+
 
   useEffect(() => {
     if (data) {
@@ -181,13 +182,15 @@ export const Shop = () => {
       <div
         className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
           toggleGrid ? gridGiant : gridCompact
-        }`}>
+        }`}
+      >
         {filteredResultsSliced.length === 0 ? (
           <p>No se encontró nada</p>
         ) : (
-          filteredResultsSliced.map(item => (
+          filteredResultsSliced.map((item) => (
             <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
               <ImagesShopSlider
+                changeClothes={0}
                 array={item}
                 maxSizeArrows={toggleGrid}
                 itsALink={true}
@@ -201,7 +204,8 @@ export const Shop = () => {
         <DefaultButton
           onClick={handleMoreData}
           color="primary"
-          disabled={!loadCards}>
+          disabled={!loadCards}
+        >
           {loadCards ? "More clothes..." : "No more products"}
         </DefaultButton>
       </div>

@@ -16,9 +16,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/jackets_and_coats/gabardine_jacket_beige1.webp",
-                        "/images/jackets_and_coats/gabardine_jacket_beige2.webp",
-                        "/images/jackets_and_coats/gabardine_jacket_beige3.webp"
+                        "/images/shop/jackets_and_coats/gabardine_jacket_beige1.webp",
+                        "/images/shop/jackets_and_coats/gabardine_jacket_beige2.webp",
+                        "/images/shop/jackets_and_coats/gabardine_jacket_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -46,9 +46,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/jackets_and_coats/quick_jacket_black1.webp",
-                        "/images/jackets_and_coats/quick_jacket_black2.webp",
-                        "/images/jackets_and_coats/quick_jacket_black3.webp"
+                        "/images/shop/jackets_and_coats/quick_jacket_black1.webp",
+                        "/images/shop/jackets_and_coats/quick_jacket_black2.webp",
+                        "/images/shop/jackets_and_coats/quick_jacket_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -76,9 +76,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/jackets_and_coats/bayport_windbraker_black1.webp",
-                        "/images/jackets_and_coats/bayport_windbraker_black2.webp",
-                        "/images/jackets_and_coats/bayport_windbraker_black3.webp"
+                        "/images/shop/jackets_and_coats/bayport_windbraker_black1.webp",
+                        "/images/shop/jackets_and_coats/bayport_windbraker_black2.webp",
+                        "/images/shop/jackets_and_coats/bayport_windbraker_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -92,9 +92,9 @@
                     "colorName": "red",
                     "hex": "#d3251d",
                     "imagesColor": [
-                        "/images/jackets_and_coats/bayport_windbraker_red1.webp",
-                        "/images/jackets_and_coats/bayport_windbraker_red2.webp",
-                        "/images/jackets_and_coats/bayport_windbraker_red3.webp"
+                        "/images/shop/jackets_and_coats/bayport_windbraker_red1.webp",
+                        "/images/shop/jackets_and_coats/bayport_windbraker_red2.webp",
+                        "/images/shop/jackets_and_coats/bayport_windbraker_red3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -122,9 +122,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/jackets_and_coats/windstorm_jacket_beige1.webp",
-                        "/images/jackets_and_coats/windstorm_jacket_beige2.webp",
-                        "/images/jackets_and_coats/windstorm_jacket_beige3.webp"
+                        "/images/shop/jackets_and_coats/windstorm_jacket_beige1.webp",
+                        "/images/shop/jackets_and_coats/windstorm_jacket_beige2.webp",
+                        "/images/shop/jackets_and_coats/windstorm_jacket_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -138,9 +138,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/jackets_and_coats/windstorm_jacket_navy1.webp",
-                        "/images/jackets_and_coats/windstorm_jacket_navy2.webp",
-                        "/images/jackets_and_coats/windstorm_jacket_navy3.webp"
+                        "/images/shop/jackets_and_coats/windstorm_jacket_navy1.webp",
+                        "/images/shop/jackets_and_coats/windstorm_jacket_navy2.webp",
+                        "/images/shop/jackets_and_coats/windstorm_jacket_navy3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -170,9 +170,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/pants_and_jeans/chester_cargo_brown1.webp",
-                        "/images/pants_and_jeans/chester_cargo_brown2.webp",
-                        "/images/pants_and_jeans/chester_cargo_brown3.webp"
+                        "/images/shop/pants_and_jeans/chester_cargo_brown1.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_brown2.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_brown3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -188,9 +188,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants_and_jeans/chester_cargo_black1.webp",
-                        "/images/pants_and_jeans/chester_cargo_black2.webp",
-                        "/images/pants_and_jeans/chester_cargo_black3.webp"
+                        "/images/shop/pants_and_jeans/chester_cargo_black1.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_black2.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -220,9 +220,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/pants_and_jeans/fulton_stretch_green_army1.webp",
-                        "/images/pants_and_jeans/fulton_stretch_green_army2.webp",
-                        "/images/pants_and_jeans/fulton_stretch_green_army3.webp"
+                        "/images/shop/pants_and_jeans/fulton_stretch_green_army1.webp",
+                        "/images/shop/pants_and_jeans/fulton_stretch_green_army2.webp",
+                        "/images/shop/pants_and_jeans/fulton_stretch_green_army3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -238,9 +238,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants_and_jeans/fulton_stretch_navy1.webp",
-                        "/images/pants_and_jeans/fulton_stretch_navy2.webp",
-                        "/images/pants_and_jeans/fulton_stretch_navy3.webp"
+                        "/images/shop/pants_and_jeans/fulton_stretch_navy1.webp",
+                        "/images/shop/pants_and_jeans/fulton_stretch_navy2.webp",
+                        "/images/shop/pants_and_jeans/fulton_stretch_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -270,9 +270,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/pants_and_jeans/joiner_carpenter_pants_oatmeal1.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_pants_oatmeal2.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_pants_oatmeal3.webp"
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_oatmeal1.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_oatmeal2.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_oatmeal3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -288,9 +288,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants_and_jeans/joiner_carpenter_pants_black1.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_pants_black2.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_pants_black3.webp"
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_black1.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_black2.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -306,9 +306,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants_and_jeans/joiner_carpenter_pants_sky_blue1.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_pants_sky_blue2.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_pants_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -338,9 +338,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/pants_and_jeans/toledo_gabardine_beige1.webp",
-                        "/images/pants_and_jeans/toledo_gabardine_beige2.webp",
-                        "/images/pants_and_jeans/toledo_gabardine_beige3.webp"
+                        "/images/shop/pants_and_jeans/toledo_gabardine_beige1.webp",
+                        "/images/shop/pants_and_jeans/toledo_gabardine_beige2.webp",
+                        "/images/shop/pants_and_jeans/toledo_gabardine_beige3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -356,9 +356,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants_and_jeans/toledo_gabardine_navy1.webp",
-                        "/images/pants_and_jeans/toledo_gabardine_navy2.webp",
-                        "/images/pants_and_jeans/toledo_gabardine_navy3.webp"
+                        "/images/shop/pants_and_jeans/toledo_gabardine_navy1.webp",
+                        "/images/shop/pants_and_jeans/toledo_gabardine_navy2.webp",
+                        "/images/shop/pants_and_jeans/toledo_gabardine_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -388,9 +388,9 @@
                     "colorName": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
-                        "/images/pants_and_jeans/chester_drawstring_kaki1.webp",
-                        "/images/pants_and_jeans/chester_drawstring_kaki2.webp",
-                        "/images/pants_and_jeans/chester_drawstring_kaki3.webp"
+                        "/images/shop/pants_and_jeans/chester_drawstring_kaki1.webp",
+                        "/images/shop/pants_and_jeans/chester_drawstring_kaki2.webp",
+                        "/images/shop/pants_and_jeans/chester_drawstring_kaki3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -406,9 +406,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants_and_jeans/chester_drawstring_black1.webp",
-                        "/images/pants_and_jeans/chester_drawstring_black2.webp",
-                        "/images/pants_and_jeans/chester_drawstring_black3.webp"
+                        "/images/shop/pants_and_jeans/chester_drawstring_black1.webp",
+                        "/images/shop/pants_and_jeans/chester_drawstring_black2.webp",
+                        "/images/shop/pants_and_jeans/chester_drawstring_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -438,9 +438,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/pants_and_jeans/abbey_stretch_green_army1.webp",
-                        "/images/pants_and_jeans/abbey_stretch_green_army2.webp",
-                        "/images/pants_and_jeans/abbey_stretch_green_army3.webp"
+                        "/images/shop/pants_and_jeans/abbey_stretch_green_army1.webp",
+                        "/images/shop/pants_and_jeans/abbey_stretch_green_army2.webp",
+                        "/images/shop/pants_and_jeans/abbey_stretch_green_army3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -456,9 +456,9 @@
                     "colorName": "kaki",
                     "hex": "#9b7846",
                     "imagesColor": [
-                        "/images/pants_and_jeans/abbey_stretch_kaki1.webp",
-                        "/images/pants_and_jeans/abbey_stretch_kaki2.webp",
-                        "/images/pants_and_jeans/abbey_stretch_kaki3.webp"
+                        "/images/shop/pants_and_jeans/abbey_stretch_kaki1.webp",
+                        "/images/shop/pants_and_jeans/abbey_stretch_kaki2.webp",
+                        "/images/shop/pants_and_jeans/abbey_stretch_kaki3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -488,9 +488,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/pants_and_jeans/fulton_jean_blue1.webp",
-                        "/images/pants_and_jeans/fulton_jean_blue2.webp",
-                        "/images/pants_and_jeans/fulton_jean_blue3.webp"
+                        "/images/shop/pants_and_jeans/fulton_jean_blue1.webp",
+                        "/images/shop/pants_and_jeans/fulton_jean_blue2.webp",
+                        "/images/shop/pants_and_jeans/fulton_jean_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -506,9 +506,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants_and_jeans/fulton_jean_sky_blue1.webp",
-                        "/images/pants_and_jeans/fulton_jean_sky_blue2.webp",
-                        "/images/pants_and_jeans/fulton_jean_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/fulton_jean_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/fulton_jean_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/fulton_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -538,9 +538,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants_and_jeans/zumo_jean_sky_blue1.webp",
-                        "/images/pants_and_jeans/zumo_jean_sky_blue2.webp",
-                        "/images/pants_and_jeans/zumo_jean_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/zumo_jean_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/zumo_jean_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/zumo_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -556,9 +556,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants_and_jeans/zumo_jean_navy1.webp",
-                        "/images/pants_and_jeans/zumo_jean_navy2.webp",
-                        "/images/pants_and_jeans/zumo_jean_navy3.webp"
+                        "/images/shop/pants_and_jeans/zumo_jean_navy1.webp",
+                        "/images/shop/pants_and_jeans/zumo_jean_navy2.webp",
+                        "/images/shop/pants_and_jeans/zumo_jean_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -588,9 +588,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants_and_jeans/copenhagen_jean_sky_blue1.webp",
-                        "/images/pants_and_jeans/copenhagen_jean_sky_blue2.webp",
-                        "/images/pants_and_jeans/copenhagen_jean_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/copenhagen_jean_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/copenhagen_jean_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/copenhagen_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -606,9 +606,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/pants_and_jeans/copenhagen_jean_navy1.webp",
-                        "/images/pants_and_jeans/copenhagen_jean_navy2.webp",
-                        "/images/pants_and_jeans/copenhagen_jean_navy3.webp"
+                        "/images/shop/pants_and_jeans/copenhagen_jean_navy1.webp",
+                        "/images/shop/pants_and_jeans/copenhagen_jean_navy2.webp",
+                        "/images/shop/pants_and_jeans/copenhagen_jean_navy3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -638,9 +638,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants_and_jeans/joiner_carpenter_sky_blue1.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_sky_blue2.webp",
-                        "/images/pants_and_jeans/joiner_carpenter_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/joiner_carpenter_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -670,9 +670,9 @@
                     "colorName": "dark grey",
                     "hex": "#303030",
                     "imagesColor": [
-                        "/images/pants_and_jeans/loose_jean_dark_grey1.webp",
-                        "/images/pants_and_jeans/loose_jean_dark_grey2.webp",
-                        "/images/pants_and_jeans/loose_jean_dark_grey3.webp"
+                        "/images/shop/pants_and_jeans/loose_jean_dark_grey1.webp",
+                        "/images/shop/pants_and_jeans/loose_jean_dark_grey2.webp",
+                        "/images/shop/pants_and_jeans/loose_jean_dark_grey3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -688,9 +688,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/pants_and_jeans/loose_jean_sky_blue1.webp",
-                        "/images/pants_and_jeans/loose_jean_sky_blue2.webp",
-                        "/images/pants_and_jeans/loose_jean_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/loose_jean_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/loose_jean_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/loose_jean_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -720,9 +720,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/pants_and_jeans/looseII_jean_light_grey1.webp",
-                        "/images/pants_and_jeans/looseII_jean_light_grey2.webp",
-                        "/images/pants_and_jeans/looseII_jean_light_grey3.webp"
+                        "/images/shop/pants_and_jeans/looseII_jean_light_grey1.webp",
+                        "/images/shop/pants_and_jeans/looseII_jean_light_grey2.webp",
+                        "/images/shop/pants_and_jeans/looseII_jean_light_grey3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -752,9 +752,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/pants_and_jeans/distracted_joggins_grey1.webp",
-                        "/images/pants_and_jeans/distracted_joggins_grey2.webp",
-                        "/images/pants_and_jeans/distracted_joggins_grey3.webp"
+                        "/images/shop/pants_and_jeans/distracted_joggins_grey1.webp",
+                        "/images/shop/pants_and_jeans/distracted_joggins_grey2.webp",
+                        "/images/shop/pants_and_jeans/distracted_joggins_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -768,9 +768,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants_and_jeans/distracted_joggins_black1.webp",
-                        "/images/pants_and_jeans/distracted_joggins_black2.webp",
-                        "/images/pants_and_jeans/distracted_joggins_black3.webp"
+                        "/images/shop/pants_and_jeans/distracted_joggins_black1.webp",
+                        "/images/shop/pants_and_jeans/distracted_joggins_black2.webp",
+                        "/images/shop/pants_and_jeans/distracted_joggins_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -798,9 +798,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/pants_and_jeans/ravara_joggins_grey1.webp",
-                        "/images/pants_and_jeans/ravara_joggins_grey2.webp",
-                        "/images/pants_and_jeans/ravara_joggins_grey3.webp"
+                        "/images/shop/pants_and_jeans/ravara_joggins_grey1.webp",
+                        "/images/shop/pants_and_jeans/ravara_joggins_grey2.webp",
+                        "/images/shop/pants_and_jeans/ravara_joggins_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -814,9 +814,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants_and_jeans/ravara_joggins_black1.webp",
-                        "/images/pants_and_jeans/ravara_joggins_black2.webp",
-                        "/images/pants_and_jeans/ravara_joggins_black3.webp"
+                        "/images/shop/pants_and_jeans/ravara_joggins_black1.webp",
+                        "/images/shop/pants_and_jeans/ravara_joggins_black2.webp",
+                        "/images/shop/pants_and_jeans/ravara_joggins_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -846,9 +846,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drum_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_white3.webp"
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_white1.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_white2.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -862,9 +862,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drum_t-shirt_black1.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_black2.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_black3.webp"
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_black1.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_black2.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -892,9 +892,9 @@
                     "colorName": "pink",
                     "hex": "#f0d0c6",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rad_t-shirt_pink1.webp",
-                        "/images/polo_and_t-shirts/rad_t-shirt_pink2.webp",
-                        "/images/polo_and_t-shirts/rad_t-shirt_pink3.webp"
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_pink1.webp",
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_pink2.webp",
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_pink3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -908,9 +908,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rad_t-shirt_aero1.webp",
-                        "/images/polo_and_t-shirts/rad_t-shirt_aero2.webp",
-                        "/images/polo_and_t-shirts/rad_t-shirt_aero3.webp"
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_aero1.webp",
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_aero2.webp",
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -924,9 +924,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rad_t-shirt_grey1.webp",
-                        "/images/polo_and_t-shirts/rad_t-shirt_grey2.webp",
-                        "/images/polo_and_t-shirts/rad_t-shirt_grey3.webp"
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_grey1.webp",
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_grey2.webp",
+                        "/images/shop/polo_and_t-shirts/rad_t-shirt_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -954,9 +954,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/vibes_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/vibes_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/vibes_t-shirt_white3.webp"
+                        "/images/shop/polo_and_t-shirts/vibes_t-shirt_white1.webp",
+                        "/images/shop/polo_and_t-shirts/vibes_t-shirt_white2.webp",
+                        "/images/shop/polo_and_t-shirts/vibes_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -970,9 +970,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/vibes_t-shirt_aero1.webp",
-                        "/images/polo_and_t-shirts/vibes_t-shirt_aero2.webp",
-                        "/images/polo_and_t-shirts/vibes_t-shirt_aero3.webp"
+                        "/images/shop/polo_and_t-shirts/vibes_t-shirt_aero1.webp",
+                        "/images/shop/polo_and_t-shirts/vibes_t-shirt_aero2.webp",
+                        "/images/shop/polo_and_t-shirts/vibes_t-shirt_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1000,9 +1000,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/san_martin_t-shirt_black1.webp",
-                        "/images/polo_and_t-shirts/san_martin_t-shirt_black2.webp",
-                        "/images/polo_and_t-shirts/san_martin_t-shirt_black3.webp"
+                        "/images/shop/polo_and_t-shirts/san_martin_t-shirt_black1.webp",
+                        "/images/shop/polo_and_t-shirts/san_martin_t-shirt_black2.webp",
+                        "/images/shop/polo_and_t-shirts/san_martin_t-shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1030,9 +1030,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/pocket_t-shirt_grey1.webp",
-                        "/images/polo_and_t-shirts/pocket_t-shirt_grey2.webp",
-                        "/images/polo_and_t-shirts/pocket_t-shirt_grey3.webp"
+                        "/images/shop/polo_and_t-shirts/pocket_t-shirt_grey1.webp",
+                        "/images/shop/polo_and_t-shirts/pocket_t-shirt_grey2.webp",
+                        "/images/shop/polo_and_t-shirts/pocket_t-shirt_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1046,9 +1046,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue1.webp",
-                        "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue2.webp",
-                        "/images/polo_and_t-shirts/pocket_t-shirt_sky_blue3.webp"
+                        "/images/shop/polo_and_t-shirts/pocket_t-shirt_sky_blue1.webp",
+                        "/images/shop/polo_and_t-shirts/pocket_t-shirt_sky_blue2.webp",
+                        "/images/shop/polo_and_t-shirts/pocket_t-shirt_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1076,9 +1076,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/radder_t-shirt_grey1.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_grey2.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_grey3.webp"
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_grey1.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_grey2.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1092,9 +1092,9 @@
                     "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/radder_t-shirt_yellow1.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_yellow2.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_yellow3.webp"
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_yellow1.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_yellow2.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_yellow3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1108,9 +1108,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/radder_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_white3.webp"
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_white1.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_white2.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1124,9 +1124,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/radder_t-shirt_black1.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_black2.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_black3.webp"
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_black1.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_black2.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1140,9 +1140,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/radder_t-shirt_beige1.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_beige2.webp",
-                        "/images/polo_and_t-shirts/radder_t-shirt_beige3.webp"
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_beige1.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_beige2.webp",
+                        "/images/shop/polo_and_t-shirts/radder_t-shirt_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1170,9 +1170,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rider_t-shirt_oatmeal1.webp",
-                        "/images/polo_and_t-shirts/rider_t-shirt_oatmeal2.webp",
-                        "/images/polo_and_t-shirts/rider_t-shirt_oatmeal3.webp"
+                        "/images/shop/polo_and_t-shirts/rider_t-shirt_oatmeal1.webp",
+                        "/images/shop/polo_and_t-shirts/rider_t-shirt_oatmeal2.webp",
+                        "/images/shop/polo_and_t-shirts/rider_t-shirt_oatmeal3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1186,9 +1186,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rider_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/rider_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/rider_t-shirt_white3.webp"
+                        "/images/shop/polo_and_t-shirts/rider_t-shirt_white1.webp",
+                        "/images/shop/polo_and_t-shirts/rider_t-shirt_white2.webp",
+                        "/images/shop/polo_and_t-shirts/rider_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1215,9 +1215,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal1.webp",
-                        "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal2.webp",
-                        "/images/polo_and_t-shirts/motocycle_t-shirt_oatmeal3.webp"
+                        "/images/shop/polo_and_t-shirts/motocycle_t-shirt_oatmeal1.webp",
+                        "/images/shop/polo_and_t-shirts/motocycle_t-shirt_oatmeal2.webp",
+                        "/images/shop/polo_and_t-shirts/motocycle_t-shirt_oatmeal3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1245,9 +1245,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/rugby_action_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/rugby_action_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/rugby_action_t-shirt_white3.webp"
+                        "/images/shop/polo_and_t-shirts/rugby_action_t-shirt_white1.webp",
+                        "/images/shop/polo_and_t-shirts/rugby_action_t-shirt_white2.webp",
+                        "/images/shop/polo_and_t-shirts/rugby_action_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1275,9 +1275,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige1.webp",
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige2.webp",
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_beige3.webp"
+                        "/images/shop/polo_and_t-shirts/drummer_rugby_t-shirt_beige1.webp",
+                        "/images/shop/polo_and_t-shirts/drummer_rugby_t-shirt_beige2.webp",
+                        "/images/shop/polo_and_t-shirts/drummer_rugby_t-shirt_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1291,9 +1291,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal1.webp",
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal2.webp",
-                        "/images/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal3.webp"
+                        "/images/shop/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal1.webp",
+                        "/images/shop/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal2.webp",
+                        "/images/shop/polo_and_t-shirts/drummer_rugby_t-shirt_oatmeal3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1321,9 +1321,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/scared_t-shirt_navy1.webp",
-                        "/images/polo_and_t-shirts/scared_t-shirt_navy2.webp",
-                        "/images/polo_and_t-shirts/scared_t-shirt_navy3.webp"
+                        "/images/shop/polo_and_t-shirts/scared_t-shirt_navy1.webp",
+                        "/images/shop/polo_and_t-shirts/scared_t-shirt_navy2.webp",
+                        "/images/shop/polo_and_t-shirts/scared_t-shirt_navy3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1351,9 +1351,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/malvinas_t-shirt_navy1.webp",
-                        "/images/polo_and_t-shirts/malvinas_t-shirt_navy2.webp",
-                        "/images/polo_and_t-shirts/malvinas_t-shirt_navy3.webp"
+                        "/images/shop/polo_and_t-shirts/malvinas_t-shirt_navy1.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_t-shirt_navy2.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_t-shirt_navy3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1367,9 +1367,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/malvinas_t-shirt_green_army1.webp",
-                        "/images/polo_and_t-shirts/malvinas_t-shirt_green_army2.webp",
-                        "/images/polo_and_t-shirts/malvinas_t-shirt_green_army3.webp"
+                        "/images/shop/polo_and_t-shirts/malvinas_t-shirt_green_army1.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_t-shirt_green_army2.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_t-shirt_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1397,9 +1397,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/casquito_polo_beige1.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_beige2.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_beige3.webp"
+                        "/images/shop/polo_and_t-shirts/casquito_polo_beige1.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_beige2.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1413,9 +1413,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/casquito_polo_sky_blue1.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_sky_blue2.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_sky_blue3.webp"
+                        "/images/shop/polo_and_t-shirts/casquito_polo_sky_blue1.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_sky_blue2.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1429,9 +1429,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/casquito_polo_green_army1.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_green_army2.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_green_army3.webp"
+                        "/images/shop/polo_and_t-shirts/casquito_polo_green_army1.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_green_army2.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1445,9 +1445,9 @@
                     "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/casquito_polo_yellow1.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_yellow2.webp",
-                        "/images/polo_and_t-shirts/casquito_polo_yellow3.webp"
+                        "/images/shop/polo_and_t-shirts/casquito_polo_yellow1.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_yellow2.webp",
+                        "/images/shop/polo_and_t-shirts/casquito_polo_yellow3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1475,9 +1475,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/steel_polo_aero1.webp",
-                        "/images/polo_and_t-shirts/steel_polo_aero2.webp",
-                        "/images/polo_and_t-shirts/steel_polo_aero3.webp"
+                        "/images/shop/polo_and_t-shirts/steel_polo_aero1.webp",
+                        "/images/shop/polo_and_t-shirts/steel_polo_aero2.webp",
+                        "/images/shop/polo_and_t-shirts/steel_polo_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1491,9 +1491,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/steel_polo_brown1.webp",
-                        "/images/polo_and_t-shirts/steel_polo_brown2.webp",
-                        "/images/polo_and_t-shirts/steel_polo_brown3.webp"
+                        "/images/shop/polo_and_t-shirts/steel_polo_brown1.webp",
+                        "/images/shop/polo_and_t-shirts/steel_polo_brown2.webp",
+                        "/images/shop/polo_and_t-shirts/steel_polo_brown3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1521,9 +1521,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/barahona_polo_sky_blue1.webp",
-                        "/images/polo_and_t-shirts/barahona_polo_sky_blue2.webp",
-                        "/images/polo_and_t-shirts/barahona_polo_sky_blue3.webp"
+                        "/images/shop/polo_and_t-shirts/barahona_polo_sky_blue1.webp",
+                        "/images/shop/polo_and_t-shirts/barahona_polo_sky_blue2.webp",
+                        "/images/shop/polo_and_t-shirts/barahona_polo_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1537,9 +1537,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/barahona_polo_blue1.webp",
-                        "/images/polo_and_t-shirts/barahona_polo_blue2.webp",
-                        "/images/polo_and_t-shirts/barahona_polo_blue3.webp"
+                        "/images/shop/polo_and_t-shirts/barahona_polo_blue1.webp",
+                        "/images/shop/polo_and_t-shirts/barahona_polo_blue2.webp",
+                        "/images/shop/polo_and_t-shirts/barahona_polo_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1567,9 +1567,9 @@
                     "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/dagger_polo_yellow1.webp",
-                        "/images/polo_and_t-shirts/dagger_polo_yellow2.webp",
-                        "/images/polo_and_t-shirts/dagger_polo_yellow3.webp"
+                        "/images/shop/polo_and_t-shirts/dagger_polo_yellow1.webp",
+                        "/images/shop/polo_and_t-shirts/dagger_polo_yellow2.webp",
+                        "/images/shop/polo_and_t-shirts/dagger_polo_yellow3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1583,9 +1583,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/dagger_polo_light_grey1.webp",
-                        "/images/polo_and_t-shirts/dagger_polo_light_grey2.webp",
-                        "/images/polo_and_t-shirts/dagger_polo_light_grey3.webp"
+                        "/images/shop/polo_and_t-shirts/dagger_polo_light_grey1.webp",
+                        "/images/shop/polo_and_t-shirts/dagger_polo_light_grey2.webp",
+                        "/images/shop/polo_and_t-shirts/dagger_polo_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1613,9 +1613,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/malvinas_polo_green_army1.webp",
-                        "/images/polo_and_t-shirts/malvinas_polo_green_army2.webp",
-                        "/images/polo_and_t-shirts/malvinas_polo_green_army3.webp"
+                        "/images/shop/polo_and_t-shirts/malvinas_polo_green_army1.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_polo_green_army2.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_polo_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1629,9 +1629,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/malvinas_polo_navy1.webp",
-                        "/images/polo_and_t-shirts/malvinas_polo_navy2.webp",
-                        "/images/polo_and_t-shirts/malvinas_polo_navy3.webp"
+                        "/images/shop/polo_and_t-shirts/malvinas_polo_navy1.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_polo_navy2.webp",
+                        "/images/shop/polo_and_t-shirts/malvinas_polo_navy3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1659,9 +1659,9 @@
                     "colorName": "pink",
                     "hex": "#f0d0c6",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/edge_polo_pink1.webp",
-                        "/images/polo_and_t-shirts/edge_polo_pink2.webp",
-                        "/images/polo_and_t-shirts/edge_polo_pink3.webp"
+                        "/images/shop/polo_and_t-shirts/edge_polo_pink1.webp",
+                        "/images/shop/polo_and_t-shirts/edge_polo_pink2.webp",
+                        "/images/shop/polo_and_t-shirts/edge_polo_pink3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1675,9 +1675,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/edge_polo_green_army1.webp",
-                        "/images/polo_and_t-shirts/edge_polo_green_army2.webp",
-                        "/images/polo_and_t-shirts/edge_polo_green_army3.webp"
+                        "/images/shop/polo_and_t-shirts/edge_polo_green_army1.webp",
+                        "/images/shop/polo_and_t-shirts/edge_polo_green_army2.webp",
+                        "/images/shop/polo_and_t-shirts/edge_polo_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1705,9 +1705,9 @@
                     "colorName": "yellow",
                     "hex": "#fae5ae",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/cave_polo_yellow1.webp",
-                        "/images/polo_and_t-shirts/cave_polo_yellow2.webp",
-                        "/images/polo_and_t-shirts/cave_polo_yellow3.webp"
+                        "/images/shop/polo_and_t-shirts/cave_polo_yellow1.webp",
+                        "/images/shop/polo_and_t-shirts/cave_polo_yellow2.webp",
+                        "/images/shop/polo_and_t-shirts/cave_polo_yellow3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1721,9 +1721,9 @@
                     "colorName": "salmon",
                     "hex": "#ffcca2",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/cave_polo_salmon1.webp",
-                        "/images/polo_and_t-shirts/cave_polo_salmon2.webp",
-                        "/images/polo_and_t-shirts/cave_polo_salmon3.webp"
+                        "/images/shop/polo_and_t-shirts/cave_polo_salmon1.webp",
+                        "/images/shop/polo_and_t-shirts/cave_polo_salmon2.webp",
+                        "/images/shop/polo_and_t-shirts/cave_polo_salmon3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1753,9 +1753,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/shirts/zug_shirt_brown1.webp",
-                        "/images/shirts/zug_shirt_brown2.webp",
-                        "/images/shirts/zug_shirt_brown3.webp"
+                        "/images/shop/shirts/zug_shirt_brown1.webp",
+                        "/images/shop/shirts/zug_shirt_brown2.webp",
+                        "/images/shop/shirts/zug_shirt_brown3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1769,9 +1769,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/shirts/zug_shirt_oatmeal1.webp",
-                        "/images/shirts/zug_shirt_oatmeal2.webp",
-                        "/images/shirts/zug_shirt_oatmeal3.webp"
+                        "/images/shop/shirts/zug_shirt_oatmeal1.webp",
+                        "/images/shop/shirts/zug_shirt_oatmeal2.webp",
+                        "/images/shop/shirts/zug_shirt_oatmeal3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1785,9 +1785,9 @@
                     "colorName": "dark grey",
                     "hex": "#303030",
                     "imagesColor": [
-                        "/images/shirts/zug_shirt_dark_grey1.webp",
-                        "/images/shirts/zug_shirt_dark_grey2.webp",
-                        "/images/shirts/zug_shirt_dark_grey3.webp"
+                        "/images/shop/shirts/zug_shirt_dark_grey1.webp",
+                        "/images/shop/shirts/zug_shirt_dark_grey2.webp",
+                        "/images/shop/shirts/zug_shirt_dark_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1815,9 +1815,9 @@
                     "colorName": "off white",
                     "hex": "#e1e4ed",
                     "imagesColor": [
-                        "/images/shirts/havanna_shirt_off_white1.webp",
-                        "/images/shirts/havanna_shirt_off_white2.webp",
-                        "/images/shirts/havanna_shirt_off_white3.webp"
+                        "/images/shop/shirts/havanna_shirt_off_white1.webp",
+                        "/images/shop/shirts/havanna_shirt_off_white2.webp",
+                        "/images/shop/shirts/havanna_shirt_off_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1831,9 +1831,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/shirts/havanna_shirt_brown.webp",
-                        "/images/shirts/havanna_shirt_brown.webp",
-                        "/images/shirts/havanna_shirt_brown.webp"
+                        "/images/shop/shirts/havanna_shirt_brown.webp",
+                        "/images/shop/shirts/havanna_shirt_brown.webp",
+                        "/images/shop/shirts/havanna_shirt_brown.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1847,9 +1847,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/shirts/havanna_shirt_sky_blue.webp",
-                        "/images/shirts/havanna_shirt_sky_blue.webp",
-                        "/images/shirts/havanna_shirt_sky_blue.webp"
+                        "/images/shop/shirts/havanna_shirt_sky_blue.webp",
+                        "/images/shop/shirts/havanna_shirt_sky_blue.webp",
+                        "/images/shop/shirts/havanna_shirt_sky_blue.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1877,9 +1877,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/shirts/greek_shirt_black1.webp",
-                        "/images/shirts/greek_shirt_black2.webp",
-                        "/images/shirts/greek_shirt_black3.webp"
+                        "/images/shop/shirts/greek_shirt_black1.webp",
+                        "/images/shop/shirts/greek_shirt_black2.webp",
+                        "/images/shop/shirts/greek_shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1907,9 +1907,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/shirts/pond_shirt_sky_blue1.webp",
-                        "/images/shirts/pond_shirt_sky_blue2.webp",
-                        "/images/shirts/pond_shirt_sky_blue3.webp"
+                        "/images/shop/shirts/pond_shirt_sky_blue1.webp",
+                        "/images/shop/shirts/pond_shirt_sky_blue2.webp",
+                        "/images/shop/shirts/pond_shirt_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1937,9 +1937,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/shirts/jon_shirt_sky_blue1.webp",
-                        "/images/shirts/jon_shirt_sky_blue2.webp",
-                        "/images/shirts/jon_shirt_sky_blue3.webp"
+                        "/images/shop/shirts/jon_shirt_sky_blue1.webp",
+                        "/images/shop/shirts/jon_shirt_sky_blue2.webp",
+                        "/images/shop/shirts/jon_shirt_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1953,9 +1953,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/shirts/jon_shirt_grey1.webp",
-                        "/images/shirts/jon_shirt_grey2.webp",
-                        "/images/shirts/jon_shirt_grey3.webp"
+                        "/images/shop/shirts/jon_shirt_grey1.webp",
+                        "/images/shop/shirts/jon_shirt_grey2.webp",
+                        "/images/shop/shirts/jon_shirt_grey3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -1983,9 +1983,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/shirts/crow_shirt_aero1.webp",
-                        "/images/shirts/crow_shirt_aero2.webp",
-                        "/images/shirts/crow_shirt_aero3.webp"
+                        "/images/shop/shirts/crow_shirt_aero1.webp",
+                        "/images/shop/shirts/crow_shirt_aero2.webp",
+                        "/images/shop/shirts/crow_shirt_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1999,9 +1999,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/shirts/crow_shirt_light_grey1.webp",
-                        "/images/shirts/crow_shirt_light_grey2.webp",
-                        "/images/shirts/crow_shirt_light_grey3.webp"
+                        "/images/shop/shirts/crow_shirt_light_grey1.webp",
+                        "/images/shop/shirts/crow_shirt_light_grey2.webp",
+                        "/images/shop/shirts/crow_shirt_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2029,9 +2029,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/shirts/ross_shirt_aero1.webp",
-                        "/images/shirts/ross_shirt_aero2.webp",
-                        "/images/shirts/ross_shirt_aero3.webp"
+                        "/images/shop/shirts/ross_shirt_aero1.webp",
+                        "/images/shop/shirts/ross_shirt_aero2.webp",
+                        "/images/shop/shirts/ross_shirt_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2045,9 +2045,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/shirts/ross_shirt_green_army1.webp",
-                        "/images/shirts/ross_shirt_green_army2.webp",
-                        "/images/shirts/ross_shirt_green_army3.webp"
+                        "/images/shop/shirts/ross_shirt_green_army1.webp",
+                        "/images/shop/shirts/ross_shirt_green_army2.webp",
+                        "/images/shop/shirts/ross_shirt_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2061,9 +2061,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/shirts/ross_shirt_light_grey1.webp",
-                        "/images/shirts/ross_shirt_light_grey2.webp",
-                        "/images/shirts/ross_shirt_light_grey3.webp"
+                        "/images/shop/shirts/ross_shirt_light_grey1.webp",
+                        "/images/shop/shirts/ross_shirt_light_grey2.webp",
+                        "/images/shop/shirts/ross_shirt_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2091,9 +2091,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/shirts/york_shirt_blue1.webp",
-                        "/images/shirts/york_shirt_blue2.webp",
-                        "/images/shirts/york_shirt_blue3.webp"
+                        "/images/shop/shirts/york_shirt_blue1.webp",
+                        "/images/shop/shirts/york_shirt_blue2.webp",
+                        "/images/shop/shirts/york_shirt_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2107,9 +2107,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/shirts/york_shirt_blue1.webp",
-                        "/images/shirts/york_shirt_blue2.webp",
-                        "/images/shirts/york_shirt_blue3.webp"
+                        "/images/shop/shirts/york_shirt_blue1.webp",
+                        "/images/shop/shirts/york_shirt_blue2.webp",
+                        "/images/shop/shirts/york_shirt_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2137,9 +2137,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/shirts/country_style_shirt_beige1.webp",
-                        "/images/shirts/country_style_shirt_beige2.webp",
-                        "/images/shirts/country_style_shirt_beige3.webp"
+                        "/images/shop/shirts/country_style_shirt_beige1.webp",
+                        "/images/shop/shirts/country_style_shirt_beige2.webp",
+                        "/images/shop/shirts/country_style_shirt_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2153,9 +2153,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/shirts/country_style_shirt_grey1.webp",
-                        "/images/shirts/country_style_shirt_grey2.webp",
-                        "/images/shirts/country_style_shirt_grey3.webp"
+                        "/images/shop/shirts/country_style_shirt_grey1.webp",
+                        "/images/shop/shirts/country_style_shirt_grey2.webp",
+                        "/images/shop/shirts/country_style_shirt_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2183,9 +2183,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/shirts/mercey_shirt_green_army1.webp",
-                        "/images/shirts/mercey_shirt_green_army2.webp",
-                        "/images/shirts/mercey_shirt_green_army3.webp"
+                        "/images/shop/shirts/mercey_shirt_green_army1.webp",
+                        "/images/shop/shirts/mercey_shirt_green_army2.webp",
+                        "/images/shop/shirts/mercey_shirt_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2199,9 +2199,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/shirts/mercey_shirt_aero1.webp",
-                        "/images/shirts/mercey_shirt_aero2.webp",
-                        "/images/shirts/mercey_shirt_aero3.webp"
+                        "/images/shop/shirts/mercey_shirt_aero1.webp",
+                        "/images/shop/shirts/mercey_shirt_aero2.webp",
+                        "/images/shop/shirts/mercey_shirt_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2229,9 +2229,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/shirts/fusion_shirt_black1.webp",
-                        "/images/shirts/fusion_shirt_black2.webp",
-                        "/images/shirts/fusion_shirt_black3.webp"
+                        "/images/shop/shirts/fusion_shirt_black1.webp",
+                        "/images/shop/shirts/fusion_shirt_black2.webp",
+                        "/images/shop/shirts/fusion_shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2245,9 +2245,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/shirts/fusion_shirt_blue1.webp",
-                        "/images/shirts/fusion_shirt_blue2.webp",
-                        "/images/shirts/fusion_shirt_blue3.webp"
+                        "/images/shop/shirts/fusion_shirt_blue1.webp",
+                        "/images/shop/shirts/fusion_shirt_blue2.webp",
+                        "/images/shop/shirts/fusion_shirt_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2275,9 +2275,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/shirts/paradise_shirt_black1.webp",
-                        "/images/shirts/paradise_shirt_black2.webp",
-                        "/images/shirts/paradise_shirt_black3.webp"
+                        "/images/shop/shirts/paradise_shirt_black1.webp",
+                        "/images/shop/shirts/paradise_shirt_black2.webp",
+                        "/images/shop/shirts/paradise_shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2291,9 +2291,9 @@
                     "colorName": "red",
                     "hex": "#d3251d",
                     "imagesColor": [
-                        "/images/shirts/paradise_shirt_red1.webp",
-                        "/images/shirts/paradise_shirt_red2.webp",
-                        "/images/shirts/paradise_shirt_red3.webp"
+                        "/images/shop/shirts/paradise_shirt_red1.webp",
+                        "/images/shop/shirts/paradise_shirt_red2.webp",
+                        "/images/shop/shirts/paradise_shirt_red3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2323,9 +2323,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/sweaters/britain_sweater_black1.webp",
-                        "/images/sweaters/britain_sweater_black2.webp",
-                        "/images/sweaters/britain_sweater_black3.webp"
+                        "/images/shop/sweaters/britain_sweater_black1.webp",
+                        "/images/shop/sweaters/britain_sweater_black2.webp",
+                        "/images/shop/sweaters/britain_sweater_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2339,9 +2339,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/sweaters/britain_sweater_light_grey1.webp",
-                        "/images/sweaters/britain_sweater_light_grey2.webp",
-                        "/images/sweaters/britain_sweater_light_grey3.webp"
+                        "/images/shop/sweaters/britain_sweater_light_grey1.webp",
+                        "/images/shop/sweaters/britain_sweater_light_grey2.webp",
+                        "/images/shop/sweaters/britain_sweater_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2355,9 +2355,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/sweaters/britain_sweater_beige1.webp",
-                        "/images/sweaters/britain_sweater_beige2.webp",
-                        "/images/sweaters/britain_sweater_beige3.webp"
+                        "/images/shop/sweaters/britain_sweater_beige1.webp",
+                        "/images/shop/sweaters/britain_sweater_beige2.webp",
+                        "/images/shop/sweaters/britain_sweater_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2385,9 +2385,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/sweaters/dass_sweater_beige1.webp",
-                        "/images/sweaters/dass_sweater_beige2.webp",
-                        "/images/sweaters/dass_sweater_beige3.webp"
+                        "/images/shop/sweaters/dass_sweater_beige1.webp",
+                        "/images/shop/sweaters/dass_sweater_beige2.webp",
+                        "/images/shop/sweaters/dass_sweater_beige3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -2415,9 +2415,9 @@
                     "colorName": "brick",
                     "hex": "#9a372f",
                     "imagesColor": [
-                        "/images/sweaters/neptune_sweater_v_brick1.webp",
-                        "/images/sweaters/neptune_sweater_v_brick2.webp",
-                        "/images/sweaters/neptune_sweater_v_brick3.webp"
+                        "/images/shop/sweaters/neptune_sweater_v_brick1.webp",
+                        "/images/shop/sweaters/neptune_sweater_v_brick2.webp",
+                        "/images/shop/sweaters/neptune_sweater_v_brick3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2431,9 +2431,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/sweaters/neptune_sweater_v_aero1.webp",
-                        "/images/sweaters/neptune_sweater_v_aero2.webp",
-                        "/images/sweaters/neptune_sweater_v_aero3.webp"
+                        "/images/shop/sweaters/neptune_sweater_v_aero1.webp",
+                        "/images/shop/sweaters/neptune_sweater_v_aero2.webp",
+                        "/images/shop/sweaters/neptune_sweater_v_aero3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2461,9 +2461,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/sweaters/winston_sweater_jacket_aero1.webp",
-                        "/images/sweaters/winston_sweater_jacket_aero2.webp",
-                        "/images/sweaters/winston_sweater_jacket_aero3.webp"
+                        "/images/shop/sweaters/winston_sweater_jacket_aero1.webp",
+                        "/images/shop/sweaters/winston_sweater_jacket_aero2.webp",
+                        "/images/shop/sweaters/winston_sweater_jacket_aero3.webp"
                     ],
                     "sizes": {
                         "s": 1,
@@ -2477,9 +2477,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/sweaters/winston_sweater_jacket_brown1.webp",
-                        "/images/sweaters/winston_sweater_jacket_brown2.webp",
-                        "/images/sweaters/winston_sweater_jacket_brown3.webp"
+                        "/images/shop/sweaters/winston_sweater_jacket_brown1.webp",
+                        "/images/shop/sweaters/winston_sweater_jacket_brown2.webp",
+                        "/images/shop/sweaters/winston_sweater_jacket_brown3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -2493,9 +2493,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/sweaters/winston_sweater_jacket_black1.webp",
-                        "/images/sweaters/winston_sweater_jacket_black2.webp",
-                        "/images/sweaters/winston_sweater_jacket_black3.webp"
+                        "/images/shop/sweaters/winston_sweater_jacket_black1.webp",
+                        "/images/shop/sweaters/winston_sweater_jacket_black2.webp",
+                        "/images/shop/sweaters/winston_sweater_jacket_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2523,9 +2523,9 @@
                     "name": "light yellow",
                     "hex": "#f5e6a2",
                     "imagesColor": [
-                        "/images/sweaters/mercury_sweater_light_yellow1.webp",
-                        "/images/sweaters/mercury_sweater_light_yellow2.webp",
-                        "/images/sweaters/mercury_sweater_light_yellow3.webp"
+                        "/images/shop/sweaters/mercury_sweater_light_yellow1.webp",
+                        "/images/shop/sweaters/mercury_sweater_light_yellow2.webp",
+                        "/images/shop/sweaters/mercury_sweater_light_yellow3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2539,9 +2539,9 @@
                     "colorName": "pink",
                     "hex": "#f0d0c6",
                     "imagesColor": [
-                        "/images/sweaters/mercury_sweater_light_pink1.webp",
-                        "/images/sweaters/mercury_sweater_light_pink2.webp",
-                        "/images/sweaters/mercury_sweater_light_pink3.webp"
+                        "/images/shop/sweaters/mercury_sweater_light_pink1.webp",
+                        "/images/shop/sweaters/mercury_sweater_light_pink2.webp",
+                        "/images/shop/sweaters/mercury_sweater_light_pink3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2555,9 +2555,9 @@
                     "colorName": "salmon",
                     "hex": "#ffcca2",
                     "imagesColor": [
-                        "/images/sweaters/mercury_sweater_salmon1.webp",
-                        "/images/sweaters/mercury_sweater_salmon2.webp",
-                        "/images/sweaters/mercury_sweater_salmon3.webp"
+                        "/images/shop/sweaters/mercury_sweater_salmon1.webp",
+                        "/images/shop/sweaters/mercury_sweater_salmon2.webp",
+                        "/images/shop/sweaters/mercury_sweater_salmon3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2585,9 +2585,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/sweaters/constellation_sweater_blue1.webp",
-                        "/images/sweaters/constellation_sweater_blue2.webp",
-                        "/images/sweaters/constellation_sweater_blue3.webp"
+                        "/images/shop/sweaters/constellation_sweater_blue1.webp",
+                        "/images/shop/sweaters/constellation_sweater_blue2.webp",
+                        "/images/shop/sweaters/constellation_sweater_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2601,9 +2601,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/sweaters/constellation_sweater_beige1.webp",
-                        "/images/sweaters/constellation_sweater_beige2.webp",
-                        "/images/sweaters/constellation_sweater_beige3.webp"
+                        "/images/shop/sweaters/constellation_sweater_beige1.webp",
+                        "/images/shop/sweaters/constellation_sweater_beige2.webp",
+                        "/images/shop/sweaters/constellation_sweater_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2617,9 +2617,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/sweaters/constellation_sweater_light_grey1.webp",
-                        "/images/sweaters/constellation_sweater_light_grey2.webp",
-                        "/images/sweaters/constellation_sweater_light_grey3.webp"
+                        "/images/shop/sweaters/constellation_sweater_light_grey1.webp",
+                        "/images/shop/sweaters/constellation_sweater_light_grey2.webp",
+                        "/images/shop/sweaters/constellation_sweater_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2647,9 +2647,9 @@
                     "colorName": "brick",
                     "hex": "#9a372f",
                     "imagesColor": [
-                        "/images/sweaters/triton_sweater_brick1.webp",
-                        "/images/sweaters/triton_sweater_brick2.webp",
-                        "/images/sweaters/triton_sweater_brick3.webp"
+                        "/images/shop/sweaters/triton_sweater_brick1.webp",
+                        "/images/shop/sweaters/triton_sweater_brick2.webp",
+                        "/images/shop/sweaters/triton_sweater_brick3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2677,9 +2677,9 @@
                     "colorName": "navy",
                     "hex": "#13192c",
                     "imagesColor": [
-                        "/images/sweaters/eclipse_sweater_navy1.webp",
-                        "/images/sweaters/eclipse_sweater_navy2.webp",
-                        "/images/sweaters/eclipse_sweater_navy3.webp"
+                        "/images/shop/sweaters/eclipse_sweater_navy1.webp",
+                        "/images/shop/sweaters/eclipse_sweater_navy2.webp",
+                        "/images/shop/sweaters/eclipse_sweater_navy3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2709,9 +2709,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green1.webp",
-                        "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green2.webp",
-                        "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_green3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2725,9 +2725,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_light_grey1.webp",
-                        "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_light_grey2.webp",
-                        "/images/sweatshirt_and_hoodies/shadow_hoodie_jacket_army_light_grey3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/shadow_hoodie_jacket_light_grey1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/shadow_hoodie_jacket_light_grey2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/shadow_hoodie_jacket_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2755,9 +2755,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/special_peak_hoodie_black1.webp",
-                        "/images/sweatshirt_and_hoodies/special_peak_hoodie_black2.webp",
-                        "/images/sweatshirt_and_hoodies/special_peak_hoodie_black3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/special_peak_hoodie_black1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_peak_hoodie_black2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_peak_hoodie_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2771,9 +2771,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/special_peak_hoodie_white1.webp",
-                        "/images/sweatshirt_and_hoodies/special_peak_hoodie_white2.webp",
-                        "/images/sweatshirt_and_hoodies/special_peak_hoodie_white3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/special_peak_hoodie_white1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_peak_hoodie_white2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_peak_hoodie_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2801,9 +2801,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white1.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white2.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_white1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_white2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2817,9 +2817,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black1.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black2.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_black1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_black2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2847,9 +2847,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/closed_sweatshirt_beige1.webp",
-                        "/images/sweatshirt_and_hoodies/closed_sweatshirt_beige2.webp",
-                        "/images/sweatshirt_and_hoodies/closed_sweatshirt_beige3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/closed_sweatshirt_beige1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/closed_sweatshirt_beige2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/closed_sweatshirt_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2863,9 +2863,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/closed_sweatshirt_white1.webp",
-                        "/images/sweatshirt_and_hoodies/closed_sweatshirt_white2.webp",
-                        "/images/sweatshirt_and_hoodies/closed_sweatshirt_white3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/closed_sweatshirt_white1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/closed_sweatshirt_white2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/closed_sweatshirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2893,9 +2893,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/overlay_hoodie_beige1.webp",
-                        "/images/sweatshirt_and_hoodies/overlay_hoodie_beige2.webp",
-                        "/images/sweatshirt_and_hoodies/overlay_hoodie_beige3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/overlay_hoodie_beige1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/overlay_hoodie_beige2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/overlay_hoodie_beige3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2923,9 +2923,9 @@
                     "colorName": "esmerald",
                     "hex": "#0f443f",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/wells_sweatshirt_esmerald1.webp",
-                        "/images/sweatshirt_and_hoodies/wells_sweatshirt_esmerald2.webp",
-                        "/images/sweatshirt_and_hoodies/wells_sweatshirt_esmerald3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/wells_sweatshirt_esmerald1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/wells_sweatshirt_esmerald2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/wells_sweatshirt_esmerald3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2939,9 +2939,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/wells_sweatshirt_brown1.webp",
-                        "/images/sweatshirt_and_hoodies/wells_sweatshirt_brown2.webp",
-                        "/images/sweatshirt_and_hoodies/wells_sweatshirt_brown3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/wells_sweatshirt_brown1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/wells_sweatshirt_brown2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/wells_sweatshirt_brown3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2969,9 +2969,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/wolter_sweatshirt_green_army1.webp",
-                        "/images/sweatshirt_and_hoodies/wolter_sweatshirt_green_army2.webp",
-                        "/images/sweatshirt_and_hoodies/wolter_sweatshirt_green_army3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/wolter_sweatshirt_green_army1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/wolter_sweatshirt_green_army2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/wolter_sweatshirt_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2999,9 +2999,9 @@
                     "colorName": "aero",
                     "hex": "#2d3f59",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_aero1.webp",
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_aero2.webp",
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_aero3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_aero1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_aero2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_aero3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -3015,9 +3015,9 @@
                     "colorName": "light grey",
                     "hex": "#cfcfd1",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey1.webp",
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey2.webp",
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_light_grey3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -3031,9 +3031,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue1.webp",
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue2.webp",
-                        "/images/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rigger_sweatshirt_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -3061,9 +3061,9 @@
                     "colorName": "green army",
                     "hex": "#7e7e55",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/kip_hoodie_green_army1.webp",
-                        "/images/sweatshirt_and_hoodies/kip_hoodie_green_army2.webp",
-                        "/images/sweatshirt_and_hoodies/kip_hoodie_green_army3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/kip_hoodie_green_army1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kip_hoodie_green_army2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kip_hoodie_green_army3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3077,9 +3077,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/kip_hoodie_oatmeal1.webp",
-                        "/images/sweatshirt_and_hoodies/kip_hoodie_oatmeal2.webp",
-                        "/images/sweatshirt_and_hoodies/kip_hoodie_oatmeal3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/kip_hoodie_oatmeal1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kip_hoodie_oatmeal2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kip_hoodie_oatmeal3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3107,9 +3107,9 @@
                     "colorName": "bublegum pink",
                     "hex": "#e58895",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink1.webp",
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink2.webp",
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_bubblegum_pink3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3123,9 +3123,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_black1.webp",
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_black2.webp",
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_black3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_black1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_black2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3139,9 +3139,9 @@
                     "colorName": "blue",
                     "hex": "#0f2237",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_blue1.webp",
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_blue2.webp",
-                        "/images/sweatshirt_and_hoodies/kipper_hoodie_blue3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_blue1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_blue2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/kipper_hoodie_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3169,9 +3169,9 @@
                     "colorName": "grey",
                     "hex": "#a09ea2",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/relaxed_sweatshirt_grey1.webp",
-                        "/images/sweatshirt_and_hoodies/relaxed_sweatshirt_grey2.webp",
-                        "/images/sweatshirt_and_hoodies/relaxed_sweatshirt_grey3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/relaxed_sweatshirt_grey1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/relaxed_sweatshirt_grey2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/relaxed_sweatshirt_grey3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3199,9 +3199,9 @@
                     "colorName": "oatmeal",
                     "hex": "#f2eee9",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal1.webp",
-                        "/images/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal2.webp",
-                        "/images/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/rise_up_hoodie_oatmeal3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3231,9 +3231,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/pants_and_jeans/chester_cargo_brown1.webp",
-                        "/images/pants_and_jeans/chester_cargo_brown2.webp",
-                        "/images/pants_and_jeans/chester_cargo_brown3.webp"
+                        "/images/shop/pants_and_jeans/chester_cargo_brown1.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_brown2.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_brown3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -3249,9 +3249,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/pants_and_jeans/chester_cargo_black1.webp",
-                        "/images/pants_and_jeans/chester_cargo_black2.webp",
-                        "/images/pants_and_jeans/chester_cargo_black3.webp"
+                        "/images/shop/pants_and_jeans/chester_cargo_black1.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_black2.webp",
+                        "/images/shop/pants_and_jeans/chester_cargo_black3.webp"
                     ],
                     "sizes": {
                         "40": 10,
@@ -3281,9 +3281,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drum_t-shirt_white1.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_white2.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_white3.webp"
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_white1.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_white2.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3297,9 +3297,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/polo_and_t-shirts/drum_t-shirt_black1.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_black2.webp",
-                        "/images/polo_and_t-shirts/drum_t-shirt_black3.webp"
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_black1.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_black2.webp",
+                        "/images/shop/polo_and_t-shirts/drum_t-shirt_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3327,9 +3327,9 @@
                     "colorName": "beige",
                     "hex": "#cdac97",
                     "imagesColor": [
-                        "/images/sweaters/dass_sweater_beige1.webp",
-                        "/images/sweaters/dass_sweater_beige2.webp",
-                        "/images/sweaters/dass_sweater_beige3.webp"
+                        "/images/shop/sweaters/dass_sweater_beige1.webp",
+                        "/images/shop/sweaters/dass_sweater_beige2.webp",
+                        "/images/shop/sweaters/dass_sweater_beige3.webp"
                     ],
                     "sizes": {
                         "s": 0,
@@ -3357,9 +3357,9 @@
                     "colorName": "white",
                     "hex": "#ffffff",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white1.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white2.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_white3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_white1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_white2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_white3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -3373,9 +3373,9 @@
                     "colorName": "black",
                     "hex": "#000000",
                     "imagesColor": [
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black1.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black2.webp",
-                        "/images/sweatshirt_and_hoodies/special_wave_hoodie_black3.webp"
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_black1.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_black2.webp",
+                        "/images/shop/sweatshirt_and_hoodies/special_wave_hoodie_black3.webp"
                     ],
                     "sizes": {
                         "s": 10,

@@ -21,6 +21,7 @@ export const ShoppingCards = ({ title, shopArray }) => {
                   array={shopArray[index]}
                   maxSizeArrows={false}
                   itsALink={true}
+                  changeClothes={0}
                 />
                 <DescriptionShopCard
                   array={shopArray[index]}

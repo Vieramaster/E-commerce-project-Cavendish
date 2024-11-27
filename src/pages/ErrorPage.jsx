@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-import { HoverButton } from "../components/buttons/HoverButton";
+import { DefaultButtonLink } from "../components/links/DefaultButtonLink";
 import { Header } from "../components/sections/Header";
 import { Footer } from "../components/sections/Footer";
 
@@ -17,14 +17,14 @@ const ErrorPage = () => {
           </h1>
 
           <img
-            src="/src/assets/images/404Image.webp"
+            src="/images/imagePages/404Image.webp"
             alt="404 image"
             className="w-5/6 h-auto  drop-shadow-2xl xl:w-1/2 "
           />
           <h2 className="text-lg md:text-xl lg:text-2xl">
             The link might be corrupted
           </h2>
-          <HoverButton toPage="/">Go to main page</HoverButton>
+         <DefaultButtonLink color="primary" toPage="/">Go to main page</DefaultButtonLink>
         </div>
       </section>
       <Footer />

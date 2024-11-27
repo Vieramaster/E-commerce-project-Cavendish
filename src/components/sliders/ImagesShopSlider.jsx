@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { DiscountCircle } from "../DiscountCircle";
 import { ArrowCardButton } from "../buttons/ArrowCardButton";
@@ -9,13 +9,22 @@ import {
 } from "../../hooks/useCarrouselArrows";
 import "../../types";
 
-/** @param {{array:ClothesObject, maxSizeArrows: boolean , itsALink:boolean}} props */
-export const ImagesShopSlider = ({ array, maxSizeArrows, itsALink }) => {
+/** @param {{array:ClothesObject, maxSizeArrows: boolean , itsALink:boolean, changeClothes: number}} props */
+export const ImagesShopSlider = ({
+  array,
+  maxSizeArrows,
+  itsALink,
+  changeClothes,
+}) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
   const previousImage = () => PreviousImageCard(setPositionImage);
   const nextImage = () => NextImageCard(setPositionImage);
 
   let imagesOfImages = array.colors[0].imagesColor.length;
+
+  useEffect(() => {
+    setPositionImage([0, 0]);
+  }, [changeClothes]);
 
   const Container = itsALink ? Link : "div";
   const booleanImageStart = () => positionImage[1] === 0;
@@ -65,7 +74,7 @@ export const ImagesShopSlider = ({ array, maxSizeArrows, itsALink }) => {
         style={{ transform: `translateX(-${positionImage[0]}%)` }}
         className="w-[300%] h-full flex duration-500 ease-in-out"
       >
-        {array?.colors[0]?.imagesColor?.map((item, index) => (
+        {array?.colors[changeClothes]?.imagesColor?.map((item, index) => (
           <img
             key={array.idProduct + index}
             src={item}
