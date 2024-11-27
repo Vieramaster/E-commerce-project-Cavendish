@@ -1,190 +1,169 @@
-import { useState, useEffect } from "react";
-import { useFetch } from "../hooks/useFetch";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ShopFilter } from "../components/ShopFilter";
+import { DefaultButton } from "../components/buttons/DefaultButton";
+import { ShopCard } from "../components/cards/ShopCard";
 import { DescriptionShopCard } from "../components/cards/card_components/DescriptionShopCard";
 import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
-import { ShopCard } from "../components/cards/ShopCard";
+import { useFetch } from "../hooks/useFetch";
 import { useResizeWindow } from "../hooks/useResizeWindow";
-import { LoaderCircle } from "../components/loaders/LoaderCircle";
-import { DefaultButton } from "../components/buttons/DefaultButton";
 import {
   alphabeticFilter,
-  priceFilter,
   colorFilter,
+  defaultFilter,
+  priceFilter,
   sizesFilter,
   typeFilter,
-  defaultFilter,
 } from "../hooks/useSelectFilters";
 import "../types";
 
 const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 
+const sorts = {
+  title_ascending: /** @param {ClothesObject[]} data */ data =>
+    alphabeticFilter(data, true),
+  title_descending: /** @param {ClothesObject[]} data */ data =>
+    alphabeticFilter(data, false),
+  price_ascending: /** @param {ClothesObject[]} data */ data =>
+    priceFilter(data, true),
+  price_descending: /** @param {ClothesObject[]} data */ data =>
+    priceFilter(data, false),
+  default: /** @param {ClothesObject[]} data */ data => defaultFilter(data),
+};
+
+const skip = () => true;
+
+const filters = {
+  /** @param {string[]} values */
+  size: values =>
+    values.length === 0
+      ? skip
+      : /** @param {ClothesObject} product */ product =>
+          product.colors.some(color =>
+            values.some(size => color.sizes[size] > 0),
+          ),
+  /** @param {string[]} values */
+  color: values =>
+    values.length === 0
+      ? skip
+      : /** @param {ClothesObject} product */ product =>
+          product.colors.some(color => values.includes(color.colorName)),
+  /** @param {string[]} values */
+  type: values =>
+    values.length === 0
+      ? skip
+      : /** @param {ClothesObject} product */ product =>
+          values.includes(product.category),
+};
+
+const PAGE_SIZE = 8;
+
 export const Shop = () => {
   const { category } = useParams();
   const [toggleGrid, setToggleGrid] = useState(false);
-  const [loadCards, setLoadCards] = useState(true);
-  const [loadingData, setLoadingData] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(
-    /** @type {FiltersString} */ ("default")
-  );
-
-  /** @type {[ExtendFilters, React.Dispatch<React.SetStateAction<ExtendFilters>>]} */
+  const [sort, setSort] = useState(/** @type {FiltersString} */ ("default"));
   const [extendFilters, setExtendFilters] = useState(
-    /** @type {ExtendFilters} */ ({
-      size: [],
-      color: [],
-      type: [],
-    })
+    /** @type {ExtendFilters} */ ({ size: [], color: [], type: [] }),
   );
-  /** @type {[ClothesObject[], React.Dispatch<React.SetStateAction<ClothesObject[]>>]} */
-  const [progressiveArray, setProgressiveArray] = useState(
-    /** @type {ClothesObject[]} */ ([])
-  );
+  const [page, setPage] = useState(1);
+  const resetPagination = useCallback(() => setPage(1), []);
 
-  //restart the grid for screen changes
+  // restart the grid for screen changes
   useResizeWindow(976, setToggleGrid);
 
-  const gridChangeToggle = () => {
-    setToggleGrid((prevState) => !prevState);
-  };
+  const gridChangeToggle = useCallback(
+    () => setToggleGrid(prevState => !prevState),
+    [],
+  );
 
-  /**@type {{data:ClothesObject[]}} */
+  /** @type {{data:ClothesObject[]}} */
   const { data } = useFetch(category !== "new_arrivals" ? category : undefined);
-  const minCut = data.slice(0, Math.min(8, data.length));
-
 
   // data is subtracted to create filter buttons
-  /**@type {ProductAttributes} */
-  const arrayForFilters = [
-    sizesFilter(data),
-    colorFilter(data),
-    typeFilter(data),
-  ];
+  /** @type {ProductAttributes} */
+  const arrayForFilters = useMemo(
+    () => [sizesFilter(data), colorFilter(data), typeFilter(data)],
+    [data],
+  );
 
-  //Filter select
+  // Filter select
   /** @type {React.ChangeEventHandler<HTMLSelectElement>} */
-  const changeFilter = ({ target }) => {
-    setSelectedOption(/** @type {FiltersString} */ (target.value));
-  };
+  const changeFilter = useCallback(({ currentTarget }) => {
+    setSort(/** @type {FiltersString} */ (currentTarget.value));
+  }, []);
 
+  /** @type {React.MouseEventHandler<HTMLButtonElement>} */
+  const handleExtendfilter = useCallback(
+    ({ currentTarget }) => {
+      resetPagination();
+      const {
+        value: buttonValue,
+        dataset: { id: buttonData },
+      } = /** @type {HTMLButtonElement} */ (currentTarget);
 
-  const pageReset = () => {
-    setLoadingData(true);
-    setProgressiveArray(minCut);
-    setLoadCards(true);
-    setLoadingData(false);
-  };
+      setExtendFilters(prev => {
+        /**@type {"size" | "color" | "type"} */
+        let filterKey;
 
-  /** @param {React.MouseEvent<HTMLButtonElement>} event */
-  const handleExtendfilter = ({ target }) => {
-    const {
-      value: buttonValue,
-      dataset: { id: buttonData },
-    } = /** @type {HTMLButtonElement} */ (target);
+        if (buttonData === "sizeButton") {
+          filterKey = "size";
+        } else if (buttonData === "colorButton") {
+          filterKey = "color";
+        } else if (buttonData === "typeButton") {
+          filterKey = "type";
+        } else return prev;
 
-    setExtendFilters((prev) => {
-      /**@type {"size" | "color" | "type"} */
-      let filterKey;
+        const updatedFilter = prev[filterKey].includes(buttonValue)
+          ? prev[filterKey].filter(item => item !== buttonValue)
+          : [...prev[filterKey], buttonValue];
 
-      if (buttonData === "sizeButton") {
-        filterKey = "size";
-      } else if (buttonData === "colorButton") {
-        filterKey = "color";
-      } else if (buttonData === "typeButton") {
-        filterKey = "type";
-      } else return prev;
-
-      const updatedFilter = prev[filterKey].includes(buttonValue)
-        ? prev[filterKey].filter((item) => item !== buttonValue)
-        : [...prev[filterKey], buttonValue];
-
-      return {
-        ...prev,
-        [filterKey]: updatedFilter,
-      };
-    });
-  };
-
-  const handleCleanFilter = () => {
-    setExtendFilters({
-      size: [],
-      color: [],
-      type: [],
-    });
-    setProgressiveArray(minCut);
-  };
-
-  /** @param {React.FormEvent<HTMLFormElement>} event */
-  const handleFormData = (event) => {
-    event.preventDefault();
-
-    let filteredResults = data;
-
-    const {
-      size: sizeFilter,
-      color: colorFilter,
-      type: typeFilter,
-    } = extendFilters;
-
-    if (sizeFilter.length > 0) {
-      filteredResults = filteredResults.filter((product) => {
-        return product.colors.some((color) => {
-          return sizeFilter.some((size) => color.sizes[size] > 0);
-        });
+        return {
+          ...prev,
+          [filterKey]: updatedFilter,
+        };
       });
-    }
+    },
+    [resetPagination],
+  );
 
-    if (colorFilter.length > 0) {
-      filteredResults = filteredResults.filter((product) => {
-        return product.colors.some((color) =>
-          colorFilter.includes(color.colorName)
-        );
-      });
-    }
+  const handleCleanFilter = useCallback(() => {
+    setExtendFilters({ size: [], color: [], type: [] });
+    setPage(1);
+  }, []);
 
-    if (typeFilter.length > 0) {
-      filteredResults = filteredResults.filter((product) => {
-        return typeFilter.includes(product.name);
-      });
-    }
-    setProgressiveArray(filteredResults);
-    
+  const filteredResults = useMemo(
+    () =>
+      Object.entries(extendFilters).reduce(
+        (result, [filterName, filterValues]) =>
+          result.filter(
+            filters[/** @type {keyof typeof filters} */ (filterName)](
+              filterValues,
+            ),
+          ),
+        sort ? sorts[sort](data) : data,
+      ),
+    [extendFilters, data, sort],
+  );
 
-  };
+  const filteredResultsSliced = useMemo(
+    () => filteredResults.slice(0, page * PAGE_SIZE),
+    [filteredResults, page],
+  );
 
-    // add more cards
-    const handleMoreData = () => {
-      if (progressiveArray.length < data.length) {
-        const nextCards = data.slice(
-          progressiveArray.length,
-          progressiveArray.length +  Math.min(8, data.length)
-        );
-        setProgressiveArray((prev) => [...prev, ...nextCards]);
-      } else setLoadCards(false);
-    };
-  
-  /**@type {Filters} */
-  const filters = {
-    title_ascending: () => alphabeticFilter(data, true),
-    title_descending: () => alphabeticFilter(data, false),
-    price_ascending: () => priceFilter(data, false),
-    price_descending: () => priceFilter(data, true),
-    default: () => defaultFilter(data),
-  };
+  const loadCards = useMemo(
+    () => filteredResultsSliced.length < filteredResults.length,
+    [filteredResults.length, filteredResultsSliced.length],
+  );
 
-  console.log(progressiveArray)
+  // add more cards
+  const handleMoreData = useCallback(() => () => setPage(page + 1), [page]);
+
   useEffect(() => {
     if (data) {
-      pageReset();
+      resetPagination();
     }
-    if (selectedOption) {
-      
-      filters[selectedOption]();
-      setProgressiveArray(minCut);
-    }
-  }, [data, selectedOption]);
+  }, [data, resetPagination]);
 
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-28">
@@ -195,7 +174,6 @@ export const Shop = () => {
         filterButtons={arrayForFilters}
         selectedButton={extendFilters}
         {...{
-          handleFormData,
           handleCleanFilter,
           handleExtendfilter,
         }}
@@ -203,19 +181,11 @@ export const Shop = () => {
       <div
         className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
           toggleGrid ? gridGiant : gridCompact
-        }`}
-      >
-        {loadingData &&
-          Array.from({ length: 4 }).map((_, index) => (
-            <ShopCard toggleSize={toggleGrid} key={index}>
-              <LoaderCircle />
-            </ShopCard>
-          ))}
-        {!loadingData && progressiveArray.length === 0 && (
+        }`}>
+        {filteredResultsSliced.length === 0 ? (
           <p>No se encontró nada</p>
-        )}
-        {!loadingData &&
-          progressiveArray.map((item) => (
+        ) : (
+          filteredResultsSliced.map(item => (
             <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
               <ImagesShopSlider
                 array={item}
@@ -224,14 +194,14 @@ export const Shop = () => {
               />
               <DescriptionShopCard array={item} toggleSize={toggleGrid} />
             </ShopCard>
-          ))}
+          ))
+        )}
       </div>
       <div className="w-full h-20 grid place-content-center">
         <DefaultButton
           onClick={handleMoreData}
           color="primary"
-          disabled={!loadCards}
-        >
+          disabled={!loadCards}>
           {loadCards ? "More clothes..." : "No more products"}
         </DefaultButton>
       </div>

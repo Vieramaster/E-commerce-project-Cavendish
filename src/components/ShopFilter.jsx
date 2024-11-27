@@ -15,7 +15,6 @@ import { useClickOutside } from "../hooks/useClickOutside";
  *  filterButtons:ProductAttributes,
  *  handleExtendfilter: (event:React.MouseEvent<HTMLButtonElement>) => void ,
  *  handleCleanFilter:()=>void,
- *  handleFormData:React.FormEventHandler,
  *  selectedButton: ExtendFilters
  * }} props
  */
@@ -25,7 +24,6 @@ export const ShopFilter = ({
   booleanGrid,
   onChangeFilter,
   filterButtons,
-  handleFormData,
   handleExtendfilter,
   handleCleanFilter,
   selectedButton,
@@ -108,7 +106,7 @@ export const ShopFilter = ({
         toggleMenu={toggleShopMenu}
         componentRef={extenderFilterRef}
        
-        {...{ handleFormData, handleExtendfilter, handleCleanFilter, selectedButton }}
+        {...{ handleExtendfilter, handleCleanFilter, selectedButton }}
       />
     </>
   );

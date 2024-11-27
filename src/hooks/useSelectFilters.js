@@ -1,19 +1,19 @@
 /** @param {ClothesObject[]} data  @param {boolean} ascending */
 export const alphabeticFilter = (data, ascending) => {
-  return data.sort((a, b) =>
+  return data.toSorted((a, b) =>
     ascending ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
   );
 };
 
 /** @param {ClothesObject[]} data @param {boolean} ascending */
 export const priceFilter = (data, ascending) => {
-  return data.sort((a, b) =>
+  return data.toSorted((a, b) =>
     ascending ? a.price - b.price : b.price - a.price
   );
 };
 /** @param {ClothesObject[]} data*/
 export const defaultFilter = (data) => {
-  return data.sort((a, b) => a.idProduct - b.idProduct);
+  return data.toSorted((a, b) => a.idProduct - b.idProduct);
 };
 
 /**@param {ClothesObject[]} array  @return {Array<{name: string, hex: string}>}*/

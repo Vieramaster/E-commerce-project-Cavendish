@@ -11,8 +11,7 @@ const ulClasses = "flex justify-center gap-5 flex-wrap";
  *   componentRef: React.LegacyRef<HTMLFieldSetElement>,
  *   selectedButton: ExtendFilters,
  *   handleExtendfilter: (event: React.MouseEvent<HTMLButtonElement>) => void,
- *   handleCleanFilter: () => void,
- *   handleFormData: React.FormEventHandler
+ *   handleCleanFilter: () => void
  * }} props
  */
 export const ExtendFilterShop = ({
@@ -22,7 +21,6 @@ export const ExtendFilterShop = ({
   selectedButton,
   handleExtendfilter,
   handleCleanFilter,
-  handleFormData,
 }) => {
   const sizes = array[0];
   const colors = array[1];
@@ -48,7 +46,6 @@ export const ExtendFilterShop = ({
     >
       <form
         className="w-full h-auto px-3 py-5 flex flex-col gap-5 justify-center items-center"
-        onSubmit={handleFormData}
       >
         <ul className={ulClasses} role="group">
           {Object.entries(sizes).map((item) => (
@@ -109,13 +106,6 @@ export const ExtendFilterShop = ({
             onClick={handleCleanFilter}
           >
             Clean
-          </DefaultButton>
-          <DefaultButton
-            color="primary"
-            type="submit"
-            disabled={!disabledSubmit}
-          >
-            Apply
           </DefaultButton>
         </div>
       </form>
