@@ -1,8 +1,10 @@
+/** @import { LinkProps } from "react-router-dom"; */
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { DiscountCircle } from "../DiscountCircle";
 import { ArrowCardButton } from "../buttons/ArrowCardButton";
 import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
+
 import {
   NextImageCard,
   PreviousImageCard,
@@ -70,7 +72,9 @@ export const ImagesShopSlider = ({
       </div>
 
       <Container
-        {...(itsALink ? { to: `/${array.clothes}/${array.idProduct}` } : {})}
+        {...(itsALink
+          ? { to: `/${array.clothes}/${array.idProduct}` }
+          : /** @type {Pick<LinkProps, "to">} */ ({}))}
         style={{ transform: `translateX(-${positionImage[0]}%)` }}
         className="w-[300%] h-full flex duration-500 ease-in-out"
       >
@@ -90,25 +94,3 @@ export const ImagesShopSlider = ({
     </div>
   );
 };
-
-/**
- * 
- * <Link
-          to={`/${category}/${array.idProduct}`}
-          style={{ transform: `translateX(-${positionImage[0]}%)` }}
-          className="w-[300%] h-full flex duration-500 ease-in-out"
-        >
-          {array?.colors[0]?.imagesColor?.map((item, index) => (
-            <img
-              key={array.idProduct + index}
-              src={item}
-              alt="clothes photo"
-              className={`bg-cover w-1/3 h-full transition duration-500 ease-in-out ${
-                index === positionImage[1] ? "group-hover:scale-105" : ""
-              }`}
-            />
-          ))}
-        </Link>
-
-               
- */

@@ -2,6 +2,7 @@
 import { NavbarUL } from "../simpleContainers/NavbarUL";
 import { NavListLinks } from "../links/NavListLinks";
 
+
 /**@type {Array<{path:string, name:string}>} */
 export const ListEmprise = [
   { path: "/Login_and_Registrer", name: "Log in/Register" },

@@ -1,32 +1,43 @@
 import { useState, useCallback, useRef } from "react";
 // Components
-import { Navbar } from "../modals/Navbar";
+import { NavbarShop } from "../modals/NavbarShop";
 import { SearchModal } from "../modals/SearchModal";
 import { useClickOutside } from "../../hooks/useClickOutside";
+import { NavbarCartShop } from "../modals/NavbarCartShop";
 // Buttons
 import { PageLogo } from "../links/PageLogo";
-import { HeaderButtonList } from "../lists/headerButtonList";
+import { HeaderButtonList } from "../lists/HeaderButtonList";
 
 export const Header = () => {
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isNavbarShopOpen, setIsNavbarShopOpen] = useState(false);
   const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
+  const [isNavbarCartOpen, setIsNavbarCartOpen] = useState(false);
 
-  const toggleNavbar = useCallback(() => {
+  const toggleNavbarShop = useCallback(() => {
     setIsSearchBarOpen(false);
-    setIsNavbarOpen((prev) => !prev);
+    setIsNavbarCartOpen(false);
+    setIsNavbarShopOpen((prev) => !prev);
   }, []);
 
   const toggleSearchBar = useCallback(() => {
+    setIsNavbarCartOpen(false);
+    setIsNavbarShopOpen(false);
     setIsSearchBarOpen((prev) => !prev);
   }, []);
 
-  const toggleCart = () => {};
-  const navbarRef = useRef(null);
+  const toggleNavbarCart = useCallback(() => {
+    setIsSearchBarOpen(false);
+    setIsNavbarShopOpen(false);
+    setIsNavbarCartOpen((prev) => !prev);
+  }, []);
+
+  const navbarShopRef = useRef(null);
   const searchModalRef = useRef(null);
+  const navbarCartShopRef = useRef(null);
 
-  useClickOutside(navbarRef, () => setIsNavbarOpen(false));
-
+  useClickOutside(navbarShopRef, () => setIsNavbarShopOpen(false));
   useClickOutside(searchModalRef, () => setIsSearchBarOpen(false));
+  useClickOutside(navbarCartShopRef, () => setIsNavbarCartOpen(false));
 
   return (
     <>
@@ -45,18 +56,23 @@ export const Header = () => {
             <HeaderButtonList
               {...{
                 toggleSearchBar,
-                toggleCart,
-                toggleNavbar,
+                toggleNavbarCart,
+                toggleNavbarShop,
                 isSearchBarOpen,
               }}
             />
           </ul>
         </div>
 
-        <Navbar
-          componentRef={navbarRef}
-          toggle={toggleNavbar}
-          open={isNavbarOpen}
+        <NavbarShop
+          componentRef={navbarShopRef}
+          toggle={toggleNavbarShop}
+          open={isNavbarShopOpen}
+        />
+        <NavbarCartShop
+          toggle={toggleNavbarCart}
+          componentRef={navbarCartShopRef}
+          open={isNavbarCartOpen}
         />
       </header>
 

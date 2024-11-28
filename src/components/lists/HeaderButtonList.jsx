@@ -3,11 +3,11 @@ import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 import { SearchIco } from "../SVGs/icons/SearchIco";
 import { BasicButton } from "../buttons/BasicButton";
 
-/**@param {{toggleSearchBar: ()=>void, toggleCart: ()=>void,toggleNavbar: ()=>void, isSearchBarOpen: boolean}} props */
+/**@param {{toggleSearchBar: ()=>void, toggleNavbarCart: ()=>void,toggleNavbarShop: ()=>void, isSearchBarOpen: boolean}} props */
 export const HeaderButtonList = ({
   toggleSearchBar,
-  toggleCart,
-  toggleNavbar,
+  toggleNavbarCart,
+  toggleNavbarShop,
   isSearchBarOpen,
 }) => {
   /** @type {Array<{Component: React.ComponentType, key: string, handleEvent: () => void, label: string}>} */
@@ -21,13 +21,13 @@ export const HeaderButtonList = ({
     {
       Component: ShoppingCartIco,
       key: "ShoppingCart",
-      handleEvent: toggleCart,
+      handleEvent: toggleNavbarCart,
       label: "View shopping cart",
     },
     {
       Component: BarsResponsiveIco,
       key: "OpenResponsive",
-      handleEvent: toggleNavbar,
+      handleEvent: toggleNavbarShop,
       label: "Open navigation menu",
     },
     

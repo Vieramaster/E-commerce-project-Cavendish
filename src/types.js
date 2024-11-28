@@ -75,3 +75,14 @@
 /**
  * @typedef {"title_ascending" | "title_descending" | "price_ascending" | "price_descending" | "default"} FiltersString
  */
+
+/**
+ * @typedef {Object} CartProduct
+ * @property {number} price
+ * @property {number} idProduct
+ * @property {string} name
+ * @property {ClothesColor} colorChoise
+ * @property {string} selectedSize
+ * @property {number} amount
+
+ */
