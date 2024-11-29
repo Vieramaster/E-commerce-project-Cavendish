@@ -11,12 +11,12 @@ import {
 } from "../../hooks/useCarrouselArrows";
 import "../../types";
 
-/** @param {{array:ClothesObject, maxSizeArrows: boolean , itsALink:boolean, changeClothes: number}} props */
+/** @param {{array:ClothesObject, maxSizeArrows: boolean , itsALink:boolean, changeClothesColor: number}} props */
 export const ImagesShopSlider = ({
   array,
   maxSizeArrows,
   itsALink,
-  changeClothes,
+  changeClothesColor,
 }) => {
   const [positionImage, setPositionImage] = useState([0, 0]);
   const previousImage = () => PreviousImageCard(setPositionImage);
@@ -26,7 +26,7 @@ export const ImagesShopSlider = ({
 
   useEffect(() => {
     setPositionImage([0, 0]);
-  }, [changeClothes]);
+  }, [changeClothesColor]);
 
   const Container = itsALink ? Link : "div";
   const booleanImageStart = () => positionImage[1] === 0;
@@ -78,7 +78,7 @@ export const ImagesShopSlider = ({
         style={{ transform: `translateX(-${positionImage[0]}%)` }}
         className="w-[300%] h-full flex duration-500 ease-in-out"
       >
-        {array?.colors[changeClothes]?.imagesColor?.map((item, index) => (
+        {array?.colors[changeClothesColor]?.imagesColor?.map((item, index) => (
           <img
             key={array.idProduct + index}
             src={item}

@@ -190,7 +190,7 @@ export const Shop = () => {
           filteredResultsSliced.map((item) => (
             <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
               <ImagesShopSlider
-                changeClothes={0}
+                changeClothesColor={0}
                 array={item}
                 maxSizeArrows={toggleGrid}
                 itsALink={true}

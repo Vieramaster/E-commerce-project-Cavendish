@@ -86,3 +86,9 @@
  * @property {number} amount
 
  */
+
+/**
+ * @typedef {Object} SearchList
+ * @property {string} name
+ * @property {number} idProduct
+ */

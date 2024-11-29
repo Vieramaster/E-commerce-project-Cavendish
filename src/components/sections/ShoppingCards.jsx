@@ -16,12 +16,12 @@ export const ShoppingCards = ({ title, shopArray }) => {
         <div className="w-full grid grid-cols-1 gap-10  justify-items-center lg:justify-items-end lg:grid-cols-2 lg: 2xl:flex 2xl:justify-between">
           {shopArray?.map((_, index) => {
             return (
-              <ShopCard toggleSize={false}>
+              <ShopCard toggleSize={false} key={index * index}>
                 <ImagesShopSlider
                   array={shopArray[index]}
                   maxSizeArrows={false}
                   itsALink={true}
-                  changeClothes={0}
+                  changeClothesColor={0}
                 />
                 <DescriptionShopCard
                   array={shopArray[index]}

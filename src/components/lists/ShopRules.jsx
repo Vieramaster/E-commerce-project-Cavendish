@@ -21,13 +21,15 @@ export const bannerIcons = [
 
 export const ShopRules = () => {
   return (
-    <div className="w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between border-b-2 border-white ">
+    <ul className="w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between border-b-2 border-white ">
       {bannerIcons?.map(({ Component, title, name }) => (
-        <div key={name} className="flex flex-col items-center" >
-          <div className="size-10"><Component/></div>
+        <li key={name} className="flex flex-col items-center">
+          <div className="size-10">
+            <Component />
+          </div>
           <p className="text-center mt-3">{title}</p>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };

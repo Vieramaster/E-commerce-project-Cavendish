@@ -44,7 +44,7 @@ export const Header = () => {
       <header className=" bg-background flex flex-col w-full h-28 z-50 fixed border-b border-border">
         <div className="h-8 w-full bg-mainColor grid place-content-center flex-1">
           <p
-            className="text-contrast text-center font-semibold font-sans text-sm"
+            className="text-white text-center font-semibold font-sans text-sm"
             role="presentation"
           >
             Free standard shipping from $75 nationwide
