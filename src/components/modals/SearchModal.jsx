@@ -13,16 +13,15 @@ import "../../types";
 export const SearchModal = ({ toggle, componentRef, open }) => {
   const [inputSearch, setInputSearch] = useState("");
 
-  /**@type {SearchList[] | null} */
-  const [nameList, setNameList] = useState([]);
+  /** @type {[ClothesObject[] | undefined, React.Dispatch<React.SetStateAction<ClothesObject[] | undefined>>]} */
+  const [nameList, setNameList] = useState(
+    /** @type {ClothesObject[] | undefined} */ ([])
+  );
 
-  const [dataChoise, setDataChoise] = useState({
-    name: "",
-    product: 0,
-  });
   const { data: searchData } = useFetch("");
 
   /**@type {React.ChangeEventHandler<HTMLInputElement>} */
+
   const onSearchValue = useCallback(
     ({ currentTarget: { value } }) => {
       setNameList([]);
@@ -36,34 +35,37 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
       const result = searchData.filter((product) =>
         product.name?.toLowerCase().includes(value.toLowerCase())
       );
-
-      if (result && value.length > 0) {
-        const names = result.flatMap((item) => ({
-          name: item.name,
-          idProduct: item.idProduct,
-        }));
-        setNameList(names);
-      } else setNameList([]);
+      result.length > 0 ? setNameList(result) : undefined;
+      console.log(value);
+     
     },
     [searchData]
   );
-
+  console.log(nameList);
   //restart the form if you close it
   useEffect(() => {
     if (!open) {
       setInputSearch("");
       setNameList([]);
     }
+    
   }, [open]);
 
-  /** @type {React.ChangeEventHandler<HTMLSelectElement>} */
-  const handleChosenClothes = ({ currentTarget }) => {
+  /**
+   * @param {React.MouseEvent<HTMLButtonElement>} event
+   */
+  const handleChosenClothes = (event) => {
+    event.preventDefault();
+
     const {
-      dataset: { id: idProduct, name: name },
-    } = currentTarget;
+      currentTarget: {
+        dataset: { id: idProduct, name: name },
+      },
+    } = event;
 
     console.log(idProduct, name);
   };
+
   return (
     <fieldset
       ref={componentRef}

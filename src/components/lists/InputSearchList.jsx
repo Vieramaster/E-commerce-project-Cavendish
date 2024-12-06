@@ -1,12 +1,13 @@
-/**@param {{list: SearchList[], value: string, handleChosenClothes : ()=> void}} props */
+/**
+ * @param {{ list: ClothesObject[] | undefined, value: string, handleChosenClothes: React.MouseEventHandler<HTMLButtonElement> }} props*/
 export const InputSearchList = ({ list, value, handleChosenClothes }) => {
   return (
     <ul
       className={`${
-        value && list.length > 0 ? "block" : "hidden"
-      } absolute top-[2.9rem] lg:top-[4.1rem] w-full max-h-96 overflow-y-auto bg-white `}
+        value && list !== undefined ? "block" : "hidden"
+      } absolute top-[2.9rem] lg:top-[4.1rem] w-full max-h-96 overflow-y-auto bg-white`}
     >
-      {list.map(({ name, idProduct }, index) => (
+      {list?.map(({ name, idProduct }) => (
         <li
           key={name}
           className="font-alternative text-lightCarbon h-10 hover:bg-lightGrey flex items-center"

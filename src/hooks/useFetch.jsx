@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import "../types";
 
 /**
- * @param {string | undefined } category
+ * @param {"/data/clothes_for_e-commerse.json" | "/data/best_sellers.json" } URL
+ * @param {string | null} category
  * @returns {{ data: ClothesObject[], loading: boolean, error: Error | null }}
  */
-export const useFetch = (category) => {
+export const useFetch = (URL, category) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,15 +16,20 @@ export const useFetch = (category) => {
     const { signal } = controller;
     setLoading(true);
 
-    fetch("/data/clothes_for_e-commerse.json", { signal })
+    fetch(URL, { signal })
       .then((response) =>
         response.ok ? response.json() : Promise.reject(new Error("throw error"))
       )
       .then((jsonData) => {
-        const slicedData = category
-          ? jsonData[category]
-          : Object.values(jsonData).flatMap((arr) => arr);
-        setData(slicedData);
+        if (URL === "/data/clothes_for_e-commerse.json") {
+          const slicedData = category
+            ? jsonData[category]
+            : Object.values(jsonData).flatMap((arr) => arr);
+          setData(slicedData);
+        }
+        if (URL === "/data/best_sellers.json") {
+          setData(jsonData);
+        }
       })
       .catch((error) => {
         if (error.name !== "AbortError") {
@@ -37,7 +43,7 @@ export const useFetch = (category) => {
     return () => {
       controller.abort();
     };
-  }, [category]);
+  }, [URL]);
 
   return { data, loading, error };
 };
