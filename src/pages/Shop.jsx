@@ -7,6 +7,7 @@ import { DescriptionShopCard } from "../components/cards/card_components/Descrip
 import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { useFetch } from "../hooks/useFetch";
 import { useResizeWindow } from "../hooks/useResizeWindow";
+import { useSearchValue } from "../hooks/useZustand";
 import {
   alphabeticFilter,
   colorFilter,
@@ -77,8 +78,13 @@ export const Shop = () => {
     []
   );
 
+  const { searchValue } = useSearchValue();
+
   /** @type {{data:ClothesObject[]}} */
-  const { data } = useFetch(category !== "new_arrivals" ? category : undefined);
+  const { data } = useFetch(
+    "/data/clothes_for_e-commerse.json",
+    category !== "new_arrivals" ? category : undefined
+  );
 
   // data is subtracted to create filter buttons
   /** @type {ProductAttributes} */
@@ -157,8 +163,10 @@ export const Shop = () => {
   );
 
   // add more cards
-  const handleMoreData = useCallback(() => setPage((prevPage) => prevPage + 1), []);
-
+  const handleMoreData = useCallback(
+    () => setPage((prevPage) => prevPage + 1),
+    []
+  );
 
   useEffect(() => {
     if (data) {
@@ -167,7 +175,10 @@ export const Shop = () => {
   }, [data, resetPagination]);
 
   return (
-    <section className="bg-offWhite w-full min-h-screen h-auto pt-28">
+    <section
+      className="bg-offWhite w-full min-h-screen h-auto pt-28"
+      key={category}
+    >
       <ShopFilter
         onChangeFilter={changeFilter}
         toggleGrid={gridChangeToggle}

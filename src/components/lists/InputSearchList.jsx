@@ -7,14 +7,14 @@ export const InputSearchList = ({ list, value, handleChosenClothes }) => {
         value && list !== undefined ? "block" : "hidden"
       } absolute top-[2.9rem] lg:top-[4.1rem] w-full max-h-96 overflow-y-auto bg-white`}
     >
-      {list?.map(({ name, idProduct }) => (
+      {list?.map(({ name }) => (
         <li
           key={name}
           className="font-alternative text-lightCarbon h-10 hover:bg-lightGrey flex items-center"
         >
           <button
             className="pl-10"
-            data-id={idProduct}
+            aria-label={name}
             data-name={name}
             onClick={handleChosenClothes}
           >

@@ -7,6 +7,7 @@ const Shop = lazy(() => import("../pages/Shop"));
 const ErrorPage = lazy(() => import("../pages/ErrorPage"));
 const ShopProduct = lazy(() => import("../pages/ShopProduct"));
 
+// @ts-ignore
 const SuspenseWrapper = ({ children }) => (
   <Suspense fallback={<div>Cargando...</div>}>{children}</Suspense>
 );
@@ -34,7 +35,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/:category",
+        path: "/shop/:category",
         element: (
           <SuspenseWrapper>
             <Shop />
@@ -43,7 +44,7 @@ export const router = createBrowserRouter([
       
       },
       {
-        path: "/:category/:idProduct",
+        path: "/shop/:category/:idProduct",
         element: (
           <SuspenseWrapper>
             <ShopProduct />

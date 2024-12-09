@@ -2520,7 +2520,7 @@
             "outlet": false,
             "colors": [
                 {
-                    "name": "light yellow",
+                    "colorName": "light yellow",
                     "hex": "#f5e6a2",
                     "imagesColor": [
                         "/images/shop/sweaters/mercury_sweater_light_yellow1.webp",

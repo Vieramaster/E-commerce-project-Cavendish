@@ -73,7 +73,7 @@ export const ImagesShopSlider = ({
 
       <Container
         {...(itsALink
-          ? { to: `/${array.clothes}/${array.idProduct}` }
+          ? { to: `/shop/${array.clothes}/${array.idProduct}` }
           : /** @type {Pick<LinkProps, "to">} */ ({}))}
         style={{ transform: `translateX(-${positionImage[0]}%)` }}
         className="w-[300%] h-full flex duration-500 ease-in-out"

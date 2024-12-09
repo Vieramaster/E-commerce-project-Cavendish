@@ -46,7 +46,6 @@ export const sizesFilter = (array) => {
           sizeAvailability[size] = true;
         }
       });
-      
     });
   });
 
@@ -56,4 +55,13 @@ export const sizesFilter = (array) => {
 /**@param {ClothesObject[]} array @return {Array<string>} */
 export const typeFilter = (array) => {
   return [...new Set(array.flatMap((element) => element.category))];
+};
+
+//name filters
+
+/** @param {ClothesObject[]} data @param {string} valueSearch */
+export const useProductFinder = (data, valueSearch) => {
+  return data.filter((product) =>
+    product.name?.toLowerCase().includes(valueSearch.toLowerCase())
+  );
 };

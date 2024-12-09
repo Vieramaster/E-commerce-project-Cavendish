@@ -38,7 +38,7 @@ const news = [
 ];
 
 const Home = () => {
-  const { data: newArrivals } = useFetch("best_sellers");
+  const { data: newArrivals } = useFetch("/data/best_sellers.json", "");
 
   return (
     <>

@@ -14,7 +14,10 @@ const ShopProduct = () => {
 
   const { idProduct: idClothes, category: categoryProduct } = useParams();
 
-  const { data: dataCategory } = useFetch(categoryProduct);
+  const { data: dataCategory } = useFetch(
+    "/data/clothes_for_e-commerse.json",
+    categoryProduct
+  );
 
   const idClothesNumber = idClothes && Number(idClothes);
 

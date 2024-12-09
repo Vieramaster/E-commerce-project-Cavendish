@@ -3,7 +3,7 @@ import "../types";
 
 /**
  * @param {"/data/clothes_for_e-commerse.json" | "/data/best_sellers.json" } URL
- * @param {string | null} category
+ * @param {string | undefined} category
  * @returns {{ data: ClothesObject[], loading: boolean, error: Error | null }}
  */
 export const useFetch = (URL, category) => {
@@ -43,7 +43,7 @@ export const useFetch = (URL, category) => {
     return () => {
       controller.abort();
     };
-  }, [URL]);
+  }, [URL, category]);
 
   return { data, loading, error };
 };
