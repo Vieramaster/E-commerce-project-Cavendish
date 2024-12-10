@@ -26,9 +26,10 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
   //Router hook
   const navigate = useNavigate();
 
-  const { data: searchData } = useFetch(
+  const { data } = useFetch(
     "/data/clothes_for_e-commerse.json",
-    undefined
+    undefined,
+    null
   );
 
   /**@type {React.ChangeEventHandler<HTMLInputElement>} */
@@ -37,15 +38,15 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
       setNameList([]);
       setInputSearch(value);
 
-      if (!searchData || !Array.isArray(searchData)) {
-        console.error("searchData is invalid or empty:", searchData);
+      if (!data || !Array.isArray(data)) {
+        console.error("data is invalid or empty:", data);
         return;
       }
 
-      const result = useProductFinder(searchData, value);
+      const result = useProductFinder(data, value);
       result.length > 0 ? setNameList(result) : undefined;
     },
-    [searchData]
+    [data]
   );
 
   /**
@@ -71,7 +72,6 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
     if (!open) {
       setInputSearch("");
       setNameList([]);
-
     }
   }, [open]);
 

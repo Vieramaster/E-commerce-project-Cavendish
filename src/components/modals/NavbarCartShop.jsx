@@ -1,7 +1,10 @@
 import { NavbarComponent } from "../simpleContainers/NavbarComponent";
 import { NavbarCloseComponent } from "../NavbarCloseComponent";
 import { NavbarCartList } from "../lists/NavbarCartList";
+import {useAddShop} from "../../hooks/useZustand"
 import "../../types";
+
+const {addShop} = useAddShop()
 
 /** @type {CartProduct[]}*/
 const arrayLoco = [
@@ -75,6 +78,7 @@ const arrayLoco = [
     amount: 2,
   },
 ];
+console.log()
 /** * @param {{componentRef:React.RefObject<HTMLElement>, toggle:()=>void, open:boolean}} props */
 export const NavbarCartShop = ({ componentRef, toggle, open }) => {
   return (

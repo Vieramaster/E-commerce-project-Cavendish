@@ -5,6 +5,7 @@ import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { ObjectPropertyShop } from "../components/ObjectPropertyShop";
 import { ClientBenefitList } from "../components/lists/ClientBenefitList";
 import { Shopbutton } from "../components/buttons/ShopButton";
+import { useAddShop } from "../hooks/useZustand";
 import "../types";
 
 const ShopProduct = () => {
@@ -16,8 +17,10 @@ const ShopProduct = () => {
 
   const { data: dataCategory } = useFetch(
     "/data/clothes_for_e-commerse.json",
-    categoryProduct
+    categoryProduct,
+    null
   );
+
 
   const idClothesNumber = idClothes && Number(idClothes);
 
@@ -51,6 +54,8 @@ const ShopProduct = () => {
     }
   }, [productData, changeClothesColor, selectSize]);
 
+  const {setAddShop} = useAddShop()
+
   const handleShop = useCallback(() => {
     if (productData) {
       const { price, idProduct, name, colors } = productData;
@@ -63,7 +68,8 @@ const ShopProduct = () => {
         selectSize,
         quantityClothes,
       };
-      console.log(purchageProduct);
+      setAddShop(purchageProduct)
+
     }
   }, [productData, changeClothesColor, selectSize, quantityClothes]);
 

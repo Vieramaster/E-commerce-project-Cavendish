@@ -80,10 +80,10 @@ export const Shop = () => {
 
   const { searchValue } = useSearchValue();
 
-  /** @type {{data:ClothesObject[]}} */
   const { data } = useFetch(
     "/data/clothes_for_e-commerse.json",
-    category !== "new_arrivals" ? category : undefined
+    category !== "new_arrivals" ? category : undefined,
+    searchValue ?? null
   );
 
   // data is subtracted to create filter buttons

@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
+import { useProductFinder } from "./useSelectFilters";
 import "../types";
 
 /**
  * @param {"/data/clothes_for_e-commerse.json" | "/data/best_sellers.json" } URL
  * @param {string | undefined} category
+ * @param {string | null} searchMode
  * @returns {{ data: ClothesObject[], loading: boolean, error: Error | null }}
  */
-export const useFetch = (URL, category) => {
-  const [data, setData] = useState([]);
+
+export const useFetch = (URL, category, searchMode) => {
+  const [data, setData] = useState(/** @type {ClothesObject[]} */ ([]));
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -21,12 +24,18 @@ export const useFetch = (URL, category) => {
         response.ok ? response.json() : Promise.reject(new Error("throw error"))
       )
       .then((jsonData) => {
+        const entireJson = Object.values(jsonData).flatMap((arr) => arr);
+
         if (URL === "/data/clothes_for_e-commerse.json") {
-          const slicedData = category
-            ? jsonData[category]
-            : Object.values(jsonData).flatMap((arr) => arr);
-          setData(slicedData);
+          if (searchMode) {
+            const searchData = useProductFinder(entireJson, searchMode);
+            setData(searchData);
+          } else {
+            const sliceData = category ? jsonData[category] : entireJson;
+            setData(sliceData);
+          }
         }
+
         if (URL === "/data/best_sellers.json") {
           setData(jsonData);
         }
@@ -43,7 +52,7 @@ export const useFetch = (URL, category) => {
     return () => {
       controller.abort();
     };
-  }, [URL, category]);
+  }, [URL, category, useProductFinder]);
 
   return { data, loading, error };
 };
