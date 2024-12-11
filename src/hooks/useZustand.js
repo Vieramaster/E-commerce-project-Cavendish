@@ -7,8 +7,21 @@ export const useSearchValue = create((set) => ({
     set({ searchValue: newString }),
 }));
 
-export const useAddShop = create((set) => ({
-  addShop: [],
-  setAddShop: (/** @type {ClothesObject[]} */ newObject) =>
-    set({ addShop: newObject }),
+export const useCart = create((set) => ({
+  /** @type {CartProduct[]} */
+  cart: [],
+
+  /**  @param {CartProduct} product */
+  addToCart: (product) =>
+    set((/** @type {{ cart: CartProduct[]; }} */ state) => ({
+      cart: [...state.cart, product],
+    })),
+
+  /**  @param {CartProduct} product */
+  removeFromCart: (product) =>
+    set((/** @type {{ cart: CartProduct[]; }} */ state) => ({
+      cart: state.cart.filter((item) => item.idProduct !== product.idProduct),
+    })),
+
+  clearCart: () => set({ cart: [] }),
 }));

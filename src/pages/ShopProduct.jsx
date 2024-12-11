@@ -5,13 +5,14 @@ import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { ObjectPropertyShop } from "../components/ObjectPropertyShop";
 import { ClientBenefitList } from "../components/lists/ClientBenefitList";
 import { Shopbutton } from "../components/buttons/ShopButton";
-import { useAddShop } from "../hooks/useZustand";
+import { useCart } from "../hooks/useZustand";
 import "../types";
 
 const ShopProduct = () => {
   const [changeClothesColor, setChangeClothesColor] = useState(0);
   const [selectSize, setSelectSize] = useState("");
   const [quantityClothes, setQuantityClothes] = useState(0);
+  const [finishBuy, setFinishBuy] = useState(false);
 
   const { idProduct: idClothes, category: categoryProduct } = useParams();
 
@@ -20,7 +21,6 @@ const ShopProduct = () => {
     categoryProduct,
     null
   );
-
 
   const idClothesNumber = idClothes && Number(idClothes);
 
@@ -54,7 +54,7 @@ const ShopProduct = () => {
     }
   }, [productData, changeClothesColor, selectSize]);
 
-  const {setAddShop} = useAddShop()
+  const { addToCart, cart } = useCart();
 
   const handleShop = useCallback(() => {
     if (productData) {
@@ -68,11 +68,12 @@ const ShopProduct = () => {
         selectSize,
         quantityClothes,
       };
-      setAddShop(purchageProduct)
-
+      addToCart(purchageProduct);
+      setFinishBuy(true);
     }
   }, [productData, changeClothesColor, selectSize, quantityClothes]);
 
+  console.log(cart);
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
       {!productData ? (
@@ -101,8 +102,11 @@ const ShopProduct = () => {
                 changeClothesColor,
               }}
             />
-            <Shopbutton onClick={handleShop} disabled={quantityClothes === 0}>
-              Add to bag
+            <Shopbutton
+              onClick={handleShop}
+              disabled={quantityClothes === 0 || finishBuy === true}
+            >
+              {finishBuy ? "added!" : "Add to bag"}
             </Shopbutton>
             <ClientBenefitList />
           </div>

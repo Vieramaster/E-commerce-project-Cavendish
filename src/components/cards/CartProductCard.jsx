@@ -1,4 +1,4 @@
-/**@param {{image:string, name:string, price:number, colorName:string, amount:number , size:string}} props*/
+/**@param {{image:string, name:string, price:number, colorName:string, amount:number , size:string, handleRemove: ()=> void, data:number }} props*/
 export const CartProductCard = ({
   image,
   name,
@@ -6,9 +6,14 @@ export const CartProductCard = ({
   colorName,
   amount,
   size,
+  data,
+  handleRemove,
 }) => {
   return (
-    <li className=" h-48 w-full flex gap-2 items-center my-2 px-2 text-textColor">
+    <li
+      className=" h-48 w-full flex gap-2 items-center my-2 px-2 text-textColor"
+      data-id={data}
+    >
       <img src={image} className="h-5/6 rounded-md " />
       <div className=" flex-grow h-full flex flex-col gap-2 py-5 items-start">
         <p className="truncate px-1 font-semibold "> {name}</p>
@@ -20,7 +25,9 @@ export const CartProductCard = ({
         <p>quantity: {amount} </p>
         <div className="flex justify-between w-full">
           <p className="font-alternative  font-semibold">Total: ${price}</p>
-          <button className="underline">remove</button>
+          <button className="underline" onClick={handleRemove}>
+            remove
+          </button>
         </div>
       </div>
     </li>

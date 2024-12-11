@@ -83,7 +83,7 @@
  * @property {string} name
  * @property {ClothesColor} colorChoise
  * @property {string} selectedSize
- * @property {number} amount
+ * @property {number} quantityClothes
 
  */
 
