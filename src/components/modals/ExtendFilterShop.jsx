@@ -44,9 +44,7 @@ export const ExtendFilterShop = ({
         toggleMenu ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <form
-        className="w-full h-auto px-3 py-5 flex flex-col gap-5 justify-center items-center"
-      >
+      <form className="w-full h-auto px-3 py-5 flex flex-col gap-5 justify-center items-center">
         <ul className={ulClasses} role="group">
           {Object.entries(sizes).map((item) => (
             <li key={item[0]}>

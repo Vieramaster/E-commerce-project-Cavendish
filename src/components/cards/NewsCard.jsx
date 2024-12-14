@@ -13,7 +13,7 @@ export const NewsCard = ({
   return (
     <Link
       to={toPage}
-      className="w-80 h-96 rounded-md flex flex-col gap-1 lg:w-1/3 lg:h-auto"
+      className="w-80 h-auto rounded-md flex flex-col gap-1 lg:w-1/3 "
     >
       <div className="h-2/3 w-full relative">
         <img

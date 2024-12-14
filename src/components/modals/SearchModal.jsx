@@ -49,9 +49,7 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
     [data]
   );
 
-  /**
-   * @param {React.MouseEvent<HTMLButtonElement>} event
-   */
+  /*** @param {React.MouseEvent<HTMLButtonElement>} event*/
   const handleChosenClothes = (event) => {
     event.preventDefault();
 

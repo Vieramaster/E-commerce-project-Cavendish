@@ -2,10 +2,8 @@ import { CartProductCard } from "../cards/CartProductCard";
 import { useCart } from "../../hooks/useZustand";
 import "../../types";
 
-/**@param {{product: CartProduct[]}} props */
-export const NavbarCartList = ({ product }) => {
-  const clearCart = useCart((state) => state.clearCart);
-
+/**@param {{product: CartProduct[], handleRemove: React.MouseEventHandler<HTMLButtonElement>}} props */
+export const NavbarCartList = ({ product, handleRemove }) => {
   const totalPrice = (/**@type {number} */ a, /**@type {number} */ b) => a * b;
   return (
     <ul className="w-full flex-grow overflow-y-auto py-2">
@@ -17,7 +15,7 @@ export const NavbarCartList = ({ product }) => {
             quantityClothes,
             price,
             selectedSize,
-            idProduct
+            idProduct,
           },
           index
         ) => (
@@ -29,7 +27,7 @@ export const NavbarCartList = ({ product }) => {
             colorName={colorName}
             size={selectedSize}
             amount={quantityClothes}
-            handleRemove={clearCart}
+            {...{ handleRemove }}
             data={idProduct}
           />
         )

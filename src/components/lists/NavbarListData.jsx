@@ -1,7 +1,5 @@
-
 import { NavbarUL } from "../simpleContainers/NavbarUL";
 import { NavListLinks } from "../links/NavListLinks";
-
 
 /**@type {Array<{path:string, name:string}>} */
 export const ListEmprise = [
@@ -18,7 +16,9 @@ export const NavbarListData = () => {
       {ListEmprise.map(({ path, name }, index) => {
         return (
           <li key={index + name}>
-            <NavListLinks toPage={path} title={false}>{name}</NavListLinks>
+            <NavListLinks toPage={path} title={false}>
+              {name}
+            </NavListLinks>
           </li>
         );
       })}

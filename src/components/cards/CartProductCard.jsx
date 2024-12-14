@@ -1,4 +1,4 @@
-/**@param {{image:string, name:string, price:number, colorName:string, amount:number , size:string, handleRemove: ()=> void, data:number }} props*/
+/**@param {{image:string, name:string, price:number, colorName:string, amount:number , size:string, handleRemove: React.MouseEventHandler<HTMLButtonElement>, data:number }} props*/
 export const CartProductCard = ({
   image,
   name,
