@@ -21,12 +21,10 @@ export const useCart = create(
           cart: [...state.cart, product],
         })),
 
-      /** @param {CartProduct} product */
-      removeFromCart: (product) =>
-        set((/** @type {{ cart: CartProduct[]; }} */ state) => ({
-          cart: state.cart.filter(
-            (item) => item.idProduct !== product.idProduct
-          ),
+      /** @param {string} ID */
+      removeFromCart: (ID) =>
+        set((/** @type {{ cart: CartProduct[]}} */ state) => ({
+          cart: state.cart.filter((item) => item.idProduct !== ID),
         })),
 
       clearCart: () => set({ cart: [] }),

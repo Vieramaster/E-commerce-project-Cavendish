@@ -6,6 +6,7 @@ import { ObjectPropertyShop } from "../components/ObjectPropertyShop";
 import { ClientBenefitList } from "../components/lists/ClientBenefitList";
 import { Shopbutton } from "../components/buttons/ShopButton";
 import { useCart } from "../hooks/useZustand";
+import { LoaderPage } from "../components/loaders/LoaderPage";
 import "../types";
 
 const ShopProduct = () => {
@@ -73,11 +74,11 @@ const ShopProduct = () => {
     }
   }, [productData, changeClothesColor, selectSize, quantityClothes]);
 
-  console.log(cart);
+
   return (
     <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
       {!productData ? (
-        <h3> no hay nada we</h3>
+        <LoaderPage/>
       ) : (
         <div className="w-5/6 h-auto mx-auto py-10 gap-10 lg:flex ">
           <div className="h-auto py-5 lg:h-full lg:w-1/2 lg:py-0">

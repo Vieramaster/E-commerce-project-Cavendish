@@ -6,7 +6,7 @@ import { XIco } from "./SVGs/icons/XIco";
 export const NavbarCloseComponent = ({ toggle }) => {
   return (
     <div className=" w-full h-20 flex justify-end items-center p-5">
-      <BasicButton onClick={toggle} aria-label="Close menu" responsive={false}>
+      <BasicButton onClick={toggle} aria-label="Close menu" responsive={false} relative>
         <XIco />
       </BasicButton>
     </div>

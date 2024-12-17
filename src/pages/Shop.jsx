@@ -16,6 +16,7 @@ import {
   sizesFilter,
   typeFilter,
 } from "../hooks/useSelectFilters";
+import { LoaderPage } from "../components/loaders/LoaderPage";
 import "../types";
 
 const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
@@ -80,7 +81,7 @@ export const Shop = () => {
 
   const { searchValue } = useSearchValue();
 
-  const { data } = useFetch(
+  const { data, loading } = useFetch(
     "/data/clothes_for_e-commerse.json",
     category !== "new_arrivals" ? category : undefined,
     searchValue ?? null
@@ -195,9 +196,8 @@ export const Shop = () => {
           toggleGrid ? gridGiant : gridCompact
         }`}
       >
-        {filteredResultsSliced.length === 0 ? (
-          <p>No se encontró nada</p>
-        ) : (
+        {loading && <LoaderPage />}
+        {!loading &&
           filteredResultsSliced.map((item) => (
             <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
               <ImagesShopSlider
@@ -208,7 +208,9 @@ export const Shop = () => {
               />
               <DescriptionShopCard array={item} toggleSize={toggleGrid} />
             </ShopCard>
-          ))
+          ))}
+        {!loading && filteredResults.length === 0 && searchValue && (
+          <LoaderPage />
         )}
       </div>
       <div className="w-full h-20 grid place-content-center">

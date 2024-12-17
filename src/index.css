@@ -165,3 +165,26 @@ input[type="search"]::-webkit-search-cancel-button {
   animation: fadeInPrevius ease-in-out 1s both;
 }
 
+
+@keyframes dots {
+  0% {
+    content: '';
+    opacity: 0;
+  }
+  33% {
+    content: '.';
+    opacity: 1;
+  }
+  66% {
+    content: '..';
+    opacity: 1;
+  }
+  100% {
+    content: '...';
+    opacity: 1;
+  }
+}
+
+.animate-dots {
+  animation: dots 1.5s steps(1, end) infinite;
+}

@@ -12,7 +12,7 @@ export const CartProductCard = ({
   return (
     <li
       className=" h-48 w-full flex gap-2 items-center my-2 px-2 text-textColor"
-      data-id={data}
+      
     >
       <img src={image} className="h-5/6 rounded-md " />
       <div className=" flex-grow h-full flex flex-col gap-2 py-5 items-start">
@@ -25,7 +25,7 @@ export const CartProductCard = ({
         <p>quantity: {amount} </p>
         <div className="flex justify-between w-full">
           <p className="font-alternative  font-semibold">Total: ${price}</p>
-          <button className="underline" onClick={handleRemove}>
+          <button className="underline" onClick={handleRemove} data-id={data}>
             remove
           </button>
         </div>

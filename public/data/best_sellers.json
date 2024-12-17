@@ -1,6 +1,6 @@
 [
     {
-        "idProduct": 100,
+        "idProduct": 5,
         "name": "Chester cargo",
         "description": "lorem10",
         "category": "cargo",
@@ -50,11 +50,11 @@
         ]
     },
     {
-        "idProduct": 101,
+        "idProduct": 20,
         "name": "Drum II t-shirt",
         "description": "lorem20",
         "category": "t-shirt",
-        "clothes": "polos_and_t_shirts",
+        "clothes": "t_shirts_and_polos",
         "price": 25,
         "realPrice": 25,
         "discount": false,
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "idProduct": 103,
+        "idProduct": 54,
         "name": "Dass sweater",
         "description": "lorem20",
         "category": "sweater",
@@ -126,7 +126,7 @@
         ]
     },
     {
-        "idProduct": 104,
+        "idProduct": 64,
         "name": "Special Wave hoodie jacket ",
         "description": "lorem25",
         "category": "hoodie",
