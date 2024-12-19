@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 /** @param {import("react-router-dom").LinkProps & { disabled?: boolean }} props */
-export const ShopCartButton = ({ disabled, ...props }) => {
+export const ShopCartLink = ({ disabled, ...props }) => {
   return (
     <Link
       {...props}

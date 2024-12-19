@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { NavbarComponent } from "../simpleContainers/NavbarComponent";
 import { NavbarCloseComponent } from "../NavbarCloseComponent";
 import { NavbarCartList } from "../lists/NavbarCartList";
-import { ShopCartButton } from "../buttons/ShopCartButton";
+import { ShopCartLink } from "../links/ShopCartLink";
 import { useCart } from "../../hooks/useZustand";
 import "../../types";
 
@@ -41,9 +41,9 @@ export const NavbarCartShop = ({ componentRef, toggle, open }) => {
         <p className={classText}>Products: {cart.length}</p>
         <p className={classText}>Total: ${totalPrice.toFixed(2)}</p>
       </div>
-      <ShopCartButton disabled={checkLength} to={"/Checkouts"} >
+      <ShopCartLink disabled={checkLength} to={"/Checkout"} >
         {checkLength ? "Add products" : "Checkout"}
-      </ShopCartButton>
+      </ShopCartLink>
     </NavbarComponent>
   );
 };
