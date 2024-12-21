@@ -82,7 +82,7 @@
  * @property {number} idProduct
  * @property {string} name
  * @property {ClothesColor} colorChoise
- * @property {string} selectedSize
+ * @property {string} selectSize
  * @property {number} quantityClothes
 
  */

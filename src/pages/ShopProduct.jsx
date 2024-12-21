@@ -55,7 +55,7 @@ const ShopProduct = () => {
     }
   }, [productData, changeClothesColor, selectSize]);
 
-  const { addToCart, cart } = useCart();
+  const { addToCart} = useCart();
 
   const handleShop = useCallback(() => {
     if (productData) {

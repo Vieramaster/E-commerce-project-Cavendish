@@ -1,10 +1,10 @@
 import { CartProductCard } from "../cards/CartProductCard";
-import { useCart } from "../../hooks/useZustand";
+import { totalPriceItem } from "../../hooks/useMathOperations";
 import "../../types";
 
 /**@param {{product: CartProduct[], handleRemove: React.MouseEventHandler<HTMLButtonElement>}} props */
 export const NavbarCartList = ({ product, handleRemove }) => {
-  const totalPrice = (/**@type {number} */ a, /**@type {number} */ b) => a * b;
+
   return (
     <ul className="w-full flex-grow overflow-y-auto py-2">
       {product.map(
@@ -13,19 +13,20 @@ export const NavbarCartList = ({ product, handleRemove }) => {
             colorChoise: { colorName, imagesColor },
             name,
             quantityClothes,
-            price,
-            selectedSize,
+            selectSize,
             idProduct,
+            price
           },
+          
           index
         ) => (
           <CartProductCard
-            key={index}
+            key={name + index}
             image={imagesColor[0]}
             name={name}
-            price={totalPrice(quantityClothes, price)}
+            price={totalPriceItem(quantityClothes, price)}
             colorName={colorName}
-            size={selectedSize}
+            size={selectSize}
             amount={quantityClothes}
             {...{ handleRemove }}
             data={idProduct}

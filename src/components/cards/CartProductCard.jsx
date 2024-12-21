@@ -9,6 +9,7 @@ export const CartProductCard = ({
   data,
   handleRemove,
 }) => {
+  console.log(size);
   return (
     <li
       className=" h-48 w-full flex gap-2 items-center my-2 px-2 text-textColor"

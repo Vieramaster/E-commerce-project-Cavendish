@@ -1,7 +1,7 @@
 import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 
-/**@param {{changeArrow:boolean} & JSX.IntrinsicElements["button"] } props */
-export const SummaryShopButton = ({ changeArrow, ...props }) => {
+/**@param {{changeArrow:boolean, totalPrice:number} & JSX.IntrinsicElements["button"] } props */
+export const SummaryShopButton = ({ changeArrow, totalPrice, ...props }) => {
   return (
     <button
       className="w-full h-[4.2rem] bg-lightGrey text-textColor"
@@ -14,7 +14,7 @@ export const SummaryShopButton = ({ changeArrow, ...props }) => {
             <MinimalistArrow directionArrow={changeArrow ? "top" : "bottom"} />
           </span>
         </span>
-        <span className="font-alternative font-semibold text-lg">$563.63</span>
+        <span className="font-alternative font-semibold text-lg">${totalPrice}</span>
       </span>
     </button>
   );

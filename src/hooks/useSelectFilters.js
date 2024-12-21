@@ -65,3 +65,4 @@ export const useProductFinder = (data, valueSearch) => {
     product.name?.toLowerCase().includes(valueSearch.toLowerCase())
   );
 };
+
