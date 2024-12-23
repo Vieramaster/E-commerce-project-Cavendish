@@ -4,7 +4,7 @@ import "../../types";
 /**@param {{product: CartProduct[]}} props */
 export const CheckOutProductList = ({ product }) => {
   return (
-    <ul className="w-full h-auto py-6 flex flex-col gap-4">
+    <ul className="w-full h-auto py-6 flex flex-col gap-4 overflow-y-auto">
       {product.map(
         ({
           colorChoise: { imagesColor },

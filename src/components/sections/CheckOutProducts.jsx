@@ -1,20 +1,22 @@
-import { CheckOutProductList } from "../CheckOutProductList";
-import {sumPrice} from "../../hooks/useMathOperations"
-import "../../types"
-/**@param {{product: CartProduct[]}} props*/
-export const CheckOutProducts = ({ product }) => {
+import { CheckOutProductList } from "../lists/CheckOutProductList";
+import "../../types";
+/**@param {{product: CartProduct[], totalItems:number, price:number, isOpen:boolean}} props*/
+export const CheckOutProducts = ({ product, totalItems, price, isOpen }) => {
   return (
-    <div className="  w-full h-auto flex flex-col gap-2 ">
+    <div
+      className={`overflow-hidden transition-max-height duration-300 ease-in-out  ${
+        isOpen ? "max-h-full" : "max-h-0"
+      } w-full`}
+    >
       <CheckOutProductList product={product} />
-      <div className="w-full h-12 flex justify-between items-center text-textColor border-t border-border">
+      <div className="w-full h-12 flex justify-between items-center text-textColor border-t border-border mt-4">
         <p className="font-medium">
-          Subtotal : <span className="ml-2">{items} items</span>{" "}
+          Subtotal : <span className="ml-2">{totalItems} items</span>{" "}
         </p>
         <p className="font-medium ">
-          total Price:
+          Total Price:
           <span className="font-alternative font-semibold  text-2xl ml-2">
-            {" "}
-            $ {sumPrice}
+            $ {price}
           </span>
         </p>
       </div>

@@ -14,7 +14,7 @@ export const SummaryShopButton = ({ changeArrow, totalPrice, ...props }) => {
             <MinimalistArrow directionArrow={changeArrow ? "top" : "bottom"} />
           </span>
         </span>
-        <span className="font-alternative font-semibold text-lg">${totalPrice}</span>
+        <span className="font-alternative font-semibold text-2xl">${totalPrice}</span>
       </span>
     </button>
   );
