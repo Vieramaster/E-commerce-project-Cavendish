@@ -34,6 +34,7 @@ const CheckOut = () => {
     };
   }, [handleResize]);
 
+  const classH3 = "";
   return (
     <>
       <HeaderLight isHidden={!isMobile} />
@@ -63,9 +64,12 @@ const CheckOut = () => {
             <PayMethodList />
             <TextSeparator>OR</TextSeparator>
             <CheckOutForm />
+            <h3 className="text-3xl font-semibold my-2 text-start  w-full">
+              Payment
+            </h3>
+            
           </div>
         </div>
-
       </section>
     </>
   );
