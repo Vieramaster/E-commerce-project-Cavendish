@@ -21,6 +21,12 @@ export default {
         border: " #d2d2ce",
         hover: "#4a5337",
         white: "#fff",
+        shopPayButton:"#592ff4",
+        shopPayButtonHover:"#390ced",
+        payPalButton:"#ffc439",
+        payPalButtonHover:"#f0a825",
+
+
       },
       fontFamily: {
         tobias: ["Tobias", "sans-serif"],

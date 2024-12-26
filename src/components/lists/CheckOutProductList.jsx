@@ -1,10 +1,13 @@
 import { totalPriceItem } from "../../hooks/useMathOperations";
 import "../../types";
 
-/**@param {{product: CartProduct[]}} props */
-export const CheckOutProductList = ({ product }) => {
+/**@param {{product: CartProduct[], heightUl:number}} props */
+export const CheckOutProductList = ({ product, heightUl }) => {
   return (
-    <ul className="w-full h-auto py-6 flex flex-col gap-4 overflow-y-auto">
+    <ul
+      className={`w-full h-auto py-6 flex flex-col gap-4 `}
+      style={{ maxHeight: `calc(${heightUl}rem)` }}
+    >
       {product.map(
         ({
           colorChoise: { imagesColor },
@@ -29,7 +32,6 @@ export const CheckOutProductList = ({ product }) => {
               <div className="flex-1 px-5 ">
                 <h3 className="font-semibold">{name}</h3>
                 <p>
-                  {" "}
                   size: <span className="uppercase">{selectSize}</span>
                 </p>
               </div>

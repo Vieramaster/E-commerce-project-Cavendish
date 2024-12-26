@@ -92,3 +92,9 @@
  * @property {string} name
  * @property {number} idProduct
  */
+
+/**
+ * @typedef {Object[]} payButtonlist
+ * @property { "shopPay" | "paypal" | "googlePay"} name
+ * @property {React.FC} Component
+ */

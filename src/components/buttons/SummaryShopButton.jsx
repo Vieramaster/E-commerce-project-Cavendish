@@ -4,7 +4,7 @@ import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 export const SummaryShopButton = ({ changeArrow, totalPrice, ...props }) => {
   return (
     <button
-      className="w-full h-[4.2rem] bg-lightGrey text-textColor"
+      className={`w-full h-[4.2rem] bg-lightGrey text-textColor ${props.disabled && "hidden"}`}
       {...props}
     >
       <span className="w-5/6 h-full flex items-center  mx-auto justify-between">
