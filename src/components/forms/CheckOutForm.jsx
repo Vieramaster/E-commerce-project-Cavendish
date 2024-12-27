@@ -3,9 +3,7 @@ import { CustomInput } from "./CustomInput";
 export const CheckOutForm = () => {
   return (
     <fieldset className="min-h-96 w-full h-auto relative">
-      <legend className="text-3xl font-semibold my-2 ">
-        Delivery
-      </legend>
+      <legend className="text-3xl font-semibold my-2 ">Delivery</legend>
       <form className="flex flex-col gap-4">
         <div className="relative">
           <span className="absolute top-2 left-3 text-gray-500 text-sm pointer-events-none">
@@ -14,7 +12,7 @@ export const CheckOutForm = () => {
           <select
             name="country"
             id="countryForm"
-            className="w-full h-12 border border-border rounded-md pt-5 pl-3 focus:outline-subdued
+            className="w-full h-14 border border-border rounded-md pt-5 pl-3 focus:outline-subdued
             "
             aria-labelledby="select country"
           >
@@ -27,39 +25,47 @@ export const CheckOutForm = () => {
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full h-auto ">
           <CustomInput
+            text
             smallInput
             placeholder="First name"
             aria-label="Enter your first name"
           />
           <CustomInput
+            text
             smallInput
             placeholder="Last name"
             aria-label="Enter your last name"
           />
         </div>
         <CustomInput
+          text
           smallInput={false}
           placeholder="Address"
           aria-label="Enter your address"
         />
         <CustomInput
+          text
           smallInput={false}
           placeholder="Apartament, suite, etc.(optional)"
           aria-label="Enter your number of apartament, house, etc. (optional)"
         />
         <div className="flex flex-col sm:flex-row gap-3 w-full h-auto ">
           <CustomInput
+            text
             smallInput
             placeholder="City"
             aria-label="Enter your city"
           />
           <CustomInput
+            text={false}
             smallInput
             placeholder="Postal code"
             aria-label="Enter your postal code"
+            
           />
         </div>
         <CustomInput
+          text={false}
           smallInput={false}
           placeholder="Phone"
           aria-label="Enter your phone number"

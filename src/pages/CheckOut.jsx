@@ -7,6 +7,7 @@ import { PayMethodList } from "../components/lists/PayMethodList";
 import { TextSeparator } from "../components/TextSeparator";
 import { CheckOutForm } from "../components/forms/CheckOutForm";
 import { useCart } from "../hooks/useZustand";
+import { PaymentForm } from "../components/forms/PaymentForm";
 
 const CheckOut = () => {
   const [expandList, setExpandList] = useState(false);
@@ -67,6 +68,7 @@ const CheckOut = () => {
             <h3 className="text-3xl font-semibold my-2 text-start  w-full">
               Payment
             </h3>
+            <PaymentForm/>
             
           </div>
         </div>

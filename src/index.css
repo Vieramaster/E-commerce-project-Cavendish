@@ -166,25 +166,17 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
-@keyframes dots {
-  0% {
-    content: '';
-    opacity: 0;
-  }
-  33% {
-    content: '.';
-    opacity: 1;
-  }
-  66% {
-    content: '..';
-    opacity: 1;
-  }
-  100% {
-    content: '...';
-    opacity: 1;
-  }
-}
+@layer utilities {
+  .no-spinner {
+    /* Para navegadores Webkit */
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      @apply appearance-none;
+    }
 
-.animate-dots {
-  animation: dots 1.5s steps(1, end) infinite;
+    /* Para Firefox */
+    & {
+      @apply appearance-none;
+    }
+  }
 }

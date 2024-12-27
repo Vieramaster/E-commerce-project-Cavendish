@@ -36,7 +36,7 @@ export const CheckOutProductList = ({ product, heightUl }) => {
                 </p>
               </div>
               <span>
-                <p className="text-2xl font-semibold font-alternative">
+                <p className="text-lg 2xl:xl font-semibold font-alternative">
                   ${totalPriceItem(price, quantityClothes)}
                 </p>
               </span>
