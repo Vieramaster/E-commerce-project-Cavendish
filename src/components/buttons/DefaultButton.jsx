@@ -1,11 +1,10 @@
 const buttonColor = {
   primary: "bg-mainColor text-white  hover:bg-hover ",
-  secondary: "",
   disabled:
     "bg-textColor text-white active:translate-x-0 active:translate-y-0  cursor-not-allowed",
 };
 
-/** @param {JSX.IntrinsicElements['button'] & {readonly color: "primary" | "secondary" | "disabled"}} props*/
+/** @param {JSX.IntrinsicElements['button'] & {readonly color: "primary"  | "disabled"}} props*/
 export const DefaultButton = ({ color = "primary", ...props }) => {
   return (
     <button

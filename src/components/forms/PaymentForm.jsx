@@ -1,3 +1,4 @@
+import { CardsLogoList } from "../lists/CardsLogoList";
 import { CustomInput } from "./CustomInput";
 import { DateInput } from "./dateInput";
 
@@ -10,7 +11,9 @@ const maxDate = (event) => {
 export const PaymentForm = () => {
   return (
     <fieldset className="w-full h-auto bg-lightGrey rounded-lg pb-4">
-      <div className="h-14 w-full bg-red-500 mb-4"></div>
+      <div className="w-full h-14 bg-white border-x border-t border-border mb-4  rounded-t-md">
+      <CardsLogoList />
+      </div>
       <form action="" className="flex flex-col gap-4 w-5/6 h-auto mx-auto">
         <CustomInput
           text={false}

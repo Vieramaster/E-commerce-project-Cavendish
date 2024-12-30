@@ -3,7 +3,7 @@ import "../../types";
 /**@param {{product: CartProduct[], totalItems:number, price:number, isOpen:boolean}} props*/
 export const CheckOutProducts = ({ product, totalItems, price, isOpen }) => {
   // sum of the height of the product list and the height of gap between the elements in the list
-  const variableHeight = 5 * product.length + product.length * 2;
+  const variableHeight = (6 * product.length) + ( product.length * 3);
 
   return (
     <div

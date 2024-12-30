@@ -18,12 +18,12 @@ export const CheckOutProductList = ({ product, heightUl }) => {
         }) => {
           return (
             <li
-              className="w-full h-20 flex justify-between items-center text-mainColor"
+              className="w-full h-16 flex justify-between items-center text-mainColor md:h-20"
               key={name}
             >
-              <picture className="size-20 rounded-md relative">
+              <picture className="size-16 rounded-md relative md:size-20">
                 <img src={imagesColor[0]} alt={name} className="rounded-md" />
-                <span className="absolute  size-6 -top-2 -right-2 rounded-full bg-textColor opacity-90 grid place-content-center">
+                <span className="absolute  size-4 -top-1 -right-1 rounded-full bg-textColor opacity-90 grid place-content-center md:size-6 md:-top-2 lg:-right-2">
                   <p className=" font-alternative text-white">
                     {quantityClothes}
                   </p>

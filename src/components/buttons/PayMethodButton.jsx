@@ -2,9 +2,10 @@ const color = {
   shopPay: "bg-shopPayButton hover:bg-shopPayButtonHover",
   paypal: "bg-payPalButton hover:bg-payPalButtonHover",
   googlePay: "bg-black hover:opacity-85",
+
 };
 
-/** @param {JSX.IntrinsicElements['button'] & {readonly colorButton: "shopPay" | "paypal" | "googlePay" }} props*/
+/** @param {JSX.IntrinsicElements['button'] & {readonly colorButton: "shopPay" | "paypal" | "googlePay"}} props*/
 export const PayMethodButton = ({
   colorButton = "shopPay",
 

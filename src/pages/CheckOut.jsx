@@ -35,7 +35,6 @@ const CheckOut = () => {
     };
   }, [handleResize]);
 
-  const classH3 = "";
   return (
     <>
       <HeaderLight isHidden={!isMobile} />
@@ -68,8 +67,37 @@ const CheckOut = () => {
             <h3 className="text-3xl font-semibold my-2 text-start  w-full">
               Payment
             </h3>
-            <PaymentForm/>
-            
+            <PaymentForm />
+            <div className="h-14 w-full flex justify-between items-center text-lg lg:text-2xl ">
+              <p className="font-semibold">Subtotal: {cart.length} items</p>
+              <p className="font-semibold"> Total: ${sumPrice}</p>
+            </div>
+            <button className="w-full bg-mainColor hover:bg-hover duration-200 ease-in-out h-14 font-alternative font-semibold text-white rounded-md ">
+              Pay now
+            </button>
+
+            <p className="text-sm  text-left w-full text-lightTextColor lg:text-md">
+              Your info will be saved to a Shop account. By continuing, you
+              agree to Shop’s{" "}
+              <span>
+                <a
+                  href="https://shop.app/terms-of-service"
+                  className="text-links underline"
+                >
+                  Terms of Service
+                </a>
+              </span>
+              and acknowledge the
+              <span>
+                <a
+                  href="https://www.shopify.com/legal/privacy/app-users"
+                  className="text-links underline"
+                >
+                  Privacy Policy
+                </a>
+              </span>
+              .
+            </p>
           </div>
         </div>
       </section>
