@@ -3,12 +3,13 @@ import "../../types";
 /**@param {{product: CartProduct[], totalItems:number, price:number, isOpen:boolean}} props*/
 export const CheckOutProducts = ({ product, totalItems, price, isOpen }) => {
   // sum of the height of the product list and the height of gap between the elements in the list
-  const variableHeight = (6 * product.length) + ( product.length * 3);
+  // total products +  total gap + margin top and bottom
+  const variableHeight = product.length * 5 + product.length * 2 + 4;
 
   return (
     <div
       className="duration-300 ease-in-out flex flex-col  overflow-hidden "
-      style={{ height: isOpen ? `${variableHeight + 2}rem` : "0" }}
+      style={{ height: isOpen ? `${variableHeight}rem` : "0" }}
     >
       <CheckOutProductList product={product} heightUl={variableHeight} />
 

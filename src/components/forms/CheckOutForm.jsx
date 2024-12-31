@@ -1,75 +1,93 @@
-import { CustomInput } from "./CustomInput";
+import { useCallback, useState } from "react";
+import { DeliveryFormPart } from "./DeliveryFormPart";
+import { PaymentFormPart } from "./PaymentFormPart";
+import { useCart } from "../../hooks/useZustand";
+import { totalPrice } from "../../hooks/useMathOperations";
+import { WidthButton } from "../buttons/WidthButton";
+
+const h3Class = "text-3xl font-semibold my-2 text-start  w-ful";
 
 export const CheckOutForm = () => {
+  const [formData, setFormData] = useState({
+    country: "",
+    firstName: "",
+    lastName: "",
+    address: "",
+    apartament: "",
+    city: "",
+    postalCode: "",
+    phone: "",
+    cardNumber: "",
+    expirationDay: "",
+    expirationYear: "",
+    securityCode: "",
+    nameOnCard: "",
+  });
+
+  const { cart } = useCart();
+  const sumPrice = totalPrice(cart);
+
+  const handleInputLimit = useCallback(
+    (/** @type {React.ChangeEvent<HTMLInputElement>} */ event) => {
+      const maxLength = Number(event.currentTarget.dataset.maxlength);
+      const { value } = event.currentTarget;
+
+      if (!isNaN(maxLength) && maxLength > 0) {
+        event.currentTarget.value = value.slice(0, maxLength);
+      }
+    },
+    []
+  );
+  /**@param {React.ChangeEvent<HTMLInputElement | HTMLSelectElement>}  event*/
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (
+    /** @type {{ preventDefault: () => void; }} */ event
+  ) => {
+    event.preventDefault();
+    if (Object.values(formData).every((value) => value !== "")) {
+      try {
+        const response = await fetch("/api/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error("Error sending form");
+        }
+        const result = await response.json();
+        console.log("sent successfully:", result);
+        alert("Form submitted successfully");
+      } catch (error) {
+        console.error("Error!:", error);
+        alert("There was an error submitting the form. Please try again..");
+      }
+    } 
+  };
+
   return (
     <fieldset className="min-h-96 w-full h-auto relative">
-      <legend className="text-3xl font-semibold my-2 ">Delivery</legend>
-      <form className="flex flex-col gap-4">
-        <div className="relative">
-          <span className="absolute top-2 left-3 text-gray-500 text-sm pointer-events-none">
-            Selecciona tu país
-          </span>
-          <select
-            name="country"
-            id="countryForm"
-            className="w-full h-14 border border-border rounded-md pt-5 pl-3 focus:outline-subdued
-            "
-            aria-labelledby="select country"
-          >
-            <option value="Argentina">Argentina</option>
-            <option value="Mexico">Mexico</option>
-            <option value="Brazil">Brazil</option>
-            <option value="Uruguay">Uruguay</option>
-            <option value="Chile">Chile</option>
-          </select>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-3 w-full h-auto ">
-          <CustomInput
-            text
-            smallInput
-            placeholder="First name"
-            aria-label="Enter your first name"
-          />
-          <CustomInput
-            text
-            smallInput
-            placeholder="Last name"
-            aria-label="Enter your last name"
-          />
-        </div>
-        <CustomInput
-          text
-          smallInput={false}
-          placeholder="Address"
-          aria-label="Enter your address"
+      <form className="flex flex-col gap-4" onClick={handleSubmit}>
+        <h3 className={h3Class}>Delivery</h3>
+        <DeliveryFormPart {...{ handleInputChange, formData }} />
+        <h3 className={`${h3Class} mt-8`}>Payment</h3>
+        <PaymentFormPart
+          {...{ handleInputLimit, formData, handleInputChange }}
         />
-        <CustomInput
-          text
-          smallInput={false}
-          placeholder="Apartament, suite, etc.(optional)"
-          aria-label="Enter your number of apartament, house, etc. (optional)"
-        />
-        <div className="flex flex-col sm:flex-row gap-3 w-full h-auto ">
-          <CustomInput
-            text
-            smallInput
-            placeholder="City"
-            aria-label="Enter your city"
-          />
-          <CustomInput
-            text={false}
-            smallInput
-            placeholder="Postal code"
-            aria-label="Enter your postal code"
-            
-          />
+        <div className="h-14 w-full flex justify-between items-center text-lg lg:text-2xl ">
+          <p className="font-semibold">Subtotal: {cart.length} items</p>
+          <p className="font-semibold"> Total: ${sumPrice}</p>
         </div>
-        <CustomInput
-          text={false}
-          smallInput={false}
-          placeholder="Phone"
-          aria-label="Enter your phone number"
-        />
+        <WidthButton color="mainColor" type="submit">
+          Pay now
+        </WidthButton>
       </form>
     </fieldset>
   );

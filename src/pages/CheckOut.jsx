@@ -7,7 +7,6 @@ import { PayMethodList } from "../components/lists/PayMethodList";
 import { TextSeparator } from "../components/TextSeparator";
 import { CheckOutForm } from "../components/forms/CheckOutForm";
 import { useCart } from "../hooks/useZustand";
-import { PaymentForm } from "../components/forms/PaymentForm";
 
 const CheckOut = () => {
   const [expandList, setExpandList] = useState(false);
@@ -38,15 +37,15 @@ const CheckOut = () => {
   return (
     <>
       <HeaderLight isHidden={!isMobile} />
-      <section className="bg-white w-full h-auto flex flex-col lg:flex-row-reverse">
-        <div className="w-full h-auto lg:w-1/2 lg:h-screen lg:bg-lightGrey lg:pt-20">
+      <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative">
+        <div className="w-full h-auto lg:w-1/2 lg:h-screen lg:bg-lightGrey lg:pt-20 lg:fixed lg:right-0 ">
           <SummaryShopButton
             changeArrow={false}
             totalPrice={sumPrice}
             onClick={handleExpandList}
             disabled={!isMobile}
           />
-          <div className="w-5/6 h-auto mx-auto overflow-y-auto">
+          <div className="w-5/6 h-auto mx-auto overflow-y-auto ">
             <CheckOutProducts
               product={cart}
               totalItems={items}
@@ -55,7 +54,7 @@ const CheckOut = () => {
             />
           </div>
         </div>
-        <div className="h-auto lg:w-1/2 lg:overflow-y-auto  text-textColor">
+        <div className="h-auto lg:w-1/2 lg:overflow-y-auto  text-textColor mb-10 ">
           <HeaderLight isHidden={isMobile} />
           <div className="w-5/6 mx-auto flex flex-col gap-4 justify-center items-center">
             <h3 className="text-center items-center  text-lg mt-5">
@@ -64,17 +63,6 @@ const CheckOut = () => {
             <PayMethodList />
             <TextSeparator>OR</TextSeparator>
             <CheckOutForm />
-            <h3 className="text-3xl font-semibold my-2 text-start  w-full">
-              Payment
-            </h3>
-            <PaymentForm />
-            <div className="h-14 w-full flex justify-between items-center text-lg lg:text-2xl ">
-              <p className="font-semibold">Subtotal: {cart.length} items</p>
-              <p className="font-semibold"> Total: ${sumPrice}</p>
-            </div>
-            <button className="w-full bg-mainColor hover:bg-hover duration-200 ease-in-out h-14 font-alternative font-semibold text-white rounded-md ">
-              Pay now
-            </button>
 
             <p className="text-sm  text-left w-full text-lightTextColor lg:text-md">
               Your info will be saved to a Shop account. By continuing, you
@@ -82,7 +70,7 @@ const CheckOut = () => {
               <span>
                 <a
                   href="https://shop.app/terms-of-service"
-                  className="text-links underline"
+                  className="text-links underline mx-[0.2rem]"
                 >
                   Terms of Service
                 </a>
@@ -91,7 +79,7 @@ const CheckOut = () => {
               <span>
                 <a
                   href="https://www.shopify.com/legal/privacy/app-users"
-                  className="text-links underline"
+                  className="text-links underline mx-[0.2rem]"
                 >
                   Privacy Policy
                 </a>

@@ -98,3 +98,34 @@
  * @property { "shopPay" | "paypal" | "googlePay"} name
  * @property {React.FC} Component
  */
+
+/**
+ * @typedef {Object} paymentFormData
+ * @property {string} country
+ * @property {string} firstName
+ * @property {string} lastName
+ * @property {string} address
+ * @property {string} apartament
+ * @property {string} city
+ * @property {string} postalCode
+ * @property {string} phone
+ * @property {string} cardNumber
+ * @property {string} expirationDay
+ * @property {string} expirationYear
+ * @property {string} securityCode
+ * @property {string} nameOnCard
+ */
+/**
+ * @param {Object} props 
+ * @param {Object} props.formData
+ * @param {string} props.formData.country
+ * @param {string} props.formData.firstName
+ * @param {string} props.formData.lastName
+ * @param {string} props.formData.address
+ * @param {string} props.formData.apartament
+ * @param {string} props.formData.city
+ * @param {string} props.formData.postalCode
+ * @param {string} props.formData.phone
+ * @param {Function} props.handleInputChange
+ * @returns {JSX.Element}
+ */
