@@ -11,6 +11,7 @@ export const listShop = [
   { path: "/shop/pants_and_jeans", name: "Pants & Jeans" },
   { path: "/shop/sweaters", name: "Sweaters" },
   { path: "/shop/shirts", name: "Shirts" },
+  { path: "/shop/shoes", name: "Shoes" },
 ];
 
 export const NavbarListShop = () => {

@@ -3213,6 +3213,135 @@
                 }
             ]
         }
+    ],
+    "shoes": [
+        {
+            "idProduct": 74,
+            "name": "Alfira Sneakers",
+            "description": "lorem20",
+            "category": "sneakers",
+            "clothes": "shoes",
+            "price": 75,
+            "realPrice": 75,
+            "discount": false,
+            "newArrival": true,
+            "outlet": false,
+            "colors": [
+                {
+                    "colorName": "kaki",
+                    "hex": "#9b7846",
+                    "imagesColor": [
+                        "/images/shop/shoes/alfira_shoes_kaki1.webp",
+                        "/images/shop/shoes/alfira_shoes_kaki2.webp",
+                        "/images/shop/shoes/alfira_shoes_kaki3.webp"
+                    ],
+                    "sizes": {
+                        "39": 10,
+                        "40": 3,
+                        "41": 5,
+                        "42": 5,
+                        "43": 3,
+                        "44": 3,
+                        "45": 0
+                    }
+                }
+            ]
+        },
+        {
+            "idProduct": 75,
+            "name": "Alfort Sneakers",
+            "description": "lorem20",
+            "category": "sneakers",
+            "clothes": "shoes",
+            "price": 65,
+            "realPrice": 65,
+            "discount": false,
+            "newArrival": true,
+            "outlet": false,
+            "colors": [
+                {
+                    "colorName": "aero",
+                    "hex": "#2d3f59",
+                    "imagesColor": [
+                        "/images/shop/shoes/alfort_shoes_aero1.webp",
+                        "/images/shop/shoes/alfort_shoes_aero2.webp",
+                        "/images/shop/shoes/alfort_shoes_aero3.webp"
+                    ],
+                    "sizes": {
+                        "39": 10,
+                        "40": 3,
+                        "41": 5,
+                        "42": 0,
+                        "43": 3,
+                        "44": 3,
+                        "45": 0
+                    }
+                }
+            ]
+        },
+        {
+            "idProduct": 76,
+            "name": "Combine Sneakers",
+            "description": "lorem20",
+            "category": "sneakers",
+            "clothes": "shoes",
+            "price": 65,
+            "realPrice": 65,
+            "discount": false,
+            "newArrival": true,
+            "outlet": false,
+            "colors": [
+                {
+                    "colorName": "black",
+                    "hex": "#000000",
+                    "imagesColor": [
+                        "/images/shop/shoes/combine_shoes_black1.webp",
+                        "/images/shop/shoes/combine_shoes_black2.webp",
+                        "/images/shop/shoes/combine_shoes_black3.webp"
+                    ],
+                    "sizes": {
+                        "39": 10,
+                        "40": 0,
+                        "41": 5,
+                        "42": 0,
+                        "43": 3,
+                        "44": 3,
+                        "45": 0
+                    }
+                }
+            ]
+        },
+        {
+            "idProduct": 77,
+            "name": "Fancy Sneakers",
+            "description": "lorem20",
+            "category": "sneakers",
+            "clothes": "shoes",
+            "price": 55,
+            "realPrice": 65,
+            "discount": true,
+            "newArrival": false,
+            "outlet": false,
+            "colors": [
+                {
+                    "colorName": "light grey",
+                    "hex": "#cfcfd1",
+                    "imagesColor": [
+                        "/images/shop/shoes/fancy_shoes_lightGrey1.webp",
+                        "/images/shop/shoes/fancy_shoes_lightGrey2.webp",
+                        "/images/shop/shoes/fancy_shoes_lightGrey3.webp"
+                    ],
+                    "sizes": {
+                        "39": 10,
+                        "40": 0,
+                        "41": 5,
+                        "42": 2,
+                        "43": 3,
+                        "44": 3,
+                        "45": 1
+                    }
+                }
+            ]
+        }
     ]
-
 }
