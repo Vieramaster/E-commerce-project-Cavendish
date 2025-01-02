@@ -5,6 +5,7 @@ import { News } from "../components/sections/News";
 import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { useFetch } from "../hooks/useFetch";
 import { Introduction } from "../components/sections/Introduction";
+import { usePercentage } from "../hooks/useMathOperations";
 import "../types";
 
 const news = [
@@ -44,6 +45,18 @@ const Home = () => {
     null
   );
 
+  const { data: discountProduct } = useFetch(
+    "/data/clothes_for_e-commerse.json",
+    undefined,
+    "alfira"
+  );
+
+
+
+  console.log(discountProduct)
+  const sellCounterImage = colors[0].imagesColor[0];
+
+  const discountPrice = usePercentage(price, realPrice);
   return (
     <>
       <Introduction />
@@ -51,12 +64,13 @@ const Home = () => {
       <ShoppingCards shopArray={newArrivals} title={"Best Sellers"} />
 
       <SellCounter
-        afterPrice={"$180"}
-        beforePrice={"$50"}
-        discount={"-70% OFF"}
-        image={"/images/imagePages/shoes.webp"}
-        timeDate={"Dec 14, 2024 00:00:00"}
-        imageAlt={"shoes discount"}
+        afterPrice={realPrice}
+        beforePrice={price}
+        discount={discountPrice}
+        image={sellCounterImage}
+        timeDate={"feb 15, 2025 00:00:00"}
+        imageAlt={name}
+        page="/shop/shoes/74"
       />
       <News mainTitle={"Latest News"} arrayNews={news} />
       <SubscribeBanner />

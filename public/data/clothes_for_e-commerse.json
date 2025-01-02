@@ -3221,11 +3221,11 @@
             "description": "lorem20",
             "category": "sneakers",
             "clothes": "shoes",
-            "price": 75,
-            "realPrice": 75,
-            "discount": false,
-            "newArrival": true,
-            "outlet": false,
+            "price": 50,
+            "realPrice": 180,
+            "discount": true,
+            "newArrival":false,
+            "outlet": true,
             "colors": [
                 {
                     "colorName": "kaki",
