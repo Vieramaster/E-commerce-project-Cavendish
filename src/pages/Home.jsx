@@ -51,27 +51,27 @@ const Home = () => {
     "alfira"
   );
 
-
-
-  console.log(discountProduct)
-  const sellCounterImage = colors[0].imagesColor[0];
-
-  const discountPrice = usePercentage(price, realPrice);
   return (
     <>
       <Introduction />
       <BannerLogos />
       <ShoppingCards shopArray={newArrivals} title={"Best Sellers"} />
-
-      <SellCounter
-        afterPrice={realPrice}
-        beforePrice={price}
-        discount={discountPrice}
-        image={sellCounterImage}
-        timeDate={"feb 15, 2025 00:00:00"}
-        imageAlt={name}
-        page="/shop/shoes/74"
-      />
+      {discountProduct[0] &&
+        (() => {
+          const { name, price, realPrice, idProduct, clothes } =
+            discountProduct[0];
+          return (
+            <SellCounter
+              discount={usePercentage(price, realPrice)}
+              afterPrice={realPrice}
+              beforePrice={price}
+              image={"/public/images/imagePages/shoes.webp"}
+              timeDate={"feb 15, 2025 00:00:00"}
+              imageAlt={name}
+              page={`/shop/${clothes}/${idProduct}`}
+            />
+          );
+        })()}
       <News mainTitle={"Latest News"} arrayNews={news} />
       <SubscribeBanner />
     </>

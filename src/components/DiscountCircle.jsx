@@ -1,4 +1,4 @@
-import { usePercentage } from "../hooks/usePercentage";
+import { usePercentage } from "../hooks/useMathOperations";
 import "../types";
 
 /**@param {{discount:boolean, realPrice:number, price:number, maxSize:boolean }} props*/

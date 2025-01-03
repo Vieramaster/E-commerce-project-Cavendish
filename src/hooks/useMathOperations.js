@@ -23,7 +23,8 @@ export const totalPriceItem = (a, b) => {
  * */
 
 export const usePercentage = (numb1, numb2) => {
-  const diff = Math.abs(numb1 - numb2);
-  const prom = (numb1 + numb2) / 2;
-  return Math.floor((diff / prom) * 100);
+  const originalPrice = Math.max(numb1, numb2);
+  const discountedPrice = Math.min(numb1, numb2);
+  const discount = originalPrice - discountedPrice;
+  return Math.floor((discount / originalPrice) * 100);
 };

@@ -23,8 +23,8 @@ export const SellCounter = ({
     <section className="w-full py-6 bg-mainColor flex justify-center lg:h-80 2xl:h-96 ">
       <div className="w-80 h-full flex  flex-col gap-8 lg:flex-row lg:w-5/6 lg:justify-around lg:gap-5 ">
         <div className="w-full flex flex-col gap-3 text-white lg:w-96 2xl:w-[30rem] ">
-          <p className="font-alternative font-bold text-4xl text-center lg:text-start 2xl:text-5xl">
-            {discount}
+          <p className="font-alternative font-bold text-4xl text-center lg:pl-3 lg:text-start 2xl:text-5xl">
+            {discount}% OFF
           </p>
           <img src={image} alt={imageAlt} className="w-full" />
           <div className="flex justify-center  items-center gap-5 lg:justify-start 2xl:gap-8">
