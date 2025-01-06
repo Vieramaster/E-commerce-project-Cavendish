@@ -1,9 +1,9 @@
-import { Outlet } from "react-router-dom";
+import CheckOut from "../pages/CheckOut"
 
 const LayoutCheckOut = () => {
   return (
     <main>
-      <Outlet />
+      <CheckOut />
     </main>
   );
 };

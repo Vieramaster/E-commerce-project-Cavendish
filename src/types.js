@@ -116,7 +116,7 @@
  * @property {string} nameOnCard
  */
 /**
- * @param {Object} props 
+ * @param {Object} props
  * @param {Object} props.formData
  * @param {string} props.formData.country
  * @param {string} props.formData.firstName
@@ -128,4 +128,29 @@
  * @param {string} props.formData.phone
  * @param {Function} props.handleInputChange
  * @returns {JSX.Element}
+ */
+
+/**
+ * @typedef {object} source
+ * @property {string} id
+ * @property {string} name
+ */
+/**
+ * @typedef {object} news
+ * @property {string} author
+ * @property {string} content
+ * @property {string} description
+ * @property {string} publishedAt
+ * @property {string} title
+ * @property {string} url
+ * @property {string} urlToImage
+ *   @property {object} source
+ */
+
+/**
+ * @typedef {object} DeliveryTableItem
+ * @property {string} country
+ * @property {string} DeliveryMethod
+ * @property {string} cost
+ * @property {string} DeliveryTimes
  */

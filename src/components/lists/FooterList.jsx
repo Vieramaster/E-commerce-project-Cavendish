@@ -1,7 +1,7 @@
 import { PageLogo } from "../links/PageLogo";
 
-/** @typedef {{path:string, label:string}[]} list*/
-/** @typedef {{key:string, title:string, items:list}[]} listType*/
+/** @typedef {{path:string, label:string, url:string}[]} list*/
+/** @typedef {{key:string, title:string, items:list,}[]} listType*/
 
 /** @type { listType} */
 const menuListFooter = [
@@ -9,27 +9,27 @@ const menuListFooter = [
     key: "HelpAndInformation",
     title: "Help & Information",
     items: [
-      { path: "Help", label: "Help" },
-      { path: "trackOrder", label: "Track order" },
-      { path: "DeliveryAndReturns", label: "Delivery & returns" },
+      { path: "Contact", label: "Contact", url: "/contact" },
+      { path: "Delivery", label: "Delivery", url: "/delivery" },
+      { path: "DeliveryAndReturns", label: "Delivery & returns", url: "" },
     ],
   },
   {
     key: "AboutCavendish",
     title: "About Cavendish",
     items: [
-      { path: "AboutUs", label: "About us" },
-      { path: "Careers", label: "Careers of Cavendish" },
-      { path: "InvestorsSite", label: "Investors site" },
+      { path: "AboutUs", label: "About us", url: "" },
+      { path: "Careers", label: "Careers of Cavendish", url: "" },
+      { path: "InvestorsSite", label: "Investors site", url: "" },
     ],
   },
   {
     key: "MoreFromCavendish",
     title: "More From Cavendish",
     items: [
-      { path: "Mobile", label: "Mobile and apps" },
-      { path: "GiftVouchers", label: "Gift vouchers" },
-      { path: "BlackFriday", label: "Black friday" },
+      { path: "Mobile", label: "Mobile and apps", url: "" },
+      { path: "GiftVouchers", label: "Gift vouchers", url: "" },
+      { path: "BlackFriday", label: "Black friday", url: "" },
     ],
   },
 ];
@@ -44,11 +44,11 @@ export const FooterList = () => {
         <div key={key} className="py-10">
           <h3 className="text-xl font-alternative">{title}</h3>
           <ul className="mt-5">
-            {items.map(({ path, label }) => (
+            {items.map(({ path, label, url }) => (
               <li key={path}>
                 <a
                   className="text-border hover:text-white duration-200 ease-in-out"
-                  href="https://www.youtube.com/watch?v=QB7ACr7pUuE"
+                  href={url}
                 >
                   {label}
                 </a>

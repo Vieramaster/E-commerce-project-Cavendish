@@ -6,39 +6,14 @@ import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { useFetch } from "../hooks/useFetch";
 import { Introduction } from "../components/sections/Introduction";
 import { usePercentage } from "../hooks/useMathOperations";
+import {useFetchNews} from "../hooks/useFetchNews"
 import "../types";
 
-const news = [
-  {
-    id: "news0001",
-    image: "images/imagePages/news1.webp",
-    imageAlt: "outfits",
-    date: "10/10/2024",
-    title: "Lorem ipsum dolor sit",
-    introduction:
-      "Impedit laborum ex? Quasi officia nulla atque sunt iusto l Quasi officia",
-  },
-  {
-    id: "news0002",
-    image: "images/imagePages/news2.webp",
-    imageAlt: "outfits",
-    date: "10/10/2024",
-    title: "Lorem ipsum dolor sit",
-    introduction:
-      "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto l Quasi officia",
-  },
-  {
-    id: "0003",
-    image: "images/imagePages/news3.webp",
-    imageAlt: "outfits",
-    date: "10/10/2024",
-    title: "Lorem ipsum dolor sit",
-    introduction:
-      "Impedit laborum explicabo quo ex? Quasi officia nulla atque sunt iusto ",
-  },
-];
 
 const Home = () => {
+
+  const { newsData, error:newsError } = useFetchNews(); 
+
   const { data: newArrivals } = useFetch(
     "/data/best_sellers.json",
     undefined,
@@ -51,6 +26,7 @@ const Home = () => {
     "alfira"
   );
 
+  
   return (
     <>
       <Introduction />
@@ -72,7 +48,7 @@ const Home = () => {
             />
           );
         })()}
-      <News mainTitle={"Latest News"} arrayNews={news} />
+      <News error={newsError} arrayNews={newsData} />
       <SubscribeBanner />
     </>
   );

@@ -4,10 +4,10 @@ import { NavListLinks } from "../links/NavListLinks";
 /**@type {Array<{path:string, name:string}>} */
 export const ListEmprise = [
   { path: "/Login_and_Registrer", name: "Log in/Register" },
-  { path: "/Stores", name: "Stores" },
-  { path: "/Contact", name: "Contact" },
-  { path: "/Partner", name: "Partner with us" },
-  { path: "/Help", name: "Help" },
+  { path: "/stores", name: "Stores" },
+  { path: "/contact", name: "Contact" },
+  { path: "/partner", name: "Partner with us" },
+  { path: "/help", name: "Help" },
 ];
 
 export const NavbarListData = () => {
