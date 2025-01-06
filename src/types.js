@@ -144,13 +144,19 @@
  * @property {string} title
  * @property {string} url
  * @property {string} urlToImage
- *   @property {object} source
+ * @property {object} source
  */
-
 /**
- * @typedef {object} DeliveryTableItem
+ * @typedef {object} TdText
  * @property {string} country
  * @property {string} DeliveryMethod
  * @property {string} cost
  * @property {string} DeliveryTimes
  */
+
+/**
+ * @typedef {object} DeliveryTableItem
+ * @property {string[]} thTitles
+ * @property {TdText[]} tdText
+ */
+
