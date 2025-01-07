@@ -11,7 +11,8 @@ const menuListFooter = [
     items: [
       { path: "Contact", label: "Contact", url: "/contact" },
       { path: "Delivery", label: "Delivery", url: "/delivery" },
-      { path: "DeliveryAndReturns", label: "Delivery & returns", url: "" },
+      { path: "returns", label: "Returns & Exchanges", url: "/returns" },
+      { path: "productCare", label: "Product care", url: "/productCare" },
     ],
   },
   {

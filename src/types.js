@@ -160,3 +160,8 @@
  * @property {TdText[]} tdText
  */
 
+/**
+ * @typedef {object} informationList
+ * @property {string} title
+ * @property {JSX.Element} text
+ */

@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 import { useEffect, useState } from "react";
-import "../types"
+import "../types";
 
 /**
  * @returns {{newsData: news[], error: boolean, loading: boolean}}
@@ -12,7 +12,6 @@ export const useFetchNews = () => {
 
   const API_NEWS_KEY = import.meta.env.VITE_API_NEWS_KEY;
   const URL = `https://newsapi.org/v2/top-headlines?q=men&language=en&pageSize=4&apiKey=${API_NEWS_KEY}`;
-
 
   useEffect(() => {
     const controller = new AbortController();
@@ -31,7 +30,7 @@ export const useFetchNews = () => {
         if (data.status !== "ok") {
           throw new Error(`API error: ${data.message || "Unknown error"}`);
         }
-        setNewsData(data.articles || []); 
+        setNewsData(data.articles || []);
         setError(false);
       })
       .catch((err) => {

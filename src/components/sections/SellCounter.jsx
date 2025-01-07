@@ -3,8 +3,7 @@ import { CountdownCard } from "../cards/CountdownCard";
 import { DefaultButtonLink } from "../links/DefaultButtonLink";
 import { ShoppingCartIco } from "../SVGs/icons/ShoppingCartIco";
 
-const textStyles =
-  "font-alternative  font-semibold text-2xl lg:text-3xl 2xl:text-3xl";
+
 
 /** @param {{discount:number, afterPrice:number, beforePrice:number, image:string, timeDate:string, imageAlt:string, page:string}} props*/
 export const SellCounter = ({
