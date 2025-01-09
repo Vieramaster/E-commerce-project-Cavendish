@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { DeliveryTablePage } from "../components/DeliveyTablePage";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const textTable = [
   {
@@ -90,6 +91,7 @@ const listUL = [
 ];
 
 const Delivery = () => {
+  useDocumentTitle("Delivery")
   return (
     <section className="w-full h-auto pt-28 bg-background">
       <div className="w-5/6 h-auto mx-auto py-10 text-textColor flex flex-col gap-3">

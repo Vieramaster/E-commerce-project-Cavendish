@@ -1,9 +1,13 @@
+import useDocumentTitle from "../hooks/useDocumentTitle";
+
 const Contact = () => {
+  useDocumentTitle("Contact")
+  
   return (
     <section className="w-full h-screen pt-28 relative flex">
       <div className="absolute inset-0 bg-[url('/images/main/background2.webp')] bg-cover bg-center filter blur-sm" />
 
-      <div className="relative z-10 w-5/6 h-auto m-auto flex flex-col gap-5 py-10 px-5 text-start text-textColor bg-background opacity-90 rounded-md">
+      <article className="relative z-10 w-5/6 h-auto m-auto flex flex-col gap-5 py-10 px-5 text-start text-textColor bg-background opacity-90 rounded-md">
         <h1 className="font-bold text-2xl">Contact</h1>
         <p>
           Our Customer Service team is always happy to hear from you and answer
@@ -28,7 +32,7 @@ const Contact = () => {
         <p>
           <strong>Email:</strong> support@cavendishcountry.com
         </p>
-      </div>
+      </article>
     </section>
   );
 };

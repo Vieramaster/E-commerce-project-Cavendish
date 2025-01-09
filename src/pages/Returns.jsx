@@ -1,5 +1,6 @@
-import { useState } from "react";
+
 import { InformationList } from "../components/lists/InformationList";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const link = (
   <a href="/https://youtu.be/watch?v=xvFZjo5PgG0" className="underline">
@@ -134,10 +135,10 @@ const faqList = [
 const h3Class = "text-lg font-medium mt-5";
 
 const Returns = () => {
-
+  useDocumentTitle("Returns")
   return (
     <section className="w-full h-auto pt-28 bg-background">
-      <div className=" w-5/6 flex flex-col gap-4 mx-auto py-16 text-textColor">
+      <article className=" w-5/6 flex flex-col gap-4 mx-auto py-16 text-textColor">
         <h1 className="text-3xl font-semibold">Returns & Exchanges</h1>
         <p>
           At Cavendish Country, we are committed to ensuring your complete
@@ -156,7 +157,7 @@ const Returns = () => {
         </p>
         <h3 className={h3Class}>Returns FAQs</h3>
         <InformationList arrayObject={faqList} />
-      </div>
+      </article>
     </section>
   );
 };

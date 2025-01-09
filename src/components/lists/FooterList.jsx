@@ -19,7 +19,7 @@ const menuListFooter = [
     key: "AboutCavendish",
     title: "About Cavendish",
     items: [
-      { path: "AboutUs", label: "About us", url: "" },
+      { path: "About us", label: "About us", url: "/About_us" },
       { path: "Careers", label: "Careers of Cavendish", url: "" },
       { path: "InvestorsSite", label: "Investors site", url: "" },
     ],

@@ -2,11 +2,13 @@ import { useRouteError } from "react-router-dom";
 import { DefaultButtonLink } from "../components/links/DefaultButtonLink";
 import { Header } from "../components/sections/Header";
 import { Footer } from "../components/sections/Footer";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const ErrorPage = () => {
   const error = useRouteError();
   console.log(error);
 
+  useDocumentTitle("error!")
   return (
     <>
       <Header />

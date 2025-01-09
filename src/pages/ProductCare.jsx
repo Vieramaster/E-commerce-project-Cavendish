@@ -1,4 +1,6 @@
 import { InformationList } from "../components/lists/InformationList";
+import { ImageBanner } from "../components/ImageBanners";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const olClass = "list-disc pl-5 flex flex-col gap-2";
 const productCareList = [
@@ -112,25 +114,15 @@ const productCareList = [
   },
 ];
 const ProductCare = () => {
+  useDocumentTitle("Product care");
   return (
     <section className="w-full h-auto bg-background pt-28">
-      <picture className="w-full h-auto bg-cover relative">
-        <h1 className="absolute text-white text-2xl font-bold font-alternative top-1/2 pl-10 md:text-4xl lg:text-5xl 2xl:text-6xl">
-          Product care
-        </h1>
-        <source
-          srcSet="images/main/product-care-image-default.webp"
-          media="(min-width: 800px)"
-        />
-        <source
-          srcSet="images/main/product-care-image-small.webp"
-          media="(max-width: 799px)"
-        />
-        <img
-          src="images/main/product-care-image-default.webp"
-          alt="A responsive image example"
-        />
-      </picture>
+      <ImageBanner
+        title="Product care"
+        defaultImage="images/main/product-care-image-default.webp"
+        smallImage="images/main/product-care-image-small.webp"
+        altImage="image banner"
+      />
       <div className="w-5/6 mx-auto h-auto text-textColor">
         <h3 className="text-3xl font-bold my-10">General care</h3>
         <InformationList arrayObject={productCareList} />

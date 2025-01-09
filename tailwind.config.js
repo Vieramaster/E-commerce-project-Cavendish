@@ -32,6 +32,7 @@ export default {
         tobias: ["Tobias", "sans-serif"],
         alternative: ["Alternative", "sans-serif"],
       },
+      
     },
   },
   plugins: [],

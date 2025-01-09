@@ -7,11 +7,12 @@ import { useFetch } from "../hooks/useFetch";
 import { Introduction } from "../components/sections/Introduction";
 import { usePercentage } from "../hooks/useMathOperations";
 import {useFetchNews} from "../hooks/useFetchNews"
+import useDocumentTitle from "../hooks/useDocumentTitle";
 import "../types";
 
 
 const Home = () => {
-
+  useDocumentTitle("Best clothes for men")
   const { newsData, error:newsError } = useFetchNews(); 
 
   const { data: newArrivals } = useFetch(

@@ -12,6 +12,7 @@ const Contact = lazy(() => import("../pages/Contact"));
 const Delivery = lazy(() => import("../pages/Delivery"));
 const Returns = lazy(() => import("../pages/Returns"));
 const ProductCare = lazy(()=> import ("../pages/ProductCare"))
+const AboutUs = lazy(()=> import ("../pages/AboutUs"))
 // @ts-ignore
 const SuspenseWrapper = ({ children }) => (
   <Suspense fallback={<LoaderPage />}>{children}</Suspense>
@@ -84,6 +85,14 @@ export const router = createBrowserRouter([
         element: (
           <SuspenseWrapper>
             <ProductCare />
+          </SuspenseWrapper>
+        ),
+      },
+      {
+        path: "/About_us",
+        element: (
+          <SuspenseWrapper>
+            <AboutUs />
           </SuspenseWrapper>
         ),
       },

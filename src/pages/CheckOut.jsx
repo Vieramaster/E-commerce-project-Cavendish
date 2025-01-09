@@ -7,8 +7,10 @@ import { PayMethodList } from "../components/lists/PayMethodList";
 import { TextSeparator } from "../components/TextSeparator";
 import { CheckOutForm } from "../components/forms/CheckOutForm";
 import { useCart } from "../hooks/useZustand";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const CheckOut = () => {
+  useDocumentTitle("CheckOut");
   const [expandList, setExpandList] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const { cart } = useCart();

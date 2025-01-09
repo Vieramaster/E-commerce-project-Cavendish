@@ -7,7 +7,7 @@ export const ListEmprise = [
   { path: "/stores", name: "Stores" },
   { path: "/contact", name: "Contact" },
   { path: "/partner", name: "Partner with us" },
-  { path: "/help", name: "Help" },
+  { path: "/returns", name: "Returns & Exchanges" },
 ];
 
 export const NavbarListData = () => {

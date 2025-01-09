@@ -18,6 +18,7 @@ import {
 } from "../hooks/useSelectFilters";
 import { LoaderPage } from "../components/loaders/LoaderPage";
 import "../types";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
@@ -63,6 +64,7 @@ const PAGE_SIZE = 8;
 
 export const Shop = () => {
   const { category } = useParams();
+
   const [toggleGrid, setToggleGrid] = useState(false);
   const [sort, setSort] = useState(/** @type {FiltersString} */ ("default"));
   const [extendFilters, setExtendFilters] = useState(
@@ -71,6 +73,7 @@ export const Shop = () => {
   const [page, setPage] = useState(1);
   const resetPagination = useCallback(() => setPage(1), []);
 
+  category && useDocumentTitle(category.replace(/_/g, " "));
   // restart the grid for screen changes
   useResizeWindow(976, setToggleGrid);
 
