@@ -165,3 +165,12 @@
  * @property {string} title
  * @property {JSX.Element} text
  */
+
+/**
+ * @typedef {object} directionList
+ * @property {string}  localName
+ * @property {string}  city
+ * @property {string}  direction
+ * @property {string}  phone
+ * @property {string}  coordinates
+ */

@@ -50,7 +50,7 @@ const productCareList = [
     text: (
       <>
         <p>
-          For washing Schöffel products, use non-bio washing powder or gel and
+          For washing Cavendish products, use non-bio washing powder or gel and
           follow the label instructions to maintain your product effectively.
         </p>
         <br />
@@ -105,7 +105,7 @@ const productCareList = [
         </ol>
         <br />
         <p>
-          All down and feathers used in Schöffel products are RDS certified,
+          All down and feathers used in Cavendish products are RDS certified,
           reflecting our commitment to animal welfare under the Responsible Down
           Standard (RDS) certification.
         </p>
@@ -123,7 +123,7 @@ const ProductCare = () => {
         smallImage="images/main/product-care-image-small.webp"
         altImage="image banner"
       />
-      <div className="w-5/6 mx-auto h-auto text-textColor">
+      <div className="w-5/6 mx-auto h-auto text-textColor pb-10">
         <h3 className="text-3xl font-bold my-10">General care</h3>
         <InformationList arrayObject={productCareList} />
       </div>
