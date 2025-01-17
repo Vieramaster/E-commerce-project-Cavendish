@@ -1,25 +1,42 @@
-import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
-import "leaflet/dist/leaflet.css"; 
+import { MapContainer, TileLayer, Popup, Marker, useMap } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
-export const Maps = () => {
+/** @param {{ center: [number, number] }} props */
+const CenterMap = ({ center }) => {
+  const map = useMap();
+  map.setView(center, map.getZoom());
+  return null;
+};
+
+/** @param {{markers:directionList[], zoomMark:number[]}} props */
+export const Maps = ({ markers, zoomMark }) => {
+  
+  /**@type {[number,number]} */
+  const center =
+    Array.isArray(zoomMark) && zoomMark.length === 2
+      ? [zoomMark[0], zoomMark[1]]
+      : [markers[0].coordinates[0], markers[0].coordinates[1]];
+
   return (
     <div className="relative w-full h-96 z-0">
-
       <MapContainer
-        center={[-37.999652, -57.546397]}
+        center={center}
         zoom={16}
         scrollWheelZoom={false}
-        className="w-full h-full" 
+        className="w-full h-full"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[-37.999652, -57.546397]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+        {/* Hook para centrar el mapa */}
+        <CenterMap center={center} />
+
+        {markers?.map(({ localName, coordinates }, index) => (
+          <Marker key={index} position={coordinates}>
+            <Popup>{localName}</Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   );

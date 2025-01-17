@@ -172,5 +172,5 @@
  * @property {string}  city
  * @property {string}  direction
  * @property {string}  phone
- * @property {string}  coordinates
+ * @property {[number, number]}  coordinates
  */
