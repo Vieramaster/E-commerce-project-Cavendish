@@ -9,7 +9,7 @@ export const LocationButton = ({
 }) => {
   return (
     <button className="flex gap-10 w-full h-full" {...props}>
-      <div className="  size-5  fill-textColor">{icon}</div>
+      <div className="  size-5  fill-hover">{icon}</div>
       <div className="w-5/6 h-full text-start">
         <h3 className="font-semibold font-alternative text-lg">{localName}</h3>
         <p>{city}</p>

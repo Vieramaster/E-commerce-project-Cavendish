@@ -10,7 +10,6 @@ const CenterMap = ({ center }) => {
 
 /** @param {{markers:directionList[], zoomMark:number[]}} props */
 export const Maps = ({ markers, zoomMark }) => {
-  
   /**@type {[number,number]} */
   const center =
     Array.isArray(zoomMark) && zoomMark.length === 2
@@ -18,7 +17,7 @@ export const Maps = ({ markers, zoomMark }) => {
       : [markers[0].coordinates[0], markers[0].coordinates[1]];
 
   return (
-    <div className="relative w-full h-96 z-0">
+    <div className="relative w-full h-96 z-0 lg:w-3/5 lg:h-full">
       <MapContainer
         center={center}
         zoom={16}
@@ -29,12 +28,11 @@ export const Maps = ({ markers, zoomMark }) => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {/* Hook para centrar el mapa */}
         <CenterMap center={center} />
 
         {markers?.map(({ localName, coordinates }, index) => (
           <Marker key={index} position={coordinates}>
-            <Popup>{localName}</Popup>
+            <Popup  >{localName}</Popup>
           </Marker>
         ))}
       </MapContainer>

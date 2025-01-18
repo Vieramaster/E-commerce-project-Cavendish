@@ -21,7 +21,7 @@ const menuListFooter = [
     items: [
       { path: "About us", label: "About us", url: "/About_us" },
       { path: "Our story", label: "Our story", url: "/Our-story" },
-      { path: "InvestorsSite", label: "Investors site", url: "" },
+      { path: "store locator", label: "store locator", url: "/stores" },
     ],
   },
   {

@@ -10,7 +10,7 @@ export const DeliveryTablePage = ({ arrayTable }) => {
           key={tableIndex}
           className="w-full h-auto border rounded-md border-border text-center text-textColor flex-wrap my-4"
         >
-          <thead className="border border-border bg-gray-100">
+          <thead className="border border-border ">
             <tr>
               {thTitles?.map((item, index) => (
                 <th
