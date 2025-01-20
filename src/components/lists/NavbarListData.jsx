@@ -1,7 +1,13 @@
 import { NavbarUL } from "../simpleContainers/NavbarUL";
 import { NavListLinks } from "../links/NavListLinks";
 
-/**@type {Array<{path:string, name:string}>} */
+/**
+ * @type {{
+ * path:string,
+ * name:string
+ * }[]}
+ *
+ */
 export const ListEmprise = [
   { path: "/Login_and_Registrer", name: "Log in/Register" },
   { path: "/stores", name: "Stores" },
@@ -13,9 +19,9 @@ export const ListEmprise = [
 export const NavbarListData = () => {
   return (
     <NavbarUL>
-      {ListEmprise.map(({ path, name }, index) => {
+      {ListEmprise.map(({ path, name }) => {
         return (
-          <li key={index + name}>
+          <li key={name} aria-label={name}>
             <NavListLinks toPage={path} title={false}>
               {name}
             </NavListLinks>

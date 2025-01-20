@@ -86,12 +86,12 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
     navigate("/shop/search");
   };
 
+  const visibleMenu = open ? "top-28 opacity-100" : "top-5 opacity-0";
+  
   return (
     <fieldset
       ref={componentRef}
-      className={`fixed ${
-        open ? "top-28 opacity-100" : "top-5 opacity-0"
-      } h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-40 gap-5`}
+      className={`fixed h-14 w-full duration-500 ease-in-out transition-all flex justify-center items-center bg-white lg:h-20 z-40 gap-5 ${visibleMenu}`}
     >
       <form
         onSubmit={handleSubmit}

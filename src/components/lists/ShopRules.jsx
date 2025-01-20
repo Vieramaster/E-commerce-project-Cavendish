@@ -3,7 +3,7 @@ import { CoinIco } from "../SVGs/icons/CoinIco";
 import { ReplaceIco } from "../SVGs/icons/ReplaceIco";
 import { ShieldDolarIco } from "../SVGs/icons/ShieldDolarIco";
 
-/** @type {{name:string, Component: React.ComponentType, title: string}[]} */
+/** @type {BannerIcon[]} */
 export const bannerIcons = [
   { name: "Shipping", Component: TruckIco, title: "Free Shipping & Returns" },
   { name: "Guarantee", Component: CoinIco, title: "100% Money Back Guarantee" },
@@ -21,13 +21,19 @@ export const bannerIcons = [
 
 export const ShopRules = () => {
   return (
-    <ul className="w-full  py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between border-b-2 border-white ">
-      {bannerIcons?.map(({ Component, title, name }) => (
-        <li key={name} className="flex flex-col items-center">
+    <ul className="w-full py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between border-b-2 border-white">
+      {bannerIcons.map(({ Component, title, name }) => (
+        <li
+          key={name}
+          className="flex flex-col items-center"
+          aria-labelledby={`title-${name}`}
+        >
           <div className="size-10">
             <Component />
           </div>
-          <p className="text-center mt-3">{title}</p>
+          <p id={`title-${name}`} className="text-center mt-3">
+            {title}
+          </p>
         </li>
       ))}
     </ul>

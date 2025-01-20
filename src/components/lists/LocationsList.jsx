@@ -13,14 +13,17 @@ export const LocationsList = ({ list, handleFocusDirection, activeButton }) => {
     <ul className="w-full h-auto text-textColor lg:w-2/5 lg:overflow-y-auto">
       {list?.map(
         ({ localName, direction, phone, city, coordinates }, index) => {
+
+          const addLeftBorder =
+            activeButton[0] === coordinates[0] &&
+            activeButton[1] === coordinates[1]
+              ? "after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:border-l-4 after:border-hover"
+              : "";
+              
           return (
             <li
-              className={`w-full p-5 border-border border-b border-t relative ${
-                activeButton[0] === coordinates[0] &&
-                activeButton[1] === coordinates[1]
-                  ? "after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:border-l-4 after:border-hover"
-                  : ""
-              }`}
+              className={`
+                w-full p-5 border-border border-b border-t relative ${addLeftBorder}`}
               key={`${index}-${phone}`}
             >
               <LocationButton

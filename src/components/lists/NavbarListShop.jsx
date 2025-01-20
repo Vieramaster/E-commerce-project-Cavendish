@@ -1,7 +1,12 @@
 import { NavListLinks } from "../links/NavListLinks";
 import { NavbarUL } from "../simpleContainers/NavbarUL";
 
-/**@type {Array<{path:string, name:string}>} */
+/**
+ * @type {{
+ * path:string,
+ * name:string
+ * }[]}
+ * */
 
 export const listShop = [
   { path: "/shop/new_arrivals", name: "New Arrivals" },
@@ -18,9 +23,11 @@ export const NavbarListShop = () => {
   return (
     <NavbarUL>
       {listShop.map(({ path, name }, index) => {
+
+        const classHigth = index === 0 ? "h-12 lg:h-14" : "";
         return (
-          <li key={name} className={index === 0 ? "h-12 lg:h-14" : ""}>
-            <NavListLinks toPage={path} title={index === 0 }>
+          <li key={name} className={classHigth}>
+            <NavListLinks toPage={path} title={index === 0}>
               {name}
             </NavListLinks>
           </li>

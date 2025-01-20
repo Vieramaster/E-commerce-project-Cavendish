@@ -2,7 +2,7 @@ import { FilterProductButton } from "../buttons/FilterProductButton";
 import { ColorButton } from "../buttons/ColorButton";
 import { DefaultButton } from "../buttons/DefaultButton";
 
-const ulClasses = "flex justify-center gap-5 flex-wrap";
+
 
 /**
  * @param {{
@@ -31,8 +31,9 @@ export const ExtendFilterShop = ({
     color: selectedColor,
     type: selectedType,
   } = selectedButton;
-
-
+  
+  const ulClasses = "flex justify-center gap-5 flex-wrap";
+  const visibleMenu = toggleMenu ? "translate-y-0" : "-translate-y-full";
 
   return (
     <fieldset
@@ -40,9 +41,7 @@ export const ExtendFilterShop = ({
       aria-labelledby="filter-button"
       id="filter-options"
       aria-hidden={toggleMenu}
-      className={`absolute z-20 w-full h-auto bg-background border-b-2 duration-500 ease-in-out min-h-28 ${
-        toggleMenu ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`absolute z-20 w-full h-auto bg-background border-b-2 duration-500 ease-in-out min-h-28 ${visibleMenu}`}
     >
       <form className="w-full h-auto px-3 py-5 flex flex-col gap-5 justify-center items-center">
         <ul className={ulClasses} role="group">

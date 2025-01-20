@@ -192,3 +192,10 @@
  * @property {number} minutes
  * @property {number} seconds
  */
+
+/**
+ * @typedef {Object} BannerIcon
+ * @property {string} name 
+ * @property {React.ComponentType} Component 
+ * @property {string} title 
+ */

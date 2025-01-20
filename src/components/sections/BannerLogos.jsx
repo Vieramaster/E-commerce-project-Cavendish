@@ -5,7 +5,7 @@ import { DCLogo } from "../SVGs/logos/DCLogo";
 import { ConverseLogo } from "../SVGs/logos/ConverseLogo";
 import { PumaLogo } from "../SVGs/logos/PumaLogo";
 
-/** @type {Array<{Component: React.ComponentType, key: string, label: string}>} */
+/** @type {{Component: React.ComponentType, key: string, label: string}[]} */
 export const logos = [
   { Component: UnderArmorLogo, key: "UnderArmor", label: "Under Armor Logo" },
   { Component: AdidasLogo, key: "Adidas", label: "Adidas Logo" },

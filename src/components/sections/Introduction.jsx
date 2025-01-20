@@ -3,7 +3,16 @@ import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 import { ArrowPageButton } from "../buttons/ArrowPageButton";
 import { useState, useEffect, useRef } from "react";
 
-/** @type {{title: string, text: string, positionTitle: "left" | "right" | "center", backgroundImage: string, toPage: string}[]} */
+/**
+ * @type {{
+ *  title: string,
+ *  text: string,
+ *  positionTitle: "left" | "right" | "center",
+ *  backgroundImage: string,
+ *  toPage: string
+ * }[]}
+ *
+ */
 const componentList = [
   {
     title: "Sensations ",
@@ -73,7 +82,10 @@ export const Introduction = () => {
   }, [positionUl]);
 
   return (
-    <section className="w-full h-screen overflow-hidden relative" aria-label="banner">
+    <section
+      className="w-full h-screen overflow-hidden relative"
+      aria-label="banner"
+    >
       <ArrowPageButton
         positionButton="left"
         onClick={previousUl}

@@ -6,18 +6,10 @@ import "../../types";
 
 /**@type {payButtonlist} */
 const buttonList = [
-  {
-    name: "shopPay",
-    Component: ShopPayLogo,
-  },
-  {
-    name: "paypal",
-    Component: PayPalLogo,
-  },
-  {
-    name: "googlePay",
-    Component: GooglePayLogo,
-  },
+  { name: "shopPay", Component: ShopPayLogo,},
+  {name: "paypal",Component: PayPalLogo,},
+  {name: "googlePay",Component: GooglePayLogo,
+},
 ];
 
 export const PayMethodList = () => {
