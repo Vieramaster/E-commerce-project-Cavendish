@@ -2,11 +2,16 @@ import { CartProductCard } from "../cards/CartProductCard";
 import { totalPriceItem } from "../../hooks/useMathOperations";
 import "../../types";
 
-/**@param {{product: CartProduct[], handleRemove: React.MouseEventHandler<HTMLButtonElement>}} props */
+/**
+ * @param {{
+ * product: CartProduct[],
+ * handleRemove:
+ * React.MouseEventHandler<HTMLButtonElement>
+ * }} props
+ * */
 export const NavbarCartList = ({ product, handleRemove }) => {
-
   return (
-    <ul className="w-full flex-grow overflow-y-auto py-2">
+    <ul className="w-full flex-grow h-full scrollable-list py-2">
       {product.map(
         (
           {
@@ -15,9 +20,9 @@ export const NavbarCartList = ({ product, handleRemove }) => {
             quantityClothes,
             selectSize,
             idProduct,
-            price
+            price,
           },
-          
+
           index
         ) => (
           <CartProductCard

@@ -1,9 +1,16 @@
 /**
- * @param {{ count: number, label: string }} props
+ * @param {{
+ * count: number,
+ *  label: string
+ * }} props
  */
 export const CountdownCard = ({ count, label }) => {
   return (
-    <div className="size-16 lg:size-24 2xl:size-28 ">
+    <div
+      className="size-16 lg:size-24 2xl:size-28"
+      role="timer"
+      aria-label={`Countdown for ${label}: ${count} seconds remaining`}
+    >
       <div className="bg-background w-full h-5/6 flex justify-center items-center rounded-md">
         <p className="text-2xl text-textColor font-alternative lg:text-4xl 2xl:text-5xl">
           {count}

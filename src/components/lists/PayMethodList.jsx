@@ -22,7 +22,7 @@ const buttonList = [
 
 export const PayMethodList = () => {
   return (
-    <ul className="w-full h-auto flex flex-col gap-3 justify-center items-center md:flex-row lg:flex-col  2xl:flex-row">
+    <ul className="w-full flex flex-col gap-3 justify-center items-center md:flex-row lg:flex-col  2xl:flex-row">
       {buttonList.map(({ name, Component }) => (
         <li key={name} className="h-14 w-full ">
           <PayMethodButton

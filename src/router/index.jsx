@@ -14,6 +14,7 @@ const Returns = lazy(() => import("../pages/Returns"));
 const ProductCare = lazy(()=> import ("../pages/ProductCare"))
 const OurStory = lazy(()=> import ("../pages/OurStory"))
 const Stores = lazy(()=> import ("../pages/Stores"))
+const OurFabrics = lazy(()=>import("../pages/OurFabrics"))
 // @ts-ignore
 const SuspenseWrapper = ({ children }) => (
   <Suspense fallback={<LoaderPage />}>{children}</Suspense>
@@ -82,7 +83,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/productCare",
+        path: "/product-care",
         element: (
           <SuspenseWrapper>
             <ProductCare />
@@ -90,7 +91,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/Our-story",
+        path: "/our-story",
         element: (
           <SuspenseWrapper>
             <OurStory />
@@ -98,10 +99,18 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/Stores",
+        path: "/stores",
         element: (
           <SuspenseWrapper>
             <Stores />
+          </SuspenseWrapper>
+        ),
+      },
+      {
+        path: "/Our-fabrics",
+        element: (
+          <SuspenseWrapper>
+            <OurFabrics />
           </SuspenseWrapper>
         ),
       },

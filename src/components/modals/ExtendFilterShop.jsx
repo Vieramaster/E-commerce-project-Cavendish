@@ -32,14 +32,14 @@ export const ExtendFilterShop = ({
     type: selectedType,
   } = selectedButton;
 
-  //If there are no filters the button submit is disabled
-  const disabledSubmit = Object.values(selectedButton).some(
-    (array) => array.length > 0
-  );
+
 
   return (
     <fieldset
       ref={componentRef}
+      aria-labelledby="filter-button"
+      id="filter-options"
+      aria-hidden={toggleMenu}
       className={`absolute z-20 w-full h-auto bg-background border-b-2 duration-500 ease-in-out min-h-28 ${
         toggleMenu ? "translate-y-0" : "-translate-y-full"
       }`}

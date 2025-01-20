@@ -1,14 +1,32 @@
-/**@param {{smallInput:boolean, text:boolean} & JSX.IntrinsicElements["input"]} props*/
+/**
+ * @param {{
+ * smallInput: boolean,
+ * text: boolean
+ * }
+ * &
+ * JSX.IntrinsicElements["input"]} props
+ */
 
 export const CustomInput = ({ smallInput, text, ...props }) => {
+
+  const changeType = text ? "text" : "number";
+  const spinner = !text && "no-spinner";
+  const size = smallInput ? "w-full md:w-1/2" : "w-full";
+  
   return (
     <input
-      type={text ? "text" : "number"}
+      type={changeType}
       required
       autoComplete="off"
-      className={`${!text ? "no-spinner" : ""} ${
-        smallInput ? "w-full md:w-1/2" : "w-full"
-      } h-12 border border-border rounded-md  focus:outline-none pl-3`}
+      className={`
+           h-12 
+           border 
+           border-border 
+           rounded-md  
+           focus:outline-none pl-3
+           ${spinner} 
+           ${size}
+           `}
       {...props}
     />
   );

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { DiscountCircle } from "../DiscountCircle";
 import { ArrowCardButton } from "../buttons/ArrowCardButton";
 import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
-
 import {
   NextImageCard,
   PreviousImageCard,

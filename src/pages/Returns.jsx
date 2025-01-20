@@ -1,4 +1,3 @@
-
 import { InformationList } from "../components/lists/InformationList";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
@@ -135,11 +134,11 @@ const faqList = [
 const h3Class = "text-lg font-medium mt-5";
 
 const Returns = () => {
-  useDocumentTitle("Returns")
+  useDocumentTitle("Returns");
   return (
-    <section className="w-full h-auto pt-28 bg-background">
-      <article className=" w-5/6 flex flex-col gap-4 mx-auto py-16 text-textColor">
-        <h1 className="text-3xl font-semibold">Returns & Exchanges</h1>
+    <div className="w-5/6 flex flex-col gap-4 mx-auto py-16 text-textColor">
+      <article aria-labelledby="returns-and-exchanges">
+        <h1 className="text-3xl font-semibold mb-5">Returns & Exchanges</h1>
         <p>
           At Cavendish Country, we are committed to ensuring your complete
           satisfaction. Should you wish to make a return or an exchange, you can
@@ -155,11 +154,14 @@ const Returns = () => {
           during this time are eligible for returns until{" "}
           <strong>31st January</strong>.
         </p>
+      </article>
+      <section>
         <h3 className={h3Class}>Returns FAQs</h3>
         <InformationList arrayObject={faqList} />
-      </article>
-    </section>
+      </section>
+    </div>
   );
 };
 
 export default Returns;
+

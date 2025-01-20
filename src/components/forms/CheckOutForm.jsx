@@ -5,15 +5,15 @@ import { useCart } from "../../hooks/useZustand";
 import { totalPrice } from "../../hooks/useMathOperations";
 import { WidthButton } from "../buttons/WidthButton";
 
-const h3Class = "text-3xl font-semibold my-2 text-start  w-ful";
+const h3Class = "text-3xl font-semibold my-2 text-start w-full";
 
 export const CheckOutForm = () => {
-  const [formData, setFormData] = useState({
+  const defaultData = {
     country: "",
     firstName: "",
     lastName: "",
     address: "",
-    apartament: "",
+    flat: "",
     city: "",
     postalCode: "",
     phone: "",
@@ -22,7 +22,8 @@ export const CheckOutForm = () => {
     expirationYear: "",
     securityCode: "",
     nameOnCard: "",
-  });
+  };
+  const [formData, setFormData] = useState(defaultData);
 
   const { cart } = useCart();
   const sumPrice = totalPrice(cart);
@@ -38,6 +39,7 @@ export const CheckOutForm = () => {
     },
     []
   );
+
   /**@param {React.ChangeEvent<HTMLInputElement | HTMLSelectElement>}  event*/
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -65,25 +67,28 @@ export const CheckOutForm = () => {
         const result = await response.json();
         console.log("sent successfully:", result);
         alert("Form submitted successfully");
+        setFormData(defaultData);
       } catch (error) {
         console.error("Error!:", error);
-        alert("There was an error submitting the form. Please try again..");
+        alert("There was an error submitting the form. Please try again.");
       }
-    } 
+    } else {
+      alert("Please fill in all fields before submitting.");
+    }
   };
 
   return (
     <fieldset className="min-h-96 w-full h-auto relative">
-      <form className="flex flex-col gap-4" onClick={handleSubmit}>
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <h3 className={h3Class}>Delivery</h3>
         <DeliveryFormPart {...{ handleInputChange, formData }} />
         <h3 className={`${h3Class} mt-8`}>Payment</h3>
         <PaymentFormPart
           {...{ handleInputLimit, formData, handleInputChange }}
         />
-        <div className="h-14 w-full flex justify-between items-center text-lg lg:text-2xl ">
+        <div className="h-14 w-full flex justify-between items-center text-lg lg:text-2xl">
           <p className="font-semibold">Subtotal: {cart.length} items</p>
-          <p className="font-semibold"> Total: ${sumPrice}</p>
+          <p className="font-semibold">Total: ${sumPrice}</p>
         </div>
         <WidthButton color="mainColor" type="submit">
           Pay now

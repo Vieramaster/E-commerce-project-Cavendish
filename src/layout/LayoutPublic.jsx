@@ -6,11 +6,11 @@ const LayoutPublic = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="w-full h-auto  pt-28 bg-background">
         <Outlet />
       </main>
       <Footer />
     </>
   );
 };
-export default LayoutPublic
+export default LayoutPublic;

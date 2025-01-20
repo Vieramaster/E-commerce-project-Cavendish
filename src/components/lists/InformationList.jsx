@@ -1,8 +1,11 @@
-import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 import { useState } from "react";
+import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 
-/** @param {{ arrayObject: informationList[] }} props*/
-
+/**
+ * @param {{
+ *  arrayObject: {title: string, text: string}[]
+ * }} props
+ */
 export const InformationList = ({ arrayObject }) => {
   const [isOpenFaq, setIsOpenFaq] = useState(10);
 
@@ -19,9 +22,13 @@ export const InformationList = ({ arrayObject }) => {
   };
 
   return (
-    <ul className="w-full">
+    <ul className="w-full py-10">
       {arrayObject?.map(({ text, title }, index) => {
+        
         const isOpen = isOpenFaq === index;
+        const expanded = isOpen ? "true" : "false";
+        const open = isOpen ? "max-h-96" : "max-h-0";
+        const changeDirectionArrow = isOpen ? "top" : "bottom";
 
         return (
           <li
@@ -29,22 +36,22 @@ export const InformationList = ({ arrayObject }) => {
             className="w-full border-b border-border overflow-hidden"
           >
             <button
-              className="min-h-14  w-full text-start text-lg flex justify-between items-center gap-10"
+              className="min-h-14 w-full text-start text-lg font-light flex justify-between items-center gap-10"
               onClick={handleFaq}
               data-id={index}
+              aria-expanded={expanded}
             >
               {title}{" "}
-              <span className="w-4 h-auto mr-3 fill-textColor ">
-                {<MinimalistArrow directionArrow={isOpen ? "top" : "bottom"} />}
+              <span className="w-4 h-auto mr-3 fill-textColor">
+                <MinimalistArrow directionArrow={changeDirectionArrow} />
               </span>
             </button>
-            <div
-              className={`transition-[max-height] duration-1000 ease-in-out overflow-hidden ${
-                isOpen ? "max-h-96" : "max-h-0"
-              }`}
+
+            <article
+              className={`transition-[max-height] duration-1000 ease-in-out overflow-hidden ${open}`}
             >
-              <p className="italic pb-6 ">{text}</p>
-            </div>
+              <p className="italic pb-6">{text}</p>
+            </article>
           </li>
         );
       })}

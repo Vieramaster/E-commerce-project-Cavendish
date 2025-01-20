@@ -10,14 +10,14 @@ const componentList = [
     text: "New summer collection 2025",
     positionTitle: "left",
     backgroundImage: "/images/main/background2.webp",
-    toPage: "/shop/new_arrivals",
+    toPage: "/shop/new-arrivals",
   },
   {
     title: "Luxury",
     text: "Best jackets quality",
     positionTitle: "right",
     backgroundImage: "/images/main/background1.webp",
-    toPage: "/shop/jackets_and_coats",
+    toPage: "/shop/jackets-and-coats",
   },
   {
     title: "Premium ",
@@ -73,7 +73,7 @@ export const Introduction = () => {
   }, [positionUl]);
 
   return (
-    <section className="w-full h-screen overflow-hidden relative">
+    <section className="w-full h-screen overflow-hidden relative" aria-label="banner">
       <ArrowPageButton
         positionButton="left"
         onClick={previousUl}
@@ -90,7 +90,7 @@ export const Introduction = () => {
       </ArrowPageButton>
 
       <ul
-        className="pt-28 h-full flex duration-700 ease-in-out"
+        className="h-full flex duration-700 ease-in-out"
         style={{
           width: `${componentList.length * 100}%`,
           transform: `translateX(calc(${positionUl}%))`,

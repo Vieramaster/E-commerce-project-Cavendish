@@ -11,11 +11,18 @@ import "../../types";
 
 const classText = "font-alternative font-bold tracking-wider text-xl ";
 
-/** * @param {{componentRef:React.RefObject<HTMLElement>, toggle:()=>void, open:boolean}} props */
+/**
+ * @param {{
+ * componentRef:React.RefObject<HTMLElement>,
+ * toggle:()=>void,
+ *  open:boolean
+ * }} props 
+ */
+
 export const NavbarCartShop = ({ componentRef, toggle, open }) => {
+
   const cart = useCart((state) => state.cart);
   const removeFromCart = useCart((state) => state.removeFromCart);
-
   const sumPrice = totalPrice(cart);
 
   /** @type {React.MouseEventHandler<HTMLButtonElement>} */

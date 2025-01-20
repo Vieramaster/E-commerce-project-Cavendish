@@ -1,63 +1,71 @@
 import { PageLogo } from "../links/PageLogo";
+import { logoList } from "./SocialBanner";
+import "../../types";
 
-/** @typedef {{path:string, label:string, url:string}[]} list*/
-/** @typedef {{key:string, title:string, items:list,}[]} listType*/
-
-/** @type { listType} */
 const menuListFooter = [
   {
     key: "HelpAndInformation",
     title: "Help & Information",
     items: [
-      { path: "Contact", label: "Contact", url: "/contact" },
-      { path: "Delivery", label: "Delivery", url: "/delivery" },
-      { path: "returns", label: "Returns & Exchanges", url: "/returns" },
-      { path: "productCare", label: "Product care", url: "/productCare" },
+      { path: "Contact", title: "Contact", url: "/contact" },
+      { path: "Delivery", title: "Delivery", url: "/delivery" },
+      { path: "Returns", title: "Returns & Exchanges", url: "/returns" },
+      { path: "ProductCare", title: "Product Care", url: "/product-care" },
     ],
   },
   {
     key: "AboutCavendish",
     title: "About Cavendish",
     items: [
-      { path: "About us", label: "About us", url: "/About_us" },
-      { path: "Our story", label: "Our story", url: "/Our-story" },
-      { path: "store locator", label: "store locator", url: "/stores" },
-    ],
-  },
-  {
-    key: "MoreFromCavendish",
-    title: "More From Cavendish",
-    items: [
-      { path: "Mobile", label: "Mobile and apps", url: "" },
-      { path: "GiftVouchers", label: "Gift vouchers", url: "" },
-      { path: "BlackFriday", label: "Black friday", url: "" },
+      { path: "OurStory", title: "Our Story", url: "/our-story" },
+      { path: "OurFabrics", title: "Our Fabrics", url: "/our-fabrics" },
+      { path: "StoreLocator", title: "Store Locator", url: "/stores" },
     ],
   },
 ];
 
 export const FooterList = () => {
   return (
-    <div className="w-full h-auto py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between">
-      <div className="py-10">
-        <PageLogo color="white" />
-      </div>
+    <section className="w-full py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between">
+      {/* Company Logo */}
+      <PageLogo color="white" />
+
+      {/* Social Media Icons */}
+      <ul className="flex gap-3">
+        {logoList?.map(({ Component, key }) => (
+          <li key={key} className="size-8 lg:size-10">
+            <a
+              href="https://www.youtube.com/watch?v=QB7ACr7pUuE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="stroke-white hover:stroke-yellow duration-300 ease-in-out"
+            >
+              <Component />
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      {/* Footer Navigation */}
       {menuListFooter?.map(({ key, title, items }) => (
-        <div key={key} className="py-10">
-          <h3 className="text-xl font-alternative">{title}</h3>
+        <section key={key} aria-labelledby={`footer-${key}`}>
+          <h3 id={`footer-${key}`} className="text-xl font-alternative">
+            {title}
+          </h3>
           <ul className="mt-5">
-            {items.map(({ path, label, url }) => (
+            {items.map(({ path, title, url }) => (
               <li key={path}>
                 <a
                   className="text-border hover:text-white duration-200 ease-in-out"
                   href={url}
                 >
-                  {label}
+                  {title}
                 </a>
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       ))}
-    </div>
+    </section>
   );
 };

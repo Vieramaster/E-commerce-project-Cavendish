@@ -105,7 +105,7 @@
  * @property {string} firstName
  * @property {string} lastName
  * @property {string} address
- * @property {string} apartament
+ * @property {string} flat
  * @property {string} city
  * @property {string} postalCode
  * @property {string} phone
@@ -173,4 +173,22 @@
  * @property {string}  direction
  * @property {string}  phone
  * @property {[number, number]}  coordinates
+ */
+
+/**
+ * @typedef {object} triadImages
+ * @property {string} defaultImage
+ * @property {string} smallImage
+ * @property {string} altImage
+ */
+
+/** @typedef {{path:string, title:string, url:string}[]} list*/
+/** @typedef {{key:string, title:string, items:list,}[]} listType*/
+
+/**
+ * @typedef {object} CounterTime
+ * @property {number} days
+ * @property {number} hours
+ * @property {number} minutes
+ * @property {number} seconds
  */

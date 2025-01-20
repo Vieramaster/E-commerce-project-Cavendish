@@ -123,6 +123,7 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
       </form>
 
       <BasicButton
+        relative
         onClick={toggle}
         aria-label="close searchbar"
         responsive={false}

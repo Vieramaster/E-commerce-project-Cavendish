@@ -41,8 +41,9 @@ export const ShopFilter = ({
     <>
       <nav className="bg-offWhite w-full h-12 flex text-lightCarbon font-medium relative z-30">
         <FilterNavButton
-          aria-label="Filter"
-          aria-haspopup="listbox"
+          aria-expanded={toggleShopMenu}
+          aria-controls="filter-options"
+          id="filter-button"
           onClick={toggleFilterMenu}
         >
           <span className="size-7">
@@ -60,7 +61,9 @@ export const ShopFilter = ({
           </span>
           Sort by
           <select
+            id="sort-options"
             name="sort_by"
+            aria-label="Sort options"
             className="absolute inset-0 opacity-0 cursor-pointer bg-transparent"
             onChange={onChangeFilter}
           >
@@ -105,7 +108,6 @@ export const ShopFilter = ({
         array={filterButtons}
         toggleMenu={toggleShopMenu}
         componentRef={extenderFilterRef}
-       
         {...{ handleExtendfilter, handleCleanFilter, selectedButton }}
       />
     </>

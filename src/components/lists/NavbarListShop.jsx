@@ -20,7 +20,7 @@ export const NavbarListShop = () => {
       {listShop.map(({ path, name }, index) => {
         return (
           <li key={name} className={index === 0 ? "h-12 lg:h-14" : ""}>
-            <NavListLinks toPage={path} title={index === 0 ? true : false}>
+            <NavListLinks toPage={path} title={index === 0 }>
               {name}
             </NavListLinks>
           </li>

@@ -4,7 +4,7 @@ const Contact = () => {
   useDocumentTitle("Contact")
   
   return (
-    <section className="w-full h-screen pt-28 relative flex">
+    <section className="w-full h-screen relative flex">
       <div className="absolute inset-0 bg-[url('/images/main/background2.webp')] bg-cover bg-center filter blur-sm" />
 
       <article className="relative z-10 w-5/6 h-auto m-auto flex flex-col gap-5 py-10 px-5 text-start text-textColor bg-background opacity-90 rounded-md">

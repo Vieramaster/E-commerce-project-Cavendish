@@ -5,30 +5,30 @@ import { DCLogo } from "../SVGs/logos/DCLogo";
 import { ConverseLogo } from "../SVGs/logos/ConverseLogo";
 import { PumaLogo } from "../SVGs/logos/PumaLogo";
 
-/** @type {Array<{Component: React.ComponentType, key: string}>} */
-
+/** @type {Array<{Component: React.ComponentType, key: string, label: string}>} */
 export const logos = [
-  { Component: UnderArmorLogo, key: "UnderArmor" },
-  { Component: AdidasLogo, key: "Adidas" },
-  { Component: VansLogo, key: "vans" },
-  { Component: DCLogo, key: "DC" },
-  { Component: ConverseLogo, key: "Converse" },
-  { Component: PumaLogo, key: "Puma" },
+  { Component: UnderArmorLogo, key: "UnderArmor", label: "Under Armor Logo" },
+  { Component: AdidasLogo, key: "Adidas", label: "Adidas Logo" },
+  { Component: VansLogo, key: "Vans", label: "Vans Logo" },
+  { Component: DCLogo, key: "DC", label: "DC Shoes Logo" },
+  { Component: ConverseLogo, key: "Converse", label: "Converse Logo" },
+  { Component: PumaLogo, key: "Puma", label: "Puma Logo" },
 ];
 
 export const BannerLogos = () => {
   return (
-    <div className="h-auto w-full bg-mainColor flex justify-center">
-      <ul className="h-auto w-5/6 py-5 grid grid-rows-2 grid-cols-3 gap-5 lg:flex lg:flex-row lg:justify-between ">
-        {logos?.map(({ Component, key }) => (
+    <section className="w-full bg-mainColor py-5">
+      <ul className="w-5/6 mx-auto grid grid-rows-2 grid-cols-3 gap-5 lg:flex lg:justify-between">
+        {logos.map(({ Component, key, label }) => (
           <li
-            className="m-auto w-auto h-8 fill-background sm:h-10 lg:m-0 lg:h-12 2xl:h-14 "
+            className="h-8 sm:h-10 lg:h-12 2xl:h-14 flex justify-center items-center fill-background"
             key={key}
+            aria-label={label}
           >
             <Component />
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };

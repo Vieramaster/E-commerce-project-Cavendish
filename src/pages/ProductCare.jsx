@@ -116,18 +116,18 @@ const productCareList = [
 const ProductCare = () => {
   useDocumentTitle("Product care");
   return (
-    <section className="w-full h-auto bg-background pt-28">
+    <>
       <ImageBanner
         title="Product care"
         defaultImage="images/main/product-care-image-default.webp"
         smallImage="images/main/product-care-image-small.webp"
         altImage="image banner"
       />
-      <div className="w-5/6 mx-auto h-auto text-textColor pb-10">
-        <h3 className="text-3xl font-bold my-10">General care</h3>
+      <section className="w-5/6 mx-auto text-textColor py-10" aria-labelledby="general care">
+        <h3 id="general care" className="text-3xl font-bold">General care</h3>
         <InformationList arrayObject={productCareList} />
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

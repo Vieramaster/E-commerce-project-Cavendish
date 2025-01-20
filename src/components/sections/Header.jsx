@@ -17,7 +17,7 @@ export const Header = () => {
   const params = useParams();
   const prevParamsRef = useRef({});
 
-  // Toggles
+  // Toggles for individual modals
   const toggleNavbarShop = useCallback(() => {
     setIsSearchBarOpen(false);
     setIsNavbarCartOpen(false);
@@ -46,7 +46,7 @@ export const Header = () => {
   useClickOutside(searchModalRef, () => setIsSearchBarOpen(false));
   useClickOutside(navbarCartShopRef, () => setIsNavbarCartOpen(false));
 
-  //Better animation when changing the page
+  // Reset modals when route changes
   useEffect(() => {
     if (prevParamsRef.current && prevParamsRef.current !== params) {
       setTimeout(() => {
@@ -57,7 +57,6 @@ export const Header = () => {
     }
     prevParamsRef.current = params || {};
   }, [params]);
-
 
   return (
     <>
@@ -70,16 +69,14 @@ export const Header = () => {
             Free standard shipping from $75 nationwide
           </p>
         </div>
-        <div className="w-full mx-auto h-20 px-5 flex justify-between items-center md:px-0 sm:w-5/6 ">
+        <div className="w-full mx-auto h-20 px-5 flex justify-between items-center md:px-0 sm:w-5/6">
           <PageLogo color="main" />
           <ul className="flex gap-5 w-auto h-full items-center justify-center text-lightTextColor">
             <HeaderButtonList
-              {...{
-                toggleSearchBar,
-                toggleNavbarCart,
-                toggleNavbarShop,
-                isSearchBarOpen,
-              }}
+              toggleSearchBar={toggleSearchBar}
+              toggleNavbarCart={toggleNavbarCart}
+              toggleNavbarShop={toggleNavbarShop}
+              isSearchBarOpen={isSearchBarOpen}
             />
           </ul>
         </div>

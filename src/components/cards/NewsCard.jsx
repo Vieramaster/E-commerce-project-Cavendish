@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 
-/** @param {{image: string, imageAlt: string, date: string, title: string, description: string, toPage:string}} props*/
+/**
+ * @param {{
+ * image: string,
+ * imageAlt: string,
+ * date: string,
+ * title: string,
+ * description: string,
+ * toPage: string
+ * }} props
+ * */
 export const NewsCard = ({
   image,
   imageAlt,
@@ -10,8 +19,8 @@ export const NewsCard = ({
   toPage,
 }) => {
   return (
-    <Link to={toPage} className="w-80 h-[30rem] flex flex-col gap-3 ">
-      <div className="h-[13rem] w-full relative">
+    <Link to={toPage} className="w-full h-full flex flex-col gap-3">
+      <div className="h-2/5 w-full relative">
         <img src={image} alt={imageAlt} className="h-full w-full bg-cover" />
         <span className="absolute bottom-3 left-3 px-4 py-1 bg-mainColor text-white font-alternative rounded-md">
           {date}
@@ -19,7 +28,7 @@ export const NewsCard = ({
       </div>
       <div className="h-[17rem] w-full px-2 pb-10  text-textColor overflow-hidden flex-grow  text-ellipsis">
         <h3 className="font-semibold text-lg text-center mb-5 ">{title}</h3>
-        <p >{description}</p>
+        <p>{description}</p>
       </div>
     </Link>
   );

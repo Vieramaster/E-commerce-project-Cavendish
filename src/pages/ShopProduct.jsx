@@ -30,7 +30,7 @@ const ShopProduct = () => {
     ? dataCategory.find((item) => item.idProduct === idClothesNumber)
     : null;
 
-  useDocumentTitle( productData ? productData.name : "shipping!")
+  useDocumentTitle(productData ? productData.name : "shipping!");
   /** @type {React.MouseEventHandler<HTMLButtonElement>} */
   const handleChangeClothes = ({ currentTarget }) => {
     const indexValue = /** @type {FiltersString} */ (currentTarget.value);
@@ -76,15 +76,12 @@ const ShopProduct = () => {
     }
   }, [productData, changeClothesColor, selectSize, quantityClothes]);
 
-
-  
-
   return (
-    <section className="bg-offWhite w-full min-h-screen h-auto pt-24 lg:pt-28">
+    <>
       {!productData ? (
         <LoaderPage />
       ) : (
-        <div className="w-5/6 h-auto mx-auto py-10 gap-10 lg:flex ">
+        <section className="w-5/6 mx-auto py-10 gap-10 lg:flex ">
           <div className="h-auto py-5 lg:h-full lg:w-1/2 lg:py-0">
             <ImagesShopSlider
               maxSizeArrows={true}
@@ -115,10 +112,12 @@ const ShopProduct = () => {
             </Shopbutton>
             <ClientBenefitList />
           </div>
-        </div>
+        </section>
       )}
-    </section>
+    </>
   );
 };
 
 export default ShopProduct;
+
+

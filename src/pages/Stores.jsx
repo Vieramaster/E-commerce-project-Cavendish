@@ -1,6 +1,7 @@
+import { useCallback, useState } from "react";
 import { Maps } from "../components/maps";
 import { LocationsList } from "../components/lists/LocationsList";
-import { useCallback, useState } from "react";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 /**@type {directionList[]} */
 const locationList = [
@@ -43,6 +44,8 @@ const locationList = [
 ];
 
 const Stores = () => {
+  useDocumentTitle("Stores");
+
   /** @type {[number,number]} */
   const initialLocation = [-37.999652, -57.546397];
 
@@ -68,14 +71,12 @@ const Stores = () => {
   }, []);
 
   return (
-    <section className="w-full h-auto pt-28 pb-10 bg-background">
-      <div className="w-5/6 h-auto mx-auto grid gap-5">
-        <div className="h-28 w-full flex items-end lg:h-32">
-          <h1 className="font-semibold text-4xl mb-5 text-textColor text-center items-center xl:text-5xl">
-            Store Locator
-          </h1>
-        </div>
-        <div className="w-full h-auto mx-auto flex flex-col gap-5 lg:flex-row-reverse lg:h-[40rem] lg:gap-0  overflow-hidden">
+    <>
+      <section className="w-5/6 mx-auto flex flex-col gap-5 py-12 ">
+        <h1 className="font-semibold text-4xl mb-5 text-textColor text-start  xl:text-5xl">
+          Store Locator
+        </h1>
+        <div className="w-full flex flex-col gap-5 lg:flex-row-reverse lg:h-[40rem] lg:gap-0  overflow-hidden">
           <Maps markers={locationList} zoomMark={locationIndex} />
           <LocationsList
             list={locationList}
@@ -83,8 +84,8 @@ const Stores = () => {
             activeButton={locationIndex}
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

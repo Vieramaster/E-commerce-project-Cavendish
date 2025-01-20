@@ -211,3 +211,11 @@ input[type="search"]::-webkit-search-cancel-button {
   overflow-y: auto;
 }
 
+.scrollable-list {
+
+  overflow-y: scroll;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento */
+}

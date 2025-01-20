@@ -20,8 +20,8 @@ import { LoaderPage } from "../components/loaders/LoaderPage";
 import "../types";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
-const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
-const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
+const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(22rem,_1fr))]";
+const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(42rem,_1fr))]";
 
 const sorts = {
   title_ascending: /** @param {ClothesObject[]} data */ (data) =>
@@ -179,10 +179,7 @@ export const Shop = () => {
   }, [data, resetPagination]);
 
   return (
-    <section
-      className="bg-offWhite w-full min-h-screen h-auto pt-28"
-      key={category}
-    >
+    <>
       <ShopFilter
         onChangeFilter={changeFilter}
         toggleGrid={gridChangeToggle}
@@ -194,28 +191,30 @@ export const Shop = () => {
           handleExtendfilter,
         }}
       />
-      <div
-        className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
-          toggleGrid ? gridGiant : gridCompact
-        }`}
-      >
-        {loading && <LoaderPage />}
-        {!loading &&
-          filteredResultsSliced.map((item) => (
-            <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
-              <ImagesShopSlider
-                changeClothesColor={0}
-                array={item}
-                maxSizeArrows={toggleGrid}
-                itsALink={true}
-              />
-              <DescriptionShopCard array={item} toggleSize={toggleGrid} />
-            </ShopCard>
-          ))}
-        {!loading && filteredResults.length === 0 && searchValue && (
-          <LoaderPage />
-        )}
-      </div>
+      <section className="bg-offWhite w-full min-h-screen" key={category}>
+        <div
+          className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
+            toggleGrid ? gridGiant : gridCompact
+          }`}
+        >
+          {loading && <LoaderPage />}
+          {!loading &&
+            filteredResultsSliced.map((item) => (
+              <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
+                <ImagesShopSlider
+                  changeClothesColor={0}
+                  array={item}
+                  maxSizeArrows={toggleGrid}
+                  itsALink={true}
+                />
+                <DescriptionShopCard array={item} toggleSize={toggleGrid} />
+              </ShopCard>
+            ))}
+          {!loading && filteredResults.length === 0 && searchValue && (
+            <LoaderPage />
+          )}
+        </div>
+      </section>
       <div className="w-full h-20 grid place-content-center">
         <DefaultButton
           onClick={handleMoreData}
@@ -225,7 +224,7 @@ export const Shop = () => {
           {loadCards ? "More clothes..." : "No more products"}
         </DefaultButton>
       </div>
-    </section>
+    </>
   );
 };
 

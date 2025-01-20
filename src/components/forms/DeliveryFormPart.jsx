@@ -1,7 +1,23 @@
 import { CustomInput } from "../forms/CustomInput";
 
-/**@param {{ formData:paymentFormData , handleInputChange: (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void }} props */
+/**
+ * @param {{
+ * formData: paymentFormData ,
+ * handleInputChange: (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void
+ * }} props
+ */
 export const DeliveryFormPart = ({ formData, handleInputChange }) => {
+  const {
+    country,
+    firstName,
+    lastName,
+    address,
+    flat,
+    city,
+    postalCode,
+    phone,
+  } = formData;
+
   return (
     <>
       <div className="relative">
@@ -10,12 +26,11 @@ export const DeliveryFormPart = ({ formData, handleInputChange }) => {
         </span>
         <select
           name="country"
-          value={formData.country}
+          value={country}
           onChange={handleInputChange}
           id="countryForm"
-          className="w-full h-14 border border-border rounded-md pt-5 pl-3 focus:outline-subdued
-                "
-          aria-labelledby="select country"
+          className="w-full h-14 border border-border rounded-md pt-5 pl-3 focus:outline-subdued"
+          aria-labelledby="countryForm"
         >
           <option value="Argentina">Argentina</option>
           <option value="Mexico">Mexico</option>
@@ -24,10 +39,11 @@ export const DeliveryFormPart = ({ formData, handleInputChange }) => {
           <option value="Chile">Chile</option>
         </select>
       </div>
-      <div className="flex flex-col sm:flex-row gap-3 w-full h-auto ">
+
+      <div className="flex flex-col sm:flex-row gap-3 w-full h-auto">
         <CustomInput
           name="firstName"
-          value={formData.firstName}
+          value={firstName}
           onChange={handleInputChange}
           text
           smallInput
@@ -36,7 +52,7 @@ export const DeliveryFormPart = ({ formData, handleInputChange }) => {
         />
         <CustomInput
           name="lastName"
-          value={formData.lastName}
+          value={lastName}
           onChange={handleInputChange}
           text
           smallInput
@@ -44,29 +60,32 @@ export const DeliveryFormPart = ({ formData, handleInputChange }) => {
           aria-label="Enter your last name"
         />
       </div>
+
       <CustomInput
         name="address"
-        value={formData.address}
+        value={address}
         onChange={handleInputChange}
         text
         smallInput={false}
         placeholder="Address"
         aria-label="Enter your address"
       />
+
       <CustomInput
-        name="apartament"
-        value={formData.apartament}
+        name="apartment"
+        value={flat}
         onChange={handleInputChange}
         text
         smallInput={false}
         required={false}
-        placeholder="Apartament, suite, etc.(optional)"
-        aria-label="Enter your number of apartament, house, etc. (optional)"
+        placeholder="Apartment, suite, etc. (optional)"
+        aria-label="Enter your apartment, suite, etc. (optional)"
       />
-      <div className="flex flex-col sm:flex-row gap-3 w-full h-auto ">
+
+      <div className="flex flex-col sm:flex-row gap-3 w-full h-auto">
         <CustomInput
           name="city"
-          value={formData.city}
+          value={city}
           onChange={handleInputChange}
           text
           smallInput
@@ -75,7 +94,7 @@ export const DeliveryFormPart = ({ formData, handleInputChange }) => {
         />
         <CustomInput
           name="postalCode"
-          value={formData.postalCode}
+          value={postalCode}
           onChange={handleInputChange}
           text={false}
           smallInput
@@ -83,9 +102,10 @@ export const DeliveryFormPart = ({ formData, handleInputChange }) => {
           aria-label="Enter your postal code"
         />
       </div>
+
       <CustomInput
         name="phone"
-        value={formData.phone}
+        value={phone}
         onChange={handleInputChange}
         text={false}
         smallInput={false}
