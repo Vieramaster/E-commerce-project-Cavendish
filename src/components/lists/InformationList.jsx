@@ -3,7 +3,7 @@ import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 
 /**
  * @param {{
- *  arrayObject: {title: string, text: string}[]
+ *  arrayObject: {title: string, text: JSX.Element}[]
  * }} props
  */
 export const InformationList = ({ arrayObject }) => {

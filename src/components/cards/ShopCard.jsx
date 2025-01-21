@@ -7,21 +7,18 @@
  */
 export const ShopCard = ({ toggleSize, children }) => {
 
-  const cardSize = toggleSize ? "w-[40rem] h-[50rem]" : "w-80 h-[25rem]";
+  const cardSize = toggleSize ? "w-[32rem] h-[40rem]" : "w-80 h-[25rem]";
   return (
     <li
       className={` 
           relative 
-        bg-lightGrey 
-          w-80 h-[25rem] 
-          mx-auto
+          bg-lightGrey
           rounded-lg
          text-lightGrey
           flex flex-col
           justify-center 
+          mx-auto
           items-center 
-          lg:w-96 
-          lg:h-[30rem]
           ${cardSize}
           `}
     >

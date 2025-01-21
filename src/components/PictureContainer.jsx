@@ -1,4 +1,11 @@
-/**@param {{defaultImage:string, smallImage:string,altImage:string} & JSX.IntrinsicElements["picture"]} props */
+/**
+ * @param {{
+ * defaultImage:string,
+ * smallImage:string,altImage:string
+ * } &
+ * JSX.IntrinsicElements["picture"]
+ * } props
+ * */
 export const PictureContainer = ({
   defaultImage,
   smallImage,

@@ -23,6 +23,7 @@ export const CheckOutForm = () => {
     securityCode: "",
     nameOnCard: "",
   };
+  
   const [formData, setFormData] = useState(defaultData);
 
   const { cart } = useCart();

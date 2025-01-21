@@ -42,6 +42,7 @@ const OurStory = () => {
               leading company in its industry. From the very beginning, we were
               convinced that hard work, passion, and a commitment to our values
               would take us far."
+          labelledby="our-beggining"
         />
         <TypeOneSection
           reverse={false}
@@ -52,6 +53,7 @@ const OurStory = () => {
           secondaryImageDefault="/images/main/story-image-4-default.webp"
           secondaryImageSmall="/images/main/story-image-4-default.webp"
           altImage="story images"
+          labelledBy="perfect-partnership"
         />
         <article className="grid gap-3">
           <h3 className="text-3xl font-semibold">
@@ -82,6 +84,7 @@ const OurStory = () => {
           secondaryImageDefault="/images/main/story-image-2-default.webp"
           secondaryImageSmall="/images/main/story-image-2-default.webp"
           altImage="story images"
+          labelledBy="thirty-years"
         />
       </div>
     </>

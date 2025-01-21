@@ -8,13 +8,19 @@ const ErrorPage = () => {
   const error = useRouteError();
   console.log(error);
 
-  useDocumentTitle("error!")
+  useDocumentTitle("error!");
   return (
     <>
       <Header />
-      <section className="w-full h-screen bg-lightgrey">
+      <section
+        className="w-full h-screen bg-lightgrey "
+        aria-labelledby="error-page"
+      >
         <div className="  w-5/6 h-full pt-24 lg:pt-28 gap-10 mx-auto text-lightCarbon flex flex-col justify-center items-center 2xl:gap-12">
-          <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl ">
+          <h1
+            className="font-semibold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl "
+            id="error-page"
+          >
             Opps!, This page Not Found!
           </h1>
 
@@ -26,7 +32,9 @@ const ErrorPage = () => {
           <h2 className="text-lg md:text-xl lg:text-2xl">
             The link might be corrupted
           </h2>
-         <DefaultButtonLink color="primary" toPage="/">Go to main page</DefaultButtonLink>
+          <DefaultButtonLink color="primary" toPage="/">
+            Go to main page
+          </DefaultButtonLink>
         </div>
       </section>
       <Footer />

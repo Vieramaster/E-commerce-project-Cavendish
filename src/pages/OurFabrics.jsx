@@ -32,12 +32,12 @@ const OurFabrics = () => {
           mainImageDefault="images/main/our-fabric-image-article-3-default.webp"
           mainImageSmall="images/main/our-fabric-image-article-3-small.webp"
           mainAltImage="outfit"
-          labelledby="Argentine quality"
+          labelledBy="Argentine-quality"
         />
         <TypeOneSection
           reverse={false}
           title="GORE-TEX®"
-          labelledby="GORE-TEX®"
+          labelledBy="GORE-TEX®"
           text="The interaction between Cavendish and GORE-TEX® results in products that provide protection and comfort, perfect for extreme weather conditions. Cavendish has been working with GORE-TEX® for over 30 years to offer highly functional garm"
           mainImageDefault="images/main/our-fabric-typeOneSection-1-main-default.webp"
           mainImageSmall="images/main/our-fabric-typeOneSection-1-main-default.webp"
@@ -47,7 +47,7 @@ const OurFabrics = () => {
         />
 
         <TypeTwoSection
-          labelledby="Pontetorto-fleece"
+          labelledBy="Pontetorto-fleece"
           title="Pontetorto fleece"
           text="The premium Italian-milled Tecnopile fleece used to make many of our gilets, jackets and quarter zips comes from Pontetorto, a company famed for its quality fabrics. Smooth in appearance, its structure ensures lightweight warmth, breathability, and durability."
           firstImageDefault="images/main/our-fabric-typeTwoSection-2-secondary-1-default.webp"
@@ -62,7 +62,7 @@ const OurFabrics = () => {
         />
         <TypeOneSection
           reverse={false}
-          labelledby="Venturi"
+          labelledBy="Venturi"
           title="Venturi"
           text="In Venturi, Schöffel has created its own high quality weatherproof clothing technology, with the membrane providing the utmost protection, so the wearer can be sure to enjoy a unique outdoor experience, whatever the weather. Venturi is a closed membrane, soft to the touch and with no openings or pores through which water or wind can penetrate."
           mainImageDefault="images/main/our-fabric-typeOneSection-2-main-default.webp"

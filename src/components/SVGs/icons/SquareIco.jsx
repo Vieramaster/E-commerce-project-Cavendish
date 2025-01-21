@@ -1,6 +1,6 @@
-/**@param {{classNameSquare:string}} props*/
+/**@param {{SVGClassName:string}} props*/
 
-export const SquareIco = ({ classNameSquare }) => {
+export const SquareIco = ({ SVGClassName }) => {
   return (
     <svg
       role="presentation"
@@ -16,7 +16,7 @@ export const SquareIco = ({ classNameSquare }) => {
         rx="1.5"
         fill="transparent"
         stroke="currentColor"
-        className={classNameSquare}
+        className={SVGClassName}
       ></rect>
     </svg>
   );

@@ -18,7 +18,6 @@ export const ObjectPropertyShop = ({
   const disabledQuantityButtons = disabledSize === "" ? "opacity-30" : "";
   return (
     <div className="w-full flex flex-col gap-6   ">
-      
       <article className="text-textColor flex flex-col gap-5">
         <h2 className="font-semibold text-3xl lg:text-4xl 2xl:text-5xl">
           {product.name}

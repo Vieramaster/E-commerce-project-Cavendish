@@ -39,8 +39,8 @@ const CheckOut = () => {
   return (
     <>
       <HeaderLight isHidden={!isMobile} />
-      <section className="bg-white w-full h-auto flex flex-col lg:flex-row relative">
-        <div className="w-full h-auto lg:w-1/2 lg:h-screen lg:bg-lightGrey lg:pt-20 lg:fixed lg:right-0 ">
+      <div className="bg-white w-full h-auto flex flex-col lg:flex-row relative">
+        <section className="w-full h-auto lg:w-1/2 lg:h-screen lg:bg-lightGrey lg:pt-20 lg:fixed lg:right-0 ">
           <SummaryShopButton
             changeArrow={false}
             totalPrice={sumPrice}
@@ -55,8 +55,8 @@ const CheckOut = () => {
               isOpen={expandList}
             />
           </div>
-        </div>
-        <div className="h-auto lg:w-1/2 lg:overflow-y-auto  text-textColor mb-10 ">
+        </section>
+        <section className="h-auto lg:w-1/2 lg:overflow-y-auto  text-textColor mb-10 ">
           <HeaderLight isHidden={isMobile} />
           <div className="w-5/6 mx-auto flex flex-col gap-4 justify-center items-center">
             <h3 className="text-center items-center  text-lg mt-5">
@@ -89,8 +89,8 @@ const CheckOut = () => {
               .
             </p>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };
