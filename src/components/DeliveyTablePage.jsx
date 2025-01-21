@@ -1,7 +1,11 @@
 const firstClass = "px-2 md:py-3 border border-border";
 const secondClass = `${firstClass} bg-lightGrey`;
 
-/** @param {{arrayTable: DeliveryTableItem[]}} props */
+/**
+ * @param {{
+ * arrayTable: DeliveryTableItem[]
+ * }}props
+ */
 export const DeliveryTablePage = ({ arrayTable }) => {
   return (
     <>
@@ -12,15 +16,14 @@ export const DeliveryTablePage = ({ arrayTable }) => {
         >
           <thead className="border border-border ">
             <tr>
-              {thTitles?.map((item, index) => (
-                <th
-                  key={index}
-                  className={index % 2 === 0 ? firstClass : secondClass}
-                  scope="col"
-                >
-                  {item}
-                </th>
-              ))}
+              {thTitles?.map((item, index) => {
+                const changeClass = index % 2 === 0 ? firstClass : secondClass;
+                return (
+                  <th key={index} className={changeClass} scope="col">
+                    {item}
+                  </th>
+                );
+              })}
             </tr>
           </thead>
           <tbody className="border border-border">

@@ -119,5 +119,3 @@ const ShopProduct = () => {
 };
 
 export default ShopProduct;
-
-

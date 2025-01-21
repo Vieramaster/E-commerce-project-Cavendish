@@ -1,6 +1,6 @@
-import { ShopSizeButton } from "./buttons/ShopSizeButton";
-import { ColorButton } from "./buttons/ColorButton";
 import { QuantityClothesButton } from "./buttons/QuantityClothesButton";
+import { ClothingColorsList } from "./lists/ClothingColorsList";
+import { ClothingSizeList } from "./lists/ClothingSizeList";
 import "../types";
 
 /**@param {{product: ClothesObject, disabledColor:number, handleChangeClothes: React.MouseEventHandler<HTMLButtonElement>, handleChoiseSize:React.MouseEventHandler<HTMLButtonElement>, disabledSize:string, handlegreaterQuantity: React.MouseEventHandler<HTMLButtonElement>, handleminorQuantity:React.MouseEventHandler<HTMLButtonElement>, quantityPurchased:number, changeClothesColor: number}} props*/
@@ -15,8 +15,10 @@ export const ObjectPropertyShop = ({
   quantityPurchased,
   changeClothesColor,
 }) => {
+  const disabledQuantityButtons = disabledSize === "" ? "opacity-30" : "";
   return (
-    <div className="w-full h-auto  flex flex-col gap-6   ">
+    <div className="w-full flex flex-col gap-6   ">
+      
       <article className="text-textColor flex flex-col gap-5">
         <h2 className="font-semibold text-3xl lg:text-4xl 2xl:text-5xl">
           {product.name}
@@ -29,52 +31,20 @@ export const ObjectPropertyShop = ({
           ${product.price}
         </h3>
       </article>
-      <ul className="flex gap-3">
-        {product.colors.map(({ hex, colorName }, index) => {
-          return (
-            <li
-              className="w-16 h-8 hover:border-b-black"
-              key={index + colorName}
-            >
-              <ColorButton
-                isActive={disabledColor === index}
-                disabled={disabledColor === index}
-                style={{ backgroundColor: hex }}
-                name={colorName}
-                mainProduct={true}
-                id={colorName}
-                value={index}
-                onClick={handleChangeClothes}
-              />
-            </li>
-          );
-        })}
-      </ul>
-      <ul className="flex gap-3 h-auto w-full flex-wrap">
-        {Object.entries(product?.colors[changeClothesColor].sizes).map(
-          (item, index) => {
-            return (
-              <li key={item[0] + index}>
-                <ShopSizeButton
-                  disabled={item[1] === 0}
-                  borderButton={item[1] > 0}
-                  aria-label={`${item[0]} size button`}
-                  value={item[0]}
-                  onClick={handleChoiseSize}
-                  data-id="sizeButton"
-                  selected={disabledSize === item[0]}
-                >
-                  {item[0]}
-                </ShopSizeButton>
-              </li>
-            );
-          }
-        )}
-      </ul>
+
+      <ClothingColorsList
+        array={product}
+        activeColorIndex={disabledColor}
+        {...{ handleChangeClothes }}
+      />
+
+      <ClothingSizeList
+        array={product}
+        {...{ changeClothesColor, handleChoiseSize, disabledSize }}
+      />
+
       <div
-        className={`${
-          disabledSize === "" ? "opacity-30" : ""
-        } w-auto h-10 flex text-textColor text-lg items-center`}
+        className={`h-10 flex text-textColor text-lg items-center ${disabledQuantityButtons}`}
       >
         <QuantityClothesButton
           onClick={handleminorQuantity}
