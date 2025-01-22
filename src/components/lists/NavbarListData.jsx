@@ -9,10 +9,9 @@ import { NavListLinks } from "../links/NavListLinks";
  *
  */
 export const ListEmprise = [
-  { path: "/Login_and_Registrer", name: "Log in/Register" },
+
   { path: "/stores", name: "Stores" },
   { path: "/contact", name: "Contact" },
-  { path: "/partner", name: "Partner with us" },
   { path: "/returns", name: "Returns & Exchanges" },
 ];
 

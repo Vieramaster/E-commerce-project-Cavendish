@@ -21,23 +21,23 @@ export const SubscribeBanner = () => {
 
   return (
     <section
-      className="w-full h-auto p-16 text-textColor bg-inputs"
+      className="w-full  py-16 text-textColor bg-inputs"
       aria-labelledby="subscribe-banner-heading"
     >
-      <div className="h-full w-full lg:w-1/2 m-auto text-center">
+      <div className="h-full w-5/6 lg:w-1/2 m-auto text-center ">
         <h3 className="font-semibold text-xl lg:text-3xl 2xl:text-4xl">
           Subscribe and get 20% off <br /> your first purchase
         </h3>
         <form
           onSubmit={handleEmail}
-          className="w-2/3 h-14 mx-auto mt-5 relative"
+          className="w-2/3 h-10 mx-auto mt-5 relative lg:h-12"
           aria-label="Subscribe to our newsletter"
         >
           <input
             type="email"
             name="email"
             className="w-full h-full rounded-lg outline-none pl-5"
-            placeholder="Enter your email (e.g., example@gmail.com)"
+            placeholder="Enter your email"
             aria-label="Enter your email address"
             value={subscribeFormData}
             onChange={handleInputChange}

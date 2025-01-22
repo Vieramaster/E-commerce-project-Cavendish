@@ -5,7 +5,7 @@ import "../../types";
 
 export const FooterList = () => {
   return (
-    <section className="w-full py-10 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between">
+    <section className="w-full py-10 px-4 grid grid-cols-2 gap-10 justify-items-center lg:flex lg:justify-between">
       {/* Company Logo */}
       <PageLogo color="white" />
       {/* Social Media Icons */}
