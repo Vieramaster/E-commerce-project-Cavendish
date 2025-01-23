@@ -11,7 +11,7 @@ export const useFetchNews = () => {
   const [loading, setLoading] = useState(true);
 
   const API_NEWS_KEY = import.meta.env.VITE_API_NEWS_KEY;
-  const URL = `https://newsapi.org/v2/top-headlines?q=men&language=en&pageSize=4&apiKey=${API_NEWS_KEY}`;
+  const URL = `https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=4&apiKey=${API_NEWS_KEY}`;
 
   useEffect(() => {
     const controller = new AbortController();

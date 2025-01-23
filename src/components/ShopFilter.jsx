@@ -1,7 +1,5 @@
 import { useState, useRef } from "react";
-import { SortIco } from "./SVGs/icons/SortIco";
-import { GridIco } from "./SVGs/icons/GridIco";
-import { SquareIco } from "./SVGs/icons/SquareIco";
+
 import { ExtendFilterShop } from "../components/modals/ExtendFilterShop";
 import { useClickOutside } from "../hooks/useClickOutside";
 import { ShopFIlterButtons } from "./ShopFilterButtons";

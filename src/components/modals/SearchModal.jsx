@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useFetch } from "../../hooks/useFetch";
-import { useProductFinder } from "../../hooks/useSelectFilters";
 import { useSearchValue } from "../../hooks/useZustand";
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { SearchIco } from "../SVGs/icons/SearchIco";
 import { XIco } from "../SVGs/icons/XIco";
 //components
+import { useProductFinder } from "../../hooks/useSelectFilters";
 import { BasicButton } from "../buttons/BasicButton";
 import { InputSearchList } from "../lists/InputSearchList";
 import "../../types";
@@ -65,13 +65,10 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
     }
   };
 
-  //restart the form if you close it
-  useEffect(() => {
-    if (!open) {
-      setInputSearch("");
-      setNameList([]);
-    }
-  }, [open]);
+  const handleSubmit = () => {
+    setSearchValue(inputSearch);
+    navigate(`/shop/search/${inputSearch}`);
+  };
 
   const handleKeyDown = (
     /** @type {{ key: string; preventDefault: () => void; }} */ event
@@ -81,13 +78,21 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
       handleSubmit();
     }
   };
-  const handleSubmit = () => {
-    setSearchValue(inputSearch);
-    navigate("/shop/search");
+
+  const handleSearch = () => {
+    handleSubmit();
   };
 
+  //restart the form if you close it
+  useEffect(() => {
+    if (!open) {
+      setInputSearch("");
+      setNameList([]);
+    }
+  }, [open]);
+
   const visibleMenu = open ? "top-28 opacity-100" : "top-5 opacity-0";
-  
+
   return (
     <fieldset
       ref={componentRef}
@@ -122,6 +127,14 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
         />
       </form>
 
+      <BasicButton
+        relative
+        onClick={handleSearch}
+        aria-label="close searchbar"
+        responsive={false}
+      >
+        <SearchIco />
+      </BasicButton>
       <BasicButton
         relative
         onClick={toggle}

@@ -26,7 +26,7 @@ export const NewsCard = ({
           {date}
         </span>
       </div>
-      <div className="h-[17rem] w-full px-2 pb-10  text-textColor overflow-hidden flex-grow  text-ellipsis">
+      <div className=" w-full px-2 pb-10  text-textColor overflow-hidden flex-grow  text-ellipsis">
         <h3 className="font-semibold text-lg text-center mb-5 ">{title}</h3>
         <p>{description}</p>
       </div>

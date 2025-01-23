@@ -31,10 +31,10 @@ export const secondTypeTwoSelectionData = {
   secondImageDefault:
     "images/main/our-fabric-typeTwoSection-2-secondary-2-default.webp",
   secondImageSmall:
-    "images/main/our-fabric-typeTwoSection-2-secondary-2-small.webp",
+    "images/main/our-fabric-typeTwoSection-2-secondary-2-default.webp",
   secondAltImage: "fabric visual",
   mainImageDefault: "images/main/our-fabric-typeTwoSection-2-main-default.webp",
-  mainImageSmall: "our-fabric-typeTwoSection-2-main-small.webp",
+  mainImageSmall: "images/main/our-fabric-typeTwoSection-2-main-small.webp",
   mainAltImage: "outfit",
 };
 
@@ -57,7 +57,7 @@ export const secondTypeOneSectionData = {
   labelledBy: "Venturi",
   title: "Venturi",
   text: "The Venturi fabric is a high-performance, double-layer laminate that is both waterproof and windproof. It is also highly breathable, making it perfect for outdoor activities.",
-  mainImageDefault: "images/main/our-fabric-typeOneSection-2-main-default.webp",
+  mainImageDefault: "/public/images/main/our-fabric-typeOneSection-2-main-default.webp",
   mainImageSmall: "images/main/our-fabric-typeOneSection-2-main-default.webp",
   secondaryImageDefault:
     "images/main/our-fabric-typeOneSection-2-secondary-default.webp",

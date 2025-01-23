@@ -24,16 +24,15 @@ export const TypeOneSection = ({
   reverse,
   labelledBy,
 }) => {
+  const isReverseSection = reverse ? "lg:flex-row-reverse" : "";
+  const isReverseSecondaryImage = reverse ? "-left-[11%]" : "-right-[11%]";
+
   return (
     <section
       aria-labelledby={labelledBy}
-      className={`w-full h-auto flex flex-col gap-10 lg:flex-row ${
-        reverse ? "lg:flex-row-reverse" : ""
-      }`}
+      className={`w-full h-auto flex flex-col gap-10 lg:flex-row ${isReverseSection} `}
     >
-      <div
-        className={`w-[94%] h-auto relative lg:w-1/2 ${reverse ? "ml-[6%]" : ""}`}
-      >
+      <div className={`w-[90%]  relative lg:w-1/2  flex items-center`}>
         <PictureContainer
           defaultImage={mainImageDefault}
           smallImage={mainImageSmall}
@@ -43,9 +42,7 @@ export const TypeOneSection = ({
         <PictureContainer
           defaultImage={secondaryImageDefault}
           smallImage={secondaryImageSmall}
-          className={`block w-1/2 h-auto absolute top-1/2 transform -translate-y-1/2 ${
-            reverse ? "-left-20" : "-right-20"
-          }`}
+          className={`block w-1/2 h-auto absolute top-1/2 transform -translate-y-1/2 ${isReverseSecondaryImage}`}
           altImage={altImage}
         />
       </div>

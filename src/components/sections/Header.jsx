@@ -49,11 +49,9 @@ export const Header = () => {
   // Reset modals when route changes
   useEffect(() => {
     if (prevParamsRef.current && prevParamsRef.current !== params) {
-      setTimeout(() => {
-        setIsNavbarCartOpen(false);
-        setIsNavbarShopOpen(false);
-        setIsSearchBarOpen(false);
-      }, 500);
+      setIsNavbarCartOpen(false);
+      setIsNavbarShopOpen(false);
+      setIsSearchBarOpen(false);
     }
     prevParamsRef.current = params || {};
   }, [params]);

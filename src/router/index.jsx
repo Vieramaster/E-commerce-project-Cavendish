@@ -11,10 +11,10 @@ const ShopProduct = lazy(() => import("../pages/ShopProduct"));
 const Contact = lazy(() => import("../pages/Contact"));
 const Delivery = lazy(() => import("../pages/Delivery"));
 const Returns = lazy(() => import("../pages/Returns"));
-const ProductCare = lazy(()=> import ("../pages/ProductCare"))
-const OurStory = lazy(()=> import ("../pages/OurStory"))
-const Stores = lazy(()=> import ("../pages/Stores"))
-const OurFabrics = lazy(()=>import("../pages/OurFabrics"))
+const ProductCare = lazy(() => import("../pages/ProductCare"));
+const OurStory = lazy(() => import("../pages/OurStory"));
+const Stores = lazy(() => import("../pages/Stores"));
+const OurFabrics = lazy(() => import("../pages/OurFabrics"));
 // @ts-ignore
 const SuspenseWrapper = ({ children }) => (
   <Suspense fallback={<LoaderPage />}>{children}</Suspense>
@@ -50,6 +50,15 @@ export const router = createBrowserRouter([
           </SuspenseWrapper>
         ),
       },
+      {
+        path: "/shop/search/:search",
+        element: (
+          <SuspenseWrapper>
+            <Shop />
+          </SuspenseWrapper>
+        ),
+      },
+
       {
         path: "/shop/:category/:idProduct",
         element: (

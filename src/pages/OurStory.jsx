@@ -18,7 +18,7 @@ const OurStory = () => {
       <ImageBanner
         title="Our Story"
         defaultImage="images/main/story-image-banner-default.webp"
-        smallImage="images/main/story-image-banner-default.webpp"
+        smallImage="images/main/story-image-banner-small.webp"
         altImage="image banner"
       />
       <div className="w-5/6 h-auto mx-auto text-textColor grid py-16 gap-20">

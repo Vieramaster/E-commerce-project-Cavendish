@@ -8,6 +8,7 @@ import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { useFetch } from "../hooks/useFetch";
 import { useResizeWindow } from "../hooks/useResizeWindow";
 import { useSearchValue } from "../hooks/useZustand";
+
 import {
   alphabeticFilter,
   colorFilter,
@@ -104,38 +105,31 @@ export const Shop = () => {
   }, []);
 
   /** @type {React.MouseEventHandler<HTMLButtonElement>} */
-  const handleExtendfilter = useCallback(
-    ({ currentTarget }) => {
-      resetPagination();
-      const {
-        value: buttonValue,
-        dataset: { id: buttonData },
-      } = /** @type {HTMLButtonElement} */ (currentTarget);
 
-      setExtendFilters((prev) => {
-        /**@type {"size" | "color" | "type"} */
-        let filterKey;
+  const handleExtendfilter = useCallback(({ currentTarget }) => {
+    const {
+      value: buttonValue,
+      dataset: { id: buttonData },
+    } = currentTarget;
 
-        if (buttonData === "sizeButton") {
-          filterKey = "size";
-        } else if (buttonData === "colorButton") {
-          filterKey = "color";
-        } else if (buttonData === "typeButton") {
-          filterKey = "type";
-        } else return prev;
+    setExtendFilters((prev) => {
+      /**@type {"size" | "color" | "type"} */
+      let filterKey;
+      if (buttonData === "sizeButton") filterKey = "size";
+      else if (buttonData === "colorButton") filterKey = "color";
+      else if (buttonData === "typeButton") filterKey = "type";
+      else return prev;
 
-        const updatedFilter = prev[filterKey].includes(buttonValue)
-          ? prev[filterKey].filter((item) => item !== buttonValue)
-          : [...prev[filterKey], buttonValue];
+      const updatedFilter = prev[filterKey].includes(buttonValue)
+        ? prev[filterKey].filter((item) => item !== buttonValue)
+        : [...prev[filterKey], buttonValue];
 
-        return {
-          ...prev,
-          [filterKey]: updatedFilter,
-        };
-      });
-    },
-    [resetPagination]
-  );
+      return {
+        ...prev,
+        [filterKey]: updatedFilter,
+      };
+    });
+  }, []);
 
   const handleCleanFilter = useCallback(() => {
     setExtendFilters({ size: [], color: [], type: [] });
@@ -175,6 +169,7 @@ export const Shop = () => {
   useEffect(() => {
     if (data) {
       resetPagination();
+      setExtendFilters({ size: [], color: [], type: [] });
     }
   }, [data, resetPagination]);
 
@@ -191,9 +186,9 @@ export const Shop = () => {
           handleExtendfilter,
         }}
       />
-      <section className="bg-offWhite w-full min-h-screen" key={category}>
+      <section className="bg-offWhite w-full min-h-screen">
         <div
-          className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
+          className={`h-full w-5/6 mx-auto  flex flex-col py-10 md:grid gap-x-5 gap-y-8 md:gap-y-12 ${
             toggleGrid ? gridGiant : gridCompact
           }`}
         >
