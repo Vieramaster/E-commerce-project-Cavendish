@@ -199,3 +199,11 @@
  * @property {React.ComponentType} Component 
  * @property {string} title 
  */
+/**
+ * @typedef {Object} MainBannerHome
+ * @property {string} title
+ * @property {string} text
+ * @property {"left" | "right" | "center"} positionTitle
+ * @property {string} backgroundImage
+ * @property {string} toPage
+ */

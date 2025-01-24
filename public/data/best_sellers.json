@@ -54,7 +54,7 @@
         "name": "Drum II t-shirt",
         "description": "lorem20",
         "category": "t-shirt",
-        "clothes": "t_shirts_and_polos",
+        "clothes": "t-shirts_and_polos",
         "price": 25,
         "realPrice": 25,
         "discount": false,

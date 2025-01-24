@@ -85,12 +85,25 @@ export const Shop = () => {
 
   const { searchValue } = useSearchValue();
 
+  const totalCategories = [
+    "sweatshirts_and_hoodies",
+    "jackets_and_coats",
+    "t-shirts_and_polos",
+    "pants_and_jeans",
+    "sweaters",
+    "shirts",
+    "shoes",
+  ];
+  const resultCategories =
+    category && totalCategories.includes(category) ? category : undefined;
+
   const { data, loading } = useFetch(
     "/data/clothes_for_e-commerse.json",
-    category !== "new_arrivals" ? category : undefined,
+    resultCategories,
     searchValue ?? null
   );
-
+  console.log(searchValue);
+  console.log(data);
   // data is subtracted to create filter buttons
   /** @type {ProductAttributes} */
   const arrayForFilters = useMemo(
@@ -167,11 +180,17 @@ export const Shop = () => {
   );
 
   useEffect(() => {
+    if (searchValue) {
+      resetPagination();
+      setExtendFilters({ size: [], color: [], type: [] });
+      setPage(1);
+    }
     if (data) {
       resetPagination();
       setExtendFilters({ size: [], color: [], type: [] });
+      setPage(1);
     }
-  }, [data, resetPagination]);
+  }, [data, searchValue, resetPagination]);
 
   return (
     <>

@@ -2,40 +2,7 @@ import { HomeIntroSlider } from "../sliders/HomeIntroSlider";
 import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 import { ArrowPageButton } from "../buttons/ArrowPageButton";
 import { useState, useEffect, useRef } from "react";
-
-/**
- * @type {{
- *  title: string,
- *  text: string,
- *  positionTitle: "left" | "right" | "center",
- *  backgroundImage: string,
- *  toPage: string
- * }[]}
- *
- */
-const componentList = [
-  {
-    title: "Sensations ",
-    text: "New summer collection 2025",
-    positionTitle: "left",
-    backgroundImage: "/images/main/background2.webp",
-    toPage: "/shop/new-arrivals",
-  },
-  {
-    title: "Luxury",
-    text: "Best jackets quality",
-    positionTitle: "right",
-    backgroundImage: "/images/main/background1.webp",
-    toPage: "/shop/jackets-and-coats",
-  },
-  {
-    title: "Premium ",
-    text: "Shirts with the best quality",
-    positionTitle: "center",
-    backgroundImage: "/images/main/background3.webp",
-    toPage: "/shop/shirts",
-  },
-];
+import { MainBannerHome } from "../data/MainBannerHome";
 
 export const Introduction = () => {
   const [positionUl, setPositionUl] = useState(0);
@@ -43,8 +10,8 @@ export const Introduction = () => {
   /** @type {React.MutableRefObject<ReturnType<typeof setInterval> | null>}  */
   const intervalRef = useRef(null);
 
-  const ulDivision = 100 / componentList.length;
-  const maxDisplacement = -(ulDivision * componentList.length - ulDivision);
+  const ulDivision = 100 / MainBannerHome.length;
+  const maxDisplacement = -(ulDivision * MainBannerHome.length - ulDivision);
 
   const previousUl = () => {
     if (positionUl < 0) setPositionUl((prev) => prev + ulDivision);
@@ -104,11 +71,11 @@ export const Introduction = () => {
       <ul
         className="h-full flex duration-700 ease-in-out"
         style={{
-          width: `${componentList.length * 100}%`,
+          width: `${MainBannerHome.length * 100}%`,
           transform: `translateX(calc(${positionUl}%))`,
         }}
       >
-        {componentList.map(
+        {MainBannerHome.map(
           ({ title, text, positionTitle, backgroundImage, toPage }, index) => (
             <HomeIntroSlider
               key={index}

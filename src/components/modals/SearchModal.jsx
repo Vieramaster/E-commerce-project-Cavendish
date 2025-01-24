@@ -32,6 +32,7 @@ export const SearchModal = ({ toggle, componentRef, open }) => {
     null
   );
 
+
   /**@type {React.ChangeEventHandler<HTMLInputElement>} */
   const onSearchValue = useCallback(
     ({ currentTarget: { value } }) => {
