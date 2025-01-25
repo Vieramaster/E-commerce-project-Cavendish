@@ -30,5 +30,7 @@ export const BannerLogos = () => {
         ))}
       </ul>
     </section>
-  );
+
+);
 };
+
