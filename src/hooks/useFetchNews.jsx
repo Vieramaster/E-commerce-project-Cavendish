@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../types";
 
 const API_NEWS_KEY = import.meta.env.API_NEWS_KEY;
-const URL = `https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=${API_NEWS_KEY}`;
+const URL = `https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=ecbfbd576cdc4f6e9fe79d40453866de`;
 
 /**
  * @returns {{newsData: news[], error: boolean, loading: boolean}}
