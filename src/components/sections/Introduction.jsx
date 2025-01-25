@@ -51,7 +51,7 @@ export const Introduction = ({arrayBanner}) => {
 
   return (
     <section
-      className="w-full h-[calc(100vh-7rem)] overflow-hidden relative  bg-red-500"
+      className="w-full h-[calc(100vh-7rem)] overflow-hidden relative"
       aria-label="banner"
     >
       <ArrowPageButton
