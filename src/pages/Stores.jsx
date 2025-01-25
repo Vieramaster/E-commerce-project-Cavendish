@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { Maps } from "../components/maps";
+import { Maps } from "../components/Maps";
 import { LocationsList } from "../components/lists/LocationsList";
 import { StoresData } from "../components/data/StoresData";
 import useDocumentTitle from "../hooks/useDocumentTitle";

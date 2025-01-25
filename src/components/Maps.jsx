@@ -31,11 +31,23 @@ export const Maps = ({ markers, zoomMark }) => {
         <CenterMap center={center} />
 
         {markers?.map(({ localName, coordinates }, index) => (
-          <Marker key={index} position={coordinates}>
-            <Popup  >{localName}</Popup>
+
+          <Marker  key={index} position={coordinates}>
+              <Popup >{localName}</Popup>
           </Marker>
         ))}
       </MapContainer>
+      <MapContainer center={center} zoom={13} scrollWheelZoom={false}>
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Marker position={center}>
+      <Popup>
+        A pretty CSS3 popup. <br /> Easily customizable.
+      </Popup>
+    </Marker>
+  </MapContainer>
     </div>
   );
 };
