@@ -1,4 +1,4 @@
- export const UnderArmorLogo= () => {
+ export const UnderArmorLogo = () => {
   return (
     <svg className="m-auto w-full h-full" viewBox="0 0 53.8 31.404">
       <g transform="translate(-1 -1)">

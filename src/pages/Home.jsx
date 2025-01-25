@@ -41,7 +41,7 @@ const Home = () => {
               discount={usePercentage(price, realPrice)}
               afterPrice={realPrice}
               beforePrice={price}
-              image={"/public/images/imagePages/shoes.webp"}
+              image={"images/imagePages/shoes.webp"}
               timeDate={"feb 15, 2025 00:00:00"}
               imageAlt={name}
               page={`/shop/${clothes}/${idProduct}`}
