@@ -10,9 +10,9 @@ import { PictureContainer } from "../PictureContainer";
  * */
 
 const positionClasses = {
-  left: ["justify-start", "ml-5 lg:ml-20"],
-  right: ["justify-end", "mr-5 lg:mr-20"],
-  center: ["justify-center", "mx-auto"],
+  left: ["lg:justify-start", "lg:ml-20"],
+  right: ["lg:justify-end", "lg:mr-20"],
+  center: ["lg:justify-center", "lg:mx-auto"],
 };
 
 /**
@@ -31,7 +31,7 @@ export const HomeIntroSlider = ({
   return (
     <>
       <li
-        className={` relative h-full w-1/2  bg-top bg-cover flex items-end  ${positionClasses[positionTitle][0]}`}
+        className={` relative h-full w-1/2  bg-top bg-cover flex items-end justify-center mx-auto  ${positionClasses[positionTitle][0]}`}
       >
         <PictureContainer
           className="w-full h-full"

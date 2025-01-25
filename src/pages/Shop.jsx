@@ -180,12 +180,12 @@ export const Shop = () => {
   );
 
   useEffect(() => {
-    if (data) {
+    if (data || searchValue) {
       resetPagination();
       setExtendFilters({ size: [], color: [], type: [] });
       setPage(1);
     }
-  }, [data, resetPagination]);
+  }, [data, searchValue, resetPagination]);
 
   return (
     <>
