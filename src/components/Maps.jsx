@@ -18,19 +18,24 @@ export const Maps = ({ markers, zoomMark }) => {
 
   return (
     <div className="relative w-full h-96 z-0 lg:w-3/5 lg:h-full">
-   
-      <MapContainer center={center} zoom={13} scrollWheelZoom={false}>
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-    <Marker position={center}>
-      <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-      </Popup>
-    </Marker>
-  </MapContainer>
+      <MapContainer
+        center={center}
+        zoom={16}
+        scrollWheelZoom={false}
+        className="w-full h-full"
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <CenterMap center={center} />
+
+        {markers?.map(({ localName, coordinates }, index) => (
+          <Marker key={index} position={coordinates} >
+            <Popup>{localName}</Popup>
+          </Marker>
+        ))}
+      </MapContainer>
     </div>
   );
-  
 };
