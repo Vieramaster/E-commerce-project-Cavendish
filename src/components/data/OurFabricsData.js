@@ -31,7 +31,7 @@ export const secondTypeTwoSelectionData = {
   secondImageDefault:
     "images/main/our-fabric-typeTwoSection-2-secondary-2-default.webp",
   secondImageSmall:
-    "images/main/our-fabric-typeTwoSection-2-secondary-2-default.webp",
+    "images/main/our-fabric-typeTwoSection-2-secondary-2-small.webp",
   secondAltImage: "fabric visual",
   mainImageDefault: "images/main/our-fabric-typeTwoSection-2-main-default.webp",
   mainImageSmall: "images/main/our-fabric-typeTwoSection-2-main-small.webp",
@@ -44,7 +44,7 @@ export const firstTypeOneSectionData = {
   labelledBy: "GORE-TEX®",
   text: "The interaction between Cavendish and GORE-TEX® results in products that provide protection and comfort, perfect for extreme weather conditions. Cavendish has been working with GORE-TEX® for over 30 years to offer highly functional garm",
   mainImageDefault: "images/main/our-fabric-typeOneSection-1-main-default.webp",
-  mainImageSmall: "images/main/our-fabric-typeOneSection-1-main-default.webp",
+  mainImageSmall: "images/main/our-fabric-typeOneSection-1-main-small.webp",
   secondaryImageDefault:
     "images/main/our-fabric-typeOneSection-1-secondary-default.webp",
   secondaryImageSmall:
@@ -57,7 +57,7 @@ export const secondTypeOneSectionData = {
   labelledBy: "Venturi",
   title: "Venturi",
   text: "The Venturi fabric is a high-performance, double-layer laminate that is both waterproof and windproof. It is also highly breathable, making it perfect for outdoor activities.",
-  mainImageDefault: "/public/images/main/our-fabric-typeOneSection-2-main-default.webp",
+  mainImageDefault: "images/main/our-fabric-typeOneSection-2-main-default.webp",
   mainImageSmall: "images/main/our-fabric-typeOneSection-2-main-default.webp",
   secondaryImageDefault:
     "images/main/our-fabric-typeOneSection-2-secondary-default.webp",
