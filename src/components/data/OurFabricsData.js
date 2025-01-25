@@ -57,10 +57,10 @@ export const secondTypeOneSectionData = {
   labelledBy: "Venturi",
   title: "Venturi",
   text: "The Venturi fabric is a high-performance, double-layer laminate that is both waterproof and windproof. It is also highly breathable, making it perfect for outdoor activities.",
-  mainImageDefault: "images/main/our-fabric-typeOneSection-2-main-default.webp",
-  mainImageSmall: "images/main/our-fabric-typeOneSection-2-main-default.webp",
+  mainImageDefault: "images/main/our-fabric-typeOneSection-2-main-small.webp",
+  mainImageSmall: "images/main/our-fabric-typeOneSection-2-main-small.webp",
   secondaryImageDefault:
-    "images/main/our-fabric-typeOneSection-2-secondary-small.webp",
+    "images/main/our-fabric-typeOneSection-2-secondary-default.webp",
   secondaryImageSmall:
     "images/main/our-fabric-typeOneSection-2-secondary-small.webp",
   altImage: "GORE-TEX® example",
