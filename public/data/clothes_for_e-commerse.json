@@ -638,9 +638,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/shop/pants_and_jeans/joiner_carpenter_sky_blue1.webp",
-                        "/images/shop/pants_and_jeans/joiner_carpenter_sky_blue2.webp",
-                        "/images/shop/pants_and_jeans/joiner_carpenter_sky_blue3.webp"
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_sky_blue1.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_sky_blue2.webp",
+                        "/images/shop/pants_and_jeans/joiner_carpenter_pants_sky_blue3.webp"
                     ],
                     "sizes": {
                         "40": 0,
@@ -1205,6 +1205,7 @@
             "name": "Motocycle t-shirt",
             "description": "lorem10",
             "category": "t-shirt",
+            "clothes": "t-shirts_and_polos",
             "price": 30,
             "realPrice": 30,
             "discount": false,
@@ -1831,9 +1832,9 @@
                     "colorName": "brown",
                     "hex": "#554838",
                     "imagesColor": [
-                        "/images/shop/shirts/havanna_shirt_brown.webp",
-                        "/images/shop/shirts/havanna_shirt_brown.webp",
-                        "/images/shop/shirts/havanna_shirt_brown.webp"
+                        "/images/shop/shirts/havanna_shirt_brown1.webp",
+                        "/images/shop/shirts/havanna_shirt_brown2.webp",
+                        "/images/shop/shirts/havanna_shirt_brown3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -1847,9 +1848,9 @@
                     "colorName": "sky blue",
                     "hex": "#466e90",
                     "imagesColor": [
-                        "/images/shop/shirts/havanna_shirt_sky_blue.webp",
-                        "/images/shop/shirts/havanna_shirt_sky_blue.webp",
-                        "/images/shop/shirts/havanna_shirt_sky_blue.webp"
+                        "/images/shop/shirts/havanna_shirt_sky_blue1.webp",
+                        "/images/shop/shirts/havanna_shirt_sky_blue2.webp",
+                        "/images/shop/shirts/havanna_shirt_sky_blue3.webp"
                     ],
                     "sizes": {
                         "s": 10,
@@ -2450,7 +2451,7 @@
             "name": "Winston sweater jacket",
             "description": "lorem25",
             "category": "sweater jacket",
-            "clothes": "sweatesr",
+            "clothes": "sweaters",
             "price": 35,
             "realPrice": 50,
             "discount": true,
@@ -2555,9 +2556,9 @@
                     "colorName": "salmon",
                     "hex": "#ffcca2",
                     "imagesColor": [
-                        "/images/shop/sweaters/mercury_sweater_salmon1.webp",
-                        "/images/shop/sweaters/mercury_sweater_salmon2.webp",
-                        "/images/shop/sweaters/mercury_sweater_salmon3.webp"
+                        "/images/shop/sweaters/mercury_sweater_light_salmon1.webp",
+                        "/images/shop/sweaters/mercury_sweater_light_salmon2.webp",
+                        "/images/shop/sweaters/mercury_sweater_light_salmon3.webp"
                     ],
                     "sizes": {
                         "s": 10,

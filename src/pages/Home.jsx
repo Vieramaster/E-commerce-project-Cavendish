@@ -6,22 +6,20 @@ import { SubscribeBanner } from "../components/sections/SubscribeBanner";
 import { useFetch } from "../hooks/useFetch";
 import { Introduction } from "../components/sections/Introduction";
 import { usePercentage } from "../hooks/useMathOperations";
-import {useFetchNews} from "../hooks/useFetchNews"
+import { useFetchNews } from "../hooks/useFetchNews";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { MainBannerHome } from "../components/data/MainBannerHome";
 import "../types";
 
-
 const Home = () => {
-  useDocumentTitle("Best clothes for men")
-  const { newsData, error:newsError } = useFetchNews(); 
-
+  useDocumentTitle("Best clothes for men");
+  const { newsData, error: newsError } = useFetchNews();
 
   const { data: newArrivals } = useFetch(
     "/data/best_sellers.json",
     undefined,
     null
   );
-
 
   const { data: discountProduct } = useFetch(
     "/data/clothes_for_e-commerse.json",
@@ -31,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-      <Introduction />
+      <Introduction arrayBanner={MainBannerHome}/>
       <BannerLogos />
       <ShoppingCards shopArray={newArrivals} title={"Best Sellers"} />
       {discountProduct[0] &&

@@ -102,7 +102,7 @@ export const Shop = () => {
     resultCategories,
     searchValue ?? null
   );
-  console.log(searchValue);
+
   console.log(data);
   // data is subtracted to create filter buttons
   /** @type {ProductAttributes} */
@@ -180,17 +180,12 @@ export const Shop = () => {
   );
 
   useEffect(() => {
-    if (searchValue) {
-      resetPagination();
-      setExtendFilters({ size: [], color: [], type: [] });
-      setPage(1);
-    }
     if (data) {
       resetPagination();
       setExtendFilters({ size: [], color: [], type: [] });
       setPage(1);
     }
-  }, [data, searchValue, resetPagination]);
+  }, [data, resetPagination]);
 
   return (
     <>

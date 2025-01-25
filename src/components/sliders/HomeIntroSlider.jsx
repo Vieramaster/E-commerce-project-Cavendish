@@ -1,4 +1,5 @@
 import { IntroHomeButton } from "../links/IntroHomeButton";
+import { PictureContainer } from "../PictureContainer";
 
 /**
  * @type {{
@@ -15,45 +16,46 @@ const positionClasses = {
 };
 
 /**
- * @param {{
- * title: string,
- * text: string,
- * positionTitle: "left" | "right" | "center",
- * backgroundImage:string, toPage:string
- * }
- * &
- * JSX.IntrinsicElements["li"]
- * } props
- * */
+ * @param {mainBannerHome & JSX.IntrinsicElements["li"]} props
+ */
 export const HomeIntroSlider = ({
   title,
   text,
   positionTitle,
-  backgroundImage,
+  imageBannerDefault,
+  imageBannersmall,
   toPage,
 }) => {
   const position = positionClasses[positionTitle][1] || "";
 
   return (
-    <li
-      className={`${positionClasses[positionTitle][0]} pt-28 h-full w-1/2  bg-top bg-cover flex items-end`}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      <div
-        className={`flex flex-col text-white mb-5 lg:mb-20 ${position}`}
-        aria-labelledby="Discover-now"
+    <>
+      <li
+        className={` relative h-full w-1/2  bg-top bg-cover flex items-end  ${positionClasses[positionTitle][0]}`}
       >
-        <h2 className="text-5xl font-bold drop-shadow-md shadow-black lg:text-6xl 2xl:text-[5rem]">
-          {title}
-        </h2>
-        <p
-          className="text-lg italic drop-shadow-md shadow-black lg:text-xl 2xl:text-2xl mb-5"
-          id="Discover-now"
+        <PictureContainer
+          className="w-full h-full"
+          smallImage={imageBannersmall}
+          defaultImage={imageBannerDefault}
+          altImage=""
+          isRounded={false}
+        />
+        <div
+          className={`flex flex-col text-white mb-5 lg:mb-20 absolute pt-28 ${position}`}
+          aria-labelledby="Discover-now"
         >
-          {text}
-        </p>
-        <IntroHomeButton toPage={toPage}>Discover Now</IntroHomeButton>
-      </div>
-    </li>
+          <h2 className="text-5xl font-bold drop-shadow-md shadow-black lg:text-6xl 2xl:text-[5rem]">
+            {title}
+          </h2>
+          <p
+            className="text-lg italic drop-shadow-md shadow-black lg:text-xl 2xl:text-2xl mb-5"
+            id="Discover-now"
+          >
+            {text}
+          </p>
+          <IntroHomeButton toPage={toPage}>Discover Now</IntroHomeButton>
+        </div>
+      </li>
+    </>
   );
 };

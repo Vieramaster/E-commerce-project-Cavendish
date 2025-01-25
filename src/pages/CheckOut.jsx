@@ -40,7 +40,7 @@ const CheckOut = () => {
     <>
       <HeaderLight isHidden={!isMobile} />
       <div className="bg-white w-full h-auto flex flex-col lg:flex-row relative">
-        <section className="w-full h-auto lg:w-1/2 lg:h-screen lg:bg-lightGrey lg:pt-20 lg:fixed lg:right-0 ">
+        <section className="w-full h-auto lg:w-1/2 lg:h-screen lg:bg-lightGrey lg:pt-20 lg:fixed lg:right-0 overflow-y-auto scrollable-list">
           <SummaryShopButton
             changeArrow={false}
             totalPrice={sumPrice}

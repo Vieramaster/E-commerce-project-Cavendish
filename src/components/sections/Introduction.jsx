@@ -2,16 +2,17 @@ import { HomeIntroSlider } from "../sliders/HomeIntroSlider";
 import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 import { ArrowPageButton } from "../buttons/ArrowPageButton";
 import { useState, useEffect, useRef } from "react";
-import { MainBannerHome } from "../data/MainBannerHome";
 
-export const Introduction = () => {
+
+/**@param {{arrayBanner:mainBannerHome[]}} props */
+export const Introduction = ({arrayBanner}) => {
   const [positionUl, setPositionUl] = useState(0);
 
   /** @type {React.MutableRefObject<ReturnType<typeof setInterval> | null>}  */
   const intervalRef = useRef(null);
 
-  const ulDivision = 100 / MainBannerHome.length;
-  const maxDisplacement = -(ulDivision * MainBannerHome.length - ulDivision);
+  const ulDivision = 100 / arrayBanner.length;
+  const maxDisplacement = -(ulDivision * arrayBanner.length - ulDivision);
 
   const previousUl = () => {
     if (positionUl < 0) setPositionUl((prev) => prev + ulDivision);
@@ -50,7 +51,7 @@ export const Introduction = () => {
 
   return (
     <section
-      className="w-full h-screen overflow-hidden relative"
+      className="w-full h-[calc(100vh-7rem)] overflow-hidden relative  bg-red-500"
       aria-label="banner"
     >
       <ArrowPageButton
@@ -71,15 +72,32 @@ export const Introduction = () => {
       <ul
         className="h-full flex duration-700 ease-in-out"
         style={{
-          width: `${MainBannerHome.length * 100}%`,
+          width: `${arrayBanner.length * 100}%`,
           transform: `translateX(calc(${positionUl}%))`,
         }}
       >
-        {MainBannerHome.map(
-          ({ title, text, positionTitle, backgroundImage, toPage }, index) => (
+        {arrayBanner.map(
+          (
+            {
+              title,
+              text,
+              positionTitle,
+              imageBannerDefault,
+              imageBannersmall,
+              toPage,
+            },
+            index
+          ) => (
             <HomeIntroSlider
               key={index}
-              {...{ text, title, positionTitle, backgroundImage, toPage }}
+              {...{
+                text,
+                title,
+                positionTitle,
+                imageBannerDefault,
+                imageBannersmall,
+                toPage,
+              }}
             />
           )
         )}

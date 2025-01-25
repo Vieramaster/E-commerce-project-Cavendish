@@ -200,10 +200,11 @@
  * @property {string} title 
  */
 /**
- * @typedef {Object} MainBannerHome
+ * @typedef {Object} mainBannerHome
  * @property {string} title
  * @property {string} text
  * @property {"left" | "right" | "center"} positionTitle
- * @property {string} backgroundImage
+ * @property {string} imageBannerDefault
+ * @property {string} imageBannersmall
  * @property {string} toPage
  */
