@@ -1,4 +1,4 @@
-import { AdidasLogo } from "../SVGs/logos/AdidasLogo"
+import { AdidasLogo } from "../SVGs/logos/AdidasLogo.jsx";
 import { UnderArmorLogo } from "../SVGs/logos/UnderArmorLogo";
 import { VansLogo } from "../SVGs/logos/VansLogo";
 import { DCLogo } from "../SVGs/logos/DCLogo";
