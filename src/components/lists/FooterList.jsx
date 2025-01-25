@@ -32,7 +32,7 @@ export const FooterList = () => {
           </h3>
           <ul className="mt-5">
             {items.map(({ path, title, url }) => (
-              <li key={path}>
+              <li key={path} className="text-center lg:text-left">
                 <Link
                   className="text-border hover:text-white duration-200 ease-in-out"
                   to={url}
