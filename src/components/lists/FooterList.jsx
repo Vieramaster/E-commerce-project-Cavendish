@@ -27,14 +27,14 @@ export const FooterList = () => {
       {/* Footer Navigation */}
       {FooterListData?.map(({ key, title, items }) => (
         <section key={key} aria-labelledby={`footer-${key}`}>
-          <h3 id={`footer-${key}`} className="text-xl font-alternative">
+          <h3 id={`footer-${key}`} className="text-start lg:text-left text-xl font-alternative">
             {title}
           </h3>
           <ul className="mt-5">
             {items.map(({ path, title, url }) => (
               <li key={path}>
                 <Link
-                  className="text-border hover:text-white duration-200 ease-in-out"
+                  className="text-border text-center lg:text-left hover:text-white duration-200 ease-in-out"
                   to={url}
                 >
                   {title}
