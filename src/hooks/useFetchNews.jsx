@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "../types";
 
-const API_NEWS_KEY = import.meta.env.VITE_API_NEWS_KEY;
+const API_NEWS_KEY = import.meta.env.API_NEWS_KEY;
 const URL = `https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=${API_NEWS_KEY}`;
 
 /**
@@ -13,6 +13,9 @@ export const useFetchNews = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
+
+
+//Being a defective API, the objects that do not provide all its features were purged
   const newArray = (/** @type {news[]} */ array) =>
     array.reduce((acc /** @type {news[]} */, item) => {
       if (item.title && item.url && item.urlToImage && item.description) {
@@ -22,6 +25,7 @@ export const useFetchNews = () => {
       }
       return acc;
     }, /** @type {news[]} */ ([]));
+
 
   useEffect(() => {
     const controller = new AbortController();
