@@ -1,4 +1,4 @@
-
+import { AdidasLogo } from "../SVGs/logos/AdidasLogo";
 import { UnderArmorLogo } from "../SVGs/logos/UnderArmorLogo";
 import { VansLogo } from "../SVGs/logos/VansLogo";
 import { DCLogo } from "../SVGs/logos/DCLogo";
@@ -8,7 +8,7 @@ import { PumaLogo } from "../SVGs/logos/PumaLogo";
 /** @type {{Component: React.ComponentType, key: string, label: string}[]} */
 export const logos = [
   { Component: UnderArmorLogo, key: "UnderArmor", label: "Under Armor Logo" },
-
+  { Component: AdidasLogo, key: "Adidas", label: "Adidas Logo" },
   { Component: VansLogo, key: "Vans", label: "Vans Logo" },
   { Component: DCLogo, key: "DC", label: "DC Shoes Logo" },
   { Component: ConverseLogo, key: "Converse", label: "Converse Logo" },
@@ -30,7 +30,5 @@ export const BannerLogos = () => {
         ))}
       </ul>
     </section>
-
-);
+  );
 };
-
