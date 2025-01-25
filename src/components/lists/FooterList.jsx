@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 export const FooterList = () => {
   return (
-    <section className="w-5/6 mx-auto py-10 grid grid-cols-2 gap-10 justify-items-left  lg:px-4  lg:w-full lg:flex lg:justify-between">
+    <section className="w-full py-10 px-4 grid grid-cols-2 gap-10  justify-items-center items-center lg:item-left lg:flex lg:justify-between">
       {/* Company Logo */}
       <PageLogo color="white" />
       {/* Social Media Icons */}
-      <ul className="flex gap-3">
+      <ul className="flex gap-3 ">
         {SocialLogosData?.map(({ Component, name }) => (
           <li key={name} className="size-8 lg:size-10">
             <a
