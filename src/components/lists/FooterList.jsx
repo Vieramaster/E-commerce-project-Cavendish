@@ -2,6 +2,7 @@ import { FooterListData } from "../data/FooterListData";
 import { PageLogo } from "../links/PageLogo";
 import { SocialLogosData } from "../data/SocialLogosData";
 import "../../types";
+import { Link } from "react-router-dom";
 
 export const FooterList = () => {
   return (
@@ -32,12 +33,12 @@ export const FooterList = () => {
           <ul className="mt-5">
             {items.map(({ path, title, url }) => (
               <li key={path}>
-                <a
+                <Link
                   className="text-border hover:text-white duration-200 ease-in-out"
-                  href={url}
+                  to={url}
                 >
                   {title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

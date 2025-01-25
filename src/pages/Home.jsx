@@ -13,6 +13,7 @@ import "../types";
 
 const Home = () => {
   useDocumentTitle("Best clothes for men");
+  
   const { newsData, error: newsError } = useFetchNews();
 
   const { data: newArrivals } = useFetch(
@@ -26,6 +27,7 @@ const Home = () => {
     undefined,
     "alfira"
   );
+
 
   return (
     <>
