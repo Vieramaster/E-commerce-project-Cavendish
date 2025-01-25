@@ -60,7 +60,7 @@ export const secondTypeOneSectionData = {
   mainImageDefault: "images/main/our-fabric-typeOneSection-2-main-default.webp",
   mainImageSmall: "images/main/our-fabric-typeOneSection-2-main-default.webp",
   secondaryImageDefault:
-    "images/main/our-fabric-typeOneSection-2-secondary-default.webp",
+    "images/main/our-fabric-typeOneSection-2-secondary-small.webp",
   secondaryImageSmall:
     "images/main/our-fabric-typeOneSection-2-secondary-small.webp",
   altImage: "GORE-TEX® example",
