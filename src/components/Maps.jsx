@@ -32,4 +32,5 @@ export const Maps = ({ markers, zoomMark }) => {
   </MapContainer>
     </div>
   );
+  
 };
