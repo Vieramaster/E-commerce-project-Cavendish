@@ -17,13 +17,13 @@ app.get("/", (res) => {
       return response.json();
     })
     .then((data) => {
-      if (!Array.isArray(data.articles)) {
+      if (!Array.isArray(data)) {
         return Promise.reject("Respuesta inválida de la API");
       }
-      res.json(data.articles);  
+      res.json(data);  
     })
     .catch((error) => {
-      console.error("Error getting news::", error);
+      console.error("Error getting news:", error);
       res.status(500).json({ message: "Error getting news:", error });
     });
 });
