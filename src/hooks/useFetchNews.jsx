@@ -28,7 +28,13 @@ export const useFetchNews = () => {
     const controller = new AbortController();
 
     setLoading(true);
-    fetch(URL, { signal: controller.signal })
+    fetch(URL, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      signal: controller.signal,
+    })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
