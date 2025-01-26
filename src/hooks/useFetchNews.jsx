@@ -11,7 +11,8 @@ export const useFetchNews = () => {
   const [loading, setLoading] = useState(true);
 
   const API_NEWS = import.meta.env.VITE_API_NEWS;
-  const URL = `https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=${API_NEWS}`;
+  const URL = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=${API_NEWS}`;
+
 
   //Being a defective API, the objects that do not provide all its features were purged
   const filterArticles = (/** @type {news[]} */ array) =>
