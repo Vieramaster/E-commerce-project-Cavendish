@@ -135,17 +135,7 @@
  * @property {string} id
  * @property {string} name
  */
-/**
- * @typedef {object} news
- * @property {string} author
- * @property {string} content
- * @property {string} description
- * @property {string} publishedAt
- * @property {string} title
- * @property {string} url
- * @property {string} urlToImage
- * @property {object} source
- */
+
 /**
  * @typedef {object} TdText
  * @property {string} country
@@ -207,4 +197,16 @@
  * @property {string} imageBannerDefault
  * @property {string} imageBannersmall
  * @property {string} toPage
+ */
+
+
+/**
+ * @typedef {object} news
+ * @property {string} content
+ * @property {string} description
+ * @property {string} image
+ * @property {string} publishedAt
+ * @property {{name:string, url:string}} source
+ * @property {string} title
+ * @property {string} url
  */

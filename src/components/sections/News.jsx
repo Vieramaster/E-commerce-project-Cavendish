@@ -18,17 +18,25 @@ export const News = ({ arrayNews, error }) => {
         {!error &&
           arrayNews?.map(
             (
-              { description, publishedAt, title, url, urlToImage, author },
+              {
+                content,
+                description,
+                image,
+                publishedAt,
+                title,
+                url,
+                source: { name },
+              },
               index
             ) => {
               return (
                 <li
-                  className="w-80 h-[30rem]  mx-auto rounded-md overflow-hidden bg-lightGrey lg:w-full lg:h-[35rem]"
-                  key={author + index}
+                  className="w-80 h-[30rem]  mx-auto rounded-md overflow-hidden bg-lightGrey lg:w-full "
+                  key={name + index}
                 >
                   <NewsCard
-                    image={urlToImage}
-                    imageAlt={author + "news"}
+                    image={image}
+                    imageAlt={name + "news"}
                     toPage={url}
                     date={publishedAt.split("T")[0]}
                     title={title}

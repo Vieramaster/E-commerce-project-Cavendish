@@ -11,31 +11,13 @@ export const useFetchNews = () => {
   const [loading, setLoading] = useState(true);
 
   const API_NEWS = import.meta.env.VITE_API_NEWS;
-  const URL = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=${API_NEWS}`;
-
-
-  //Being a defective API, the objects that do not provide all its features were purged
-  const filterArticles = (/** @type {news[]} */ array) =>
-    array.reduce((acc /** @type {news[]} */, item) => {
-      if (item.title && item.url && item.urlToImage && item.description) {
-        if (acc.length < 4) {
-          acc.push(item);
-        }
-      }
-      return acc;
-    }, /** @type {news[]} */ ([]));
+  const URL = `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=us&max=4&apikey=${API_NEWS}`;
 
   useEffect(() => {
     const controller = new AbortController();
 
     setLoading(true);
-    fetch(URL, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      signal: controller.signal,
-    })
+    fetch(URL, { signal: controller.signal })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
@@ -43,10 +25,10 @@ export const useFetchNews = () => {
         return response.json();
       })
       .then((data) => {
-        if (data.status !== "ok" || !Array.isArray(data.articles)) {
+        if (!Array.isArray(data.articles)) {
           throw new Error(`Invalid API response`);
         }
-        setNewsData(filterArticles(data.articles));
+        setNewsData(data.articles);
         setError(false);
       })
       .catch((err) => {
