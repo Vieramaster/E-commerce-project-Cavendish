@@ -10,8 +10,8 @@ export const useFetchNews = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const API_NEWS = import.meta.env.VITE_API_NEWS;
-  const URL = `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=us&max=4&apikey=${API_NEWS}`;
+ const URL = "https://cavendish.vercel.app/"
+
 
   useEffect(() => {
     const controller = new AbortController();
@@ -25,7 +25,7 @@ export const useFetchNews = () => {
         return response.json();
       })
       .then((data) => {
-        if (!Array.isArray(data.articles)) {
+        if (data.status !== "ok" || !Array.isArray(data.articles)) {
           throw new Error(`Invalid API response`);
         }
         setNewsData(data.articles);

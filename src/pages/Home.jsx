@@ -30,6 +30,9 @@ const Home = () => {
   );
 
 
+  const API_NEWS = import.meta.env.VITE_API_NEWS;
+    console.log( API_NEWS) 
+
   return (
     <>
       <Introduction arrayBanner={MainBannerHome}/>

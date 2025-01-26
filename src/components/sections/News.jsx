@@ -19,7 +19,6 @@ export const News = ({ arrayNews, error }) => {
           arrayNews?.map(
             (
               {
-                content,
                 description,
                 image,
                 publishedAt,
