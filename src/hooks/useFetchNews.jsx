@@ -25,10 +25,10 @@ export const useFetchNews = () => {
         return response.json();
       })
       .then((data) => {
-        if (data.status !== "ok" || !Array.isArray(data.articles)) {
+        if (data.status !== "ok" || !Array.isArray(data)) {
           throw new Error(`Invalid API response`);
         }
-        setNewsData(data.articles);
+        setNewsData(data);
         setError(false);
       })
       .catch((err) => {

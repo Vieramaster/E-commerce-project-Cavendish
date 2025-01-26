@@ -28,7 +28,7 @@ app.get("/", (res) => {
     });
 });
 
-app.get("/", ( res) => {
+app.get("/", (res) => {
     res.send("CORS enabled with express");
   });
 

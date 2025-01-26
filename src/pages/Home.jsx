@@ -13,7 +13,7 @@ import "../types";
 
 const Home = () => {
   useDocumentTitle("Best clothes for men");
-  
+
   const { newsData, error: newsError } = useFetchNews();
   console.log(newsData);
 
@@ -29,10 +29,9 @@ const Home = () => {
     "alfira"
   );
 
-
   return (
     <>
-      <Introduction arrayBanner={MainBannerHome}/>
+      <Introduction arrayBanner={MainBannerHome} />
       <BannerLogos />
       <ShoppingCards shopArray={newArrivals} title={"Best Sellers"} />
       {discountProduct[0] &&
