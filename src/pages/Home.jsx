@@ -15,6 +15,7 @@ const Home = () => {
   useDocumentTitle("Best clothes for men");
   
   const { newsData, error: newsError } = useFetchNews();
+  console.log(newsData);
 
   const { data: newArrivals } = useFetch(
     "/data/best_sellers.json",

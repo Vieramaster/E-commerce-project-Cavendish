@@ -10,7 +10,7 @@ export const useFetchNews = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const API_NEWS = import.meta.env.VITE_API_NEWS_KEY;
+  const API_NEWS = import.meta.env.VITE_API_NEWS;
   const URL = `https://newsapi.org/v2/top-headlines?q=all&language=en&pageSize=10&apiKey=${API_NEWS}`;
 
   //Being a defective API, the objects that do not provide all its features were purged
