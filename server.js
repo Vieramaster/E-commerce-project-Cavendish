@@ -4,10 +4,11 @@ import fetch from "node-fetch";
 
 const app = express();
 
+// Configuración de CORS
 const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
-      ? "https://cavendish.vercel.app/"
+      ? "https://cavendish.vercel.app"
       : "http://localhost:5173",
   methods: ["GET"],
   allowedHeaders: ["Content-Type"],
@@ -15,10 +16,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-/**@type {string} */
 const API_NEWS = import.meta.env.VITE_API_NEWS;
-
-const URL =`https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=7&apikey=${API_NEWS}`;
+const URL = `https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=7&apikey=${API_NEWS}`;
 
 app.get("/", (req, res) => {
   fetch(URL)
@@ -31,7 +30,6 @@ app.get("/", (req, res) => {
       return response.json();
     })
     .then((data) => {
-      console.log("Data received from API:", data);
       if (!Array.isArray(data.articles)) {
         return Promise.reject("Respuesta inválida de la API");
       }
@@ -43,6 +41,7 @@ app.get("/", (req, res) => {
     });
 });
 
+// Puerto para el servidor
 const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`Servidor ejecutándose en http://localhost:${PORT}`);

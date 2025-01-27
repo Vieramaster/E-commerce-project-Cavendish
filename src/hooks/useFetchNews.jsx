@@ -15,7 +15,6 @@ export const useFetchNews = () => {
       ? "https://cavendish.vercel.app/"
       : "http://localhost:3001";
 
-      
   const filterArticles = (/** @type {news[]} */ array) =>
     array.reduce((acc /** @type {news[]} */, item) => {
       if (item.title && item.url && item.image && item.description) {
@@ -25,6 +24,7 @@ export const useFetchNews = () => {
       }
       return acc;
     }, /** @type {news[]} */ ([]));
+    
   useEffect(() => {
     const controller = new AbortController();
 
@@ -34,9 +34,13 @@ export const useFetchNews = () => {
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
         }
-        return response.json();
+        return response.json(); // Se espera una respuesta JSON
       })
       .then((data) => {
+        // Verifica si los datos tienen la estructura correcta antes de usarlos
+        if (!Array.isArray(data)) {
+          throw new Error("Invalid API response");
+        }
         setNewsData(filterArticles(data));
         setError(false);
       })

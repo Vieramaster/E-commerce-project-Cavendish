@@ -21,7 +21,7 @@ const Home = () => {
     undefined,
     null
   );
-
+console.log(newsData)
   const { data: discountProduct } = useFetch(
     "/data/clothes_for_e-commerse.json",
     undefined,
