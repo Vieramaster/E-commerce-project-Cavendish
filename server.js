@@ -4,20 +4,24 @@ import fetch from "node-fetch";
 
 const app = express();
 
-
 const corsOptions = {
-  origin:
-    process.env.NODE_ENV === "production"
-      ? "https://cavendish.vercel.app"
-      : "http://localhost:5173",
+  origin: (origin, callback) => {
+    if (
+      process.env.NODE_ENV === "production" &&
+      origin !== "https://cavendish.vercel.app"
+    ) {
+      callback(new Error("Not allowed by CORS"));
+    } else {
+      callback(null, true);
+    }
+  },
   methods: ["GET"],
   allowedHeaders: ["Content-Type"],
 };
 
 app.use(cors(corsOptions));
 
-
-const API_NEWS = "5e9e0e2c12a3091fb6a00c637fadf5ad";
+const API_NEWS = process.env.VITE_API_NEWS;
 const URL = `https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=7&apikey=${API_NEWS}`;
 
 app.get("/", (req, res) => {
