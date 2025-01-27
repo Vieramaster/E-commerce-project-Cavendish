@@ -18,7 +18,7 @@ app.use(cors(corsOptions));
 /**@type {string} */
 const API_NEWS = import.meta.env.VITE_API_NEWS;
 
-const URL =`https://gnews.io/api/v4/top-headlines?category=general&lang=ens&max=7&apikey=${API_NEWS}`;
+const URL =`https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=7&apikey=${API_NEWS}`;
 
 app.get("/", (req, res) => {
   fetch(URL)
