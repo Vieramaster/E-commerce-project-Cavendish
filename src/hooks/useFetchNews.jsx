@@ -24,7 +24,7 @@ export const useFetchNews = () => {
       }
       return acc;
     }, /** @type {news[]} */ ([]));
-    
+
   useEffect(() => {
     const controller = new AbortController();
 
@@ -34,10 +34,9 @@ export const useFetchNews = () => {
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
         }
-        return response.json(); // Se espera una respuesta JSON
+        return response.json(); 
       })
       .then((data) => {
-        // Verifica si los datos tienen la estructura correcta antes de usarlos
         if (!Array.isArray(data)) {
           throw new Error("Invalid API response");
         }
