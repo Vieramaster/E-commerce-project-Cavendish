@@ -10,9 +10,21 @@ export const useFetchNews = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
- const URL = "https://cavendish.vercel.app/"
+  const URL =
+    import.meta.env.MODE === "production"
+      ? "https://cavendish.vercel.app/"
+      : "http://localhost:3001";
 
-
+      
+  const filterArticles = (/** @type {news[]} */ array) =>
+    array.reduce((acc /** @type {news[]} */, item) => {
+      if (item.title && item.url && item.image && item.description) {
+        if (acc.length < 4) {
+          acc.push(item);
+        }
+      }
+      return acc;
+    }, /** @type {news[]} */ ([]));
   useEffect(() => {
     const controller = new AbortController();
 
@@ -25,10 +37,7 @@ export const useFetchNews = () => {
         return response.json();
       })
       .then((data) => {
-        if (data.status !== "ok" || !Array.isArray(data)) {
-          throw new Error(`Invalid API response`);
-        }
-        setNewsData(data);
+        setNewsData(filterArticles(data));
         setError(false);
       })
       .catch((err) => {
