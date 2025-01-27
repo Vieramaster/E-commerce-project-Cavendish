@@ -3,9 +3,8 @@ import { MinimalistArrow } from "../SVGs/icons/MinimalistArrow";
 import { ArrowPageButton } from "../buttons/ArrowPageButton";
 import { useState, useEffect, useRef } from "react";
 
-
 /**@param {{arrayBanner:mainBannerHome[]}} props */
-export const Introduction = ({arrayBanner}) => {
+export const Introduction = ({ arrayBanner }) => {
   const [positionUl, setPositionUl] = useState(0);
 
   /** @type {React.MutableRefObject<ReturnType<typeof setInterval> | null>}  */
@@ -55,6 +54,7 @@ export const Introduction = ({arrayBanner}) => {
       aria-label="banner"
     >
       <ArrowPageButton
+        aria-label="previous banner button"
         positionButton="left"
         onClick={previousUl}
         disabled={positionUl === 0}
@@ -62,6 +62,7 @@ export const Introduction = ({arrayBanner}) => {
         <MinimalistArrow directionArrow="left" />
       </ArrowPageButton>
       <ArrowPageButton
+        aria-label="next banner button"
         positionButton="right"
         onClick={nextUl}
         disabled={positionUl <= maxDisplacement}

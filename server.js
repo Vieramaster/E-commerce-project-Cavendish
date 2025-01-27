@@ -24,7 +24,6 @@ const URL = `https://gnews.io/api/v4/top-headlines?${new URLSearchParams({
 app.get("/", (_request, response) => {
     fetch(URL)
         .then((response) =>
-            // Cambio principal:
             response.ok
                 ? response.headers.get("Content-Type") === "application/json"
                     ? response.json()
@@ -45,7 +44,6 @@ app.get("/", (_request, response) => {
         });
 });
 
-// Puerto para el servidor
 const PORT = 3001;
 app.listen(PORT, () => {
     console.log(`SV working on http://localhost:${PORT}`);
