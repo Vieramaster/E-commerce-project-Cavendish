@@ -1,23 +1,15 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "functions": {
-    "api/NewsApi.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "builds": [
-    {
-      "src": "api/NewsApi.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ]
-}
+    "routes": [
+      {
+        "src": "/api/NewsApi",
+        "dest": "/api/NewsApi"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/NewsApi",
+        "destination": "/api/NewsApi"
+      }
+    ]
+  }
+  
