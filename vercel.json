@@ -1,27 +1,8 @@
 {
-
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/NewsApi.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist" 
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/NewsApi.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/$1" 
+      "source": "/",
+      "destination": "/api/NewsApi.js"
     }
   ]
 }

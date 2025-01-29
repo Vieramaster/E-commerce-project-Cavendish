@@ -1,23 +1,22 @@
 import express from "express";
 import cors from "cors";
-import fetch from "node-fetch";
 
 const app = express();
 
 const allowedOrigins = [
   "https://cavendish.vercel.app",
   "https://cavendish-git-main-vieramasters-projects.vercel.app",
-  "http://localhost:3000",
+  "http://http://localhost:5173/",
 ];
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      !origin ||
-      allowedOrigins.includes(origin) ||
-      origin.endsWith(".vercel.app")
-        ? callback(null, true)
-        : callback(new Error("Not allowed by CORS"));
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
     },
     methods: ["GET"],
     allowedHeaders: ["Content-Type"],
@@ -31,31 +30,31 @@ const URL = `https://gnews.io/api/v4/top-headlines?${new URLSearchParams({
   apikey: process.env.VITE_API_NEWS,
 })}`;
 
+const url =
+  "https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=7&apikey=1f23fd25fcd57c1f8b3407913c12d6d4";
+
 app.get("/", (_request, response) => {
-  fetch(URL)
-    .then(async (response) => {
-      console.log("Status Code:", response.status);
-      if (!response.ok) {
-        const errorDetails = await response.text();
-        console.error(
-          `Error ${response.status}: ${response.statusText} - ${errorDetails}`
-        );
-        response
-          .status(500)
-          .json({ message: "Error getting news", error: errorDetails });
-      }
-      return response.json();
-    })
+  fetch(url)
+    .then((response) =>
+      response.ok
+        ? response.headers.get("Content-Type") === "application/json"
+          ? response.json()
+          : Promise.reject("Invalid JSON")
+        : Promise.reject(`Error ${response.status}: ${response.statusText}`)
+    )
     .then((data) => {
+      if (!Array.isArray(data.articles)) {
+        return Promise.reject("Invalid API response");
+      }
       response.json(data.articles);
     })
     .catch((error) => {
-      console.error("Error:", error);
-      response.status(500).json({ message: "Error getting news", error });
+      console.error("Error getting news:", error);
+      response.status(500).json({ message: "error getting news", error });
     });
 });
 
-app.use((req, res, next) => {
-  console.log("Origin recibido:", req.headers.origin);
-  next();
+const PORT = 3001;
+app.listen(PORT, () => {
+  console.log(`SV working on http://localhost:${PORT}`);
 });
