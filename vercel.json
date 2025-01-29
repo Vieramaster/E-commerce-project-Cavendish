@@ -1,10 +1,4 @@
 {
-    "routes": [
-      {
-        "src": "/api/NewsApi",
-        "dest": "/api/NewsApi"
-      }
-    ],
     "rewrites": [
       {
         "source": "/api/NewsApi",
