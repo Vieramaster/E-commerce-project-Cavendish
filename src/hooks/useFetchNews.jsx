@@ -56,3 +56,5 @@ export const useFetchNews = () => {
 
   return { newsData, error, loading };
 };
+
+``
