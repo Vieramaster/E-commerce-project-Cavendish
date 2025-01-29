@@ -12,7 +12,7 @@ export const useFetchNews = () => {
 
   const URL =
     import.meta.env.MODE === "production"
-      ? "https://cavendish.vercel.app/"
+      ? "https://cavendish.vercel.app/api/NewsApi"
       : "http://localhost:3001";
 
   const filterArticles = (/** @type {news[]} */ array) =>
