@@ -44,11 +44,11 @@ app.get("/", (_request, response) => {
     })
     .catch((error) => {
       console.error("Error getting news:", error);
-      response.status(401).json({ message: "Unauthorized", error }); 
+      response.status(500).json({ message: "Error getting news", error });
     });
 });
 
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`SV working on http://localhost:${PORT}`);
-});
+// Exportamos la función para que Vercel lo maneje
+module.exports = (req, res) => {
+  app(req, res); // Ejecutamos Express dentro de esta función
+};
