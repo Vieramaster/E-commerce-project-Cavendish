@@ -1,12 +1,14 @@
 import express from "express";
 import cors from "cors";
+import fetch from "node-fetch";
 
 const app = express();
 
 const allowedOrigins = [
   "https://cavendish.vercel.app",
   "https://cavendish-git-main-vieramasters-projects.vercel.app",
-  "http://http://localhost:5173/",
+  "http://localhost:5173",
+  "http://localhost:3001",
 ];
 
 app.use(
@@ -23,25 +25,17 @@ app.use(
   })
 );
 
-const URL = `https://gnews.io/api/v4/top-headlines?${new URLSearchParams({
-  category: "general",
-  lang: "en",
-  max: "7",
-  apikey: process.env.VITE_API_NEWS,
-})}`;
-
 const url =
-  "https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=7&apikey=1f23fd25fcd57c1f8b3407913c12d6d4";
+  "https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=7&apikey=1f23fd25fcd57c1f8b3407913c12d6d4";
 
 app.get("/", (_request, response) => {
   fetch(url)
-    .then((response) =>
-      response.ok
-        ? response.headers.get("Content-Type") === "application/json"
-          ? response.json()
-          : Promise.reject("Invalid JSON")
-        : Promise.reject(`Error ${response.status}: ${response.statusText}`)
-    )
+    .then((apiResponse) => {
+      if (!apiResponse.ok) {
+        return Promise.reject(`Error ${apiResponse.status}: ${apiResponse.statusText}`);
+      }
+      return apiResponse.json();
+    })
     .then((data) => {
       if (!Array.isArray(data.articles)) {
         return Promise.reject("Invalid API response");
@@ -50,7 +44,7 @@ app.get("/", (_request, response) => {
     })
     .catch((error) => {
       console.error("Error getting news:", error);
-      response.status(500).json({ message: "error getting news", error });
+      response.status(401).json({ message: "Unauthorized", error }); 
     });
 });
 
