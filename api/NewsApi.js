@@ -4,14 +4,21 @@ import fetch from "node-fetch";
 
 const app = express();
 
+const allowedOrigins = [
+  "https://cavendish.vercel.app",
+  "https://cavendish-git-main-vieramasters-projects.vercel.app",
+  "http://localhost:3000",
+];
+
 app.use(
   cors({
     origin: (origin, callback) => {
-      const blocked =
-        process.env.NODE_ENV === "production" &&
-        origin !== "https://cavendish.vercel.app";
-
-      callback(blocked ? new Error("Not allowed by CORS") : null, !blocked);
+     
+      if (!origin || allowedOrigins.includes(origin) || origin.endsWith(".vercel.app")) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
     },
     methods: ["GET"],
     allowedHeaders: ["Content-Type"],
@@ -22,10 +29,8 @@ const URL = `https://gnews.io/api/v4/top-headlines?${new URLSearchParams({
   category: "general",
   lang: "en",
   max: "7",
-  apikey: "1f23fd25fcd57c1f8b3407913c12d6d4",
+  apikey: process.env.VITE_API_NEWS,
 })}`;
-
-
 
 app.get("/", (_request, response) => {
   fetch(URL)
@@ -51,13 +56,7 @@ app.get("/", (_request, response) => {
     });
 });
 
-
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`SV working on http://localhost:${PORT}`);
-});
-
 app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  console.log("Origin recibido:", req.headers.origin);
   next();
 });
