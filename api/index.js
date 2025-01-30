@@ -48,7 +48,3 @@ app.get("/", (_request, response) => {
     });
 });
 
-// Exportamos la función para que Vercel lo maneje
-module.exports = (req, res) => {
-  app(req, res); // Ejecutamos Express dentro de esta función
-};
