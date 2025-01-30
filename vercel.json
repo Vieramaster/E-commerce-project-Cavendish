@@ -9,15 +9,18 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "dist" 
       }
     }
   ],
-
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/api/NewsApi.js"
+      "src": "/api/(.*)",
+      "dest": "/api/NewsApi.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1" 
     }
   ]
 }
