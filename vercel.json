@@ -13,16 +13,7 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/api/NewsApi",
-      "dest": "/api/NewsApi"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
+
   "rewrites": [
     {
       "source": "/",
