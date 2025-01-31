@@ -32,7 +32,9 @@ app.get("/", (_request, response) => {
   fetch(url)
     .then((apiResponse) => {
       if (!apiResponse.ok) {
-        return Promise.reject(`Error ${apiResponse.status}: ${apiResponse.statusText}`);
+        return Promise.reject(
+          `Error ${apiResponse.status}: ${apiResponse.statusText}`
+        );
       }
       return apiResponse.json();
     })
@@ -44,7 +46,10 @@ app.get("/", (_request, response) => {
     })
     .catch((error) => {
       console.error("Error getting news:", error);
-      response.status(500).json({ message: "Error getting news", error });
+      response.status(401).json({ message: "Unauthorized", error });
     });
 });
 
+
+
+export default app;
