@@ -25,11 +25,18 @@ app.use(
   })
 );
 
-const url =
-  "https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=7&apikey=1f23fd25fcd57c1f8b3407913c12d6d4";
+
+
+const URL = `https://gnews.io/api/v4/top-headlines?${new URLSearchParams({
+  category: "general",
+  lang: "en",
+  country: "us",
+  max: "7",
+  apikey: process.env.VITE_API_NEWS,
+})}`;
 
 app.get("/api/NewsApi", (_request, response) => {
-  fetch(url)
+  fetch(URL)
     .then((apiResponse) => {
       if (!apiResponse.ok) {
         return Promise.reject(
@@ -50,4 +57,4 @@ app.get("/api/NewsApi", (_request, response) => {
     });
 });
 
-export default app
+export default app;
