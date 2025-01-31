@@ -15,16 +15,18 @@ export const DescriptionShopCard = ({ array, toggleSize }) => {
     <article className="flex justify-between gap-3 h-1/6 w-full text-textColor px-3 py-1">
       <div className="w-4/6 h-full flex flex-col justify-center  ">
         <span className="h-1/2  items-center flex">
-          <h3 className={`font-medium truncate whitespace-nowrap" ${sizeH3}`}>{name}</h3>
+          <h3 className={`font-medium truncate whitespace-nowrap" ${sizeH3}`}>
+            {name}
+          </h3>
         </span>
         <div className="w-full flex gap-3 h-1/2 items-center ">
           {colors?.map(({ hex, colorName }, index) => (
-            <span
+            <div
               key={`${idProduct}-${index}`}
               style={{ backgroundColor: hex }}
               className={`rounded-sm border border-textColor ${sizeColors}`}
-              aria-label={`Color ${colorName}`
-            }
+              aria-label={`Color ${colorName}`}
+              role="presentation"
             />
           ))}
         </div>
