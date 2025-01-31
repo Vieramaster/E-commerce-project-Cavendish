@@ -52,4 +52,4 @@ app.get("/", (_request, response) => {
 
 
 
-export default app;
+export default app
