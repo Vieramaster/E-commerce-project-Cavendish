@@ -9,7 +9,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"  
+        "distDir": "dist"
       }
     }
   ],
@@ -20,7 +20,47 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/index.html" 
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/shop/:category",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/search/:search",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/shop/:category/:idProduct",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/delivery",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/returns",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/product-care",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/our-story",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/stores",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/our-fabrics",
+      "dest": "/dist/index.html"
     }
   ]
 }
