@@ -13,6 +13,7 @@ export const SocialBanner = () => {
             aria-label={`Visit our ${name} page`}
           >
             <Component />
+            <span className="sr-only">{`Visit our ${name} page`}</span>
           </a>
         </li>
       ))}
