@@ -10,9 +10,9 @@ export const SocialBanner = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="stroke-white hover:stroke-yellow duration-300 ease-in-out flex items-center gap-2"
+            aria-label={`Visit our ${name} page`}
           >
             <Component />
-            <span className="sr-only">{`Visit our ${name} page`}</span>
           </a>
         </li>
       ))}

@@ -20,13 +20,12 @@ export const DescriptionShopCard = ({ array, toggleSize }) => {
           </h3>
         </span>
         <div className="w-full flex gap-3 h-1/2 items-center ">
-          {colors?.map(({ hex, colorName }, index) => (
+          {colors?.map(({ hex }, index) => (
             <div
               key={`${idProduct}-${index}`}
               style={{ backgroundColor: hex }}
               className={`rounded-sm border border-textColor ${sizeColors}`}
-              aria-label={`Color ${colorName}`}
-              role="presentation"
+
             />
           ))}
         </div>
