@@ -28,7 +28,7 @@ app.use(
 const url =
   "https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=7&apikey=1f23fd25fcd57c1f8b3407913c12d6d4";
 
-app.get("/", (_request, response) => {
+app.get("/api/NewsApi", (_request, response) => {
   fetch(url)
     .then((apiResponse) => {
       if (!apiResponse.ok) {
@@ -49,7 +49,5 @@ app.get("/", (_request, response) => {
       response.status(401).json({ message: "Unauthorized", error });
     });
 });
-
-
 
 export default app
