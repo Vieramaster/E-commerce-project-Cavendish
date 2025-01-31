@@ -23,7 +23,8 @@ export const DescriptionShopCard = ({ array, toggleSize }) => {
               key={`${idProduct}-${index}`}
               style={{ backgroundColor: hex }}
               className={`rounded-sm border border-textColor ${sizeColors}`}
-              aria-label={`Color: ${colorName}`}
+              aria-label={`Color ${colorName}`
+            }
             />
           ))}
         </div>

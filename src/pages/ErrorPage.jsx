@@ -32,7 +32,7 @@ const ErrorPage = () => {
           <h2 className="text-lg md:text-xl lg:text-2xl">
             The link might be corrupted
           </h2>
-          <DefaultButtonLink color="primary" toPage="/">
+          <DefaultButtonLink color="primary" toPage="/" arialLabel="go to home">
             Go to main page
           </DefaultButtonLink>
         </div>

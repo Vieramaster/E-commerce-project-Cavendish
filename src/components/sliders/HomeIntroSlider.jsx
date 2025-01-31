@@ -42,18 +42,16 @@ export const HomeIntroSlider = ({
         />
         <div
           className={`flex flex-col text-white mb-5 lg:mb-20 absolute pt-28 ${position}`}
-          aria-labelledby="Discover-now"
         >
           <h2 className="text-5xl font-bold drop-shadow-md shadow-black lg:text-6xl 2xl:text-[5rem]">
             {title}
           </h2>
-          <p
-            className="text-lg italic drop-shadow-md shadow-black lg:text-xl 2xl:text-2xl mb-5"
-            id="Discover-now"
-          >
+          <p className="text-lg italic drop-shadow-md shadow-black lg:text-xl 2xl:text-2xl mb-5">
             {text}
           </p>
-          <IntroHomeButton toPage={toPage}>Discover Now</IntroHomeButton>
+          <IntroHomeButton toPage={toPage} aria-label="Discover-now">
+            Discover Now
+          </IntroHomeButton>
         </div>
       </li>
     </>

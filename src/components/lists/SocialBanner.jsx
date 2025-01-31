@@ -9,10 +9,10 @@ export const SocialBanner = () => {
             href="https://www.youtube.com/watch?v=QB7ACr7pUuE"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Visit our ${name} page`}
-            className="stroke-white hover:stroke-yellow duration-300 ease-in-out"
+            className="stroke-white hover:stroke-yellow duration-300 ease-in-out flex items-center gap-2"
           >
             <Component />
+            <span className="sr-only">{`Visit our ${name} page`}</span>
           </a>
         </li>
       ))}

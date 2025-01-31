@@ -35,7 +35,11 @@ export const SellCounterImage = ({
           </p>
         </div>
 
-        <DefaultButtonLink color="banner" toPage={page}>
+        <DefaultButtonLink
+          color="banner"
+          toPage={page}
+          arialLabel="Shop button"
+        >
           <ShoppingCartIco />
         </DefaultButtonLink>
       </div>
