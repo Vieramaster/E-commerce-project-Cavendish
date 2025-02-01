@@ -15,8 +15,9 @@ const ProductCare = lazy(() => import("../pages/ProductCare"));
 const OurStory = lazy(() => import("../pages/OurStory"));
 const Stores = lazy(() => import("../pages/Stores"));
 const OurFabrics = lazy(() => import("../pages/OurFabrics"));
-// @ts-ignore
-const SuspenseWrapper = ({ children }) => (
+
+// Componente de suspenso mejorado
+const SuspenseWrapper = ({ children }: { children: React.ReactNode }) => (
   <Suspense fallback={<LoaderPage />}>{children}</Suspense>
 );
 
@@ -42,8 +43,9 @@ export const router = createBrowserRouter([
           </SuspenseWrapper>
         ),
       },
+
       {
-        path: "/shop/:category",
+        path: "shop/search/:search",
         element: (
           <SuspenseWrapper>
             <Shop />
@@ -51,7 +53,15 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/shop/search/:search",
+        path: "shop/:category/:idProduct",
+        element: (
+          <SuspenseWrapper>
+            <ShopProduct />
+          </SuspenseWrapper>
+        ),
+      },
+      {
+        path: "shop/:category",
         element: (
           <SuspenseWrapper>
             <Shop />
@@ -60,15 +70,7 @@ export const router = createBrowserRouter([
       },
 
       {
-        path: "/shop/:category/:idProduct",
-        element: (
-          <SuspenseWrapper>
-            <ShopProduct />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "/contact",
+        path: "contact",
         element: (
           <SuspenseWrapper>
             <Contact />
@@ -76,7 +78,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/delivery",
+        path: "delivery",
         element: (
           <SuspenseWrapper>
             <Delivery />
@@ -84,7 +86,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/returns",
+        path: "returns",
         element: (
           <SuspenseWrapper>
             <Returns />
@@ -92,7 +94,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/product-care",
+        path: "product-care",
         element: (
           <SuspenseWrapper>
             <ProductCare />
@@ -100,7 +102,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/our-story",
+        path: "our-story",
         element: (
           <SuspenseWrapper>
             <OurStory />
@@ -108,7 +110,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/stores",
+        path: "stores",
         element: (
           <SuspenseWrapper>
             <Stores />
@@ -116,7 +118,7 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/Our-fabrics",
+        path: "our-fabrics",
         element: (
           <SuspenseWrapper>
             <OurFabrics />
@@ -126,7 +128,7 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "/checkOut",
+    path: "/checkout",
     element: (
       <SuspenseWrapper>
         <LayoutCheckOut />
