@@ -29,115 +29,30 @@ export const router = createBrowserRouter([
         <LayoutPublic />
       </SuspenseWrapper>
     ),
-    errorElement: (
-      <SuspenseWrapper>
-        <ErrorPage />
-      </SuspenseWrapper>
-    ),
+    errorElement: <ErrorPage />,
     children: [
+      { index: true, element: <Home /> },
       {
-        index: true,
-        element: (
-          <SuspenseWrapper>
-            <Home />
-          </SuspenseWrapper>
-        ),
+        path: "shop",
+        children: [
+          { path: ":category/:idProduct", element: <ShopProduct /> },
+          { path: ":category", element: <Shop /> },
+        ],
       },
 
-      {
-        path: "shop/search/:search",
-        element: (
-          <SuspenseWrapper>
-            <Shop />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "shop/:category/:idProduct",
-        element: (
-          <SuspenseWrapper>
-            <ShopProduct />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "shop/:category",
-        element: (
-          <SuspenseWrapper>
-            <Shop />
-          </SuspenseWrapper>
-        ),
-      },
-
-      {
-        path: "contact",
-        element: (
-          <SuspenseWrapper>
-            <Contact />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "delivery",
-        element: (
-          <SuspenseWrapper>
-            <Delivery />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "returns",
-        element: (
-          <SuspenseWrapper>
-            <Returns />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "product-care",
-        element: (
-          <SuspenseWrapper>
-            <ProductCare />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "our-story",
-        element: (
-          <SuspenseWrapper>
-            <OurStory />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "stores",
-        element: (
-          <SuspenseWrapper>
-            <Stores />
-          </SuspenseWrapper>
-        ),
-      },
-      {
-        path: "our-fabrics",
-        element: (
-          <SuspenseWrapper>
-            <OurFabrics />
-          </SuspenseWrapper>
-        ),
-      },
+      { path: "search/:search", element: <Shop /> },
+      { path: "contact", element: <Contact /> },
+      { path: "delivery", element: <Delivery /> },
+      { path: "returns", element: <Returns /> },
+      { path: "product-care", element: <ProductCare /> },
+      { path: "our-story", element: <OurStory /> },
+      { path: "stores", element: <Stores /> },
+      { path: "our-fabrics", element: <OurFabrics /> },
     ],
   },
   {
     path: "/checkout",
-    element: (
-      <SuspenseWrapper>
-        <LayoutCheckOut />
-      </SuspenseWrapper>
-    ),
-    errorElement: (
-      <SuspenseWrapper>
-        <ErrorPage />
-      </SuspenseWrapper>
-    ),
+    element: <LayoutCheckOut />,
+    errorElement: <ErrorPage />,
   },
 ]);
