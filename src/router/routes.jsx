@@ -16,8 +16,8 @@ const OurStory = lazy(() => import("../pages/OurStory"));
 const Stores = lazy(() => import("../pages/Stores"));
 const OurFabrics = lazy(() => import("../pages/OurFabrics"));
 
-// Componente de suspenso mejorado
-const SuspenseWrapper = ({ children }: { children: React.ReactNode }) => (
+/**@param {{children:JSX.Element}}  props*/
+const SuspenseWrapper = ({children}) => (
   <Suspense fallback={<LoaderPage />}>{children}</Suspense>
 );
 
@@ -37,10 +37,10 @@ export const router = createBrowserRouter([
         children: [
           { path: ":category/:idProduct", element: <ShopProduct /> },
           { path: ":category", element: <Shop /> },
+          { path: "search/:search", element: <Shop /> },
         ],
       },
 
-      { path: "search/:search", element: <Shop /> },
       { path: "contact", element: <Contact /> },
       { path: "delivery", element: <Delivery /> },
       { path: "returns", element: <Returns /> },
