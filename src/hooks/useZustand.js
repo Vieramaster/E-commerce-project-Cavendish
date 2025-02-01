@@ -6,7 +6,13 @@ import { persist } from "zustand/middleware";
 export const useSearchValue = create((set) => ({
   searchValue: "",
   /** @param {string} newString */
-  setSearchValue: (newString) => set({ searchValue: newString }),
+  setSearchValue: (newString) => {
+    set({ searchValue: newString });
+
+    setTimeout(() => {
+      set({ searchValue: "" });
+    }, 2000);
+  },
 }));
 
 export const useCart = create(

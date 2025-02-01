@@ -30,10 +30,8 @@ export const Maps = ({ markers, zoomMark }) => {
         />
         <CenterMap center={center} />
 
-        {markers?.map(({ localName, coordinates }, index) => (
-          <Marker key={index} position={coordinates}>
-            <Popup  >{localName}</Popup>
-          </Marker>
+        {markers?.map(({ coordinates }, index) => (
+          <Marker key={index} position={coordinates} />
         ))}
       </MapContainer>
     </div>

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { ShopFilter } from "../components/ShopFilter";
 import { DefaultButton } from "../components/buttons/DefaultButton";
 import { ShopCard } from "../components/cards/ShopCard";
@@ -7,8 +7,6 @@ import { DescriptionShopCard } from "../components/cards/card_components/Descrip
 import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
 import { useFetch } from "../hooks/useFetch";
 import { useResizeWindow } from "../hooks/useResizeWindow";
-import { useSearchValue } from "../hooks/useZustand";
-
 import {
   alphabeticFilter,
   colorFilter,
@@ -17,12 +15,11 @@ import {
   sizesFilter,
   typeFilter,
 } from "../hooks/useSelectFilters";
-import { LoaderPage } from "../components/loaders/LoaderPage";
 import "../types";
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import { useSearchValue } from "../hooks/useZustand";
 
-const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(22rem,_1fr))]";
-const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(42rem,_1fr))]";
+const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
+const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
 
 const sorts = {
   title_ascending: /** @param {ClothesObject[]} data */ (data) =>
@@ -64,7 +61,7 @@ const filters = {
 const PAGE_SIZE = 8;
 
 export const Shop = () => {
-  const { category } = useParams();
+  const { category, search } = useParams();
 
   const [toggleGrid, setToggleGrid] = useState(false);
   const [sort, setSort] = useState(/** @type {FiltersString} */ ("default"));
@@ -74,7 +71,6 @@ export const Shop = () => {
   const [page, setPage] = useState(1);
   const resetPagination = useCallback(() => setPage(1), []);
 
-  category && useDocumentTitle(category.replace(/_/g, " "));
   // restart the grid for screen changes
   useResizeWindow(976, setToggleGrid);
 
@@ -82,9 +78,8 @@ export const Shop = () => {
     () => setToggleGrid((prevState) => !prevState),
     []
   );
-
   const { searchValue } = useSearchValue();
-
+  const {} = useLocation();
   const totalCategories = [
     "sweatshirts_and_hoodies",
     "jackets_and_coats",
@@ -97,13 +92,12 @@ export const Shop = () => {
   const resultCategories =
     category && totalCategories.includes(category) ? category : undefined;
 
-  const { data, loading } = useFetch(
+  const { data } = useFetch(
     "/data/clothes_for_e-commerse.json",
     resultCategories,
     searchValue ?? null
   );
 
-  console.log(data);
   // data is subtracted to create filter buttons
   /** @type {ProductAttributes} */
   const arrayForFilters = useMemo(
@@ -118,31 +112,38 @@ export const Shop = () => {
   }, []);
 
   /** @type {React.MouseEventHandler<HTMLButtonElement>} */
+  const handleExtendfilter = useCallback(
+    ({ currentTarget }) => {
+      resetPagination();
+      const {
+        value: buttonValue,
+        dataset: { id: buttonData },
+      } = /** @type {HTMLButtonElement} */ (currentTarget);
 
-  const handleExtendfilter = useCallback(({ currentTarget }) => {
-    const {
-      value: buttonValue,
-      dataset: { id: buttonData },
-    } = currentTarget;
+      setExtendFilters((prev) => {
+        /**@type {"size" | "color" | "type"} */
+        let filterKey;
 
-    setExtendFilters((prev) => {
-      /**@type {"size" | "color" | "type"} */
-      let filterKey;
-      if (buttonData === "sizeButton") filterKey = "size";
-      else if (buttonData === "colorButton") filterKey = "color";
-      else if (buttonData === "typeButton") filterKey = "type";
-      else return prev;
+        if (buttonData === "sizeButton") {
+          filterKey = "size";
+        } else if (buttonData === "colorButton") {
+          filterKey = "color";
+        } else if (buttonData === "typeButton") {
+          filterKey = "type";
+        } else return prev;
 
-      const updatedFilter = prev[filterKey].includes(buttonValue)
-        ? prev[filterKey].filter((item) => item !== buttonValue)
-        : [...prev[filterKey], buttonValue];
+        const updatedFilter = prev[filterKey].includes(buttonValue)
+          ? prev[filterKey].filter((item) => item !== buttonValue)
+          : [...prev[filterKey], buttonValue];
 
-      return {
-        ...prev,
-        [filterKey]: updatedFilter,
-      };
-    });
-  }, []);
+        return {
+          ...prev,
+          [filterKey]: updatedFilter,
+        };
+      });
+    },
+    [resetPagination]
+  );
 
   const handleCleanFilter = useCallback(() => {
     setExtendFilters({ size: [], color: [], type: [] });
@@ -172,23 +173,19 @@ export const Shop = () => {
     () => filteredResultsSliced.length < filteredResults.length,
     [filteredResults.length, filteredResultsSliced.length]
   );
-
-  // add more cards
-  const handleMoreData = useCallback(
-    () => setPage((prevPage) => prevPage + 1),
-    []
-  );
-
   useEffect(() => {
-    if (data || searchValue) {
+    if (data) {
       resetPagination();
-      setExtendFilters({ size: [], color: [], type: [] });
-      setPage(1);
     }
-  }, [data, searchValue, resetPagination]);
+  }, [data]);
+  // add more cards
+  const handleMoreData = useCallback(() => () => setPage(page + 1), [page]);
 
+  console.log("categoria :", category);
+  console.log("buscador:", search);
+  console.log("lala:", searchValue);
   return (
-    <>
+    <section className="bg-offWhite w-full min-h-screen">
       <ShopFilter
         onChangeFilter={changeFilter}
         toggleGrid={gridChangeToggle}
@@ -200,30 +197,27 @@ export const Shop = () => {
           handleExtendfilter,
         }}
       />
-      <section className="bg-offWhite w-full min-h-screen">
-        <div
-          className={`h-full w-5/6 mx-auto  flex flex-col py-10 md:grid gap-x-5 gap-y-8 md:gap-y-12 ${
-            toggleGrid ? gridGiant : gridCompact
-          }`}
-        >
-          {loading && <LoaderPage />}
-          {!loading &&
-            filteredResultsSliced.map((item) => (
-              <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
-                <ImagesShopSlider
-                  changeClothesColor={0}
-                  array={item}
-                  maxSizeArrows={toggleGrid}
-                  itsALink={true}
-                />
-                <DescriptionShopCard array={item} toggleSize={toggleGrid} />
-              </ShopCard>
-            ))}
-          {!loading && filteredResults.length === 0 && searchValue && (
-            <LoaderPage />
-          )}
-        </div>
-      </section>
+      <div
+        className={`h-full w-5/6 mx-auto min-w-80 py-10 grid gap-x-5 gap-y-14 ${
+          toggleGrid ? gridGiant : gridCompact
+        }`}
+      >
+        {filteredResultsSliced.length === 0 ? (
+          <p>No se encontró nada</p>
+        ) : (
+          filteredResultsSliced.map((item) => (
+            <ShopCard toggleSize={toggleGrid} key={item.idProduct}>
+              <ImagesShopSlider
+                changeClothesColor={0}
+                array={item}
+                maxSizeArrows={toggleGrid}
+                itsALink={true}
+              />
+              <DescriptionShopCard array={item} toggleSize={toggleGrid} />
+            </ShopCard>
+          ))
+        )}
+      </div>
       <div className="w-full h-20 grid place-content-center">
         <DefaultButton
           onClick={handleMoreData}
@@ -233,7 +227,7 @@ export const Shop = () => {
           {loadCards ? "More clothes..." : "No more products"}
         </DefaultButton>
       </div>
-    </>
+    </section>
   );
 };
 

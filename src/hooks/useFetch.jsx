@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useProductFinder } from "./useSelectFilters";
 import "../types";
 
