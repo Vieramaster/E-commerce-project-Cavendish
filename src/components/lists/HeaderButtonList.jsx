@@ -50,7 +50,7 @@ export const HeaderButtonList = ({
   const { cart } = useCart();
 
   return (
-    <nav className="flex place-content-center relative">
+    <nav className="flex gap-5 items-center justify-between relative ">
       {iconList.map(({ key, Component, handleEvent, label }, index) => (
         <BasicButton
           responsive={index === 2}
