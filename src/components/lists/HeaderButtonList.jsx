@@ -50,28 +50,27 @@ export const HeaderButtonList = ({
   const { cart } = useCart();
 
   return (
-    <ul className="flex gap-5 h-full items-center justify-center text-lightTextColor">
+    <nav className="flex place-content-center relative">
       {iconList.map(({ key, Component, handleEvent, label }, index) => (
-        <li key={key} className="flex place-content-center relative">
-          <BasicButton
-            responsive={index === 2}
-            onClick={handleEvent}
-            aria-label={label}
-            disabled={index === 0 && isSearchBarOpen}
-            relative={index === 1}
-          >
-            <Component />
-            {index === 1 && cart.length > 0 && (
-              <span
-                className="absolute size-4 rounded-full -right-1 -bottom-1 bg-background flex place-content-center items-center lg:size-5"
-                aria-hidden="true"
-              >
-                <span className="bg-mainColor size-[0.6rem] rounded-full m-0 lg:size-3"></span>
-              </span>
-            )}
-          </BasicButton>
-        </li>
+        <BasicButton
+          responsive={index === 2}
+          onClick={handleEvent}
+          aria-label={label}
+          disabled={index === 0 && isSearchBarOpen}
+          relative={index === 1}
+          key={key}
+        >
+          <Component />
+          {index === 1 && cart.length > 0 && (
+            <span
+              className="absolute size-4 rounded-full -right-1 -bottom-1 bg-background flex place-content-center items-center lg:size-5"
+              aria-hidden="true"
+            >
+              <span className="bg-mainColor size-[0.6rem] rounded-full m-0 lg:size-3"></span>
+            </span>
+          )}
+        </BasicButton>
       ))}
-    </ul>
+    </nav>
   );
 };
