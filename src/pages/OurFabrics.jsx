@@ -32,6 +32,4 @@ const OurFabrics = () => {
     </>
   );
 };
-
-
 export default OurFabrics;
