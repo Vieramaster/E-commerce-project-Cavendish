@@ -9,11 +9,11 @@ const Delivery = () => {
   return (
     <>
       <div className="w-5/6 grid gap-10 mx-auto text-textColor py-16">
+        <h1 id="delivery-table" className="text-3xl font-semibold">
+          Delivery
+        </h1>
         <section className="grid gap-3" aria-labelledby="delivery-table">
-          <h1 id="delivery-table" className="text-3xl font-semibold">
-            Delivery
-          </h1>
-          <h3>Delivery options</h3>
+          <h2>Delivery options</h2>
           <DeliveryTablePage arrayTable={DeliveryTableData} />
         </section>
 
@@ -35,7 +35,7 @@ const Delivery = () => {
         </section>
 
         <section aria-labelledby="more-info">
-          <h3 id="more-info">Latin America & International delivery</h3>
+          <h4 id="more-info">Latin America & International delivery</h4>
           <p>
             Please
             <span>

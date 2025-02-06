@@ -1,12 +1,19 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+//hooks
+import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import { useParams, useLocation } from "react-router-dom";
+import { useFetch } from "../hooks/useFetch";
+import { useResizeWindow } from "../hooks/useResizeWindow";
+import { useSearchValue } from "../hooks/useZustand";
+
+//components
 import { ShopFilter } from "../components/ShopFilter";
 import { DefaultButton } from "../components/buttons/DefaultButton";
 import { ShopCard } from "../components/cards/ShopCard";
 import { DescriptionShopCard } from "../components/cards/card_components/DescriptionShopCard";
 import { ImagesShopSlider } from "../components/sliders/ImagesShopSlider";
-import { useFetch } from "../hooks/useFetch";
-import { useResizeWindow } from "../hooks/useResizeWindow";
+
+
+//comands
 import {
   alphabeticFilter,
   colorFilter,
@@ -16,7 +23,6 @@ import {
   typeFilter,
 } from "../hooks/useSelectFilters";
 import "../types";
-import { useSearchValue } from "../hooks/useZustand";
 
 const gridCompact = "grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))]";
 const gridGiant = "grid-cols-[repeat(auto-fill,_minmax(40rem,_1fr))]";
@@ -173,17 +179,17 @@ export const Shop = () => {
     () => filteredResultsSliced.length < filteredResults.length,
     [filteredResults.length, filteredResultsSliced.length]
   );
+
+  const location = useLocation();
+  const prevPathname = useRef(location.pathname);
+
   useEffect(() => {
-    if (data) {
-      resetPagination();
-    }
-  }, [data]);
+    data && resetPagination();
+    prevPathname.current !== location.pathname && window.location.reload();
+  }, [data, location]);
   // add more cards
   const handleMoreData = useCallback(() => () => setPage(page + 1), [page]);
 
-  console.log("categoria :", category);
-  console.log("buscador:", search);
-  console.log("lala:", searchValue);
   return (
     <section className="bg-offWhite w-full min-h-screen">
       <ShopFilter
@@ -203,7 +209,7 @@ export const Shop = () => {
         }`}
       >
         {filteredResultsSliced.length === 0 ? (
-          <p>No se encontró nada</p>
+          <p>Nothing was found </p>
         ) : (
           filteredResultsSliced.map((item) => (
             <ShopCard toggleSize={toggleGrid} key={item.idProduct}>

@@ -9,7 +9,7 @@ import { totalPriceItem } from "../../hooks/useMathOperations";
 export const CheckOutProductList = ({ product, heightUl }) => {
   return (
     <ul
-      className="w-full h-auto py-6 flex flex-col gap-4"
+      className="w-full h-auto pt-6 flex flex-col gap-4"
       style={{ maxHeight: `calc(${heightUl}rem)` }}
       aria-label="List of products in your checkout"
     >

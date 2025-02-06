@@ -8,8 +8,8 @@ const Returns = () => {
   useDocumentTitle("Returns");
   return (
     <div className="w-5/6 flex flex-col gap-4 mx-auto py-16 text-textColor">
+      <h1 className="text-3xl font-semibold mb-5">Returns & Exchanges</h1>
       <article aria-labelledby="returns-and-exchanges">
-        <h1 className="text-3xl font-semibold mb-5">Returns & Exchanges</h1>
         <p>
           At Cavendish Country, we are committed to ensuring your complete
           satisfaction. Should you wish to make a return or an exchange, you can
@@ -17,7 +17,7 @@ const Returns = () => {
           returned in their original packaging, and with all the labels and
           tags.
         </p>
-        <h3 className={h3Class}>Extended Christmas returns period</h3>
+        <h2 className={h3Class}>Extended Christmas returns period</h2>
         <p>
           We’re pleased to offer an extended returns period for orders placed
           between <strong>1st November and 25th December</strong>. This means

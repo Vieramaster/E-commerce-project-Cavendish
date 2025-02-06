@@ -1,5 +1,5 @@
 const link = (
-    <a href="/https://youtu.be/watch?v=xvFZjo5PgG0" className="underline">
+    <a href="https://youtu.be/watch?v=xvFZjo5PgG0" className="underline" aria-label="link">
       here
     </a>
   );

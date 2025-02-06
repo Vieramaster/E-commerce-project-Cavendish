@@ -16,7 +16,7 @@ export const CheckOutProducts = ({ product, totalItems, price, isOpen }) => {
     >
       <CheckOutProductList product={product} heightUl={calculatedHeight} />
 
-      <div className="w-full h-12 flex justify-between items-center text-textColor border-t border-border mt-4">
+      <div className="w-full h-12 flex justify-between items-center text-textColor border-t border-border mt-4 lg:hidden">
         <p className="font-medium">
           Subtotal: <span className="ml-2">{totalItems} items</span>
         </p>

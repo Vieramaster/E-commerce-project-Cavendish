@@ -1,6 +1,8 @@
-export const TwitterIco = () => {
+/**@param {JSX.IntrinsicElements["svg"]} props */
+export const TwitterIco = (props) => {
   return (
     <svg
+      {...props}
       className="w-full h-full m-auto"
       viewBox="0 0 24 24"
       fill="none"

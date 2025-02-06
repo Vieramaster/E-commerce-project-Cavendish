@@ -17,9 +17,9 @@ const ProductCare = () => {
         className="w-5/6 mx-auto text-textColor py-10"
         aria-labelledby="general care"
       >
-        <h3 id="general care" className="text-3xl font-bold">
+        <h2 id="general care" className="text-3xl font-bold">
           General care
-        </h3>
+        </h2>
         <InformationList arrayObject={ProductCareData} />
       </section>
     </>

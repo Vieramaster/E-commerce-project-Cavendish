@@ -69,14 +69,12 @@ export const Header = () => {
         </div>
         <div className="w-full mx-auto h-20 px-5 flex justify-between items-center md:px-0 sm:w-5/6">
           <PageLogo color="main" />
-          <ul className="flex gap-5 w-auto h-full items-center justify-center text-lightTextColor">
-            <HeaderButtonList
-              toggleSearchBar={toggleSearchBar}
-              toggleNavbarCart={toggleNavbarCart}
-              toggleNavbarShop={toggleNavbarShop}
-              isSearchBarOpen={isSearchBarOpen}
-            />
-          </ul>
+          <HeaderButtonList
+            toggleSearchBar={toggleSearchBar}
+            toggleNavbarCart={toggleNavbarCart}
+            toggleNavbarShop={toggleNavbarShop}
+            isSearchBarOpen={isSearchBarOpen}
+          />
         </div>
 
         <NavbarShop

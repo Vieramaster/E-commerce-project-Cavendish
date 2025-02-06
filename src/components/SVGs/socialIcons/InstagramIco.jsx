@@ -1,6 +1,8 @@
-export const InstagramIco = () => {
+/**@param {JSX.IntrinsicElements["svg"]} props */
+export const InstagramIco = (props) => {
   return (
     <svg
+      {...props}
       className="w-full h-full m-auto"
       viewBox="0 0 24 24"
       fill="none"
