@@ -1,5 +1,6 @@
+
 import { ImageBanner } from "../components/ImageBanners";
-import { ArticleAbout } from "../components/articles/ArticleAbout"
+import { ArticleAbout } from "../components/articles/ArticleAbout";
 import { TypeTwoSection } from "../components/sections/TypeTwoSection";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { TypeOneSection } from "../components/sections/TypeOneSection";
