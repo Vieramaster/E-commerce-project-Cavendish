@@ -2,7 +2,7 @@ import { ImageBanner } from "../components/ImageBanners";
 import { TypeOneSection } from "../components/sections/TypeOneSection";
 import { TriadImages } from "../components/sections/TriadImages";
 import useDocumentTitle from "../hooks/useDocumentTitle";
-import { ArticleAbout } from "../components/articles/ArticleAbout";
+import { ArticleAbout } from "../ArticleAbout";
 import {
   galeryImageData,
   firstTypeOneSectionData,
