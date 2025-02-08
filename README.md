@@ -7,7 +7,7 @@ Project on e-commerse created in react and tailwind
 ## Screenshots
 
 ![App Screenshot](https://i.ibb.co/7JXPzTqf/ezgif-416b1ca2b7fc2b.gif)
-![App Screenshot](https://i.ibb.co/fpSLvwY/Outfitlandia.gif)
+![App Screenshot](https://i.ibb.co/7JXPzTqf/ezgif-416b1ca2b7fc2b.gif)
 
 ## Tech Stack
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)	
