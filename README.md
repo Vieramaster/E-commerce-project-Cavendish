@@ -6,7 +6,7 @@ project on e-commerse created in react and tailwind
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/6Qw7Jxgy/ezgif-416b1ca2b7fc2b.gif)
+[![ezgif-416b1ca2b7fc2b.gif](https://i.postimg.cc/6Qw7Jxgy/ezgif-416b1ca2b7fc2b.gif)](https://postimg.cc/BjYZHkq0)
 
 
 ## Tech Stack
