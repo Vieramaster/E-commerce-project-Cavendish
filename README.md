@@ -6,16 +6,15 @@ project on e-commerse created in react and tailwind
 
 ## Screenshots
 
-[![ezgif-416b1ca2b7fc2b.gif](https://i.postimg.cc/6Qw7Jxgy/ezgif-416b1ca2b7fc2b.gif)](https://postimg.cc/BjYZHkq0)
-
+![App Screenshot](https://i.postimg.cc/6Qw7Jxgy/ezgif-416b1ca2b7fc2b.gif)
 
 ## Tech Stack
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)	
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-**Client:** ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)	![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-**Server:** 	![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-
-**Hosting:** ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ## Appendix
 
 This project was created as a way to sharpen my skills in Tailwind CSS and React, focusing on writing better component semantics and optimizing performance. And what better way to do that than by building an eCommerce app?
